@@ -9,7 +9,7 @@ const text = dict[language]
 const NavLeft = () => (
   <div class='nav-left'>
     <a class='nav-item'>
-      <img src='/public/images/logo-head.png' alt='Logo' />
+      <img src='images/logo-head.png' alt='Logo' />
     </a>
   </div>
 )
@@ -161,13 +161,13 @@ const WallopSlides = () => (
     <div class='Wallop Wallop--fade'>
       <div class='Wallop-list'>
         <div class='Wallop-item'>
-          <img class='demo-img' src='/public/images/mockup/1.png' alt='iphone demo 1' />
+          <img class='demo-img' src='/images/mockup/1.png' alt='iphone demo 1' />
         </div>
         <div class='Wallop-item'>
-          <img class='demo-img' src='/public/images/mockup/2.png' alt='iphone demo 2' />
+          <img class='demo-img' src='/images/mockup/2.png' alt='iphone demo 2' />
         </div>
         <div class='Wallop-item'>
-          <img class='demo-img' src='/public/images/mockup/3.png' alt='iphone demo 3' />
+          <img class='demo-img' src='/images/mockup/3.png' alt='iphone demo 3' />
         </div>
       </div>
     </div>
@@ -198,7 +198,7 @@ const WallopSlide = (props) => {
         <Headlines num={num} />
       </div>
       <div class='column is-half has-text-centered'>
-        <img class='demo-img' src={`/public/images/mockup/${num}.png`} alt='iphone demo 1' />
+        <img class='demo-img' src={`/images/mockup/${num}.png`} alt='iphone demo 1' />
       </div>
     </div>
   )
