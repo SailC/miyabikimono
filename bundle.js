@@ -25835,7 +25835,7 @@ var NavLeft = function NavLeft() {
     _react2.default.createElement(
       'a',
       { className: 'nav-item' },
-      _react2.default.createElement('img', { src: 'images/logo-head.png', alt: 'Logo' })
+      _react2.default.createElement('img', { src: '/public/images/logo-head.png', alt: 'Logo' })
     )
   );
 };
@@ -26068,17 +26068,17 @@ var WallopSlides = function WallopSlides() {
         _react2.default.createElement(
           'div',
           { className: 'Wallop-item' },
-          _react2.default.createElement('img', { className: 'demo-img', src: '/images/mockup/1.png', alt: 'iphone demo 1' })
+          _react2.default.createElement('img', { className: 'demo-img', src: '/public/images/mockup/1.png', alt: 'iphone demo 1' })
         ),
         _react2.default.createElement(
           'div',
           { className: 'Wallop-item' },
-          _react2.default.createElement('img', { className: 'demo-img', src: '/images/mockup/2.png', alt: 'iphone demo 2' })
+          _react2.default.createElement('img', { className: 'demo-img', src: '/public/images/mockup/2.png', alt: 'iphone demo 2' })
         ),
         _react2.default.createElement(
           'div',
           { className: 'Wallop-item' },
-          _react2.default.createElement('img', { className: 'demo-img', src: '/images/mockup/3.png', alt: 'iphone demo 3' })
+          _react2.default.createElement('img', { className: 'demo-img', src: '/public/images/mockup/3.png', alt: 'iphone demo 3' })
         )
       )
     )
@@ -26125,7 +26125,7 @@ var WallopSlide = function WallopSlide(props) {
     _react2.default.createElement(
       'div',
       { className: 'column is-half has-text-centered' },
-      _react2.default.createElement('img', { className: 'demo-img', src: '/images/mockup/' + num + '.png', alt: 'iphone demo 1' })
+      _react2.default.createElement('img', { className: 'demo-img', src: '/public/images/mockup/' + num + '.png', alt: 'iphone demo 1' })
     )
   );
 };
