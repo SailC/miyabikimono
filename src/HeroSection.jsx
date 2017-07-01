@@ -122,15 +122,7 @@ class HeroHead extends React.Component {
 
 const HeroBody = () => (
   <div class='hero-body'>
-    {/* <div class='columns container is-fluid'>
-      <div class='column is-half'>
-        <Headlines />
-      </div>
-      <div class='column is-half'>
-        <WallopSlides />
-      </div>
-    </div> */}
-    <WallopSlides2 />
+    <WallopSlides />
   </div>
 )
 
@@ -138,8 +130,14 @@ const Headlines = (props) => {
   const { num } = props
   return (
     <div class='container is-fluid has-text-centered'>
-      <h1 class='title'> {text[`hero-title-${num}`]} </h1>
-      <h2 class='subtitle'>{text[`hero-subtitle-${num}`]}</h2>
+      <h1 class={classNames(
+        'title',
+        {'font-zhao': language === 'zh'}
+      )}> {text[`hero-title-${num}`]} </h1>
+      <h2 class={classNames(
+        'subtitle',
+        {'font-zhao': language === 'zh'}
+      )}>{text[`hero-subtitle-${num}`]}</h2>
       <a href={text['apple-store-url']} target='_blank' class='store-icon button is-primary is-inverted'>
         <span class='icon is-small'>
           <i class='fa fa-apple' />
@@ -157,24 +155,6 @@ const Headlines = (props) => {
 }
 
 const WallopSlides = () => (
-  <div class='container is-fluid has-text-centered'>
-    <div class='Wallop Wallop--fade'>
-      <div class='Wallop-list'>
-        <div class='Wallop-item'>
-          <img class='demo-img' src='/images/mockup/1.png' alt='iphone demo 1' />
-        </div>
-        <div class='Wallop-item'>
-          <img class='demo-img' src='/images/mockup/2.png' alt='iphone demo 2' />
-        </div>
-        <div class='Wallop-item'>
-          <img class='demo-img' src='/images/mockup/3.png' alt='iphone demo 3' />
-        </div>
-      </div>
-    </div>
-  </div>
-)
-
-const WallopSlides2 = () => (
   <div class='Wallop Wallop--fade'>
     <div class='Wallop-list'>
       <div class='Wallop-item'>
@@ -205,7 +185,7 @@ const WallopSlide = (props) => {
 }
 
 const HeroSection = () => (
-  <section class='hero is-primary is-fullheight'>
+  <section class='hero is-primary'>
     <HeroHead />
     <HeroBody />
   </section>

@@ -54,6 +54,40 @@
 .hero .hero-body .Wallop {
   width: 100%; }
 
+.hero .hero-body .Wallop-buttonPrevious {
+  left: 1pc; }
+
+.hero .hero-body .Wallop-buttonNext {
+  right: 1pc; }
+
+.hero .hero-body .Wallop-buttonPrevious:before {
+  content: "\276E"; }
+
+.hero .hero-body .Wallop-buttonNext:before {
+  content: "\276F"; }
+
+.hero .hero-body .Wallop-buttonNext, .hero .hero-body .Wallop-buttonPrevious {
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.hero .hero-body .Wallop-buttonNext:before, .hero .hero-body .Wallop-buttonPrevious:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  text-indent: 0;
+  font-size: 25px;
+  line-height: 0; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -5458,4 +5492,21 @@ label.panel-block {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
+
+.font-zhao {
+  font-family: SentyZhao; }
+
+@font-face {
+  font-family: "SentyZHAO";
+  src: url("/font/SentyZHAO.eot");
+  src: url("/font/SentyZHAO.eot?#iefix") format("embedded-opentype"), url("../font/SentyZHAO.woff") format("woff"), url("../font/SentyZHAO.ttf") format("truetype"), url("../font/SentyZHAO.svg#SentyZHAO") format("svg");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "SentyTang";
+  src: url("/font/SentyTang.eot");
+  src: url("/font/SentyTang.eot?#iefix") format("embedded-opentype"), url("../font/SentyTang.woff") format("woff"), url("../font/SentyTang.ttf") format("truetype"), url("../font/SentyTang.svg#SentyZHAO") format("svg");
+  font-style: normal;
+  font-weight: normal; }
 /*# sourceMappingURL=main.css.map */

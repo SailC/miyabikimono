@@ -9,6 +9,32 @@
 	],
 "creatorBuild": "25849",
 "files": {
+	"\/base\/_all.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/base\/_all.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/base\/generic.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/base\/generic.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/bulma.css": {
 		"aP": 1,
 		"bl": 0,
@@ -642,6 +668,16 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
+		},
+	"\/vendor\/sass\/utilities\/variables.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/vendor\/sass\/utilities\/variables-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/vendor\/sass\/utilities\/variables.sass": {
 		"aP": 0,

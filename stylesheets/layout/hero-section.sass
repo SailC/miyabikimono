@@ -32,3 +32,37 @@
 
     .Wallop
       width: 100%
+
+    .Wallop-buttonPrevious
+      left: 1pc
+
+    .Wallop-buttonNext
+      right: 1pc
+
+    .Wallop-buttonPrevious:before
+      content: "\276E"
+
+    .Wallop-buttonNext:before
+      content: "\276F"
+
+    .Wallop-buttonNext, .Wallop-buttonPrevious
+      border: none
+      background: hsla(0,0%,100%,.6)
+      width: 40px
+      height: 40px
+      border-radius: 20px
+      text-indent: -9999px
+      position: absolute
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      transform: translateY(-50%)
+
+    .Wallop-buttonNext:before, .Wallop-buttonPrevious:before
+      position: absolute
+      top: 50%
+      left: 0
+      width: 100%
+      text-align: center
+      text-indent: 0
+      font-size: 25px
+      line-height: 0
