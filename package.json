@@ -1,5 +1,5 @@
 {
-  "name": "busgazer",
+  "name": "Miyabi",
   "version": "1.0.0",
   "description": "江户和装工坊雅 - 浅草和服租",
   "jest": {
@@ -8,7 +8,7 @@
     ]
   },
   "scripts": {
-    "start": "webpack && node server/server.js",
+    "start": "node server/server.js",
     "dev": "webpack-dev-server --inline --content-base public/",
     "build": "webpack",
     "test": "NODE_ENV=test jest",

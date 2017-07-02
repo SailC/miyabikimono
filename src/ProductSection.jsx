@@ -1,17 +1,18 @@
 import React from 'react'
 import ShowCards from './ProductSection/ShowCards'
 import Pages from './ProductSection/Pages'
+import Filter from './ProductSection/Filter'
+import cards from './ProductSection/cards'
 
-const cardsPerPage = 8
-const totalCardNum = 32
-var cardIndices = Array.from(Array(totalCardNum).keys())
+const language = 'zh'
+const cardsPerPage = 6
 
 class ProductSection extends React.Component {
   constructor () {
     super()
     this.state = {
       pageIndex: 0,
-      showCardIndices: cardIndices
+      cards: cards[language]
     }
   }
 
@@ -23,11 +24,12 @@ class ProductSection extends React.Component {
 
   render () {
     let pageNum = Math.floor(
-        (this.state.showCardIndices.length - 1) / cardsPerPage
+        (this.state.cards.length - 1) / cardsPerPage
     ) + 1
     return (
       <section class='product-section section'>
-        <ShowCards showCardIndices={this.state.showCardIndices}
+        <Filter cards={this.state.cards} />
+        <ShowCards cards={this.state.cards}
           pageIndex={this.state.pageIndex}
           cardsPerPage={cardsPerPage}
         />

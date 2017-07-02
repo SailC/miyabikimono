@@ -9,7 +9,7 @@ const text = dict[language]
 const NavLeft = () => (
   <div class='nav-left'>
     <a class='nav-item'>
-      <img src='images/logo-head.png' alt='Logo' />
+      <img src='/images/logo-head.png' alt='Logo' />
     </a>
   </div>
 )

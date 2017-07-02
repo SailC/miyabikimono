@@ -2,19 +2,19 @@ import React from 'react'
 import Card from './Card'
 
 const ShowCards = (props) => {
-  const {showCardIndices, pageIndex, cardsPerPage} = props
-  let showCardNum = showCardIndices.length
+  const {cards, pageIndex, cardsPerPage} = props
+  let showCardNum = cards.length
   let beginCard = pageIndex * cardsPerPage
   let endCard = (
       (pageIndex + 1) * cardsPerPage >= showCardNum
       ? showCardNum
       : (pageIndex + 1) * cardsPerPage
   )
-  let showIndices = showCardIndices.slice(beginCard, endCard)
-  let cards = Array.from(showIndices, (i) => (
-    <Card key={i} id={i} />
+  let showCards = cards.slice(beginCard, endCard)
+  showCards = showCards.map((card) => (
+    <Card key={card.id} card={card} />
   ))
-  return <div class='container product-list'>{cards}</div>
+  return <div class='container product-list'>{showCards}</div>
 }
 
 export default ShowCards
