@@ -1,11 +1,11 @@
 import React from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
-import HeroSection from './HeroSection'
+import HomePage from './HomePage'
 
 const App = () => (
   <BrowserRouter>
     <div className='app'>
-      <Route exact path='/' component={HeroSection} />
+      <Route exact path='/' component={HomePage} />
     </div>
   </BrowserRouter>
 )

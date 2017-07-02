@@ -88,6 +88,35 @@
   font-size: 25px;
   line-height: 0; }
 
+.product-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.card {
+  margin: 5px; }
+  @media screen and (min-width: 1192px) {
+    .card {
+      width: 24%; } }
+  @media screen and (min-width: 1000px) and (max-width: 1191px) {
+    .card {
+      width: 32%; } }
+  @media screen and (min-width: 769px) and (max-width: 999px) {
+    .card {
+      width: 48%; } }
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%; } }
+
+nav.pagination {
+  margin: 5px; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).

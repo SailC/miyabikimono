@@ -1,0 +1,18 @@
+.product-list
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-around
+
+.card
+  margin: 5px
+  @include widescreen
+    width: 24%
+  @include desktop-only
+    width: 32%
+  @include tablet-only
+    width: 48%
+  @include mobile
+    width: 100%
+
+nav.pagination
+  margin: 5px
