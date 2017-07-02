@@ -4,12 +4,16 @@ import dict from '../dict.json'
 const language = 'zh'
 const text = dict[language]
 
+var filterClickListener
+
 const CheckBox = (props) => {
-  const {text} = props
+  const {fieldName, text} = props
   return (
     <p class='control'>
       <label class='checkbox'>
-        <input type='checkbox' /> {text}
+        <input type='checkbox' onChange={
+          filterClickListener.bind(this, fieldName, text)
+        } /> {text}
       </label>
     </p>
   )
@@ -19,11 +23,12 @@ const Field = (props) => {
   const { fieldSet, fieldName } = props
   return (
     <div class='facet'>
-      <h5 class='facet-title'>{fieldName}</h5>
+      <h5 class='facet-title'>{text[fieldName]}</h5>
       <div class='field'>
         { Array.from(fieldSet, (type) => <CheckBox
-          text={type}
           key={type}
+          fieldName={fieldName}
+          text={type}
         />) }
       </div>
     </div>
@@ -31,9 +36,10 @@ const Field = (props) => {
 }
 
 const Filter = (props) => {
-  const {cards} = props
+  const {cards, filterClick} = props
+  filterClickListener = filterClick
   let clothType = new Set(
-    cards.map((card) => card.clothType).filter(
+    cards.map((card) => card['cloth-type']).filter(
       (x) => x !== undefined
     )
   )
@@ -46,18 +52,14 @@ const Filter = (props) => {
   let event = new Set(cards.map((card) => card.event).filter(
     (x) => x !== undefined
   ))
-  console.log(clothType)
-  console.log(belt)
-  console.log(gender)
-  console.log(event)
   return (
     <div class='filter-overlay'>
       <div class='filter-plate'>
         <div id='filters'>
-          <Field fieldSet={clothType} fieldName={text['cloth-type']} />
-          <Field fieldSet={belt} fieldName={text['belt']} />
-          <Field fieldSet={gender} fieldName={text['gender']} />
-          <Field fieldSet={event} fieldName={text['event']} />
+          <Field fieldSet={clothType} fieldName='cloth-type' />
+          <Field fieldSet={belt} fieldName='belt' />
+          <Field fieldSet={gender} fieldName='gender' />
+          <Field fieldSet={event} fieldName='event' />
         </div>
       </div>
     </div>
