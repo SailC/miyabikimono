@@ -26268,6 +26268,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var language = 'zh';
 var cardsPerPage = 6;
 
+var allCards = _cards2.default[language];
+
 var ProductSection = function (_React$Component) {
   _inherits(ProductSection, _React$Component);
 
@@ -26278,16 +26280,77 @@ var ProductSection = function (_React$Component) {
 
     _this.state = {
       pageIndex: 0,
-      cards: _cards2.default[language]
+      cards: allCards,
+      filters: {}
     };
     return _this;
   }
 
   _createClass(ProductSection, [{
     key: 'pageClickListener',
-    value: function pageClickListener(pageNum, e) {
+    value: function pageClickListener(pageNum, event) {
       this.setState({
         pageIndex: pageNum
+      });
+    }
+  }, {
+    key: 'filterClickListener',
+    value: function filterClickListener(fieldName, fieldVal, event) {
+      var newFilters = this.state.filters;
+      if (event.target.checked) {
+        if (fieldName in newFilters) {
+          if (!(fieldVal in newFilters[fieldName])) {
+            newFilters[fieldName].push(fieldVal);
+          }
+        } else {
+          newFilters[fieldName] = [fieldVal];
+        }
+      } else {
+        var newVals = newFilters[fieldName].filter(function (val) {
+          return val !== fieldVal;
+        });
+        newFilters[fieldName] = newVals;
+      }
+      console.log('all', allCards);
+      var newCards = allCards.filter(function (card) {
+        for (var _fieldName in newFilters) {
+          var fieldVals = newFilters[_fieldName];
+          var _iteratorNormalCompletion = true;
+          var _didIteratorError = false;
+          var _iteratorError = undefined;
+
+          try {
+            for (var _iterator = fieldVals[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+              var _fieldVal = _step.value;
+
+              if (card[_fieldName] !== _fieldVal) {
+                return false;
+              }
+            }
+          } catch (err) {
+            _didIteratorError = true;
+            _iteratorError = err;
+          } finally {
+            try {
+              if (!_iteratorNormalCompletion && _iterator.return) {
+                _iterator.return();
+              }
+            } finally {
+              if (_didIteratorError) {
+                throw _iteratorError;
+              }
+            }
+          }
+        }
+        return true;
+      });
+
+      console.log(newCards);
+
+      this.setState({
+        pageIndex: 0,
+        filters: newFilters,
+        cards: newCards
       });
     }
   }, {
@@ -26297,7 +26360,7 @@ var ProductSection = function (_React$Component) {
       return _react2.default.createElement(
         'section',
         { className: 'product-section section' },
-        _react2.default.createElement(_Filter2.default, { cards: this.state.cards }),
+        _react2.default.createElement(_Filter2.default, { cards: this.state.cards, filterClick: this.filterClickListener.bind(this) }),
         _react2.default.createElement(_ShowCards2.default, { cards: this.state.cards,
           pageIndex: this.state.pageIndex,
           cardsPerPage: cardsPerPage
@@ -26541,8 +26604,11 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var language = 'zh';
 var text = _dict2.default[language];
 
+var filterClickListener;
+
 var CheckBox = function CheckBox(props) {
-  var text = props.text;
+  var fieldName = props.fieldName,
+      text = props.text;
 
   return _react2.default.createElement(
     'p',
@@ -26550,7 +26616,7 @@ var CheckBox = function CheckBox(props) {
     _react2.default.createElement(
       'label',
       { className: 'checkbox' },
-      _react2.default.createElement('input', { type: 'checkbox' }),
+      _react2.default.createElement('input', { type: 'checkbox', onChange: filterClickListener.bind(undefined, fieldName, text) }),
       ' ',
       text
     )
@@ -26567,15 +26633,16 @@ var Field = function Field(props) {
     _react2.default.createElement(
       'h5',
       { className: 'facet-title' },
-      fieldName
+      text[fieldName]
     ),
     _react2.default.createElement(
       'div',
       { className: 'field' },
       Array.from(fieldSet, function (type) {
         return _react2.default.createElement(CheckBox, {
-          text: type,
-          key: type
+          key: type,
+          fieldName: fieldName,
+          text: type
         });
       })
     )
@@ -26583,10 +26650,12 @@ var Field = function Field(props) {
 };
 
 var Filter = function Filter(props) {
-  var cards = props.cards;
+  var cards = props.cards,
+      filterClick = props.filterClick;
 
+  filterClickListener = filterClick;
   var clothType = new Set(cards.map(function (card) {
-    return card.clothType;
+    return card['cloth-type'];
   }).filter(function (x) {
     return x !== undefined;
   }));
@@ -26605,10 +26674,6 @@ var Filter = function Filter(props) {
   }).filter(function (x) {
     return x !== undefined;
   }));
-  console.log(clothType);
-  console.log(belt);
-  console.log(gender);
-  console.log(event);
   return _react2.default.createElement(
     'div',
     { className: 'filter-overlay' },
@@ -26618,10 +26683,10 @@ var Filter = function Filter(props) {
       _react2.default.createElement(
         'div',
         { id: 'filters' },
-        _react2.default.createElement(Field, { fieldSet: clothType, fieldName: text['cloth-type'] }),
-        _react2.default.createElement(Field, { fieldSet: belt, fieldName: text['belt'] }),
-        _react2.default.createElement(Field, { fieldSet: gender, fieldName: text['gender'] }),
-        _react2.default.createElement(Field, { fieldSet: event, fieldName: text['event'] })
+        _react2.default.createElement(Field, { fieldSet: clothType, fieldName: 'cloth-type' }),
+        _react2.default.createElement(Field, { fieldSet: belt, fieldName: 'belt' }),
+        _react2.default.createElement(Field, { fieldSet: gender, fieldName: 'gender' }),
+        _react2.default.createElement(Field, { fieldSet: event, fieldName: 'event' })
       )
     )
   );
@@ -26646,7 +26711,7 @@ module.exports = {
 			"clothNum": "200件左右",
 			"acc": "半幅带，草履，袜子，包包，和服，和服内衣，襦袢，装饰带",
 			"hair": "发型设计需要追加1000日元",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "女士",
 			"feature": "人气套餐",
 			"belt": "半幅带",
@@ -26663,7 +26728,7 @@ module.exports = {
 			"clothNum": "100件左右",
 			"acc": "半幅带，草履，袜子，包包，和服，和服内衣，襦袢，精致装饰带，精致发饰",
 			"hair": "包含发型设计",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "女士",
 			"feature": "精致套餐",
 			"belt": "半幅带",
@@ -26680,7 +26745,7 @@ module.exports = {
 			"clothNum": "50件以上",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，带扬，精致装饰带，精致发饰",
 			"hair": "包含发型设计",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "女士",
 			"feature": "特惠套餐",
 			"belt": "袋带",
@@ -26697,7 +26762,7 @@ module.exports = {
 			"clothNum": "20件以上",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，半衿，带扬，精致装饰带，精致发饰",
 			"hair": "包含发型设计",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "女士",
 			"feature": "特惠套餐",
 			"belt": "袋带",
@@ -26714,7 +26779,7 @@ module.exports = {
 			"clothNum": "20件",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，精致发饰 ，带扬，带缔",
 			"hair": "包含发型设计",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "女士",
 			"feature": "精选套餐",
 			"belt": "袋带",
@@ -26731,7 +26796,7 @@ module.exports = {
 			"clothNum": "20件",
 			"acc": "半幅带，草履，刺绣袜子，包包，和服，和服内衣",
 			"hair": "包含发型设计",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "女士",
 			"belt": "半幅带",
 			"event": "毕业典礼"
@@ -26747,7 +26812,7 @@ module.exports = {
 			"clothNum": "20件",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，精致装饰带，精致发饰",
 			"hair": "包含发型设计",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "女士",
 			"belt": "袋带",
 			"event": "登门拜访"
@@ -26763,7 +26828,7 @@ module.exports = {
 			"clothNum": "20件",
 			"acc": "半幅带，草履，袜子，包包，和服，和服内衣，襦袢，装饰带",
 			"hair": "发型设计需要追加1000日元",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "女士",
 			"feature": "特惠套餐",
 			"belt": "半幅带",
@@ -26780,7 +26845,7 @@ module.exports = {
 			"clothNum": "50件以上",
 			"acc": "腰带，草履，袜子，包包，和服，和服内衣，襦袢",
 			"hair": "不包含发型设计",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "男士",
 			"belt": "角带",
 			"event": "各种场合都适用"
@@ -26796,7 +26861,7 @@ module.exports = {
 			"clothNum": "50件以上",
 			"acc": "兵儿带，草履，袜子，包包，和服，和服内衣，襦袢，和服外套",
 			"hair": "发型设计需要追加1000日元",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "儿童",
 			"belt": "兵儿带",
 			"event": "各种场合都适用"
@@ -26812,7 +26877,7 @@ module.exports = {
 			"clothNum": "6件",
 			"acc": "豪华腰带，草履，袜子，包包，和服，和服内衣，襦袢",
 			"hair": "发型设计需要追加1000日元",
-			"clothType": "和服(春冬首选)",
+			"cloth-type": "和服(春冬首选)",
 			"gender": "儿童",
 			"feature": "奢华套餐",
 			"event": "各种场合都适用"
@@ -26828,7 +26893,7 @@ module.exports = {
 			"clothNum": "300件左右",
 			"acc": "半幅带，木屐，包包，浴衣，浴衣内衣，各种小物，装饰带",
 			"hair": "发型设计需要追加1000日元",
-			"clothType": "浴衣(夏秋首选)",
+			"cloth-type": "浴衣(夏秋首选)",
 			"gender": "女士",
 			"event": "夏季火花大会",
 			"belt": "半幅带"
@@ -26844,7 +26909,7 @@ module.exports = {
 			"clothNum": "100件左右",
 			"acc": "角带，木屐，包包，浴衣，浴衣内衣，各种小物",
 			"hair": "不包含发型设计",
-			"clothType": "浴衣(夏秋首选)",
+			"cloth-type": "浴衣(夏秋首选)",
 			"gender": "男士",
 			"event": "夏季火花大会",
 			"belt": "角带"
@@ -26860,7 +26925,7 @@ module.exports = {
 			"clothNum": "50件以上",
 			"acc": "兵儿带，木屐，包包，浴衣",
 			"hair": "发型设计需要追加1000日元",
-			"clothType": "浴衣(夏秋首选)",
+			"cloth-type": "浴衣(夏秋首选)",
 			"gender": "儿童",
 			"belt": "兵儿带",
 			"event": "夏季火花大会"
