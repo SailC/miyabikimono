@@ -21,6 +21,11 @@
     "cloth-type": "衣服类型",
     "belt": "腰带绑法",
     "gender": "适用人群",
-    "event": "推荐场合"
+    "event": "推荐场合",
+    "sort1": "受欢迎程度 (从高到低)",
+    "sort2": "价格 (从低到高)",
+    "sort3": "价格 (从高到低)",
+    "search-place-holder": "输入关键字检索",
+    "search": "搜索"
   }
 }

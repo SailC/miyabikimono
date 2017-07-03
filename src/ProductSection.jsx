@@ -2,12 +2,15 @@ import React from 'react'
 import ShowCards from './ProductSection/ShowCards'
 import Pages from './ProductSection/Pages'
 import Filter from './ProductSection/Filter'
+import Sort from './ProductSection/Sort'
 import cards from './ProductSection/cards'
+import dict from './dict.json'
 
 const language = 'zh'
 const cardsPerPage = 6
-
+const text = dict[language]
 const allCards = cards[language]
+
 class ProductSection extends React.Component {
   constructor () {
     super()
@@ -21,6 +24,24 @@ class ProductSection extends React.Component {
   pageClickListener (pageNum, event) {
     this.setState({
       pageIndex: pageNum
+    })
+  }
+
+  sortClickListener (event) {
+    console.log(event.target.value)
+    let sortFunc
+    if (event.target.value === text['sort3']) {
+      sortFunc = (a, b) => b.price - a.price
+    } else if (event.target.value === text['sort2']) {
+      sortFunc = (a, b) => a.price - b.price
+    } else {
+      sortFunc = (a, b) => b.popularity - a.popularity
+    }
+    let newCards = this.state.cards
+    newCards.sort(sortFunc)
+    this.setState({
+      cards: newCards,
+      pageIndex: 0
     })
   }
 
@@ -65,17 +86,24 @@ class ProductSection extends React.Component {
     ) + 1
     return (
       <section class='product-section section'>
-        <Filter cards={this.state.cards} filterClick={
-          this.filterClickListener.bind(this)
-        } />
-        <ShowCards cards={this.state.cards}
-          pageIndex={this.state.pageIndex}
-          cardsPerPage={cardsPerPage}
-        />
-        <Pages pageIndex={this.state.pageIndex}
-          pageNum={pageNum}
-          pageClickListener={this.pageClickListener.bind(this)}
-        />
+        <div class='columns'>
+          <div class='column is-one-quarter'>
+            <Filter cards={this.state.cards} filterClick={
+              this.filterClickListener.bind(this)
+            } />
+          </div>
+          <div class='column'>
+            <Sort sortClickListener={this.sortClickListener.bind(this)} />
+            <ShowCards cards={this.state.cards}
+              pageIndex={this.state.pageIndex}
+              cardsPerPage={cardsPerPage}
+            />
+            <Pages pageIndex={this.state.pageIndex}
+              pageNum={pageNum}
+              pageClickListener={this.pageClickListener.bind(this)}
+            />
+          </div>
+        </div>
       </section>
     )
   }

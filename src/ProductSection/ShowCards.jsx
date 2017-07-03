@@ -14,7 +14,7 @@ const ShowCards = (props) => {
   showCards = showCards.map((card) => (
     <Card key={card.id} card={card} />
   ))
-  return <div class='container product-list'>{showCards}</div>
+  return <div class='product-list'>{showCards}</div>
 }
 
 export default ShowCards
