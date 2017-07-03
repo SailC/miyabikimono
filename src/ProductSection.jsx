@@ -5,6 +5,7 @@ import Filter from './ProductSection/Filter'
 import Sort from './ProductSection/Sort'
 import cards from './ProductSection/cards'
 import dict from './dict.json'
+import $ from 'jquery'
 
 const language = 'zh'
 const cardsPerPage = 6
@@ -19,6 +20,10 @@ class ProductSection extends React.Component {
       cards: allCards,
       filters: {}
     }
+  }
+
+  toggleListener () {
+    $('html').toggleClass('filter-open')
   }
 
   pageClickListener (pageNum, event) {
@@ -87,13 +92,14 @@ class ProductSection extends React.Component {
     return (
       <section class='product-section section'>
         <div class='columns'>
-          <div class='column is-one-quarter'>
-            <Filter cards={this.state.cards} filterClick={
-              this.filterClickListener.bind(this)
-            } />
+          <div class='filter column is-one-quarter'>
+            <Filter cards={this.state.cards}
+              filterClick={this.filterClickListener.bind(this)}
+              toggleListener={this.toggleListener} />
           </div>
-          <div class='column'>
-            <Sort sortClickListener={this.sortClickListener.bind(this)} />
+          <div class='product column'>
+            <Sort sortClickListener={this.sortClickListener.bind(this)}
+              toggleListener={this.toggleListener} />
             <ShowCards cards={this.state.cards}
               pageIndex={this.state.pageIndex}
               cardsPerPage={cardsPerPage}

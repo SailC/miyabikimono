@@ -46,7 +46,7 @@ const Field = (props) => {
 }
 
 const Filter = (props) => {
-  const {cards, filterClick} = props
+  const {cards, filterClick, toggleListener} = props
   filterClickListener = filterClick
   let clothType = new Set(
     cards.map((card) => card['cloth-type']).filter(
@@ -65,6 +65,7 @@ const Filter = (props) => {
   return (
     <div class='filter-overlay'>
       <div class='filter-plate'>
+        <a class='delete is-large' onClick={toggleListener} />
         <div id='filters'>
           <Field fieldSet={clothType}
             fieldName='cloth-type'

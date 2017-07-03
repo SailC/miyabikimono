@@ -99,6 +99,10 @@
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
+@media screen and (max-width: 768px) {
+  .control span.select {
+    max-width: 60%; } }
+
 .card {
   margin: 5px; }
   @media screen and (min-width: 1192px) {
@@ -106,7 +110,7 @@
       width: 24%; } }
   @media screen and (min-width: 1000px) {
     .card {
-      width: 32%; } }
+      width: 31.5%; } }
   @media screen and (min-width: 769px) and (max-width: 999px) {
     .card {
       width: 48%; } }
@@ -114,8 +118,107 @@
     .card {
       width: 100%; } }
 
+a.filter-icon {
+  font-size: 1rem;
+  margin-right: 5px; }
+  @media screen and (min-width: 769px), print {
+    a.filter-icon {
+      display: none; } }
+
 nav.pagination {
   margin: 5px; }
+
+.field.has-addons {
+  margin: 5px;
+  border-bottom: 2px solid #eee; }
+  .field.has-addons .control {
+    padding-bottom: 5px; }
+
+.facet {
+  margin-bottom: 30px; }
+  @media screen and (max-width: 768px) {
+    .facet {
+      margin-bottom: 0px; } }
+
+.facet-title {
+  border-bottom: 2px solid #eee;
+  font-weight: bold; }
+
+.filter.column {
+  padding-top: 34px; }
+  .filter.column p.control {
+    margin: 5px auto; }
+    .filter.column p.control input {
+      margin-right: 2px; }
+    .filter.column p.control span {
+      margin-left: 2px; }
+  @media screen and (max-width: 768px) {
+    .filter.column .filter-overlay {
+      z-index: 1000;
+      position: fixed;
+      background-color: transparent;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      pointer-events: none;
+      transition: all 350ms ease-in-out;
+      height: 100%; } }
+  @media screen and (max-width: 768px) {
+    .filter.column .filter-plate {
+      position: absolute;
+      top: 0px;
+      left: -1000px;
+      width: 100%;
+      background: white;
+      box-shadow: 3px 0px 30px rgba(0, 0, 0, 0.4);
+      transition: all 350ms ease-in-out;
+      height: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; } }
+  .filter.column .filter-plate .delete {
+    position: fixed;
+    top: 5px;
+    right: 5px; }
+  .filter.column #filters {
+    width: 75%; }
+
+.filter-open .filter-plate .delete {
+  display: inherit; }
+
+.filter-plate .delete {
+  display: none; }
+
+.filter-open body {
+  position: fixed;
+  overflow: hidden; }
+
+.filter-open .filter.column .filter-overlay {
+  background-color: rgba(255, 255, 255, 0.8);
+  pointer-events: auto; }
+
+.filter-open .filter.column .filter-plate {
+  overflow: hidden; }
+  @media screen and (max-width: 768px) {
+    .filter-open .filter.column .filter-plate {
+      -webkit-transform: translate3d(1000px, 0px, 0px);
+              transform: translate3d(1000px, 0px, 0px); } }
+
+.filter-open .filter.column .filter-icon {
+  display: none; }
+
+.filter-open .filter.column .filter-close-icon {
+  display: block; }
+
+.filter-open .filter.column .menu-svg {
+  visibility: hidden; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
