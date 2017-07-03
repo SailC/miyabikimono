@@ -84,6 +84,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/layout\/qa-section.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/layout\/qa-section.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/main.sass": {
 		"aP": 1,
 		"bl": 0,

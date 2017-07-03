@@ -7,17 +7,17 @@ import cards from './ProductSection/cards'
 import dict from './dict.json'
 import $ from 'jquery'
 
-const language = 'zh'
+var language
+var text
+const allCards = cards['zh']
 const cardsPerPage = 6
-const text = dict[language]
-const allCards = cards[language]
 
 class ProductSection extends React.Component {
-  constructor () {
+  constructor (props) {
     super()
     this.state = {
       pageIndex: 0,
-      cards: allCards,
+      cards: cards[props.lang],
       filters: {}
     }
   }
@@ -86,6 +86,12 @@ class ProductSection extends React.Component {
   }
 
   render () {
+    const {lang} = this.props
+    text = dict[lang]
+    language = lang
+    console.log(language)
+    console.log(this.state.cards)
+
     let pageNum = Math.floor(
         (this.state.cards.length - 1) / cardsPerPage
     ) + 1

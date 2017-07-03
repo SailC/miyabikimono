@@ -20,6 +20,17 @@
 
 .hero .hero-head .nav-item {
   font-weight: 500; }
+  .hero .hero-head .nav-item .field {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .hero .hero-head .nav-item .control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 .hero .hero-body .columns {
   -webkit-box-align: center;

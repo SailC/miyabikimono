@@ -11,10 +11,8 @@ const FaqItem = (props) => {
       </figure>
       <div class='media-content'>
         <div class='content'>
-          <p>
-            <strong>{askerName}</strong>
-            <p>{question}</p>
-          </p>
+          <strong>{askerName}</strong>
+          <p>{question}</p>
         </div>
 
         <article class='media'>
@@ -25,10 +23,8 @@ const FaqItem = (props) => {
           </figure>
           <div class='media-content'>
             <div class='content'>
-              <p>
-                <strong>{answererName}</strong>
-                <p>{answer}</p>
-              </p>
+              <strong>{answererName}</strong>
+              <p>{answer}</p>
             </div>
           </div>
         </article>

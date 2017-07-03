@@ -2,9 +2,10 @@ import React from 'react'
 import classNames from 'classnames'
 import dict from './dict.json'
 
-const language = 'zh'
-
-const text = dict[language]
+// default to Chinese simplified
+var language = 'zh'
+var text = dict['zh']
+var langChangeListener
 
 const NavLeft = () => (
   <div class='nav-left'>
@@ -83,6 +84,20 @@ const NavRight = (props) => {
             <i class='fa fa-wechat' />
           </span>
         </a>
+      </span>
+      <span class='nav-item'>
+        <div class='field'>
+          <p class='control'>
+            <span class='select is-small is-primary has-text-centered'>
+              <select onChange={langChangeListener}>
+                <option>简体中文</option>
+                <option>正體中文</option>
+                <option>English</option>
+                <option>日本語</option>
+              </select>
+            </span>
+          </p>
+        </div>
       </span>
     </div>
   )
@@ -184,11 +199,17 @@ const WallopSlide = (props) => {
   )
 }
 
-const HeroSection = () => (
-  <section class='hero is-primary'>
-    <HeroHead />
-    <HeroBody />
-  </section>
-)
+const HeroSection = (props) => {
+  const {lang, onLangChange} = props
+  langChangeListener = onLangChange
+  text = dict[lang]
+  language = lang
+  return (
+    <section class='hero is-primary'>
+      <HeroHead />
+      <HeroBody />
+    </section>
+  )
+}
 
 export default HeroSection
