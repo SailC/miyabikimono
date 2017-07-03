@@ -40,7 +40,6 @@ class ProductSection extends React.Component {
       )
       newFilters[fieldName] = newVals
     }
-    console.log('all', allCards)
     let newCards = allCards.filter(card => {
       for (let fieldName in newFilters) {
         let fieldVals = newFilters[fieldName]
@@ -52,8 +51,6 @@ class ProductSection extends React.Component {
       }
       return true
     })
-
-    console.log(newCards)
 
     this.setState({
       pageIndex: 0,
