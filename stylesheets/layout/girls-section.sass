@@ -3,6 +3,9 @@
   //   @include desktop
   //     width: 50%
 
+  .Wallop-list
+    @include mobile
+      padding-bottom: 20px
   .Wallop-item
     display: flex
     align-items: center
@@ -11,12 +14,15 @@
       box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
       width: 350px
     .columns
-      width: 80%
+      @include tablet
+        width: 80%
     .column
       display: flex
       justify-content: center
       align-items: center
       padding: 20px
+    .column.info
+        padding-top: 0px
     // padding: 40px
     // max-height: 300px
     // @include tablet
@@ -27,11 +33,15 @@
 
   .Wallop-buttonPrevious
     left: 1pc
+    @include mobile
+      left: 5pc
     &:before
       content: "\276E"
 
   .Wallop-buttonNext
     right: 1pc
+    @include mobile
+      right: 5pc
     &:before
       content: "\276F"
 
@@ -44,7 +54,8 @@
       border-radius: 20px
       text-indent: -9999px
       position: absolute
-      top: 50%
+      @include tablet
+        top: 50%
       -webkit-transform: translateY(-50%)
       transform: translateY(-50%)
       &:before

@@ -266,6 +266,10 @@ nav.pagination {
     font-size: 1rem;
     margin-bottom: 0.5rem; }
 
+@media screen and (max-width: 768px) {
+  .girls-section .Wallop-list {
+    padding-bottom: 20px; } }
+
 .girls-section .Wallop-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,8 +283,9 @@ nav.pagination {
   .girls-section .Wallop-item .image img {
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     width: 350px; }
-  .girls-section .Wallop-item .columns {
-    width: 80%; }
+  @media screen and (min-width: 769px), print {
+    .girls-section .Wallop-item .columns {
+      width: 80%; } }
   .girls-section .Wallop-item .column {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -292,14 +297,22 @@ nav.pagination {
         -ms-flex-align: center;
             align-items: center;
     padding: 20px; }
+  .girls-section .Wallop-item .column.info {
+    padding-top: 0px; }
 
 .girls-section .Wallop-buttonPrevious {
   left: 1pc; }
+  @media screen and (max-width: 768px) {
+    .girls-section .Wallop-buttonPrevious {
+      left: 5pc; } }
   .girls-section .Wallop-buttonPrevious:before {
     content: "\276E"; }
 
 .girls-section .Wallop-buttonNext {
   right: 1pc; }
+  @media screen and (max-width: 768px) {
+    .girls-section .Wallop-buttonNext {
+      right: 5pc; } }
   .girls-section .Wallop-buttonNext:before {
     content: "\276F"; }
 
@@ -312,9 +325,11 @@ nav.pagination {
   border-radius: 20px;
   text-indent: -9999px;
   position: absolute;
-  top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
+  @media screen and (min-width: 769px), print {
+    .girls-section .Wallop-buttonNext, .girls-section .Wallop-buttonPrevious {
+      top: 50%; } }
   .girls-section .Wallop-buttonNext:before, .girls-section .Wallop-buttonPrevious:before {
     position: absolute;
     top: 50%;
