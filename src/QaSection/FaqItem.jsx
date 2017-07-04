@@ -1,37 +1,56 @@
 import React from 'react'
+import classNames from 'classnames'
 
-const FaqItem = (props) => {
-  const {question, answer, askerName, answererName, askerUrl, answererUrl} = props
-  return (
-    <article class='media'>
-      <figure class='media-left'>
-        <p class='image is-64x64'>
-          <img src={askerUrl} />
-        </p>
-      </figure>
-      <div class='media-content'>
-        <div class='content'>
-          <strong>{askerName}</strong>
-          <p>{question}</p>
-        </div>
+class FaqItem extends React.Component {
+  constructor () {
+    super()
+    this.state = {
+      isHidden: true
+    }
+  }
 
-        <article class='media'>
-          <figure class='media-left'>
-            <p class='image is-48x48'>
-              <img src={answererUrl} />
-            </p>
-          </figure>
-          <div class='media-content'>
-            <div class='content'>
-              <strong>{answererName}</strong>
-              <p>{answer}</p>
-            </div>
+  toggleListener () {
+    this.setState({
+      isHidden: !(this.state.isHidden)
+    })
+  }
+
+  render () {
+    const {question, answer, askerName, answererName, askerUrl, answererUrl} = this.props
+    return (
+      <article class='media'>
+        <figure class='media-left'>
+          <p class='image is-64x64'>
+            <img src={askerUrl} class='button' onClick={this.toggleListener.bind(this)} />
+          </p>
+        </figure>
+        <div class='media-content'>
+          <div class='content'>
+            <strong>{askerName}</strong>
+            <p>{question}</p>
           </div>
-        </article>
 
-      </div>
-    </article>
-  )
+          <article class={classNames(
+            'media',
+            {'is-hidden': this.state.isHidden}
+          )}>
+            <figure class='media-left'>
+              <p class='image is-48x48'>
+                <img src={answererUrl} class='button' onClick={this.toggleListener.bind(this)} />
+              </p>
+            </figure>
+            <div class='media-content'>
+              <div class='content'>
+                <strong>{answererName}</strong>
+                <p>{answer}</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </article>
+    )
+  }
 }
 
 export default FaqItem

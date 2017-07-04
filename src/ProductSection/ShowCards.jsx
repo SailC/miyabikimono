@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './Card'
 
 const ShowCards = (props) => {
-  const {cards, pageIndex, cardsPerPage} = props
+  const {cards, pageIndex, cardsPerPage, lang} = props
   let showCardNum = cards.length
   let beginCard = pageIndex * cardsPerPage
   let endCard = (
@@ -12,7 +12,7 @@ const ShowCards = (props) => {
   )
   let showCards = cards.slice(beginCard, endCard)
   showCards = showCards.map((card) => (
-    <Card key={card.id} card={card} />
+    <Card key={card[lang].id} card={card[lang]} />
   ))
   return <div class='product-list'>{showCards}</div>
 }

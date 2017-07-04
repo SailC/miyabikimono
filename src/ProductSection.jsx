@@ -9,7 +9,7 @@ import $ from 'jquery'
 
 var language
 var text
-const allCards = cards['zh']
+const allCards = cards
 const cardsPerPage = 6
 
 class ProductSection extends React.Component {
@@ -17,7 +17,7 @@ class ProductSection extends React.Component {
     super()
     this.state = {
       pageIndex: 0,
-      cards: cards[props.lang],
+      cards: cards,
       filters: {}
     }
   }
@@ -33,7 +33,6 @@ class ProductSection extends React.Component {
   }
 
   sortClickListener (event) {
-    console.log(event.target.value)
     let sortFunc
     if (event.target.value === text['sort3']) {
       sortFunc = (a, b) => b.price - a.price
@@ -70,7 +69,7 @@ class ProductSection extends React.Component {
       for (let fieldName in newFilters) {
         let fieldVals = newFilters[fieldName]
         for (let fieldVal of fieldVals) {
-          if (card[fieldName] !== fieldVal) {
+          if (card[language][fieldName] !== fieldVal) {
             return false
           }
         }
@@ -89,8 +88,6 @@ class ProductSection extends React.Component {
     const {lang} = this.props
     text = dict[lang]
     language = lang
-    console.log(language)
-    console.log(this.state.cards)
 
     let pageNum = Math.floor(
         (this.state.cards.length - 1) / cardsPerPage
@@ -101,7 +98,9 @@ class ProductSection extends React.Component {
           <div class='filter column is-one-quarter'>
             <Filter cards={this.state.cards}
               filterClick={this.filterClickListener.bind(this)}
-              toggleListener={this.toggleListener} />
+              toggleListener={this.toggleListener}
+              lang={lang}
+            />
           </div>
           <div class='product column'>
             <Sort sortClickListener={this.sortClickListener.bind(this)}
@@ -109,6 +108,7 @@ class ProductSection extends React.Component {
             <ShowCards cards={this.state.cards}
               pageIndex={this.state.pageIndex}
               cardsPerPage={cardsPerPage}
+              lang={language}
             />
             <Pages pageIndex={this.state.pageIndex}
               pageNum={pageNum}

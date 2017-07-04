@@ -1,6 +1,6 @@
-{
-  "zh":[
-    {
+[
+  {
+    "zh": {
       "id": "1",
       "name": "女士华丽和服",
       "url":  "hualinvshi.jpg",
@@ -16,8 +16,10 @@
       "feature": "人气套餐",
       "belt": "半幅带",
       "event": "各种场合都适用"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "2",
       "name": "女士高级和服",
       "url":  "gaojihefu.jpg",
@@ -33,8 +35,10 @@
       "feature": "精致套餐",
       "belt": "半幅带",
       "event": "各种场合都适用"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "3",
       "name": "成人礼振袖",
       "url":  "chengren.jpg",
@@ -50,8 +54,10 @@
       "feature": "特惠套餐",
       "belt": "袋带",
       "event": "成人礼 婚宴喜事"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "4",
       "name": "豪华成人礼振袖",
       "url":  "gaojichengren.jpg",
@@ -67,8 +73,10 @@
       "feature": "特惠套餐",
       "belt": "袋带",
       "event": "成人礼 婚宴喜事"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "5",
       "name": "名牌和服",
       "url":  "mingpaihefu.jpg",
@@ -84,8 +92,10 @@
       "feature": "精选套餐",
       "belt": "袋带",
       "event": "各种场合都适用"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "6",
       "name": "毕业典礼用袴",
       "url":  "kua.jpg",
@@ -100,8 +110,10 @@
       "gender": "女士",
       "belt": "半幅带",
       "event": "毕业典礼"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "7",
       "name": "访问者",
       "url":  "fangwen.jpg",
@@ -116,8 +128,10 @@
       "gender": "女士",
       "belt": "袋带",
       "event": "登门拜访"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "8",
       "name": "女士优惠和服",
       "url":  "nvshiyouhui.jpg",
@@ -133,8 +147,10 @@
       "feature": "特惠套餐",
       "belt": "半幅带",
       "event": "登门拜访"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "9",
       "name": "男士和服",
       "url":  "nanshihefu.jpg",
@@ -149,8 +165,10 @@
       "gender": "男士",
       "belt": "角带",
       "event": "各种场合都适用"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "10",
       "name": "儿童和服",
       "url":  "ertonghefu.jpg",
@@ -165,8 +183,10 @@
       "gender": "儿童",
       "belt": "兵儿带",
       "event": "各种场合都适用"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "11",
       "name": "女童振袖和服",
       "url":  "nvtongzhenxiu.jpg",
@@ -181,8 +201,10 @@
       "gender": "儿童",
       "feature": "奢华套餐",
       "event": "各种场合都适用"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "12",
       "name": "女士浴衣",
       "url":  "nvshiyuyi.jpg",
@@ -197,8 +219,10 @@
       "gender": "女士",
       "event": "夏季火花大会",
       "belt": "半幅带"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "13",
       "name": "男士浴衣",
       "url":  "nanshiyuyi.jpg",
@@ -213,8 +237,10 @@
       "gender": "男士",
       "event": "夏季火花大会",
       "belt": "角带"
-    },
-    {
+    }
+  },
+  {
+    "zh": {
       "id": "14",
       "name": "儿童浴衣",
       "url":  "ertongyuyi.jpg",
@@ -230,5 +256,5 @@
       "belt": "兵儿带",
       "event": "夏季火花大会"
     }
-  ]
-}
+  }
+]

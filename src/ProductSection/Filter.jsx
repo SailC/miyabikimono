@@ -1,9 +1,8 @@
 import React from 'react'
 import dict from '../dict.json'
 
-const language = 'zh'
-const text = dict[language]
-
+var language
+var text
 var filterClickListener
 
 const CheckBox = (props) => {
@@ -29,7 +28,7 @@ const Field = (props) => {
       <div class='field'>
         {
           Array.from(fieldSet, (type) => {
-            let size = cards.filter(card => card[fieldName] === type).length
+            let size = cards.filter(card => card[language][fieldName] === type).length
             return (
               <CheckBox
                 key={type}
@@ -46,20 +45,23 @@ const Field = (props) => {
 }
 
 const Filter = (props) => {
-  const {cards, filterClick, toggleListener} = props
+  const {cards, filterClick, toggleListener, lang} = props
   filterClickListener = filterClick
+  language = lang
+  text = dict[language]
+
   let clothType = new Set(
-    cards.map((card) => card['cloth-type']).filter(
+    cards.map((card) => card[language]['cloth-type']).filter(
       (x) => x !== undefined
     )
   )
-  let belt = new Set(cards.map((card) => card.belt).filter(
+  let belt = new Set(cards.map((card) => card[language].belt).filter(
     (x) => x !== undefined
   ))
-  let gender = new Set(cards.map((card) => card.gender).filter(
+  let gender = new Set(cards.map((card) => card[language].gender).filter(
     (x) => x !== undefined
   ))
-  let event = new Set(cards.map((card) => card.event).filter(
+  let event = new Set(cards.map((card) => card[language].event).filter(
     (x) => x !== undefined
   ))
   return (

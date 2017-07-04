@@ -4,14 +4,14 @@ const StepItem = (props) => {
   const {title, content, url} = props
   return (
     <div class='tile is-child box'>
-      <p class='title'>{title}</p>
-      <div class='columns'>
-        <div class='column is-half'>
-          <figure class='image is-256x256'>
+      <div class='columns is-mobile'>
+        <div class='column is-half step-image'>
+          <figure class='image is-128x128'>
             <img src={url} />
           </figure>
         </div>
-        <div class='column'>
+        <div class='column step-content'>
+          <p class='title'>{title}</p>
           <p>{content}</p>
         </div>
       </div>

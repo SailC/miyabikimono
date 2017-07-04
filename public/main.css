@@ -231,6 +231,16 @@ nav.pagination {
 .filter-open .filter.column .menu-svg {
   visibility: hidden; }
 
+@media screen and (max-width: 768px) {
+  .qa-section article.media {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+.qa-section .step-content {
+  padding-left: 40px; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
