@@ -1,0 +1,78 @@
+.girls-section
+  // .container
+  //   @include desktop
+  //     width: 50%
+
+  .Wallop-item
+    display: flex
+    align-items: center
+    justify-content: center
+    .image img
+      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+      width: 350px
+    .columns
+      width: 80%
+    .column
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 20px
+    // padding: 40px
+    // max-height: 300px
+    // @include tablet
+    //   padding-top: 5pc
+    //   padding-bottom: 5pc
+    //   height: 5in
+    //   max-height: 5in
+
+  .Wallop-buttonPrevious
+    left: 1pc
+    &:before
+      content: "\276E"
+
+  .Wallop-buttonNext
+    right: 1pc
+    &:before
+      content: "\276F"
+
+  .Wallop-buttonNext, .Wallop-buttonPrevious
+      border: none
+      webkit-appearance: none
+      background: hsla(0,0%,100%,.6)
+      width: 40px
+      height: 40px
+      border-radius: 20px
+      text-indent: -9999px
+      position: absolute
+      top: 50%
+      -webkit-transform: translateY(-50%)
+      transform: translateY(-50%)
+      &:before
+        position: absolute
+        top: 50%
+        left: 0
+        width: 100%
+        text-align: center
+        text-indent: 0
+        font-size: 25px
+        line-height: 0
+
+  // .Wallop-item:nth-child(1)
+  //   .info
+  //     background-color: #8dccb4
+  //
+  // .Wallop-item:nth-child(2)
+  //   .info
+  //     background-color: #e85239
+  //
+  // .Wallop-item:nth-child(3)
+  //   .info
+  //     background-color: #c65c8e
+  //
+  // .Wallop-item:nth-child(4)
+  //   .info
+  //     background-color: #fbe178
+  //
+  // .Wallop-item:nth-child(5)
+  //   .info
+  //     background-color: #d6f3e0

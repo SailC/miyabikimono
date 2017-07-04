@@ -6,11 +6,13 @@ import App from './App'
 import Wallop from 'Wallop'
 
 ReactDOM.render(<App />, document.getElementById('app'))
-var wallopEl = document.querySelector('.Wallop')
-var slider = new Wallop(wallopEl)
+var heroWallop = document.querySelector('#heroWallop')
+var girlWallop = document.querySelector('#girlWallop')
+var heroSlider = new Wallop(heroWallop)
+var girlSlider = new Wallop(girlWallop)
 
 function goToNextSlide () {
-  slider.next()
+  heroSlider.next()
 }
 
 setInterval(goToNextSlide, 3000)

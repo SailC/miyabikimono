@@ -16,7 +16,7 @@ const NavLeft = () => (
 )
 
 const NavToggle = (props) => {
-  const { isActive, toggleListener } = props
+  let { isActive, toggleListener } = props
   return (
     <span class={classNames(
       'nav-toggle',
@@ -30,7 +30,7 @@ const NavToggle = (props) => {
 }
 
 const NavRight = (props) => {
-  const { isActive, toggleListener } = props
+  let { isActive, toggleListener } = props
   return (
     <div class={classNames(
       'nav-right',
@@ -142,7 +142,7 @@ const HeroBody = () => (
 )
 
 const Headlines = (props) => {
-  const { num } = props
+  let { num } = props
   return (
     <div class='container is-fluid has-text-centered'>
       <h1 class={classNames(
@@ -170,7 +170,7 @@ const Headlines = (props) => {
 }
 
 const WallopSlides = () => (
-  <div class='Wallop Wallop--fade'>
+  <div class='Wallop Wallop--fade' id='heroWallop'>
     <div class='Wallop-list'>
       <div class='Wallop-item'>
         <WallopSlide num='1' />
@@ -186,7 +186,7 @@ const WallopSlides = () => (
 )
 
 const WallopSlide = (props) => {
-  const { num } = props
+  let { num } = props
   return (
     <div class='columns container is-fluid'>
       <div class='column is-half'>
@@ -200,7 +200,7 @@ const WallopSlide = (props) => {
 }
 
 const HeroSection = (props) => {
-  const {lang, onLangChange} = props
+  let {lang, onLangChange} = props
   langChangeListener = onLangChange
   text = dict[lang]
   language = lang

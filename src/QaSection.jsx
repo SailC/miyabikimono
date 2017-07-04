@@ -12,7 +12,7 @@ class QaSection extends React.Component {
     const {lang} = this.props
     language = lang
     return (
-      <div class='section qa-section'>
+      <div class='section qa-section container'>
         <div class='tile is-ancestor'>
           <div class='tile is-6 is-vertical is-parent'>
             <StepItems />

@@ -93,7 +93,7 @@ class ProductSection extends React.Component {
         (this.state.cards.length - 1) / cardsPerPage
     ) + 1
     return (
-      <section class='product-section section'>
+      <section class='product-section section container'>
         <div class='columns'>
           <div class='filter column is-one-quarter'>
             <Filter cards={this.state.cards}

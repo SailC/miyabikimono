@@ -1,9 +1,9 @@
 .qa-section
   margin: 0 auto
-  @include widescreen
-    width: 70%
-  @include desktop-only
-    width: 80%
+  // @include widescreen
+  //   width: 70%
+  // @include desktop-only
+  //   width: 80%
   .step-items
     .tile.box
       margin-bottom: 0.5rem
@@ -13,14 +13,23 @@
       flex-direction: column
   .step-image
     .image
-      @include mobile
-        margin: 0 auto
+      // @include mobile
+      // margin: 0 auto
+
       img
         border-radius: 10px
+
+  .column.step-image
+    display: flex
+    justify-content: center
+    align-items: center
+
 
   .step-content
     p
       font-size: 12px
+      @include desktop
+        font-size: 15px
     .title
       font-weight: bold
       font-size: 1rem

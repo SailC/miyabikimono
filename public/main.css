@@ -114,19 +114,19 @@
   .control span.select {
     max-width: 60%; } }
 
-.card {
+.product-section .card {
   margin: 5px; }
   @media screen and (min-width: 1192px) {
-    .card {
+    .product-section .card {
       width: 24%; } }
   @media screen and (min-width: 1000px) {
-    .card {
+    .product-section .card {
       width: 31.5%; } }
   @media screen and (min-width: 769px) and (max-width: 999px) {
-    .card {
+    .product-section .card {
       width: 48%; } }
   @media screen and (max-width: 768px) {
-    .card {
+    .product-section .card {
       width: 100%; } }
 
 a.filter-icon {
@@ -233,12 +233,6 @@ nav.pagination {
 
 .qa-section {
   margin: 0 auto; }
-  @media screen and (min-width: 1192px) {
-    .qa-section {
-      width: 70%; } }
-  @media screen and (min-width: 1000px) and (max-width: 1191px) {
-    .qa-section {
-      width: 80%; } }
   .qa-section .step-items .tile.box {
     margin-bottom: 0.5rem;
     -webkit-box-pack: center;
@@ -250,17 +244,86 @@ nav.pagination {
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column; } }
-  @media screen and (max-width: 768px) {
-    .qa-section .step-image .image {
-      margin: 0 auto; } }
   .qa-section .step-image .image img {
     border-radius: 10px; }
+  .qa-section .column.step-image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .qa-section .step-content p {
     font-size: 12px; }
+    @media screen and (min-width: 1000px) {
+      .qa-section .step-content p {
+        font-size: 15px; } }
   .qa-section .step-content .title {
     font-weight: bold;
     font-size: 1rem;
     margin-bottom: 0.5rem; }
+
+.girls-section .Wallop-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .girls-section .Wallop-item .image img {
+    box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
+    width: 350px; }
+  .girls-section .Wallop-item .columns {
+    width: 80%; }
+  .girls-section .Wallop-item .column {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px; }
+
+.girls-section .Wallop-buttonPrevious {
+  left: 1pc; }
+  .girls-section .Wallop-buttonPrevious:before {
+    content: "\276E"; }
+
+.girls-section .Wallop-buttonNext {
+  right: 1pc; }
+  .girls-section .Wallop-buttonNext:before {
+    content: "\276F"; }
+
+.girls-section .Wallop-buttonNext, .girls-section .Wallop-buttonPrevious {
+  border: none;
+  webkit-appearance: none;
+  background: rgba(255, 255, 255, 0.6);
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  text-indent: -9999px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .girls-section .Wallop-buttonNext:before, .girls-section .Wallop-buttonPrevious:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    text-indent: 0;
+    font-size: 25px;
+    line-height: 0; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
