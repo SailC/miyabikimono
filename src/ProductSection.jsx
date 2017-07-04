@@ -41,7 +41,7 @@ class ProductSection extends React.Component {
     } else {
       sortFunc = (a, b) => b.popularity - a.popularity
     }
-    let newCards = this.state.cards
+    let newCards = Array.from(this.state.cards)
     newCards.sort(sortFunc)
     this.setState({
       cards: newCards,

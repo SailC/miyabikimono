@@ -31225,7 +31225,7 @@ var ProductSection = function (_React$Component) {
           return b.popularity - a.popularity;
         };
       }
-      var newCards = this.state.cards;
+      var newCards = Array.from(this.state.cards);
       newCards.sort(sortFunc);
       this.setState({
         cards: newCards,
