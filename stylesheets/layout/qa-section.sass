@@ -1,7 +1,27 @@
 .qa-section
+  margin: 0 auto
+  @include widescreen
+    width: 70%
+  @include desktop-only
+    width: 80%
+  .step-items
+    .tile.box
+      margin-bottom: 0.5rem
+      justify-content: center
   article.media
     @include mobile
       flex-direction: column
+  .step-image
+    .image
+      @include mobile
+        margin: 0 auto
+      img
+        border-radius: 10px
 
   .step-content
-    padding-left: 40px
+    p
+      font-size: 12px
+    .title
+      font-weight: bold
+      font-size: 1rem
+      margin-bottom: 0.5rem

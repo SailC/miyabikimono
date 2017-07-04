@@ -231,15 +231,36 @@ nav.pagination {
 .filter-open .filter.column .menu-svg {
   visibility: hidden; }
 
-@media screen and (max-width: 768px) {
-  .qa-section article.media {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column; } }
-
-.qa-section .step-content {
-  padding-left: 40px; }
+.qa-section {
+  margin: 0 auto; }
+  @media screen and (min-width: 1192px) {
+    .qa-section {
+      width: 70%; } }
+  @media screen and (min-width: 1000px) and (max-width: 1191px) {
+    .qa-section {
+      width: 80%; } }
+  .qa-section .step-items .tile.box {
+    margin-bottom: 0.5rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  @media screen and (max-width: 768px) {
+    .qa-section article.media {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+  @media screen and (max-width: 768px) {
+    .qa-section .step-image .image {
+      margin: 0 auto; } }
+  .qa-section .step-image .image img {
+    border-radius: 10px; }
+  .qa-section .step-content p {
+    font-size: 12px; }
+  .qa-section .step-content .title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 0.5rem; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**

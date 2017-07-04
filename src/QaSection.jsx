@@ -2,9 +2,9 @@ import React from 'react'
 import FaqItem from './QaSection/FaqItem'
 import StepItem from './QaSection/StepItem'
 import faqs from './QaSection/faq'
+import steps from './QaSection/step'
 import dict from './dict'
 
-const url = 'http://bulma.io/images/placeholders/128x128.png'
 var language
 
 class QaSection extends React.Component {
@@ -14,27 +14,35 @@ class QaSection extends React.Component {
     return (
       <div class='section qa-section'>
         <div class='tile is-ancestor'>
-          <div class='tile is-4 is-vertical is-parent'>
-            <StepItem title='title' content='content' url={url} />
-            <StepItem title='title' content='content' url={url} />
-            <StepItem title='title' content='content' url={url} />
-            <StepItem title='title' content='content' url={url} />
-            <StepItem title='title' content='content' url={url} />
-            <StepItem title='title' content='content' url={url} />
-            <StepItem title='title' content='content' url={url} />
-            <StepItem title='title' content='content' url={url} />
+          <div class='tile is-6 is-vertical is-parent'>
+            <StepItems />
           </div>
           <div class='tile is-parent'>
             <div class='tile is-child box'>
-              {
-                <FaqItems />
-              }
+              <FaqItems />
             </div>
           </div>
         </div>
       </div>
     )
   }
+}
+
+const StepItems = () => {
+  return (
+    <div class='step-items'>
+      {
+        Array.from(steps, (step) => (
+          <StepItem
+            key={step.id}
+            title={step.title[language]}
+            content={step.content[language]}
+            url={step.url}
+          />
+        ))
+      }
+    </div>
+  )
 }
 
 const FaqItems = () => {
