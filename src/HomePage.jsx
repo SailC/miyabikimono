@@ -4,6 +4,7 @@ import ProductSection from './ProductSection'
 import QaSection from './QaSection'
 import GirlsSection from './GirlsSection'
 import AboutSection from './AboutSection'
+import FooterSection from './FooterSection'
 
 class HomePage extends React.Component {
   constructor () {
@@ -35,6 +36,7 @@ class HomePage extends React.Component {
         <QaSection lang={this.state.lang} />
         <GirlsSection lang={this.state.lang} />
         <AboutSection lang={this.state.lang} />
+        <FooterSection lang={this.state.lang} />
       </div>
     )
   }

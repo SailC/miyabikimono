@@ -260,7 +260,7 @@ process.umask = function() { return 0; };
 "use strict";
 
 
-module.exports = __webpack_require__(22);
+module.exports = __webpack_require__(23);
 
 
 /***/ }),
@@ -891,7 +891,7 @@ module.exports = ExecutionEnvironment;
 
 
 
-var _prodInvariant = __webpack_require__(23);
+var _prodInvariant = __webpack_require__(24);
 
 var ReactCurrentOwner = __webpack_require__(14);
 
@@ -1431,7 +1431,7 @@ var _prodInvariant = __webpack_require__(6),
 var CallbackQueue = __webpack_require__(80);
 var PooledClass = __webpack_require__(20);
 var ReactFeatureFlags = __webpack_require__(81);
-var ReactReconciler = __webpack_require__(24);
+var ReactReconciler = __webpack_require__(25);
 var Transaction = __webpack_require__(36);
 
 var invariant = __webpack_require__(2);
@@ -2804,6 +2804,47 @@ module.exports = warning;
 
 /***/ }),
 /* 22 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"zh": {
+		"apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
+		"google-play-url": "https://play.google.com/store/apps/details?id=com.busgazer.oba&_branch_match_id=399387738945819974",
+		"nav-home": "主页",
+		"nav-web": "Web App",
+		"nav-combo": "特色套餐",
+		"nav-booking": "网上预约",
+		"nav-faq": "预约流程和常见问题",
+		"nav-girls": "她们来过",
+		"nav-about": "关于我们",
+		"nav-social": "联系方式",
+		"download-iphone": "iPhone",
+		"download-android": "Andoid",
+		"hero-title-1": "江户和装工房",
+		"hero-subtitle-1": "和服是一次相遇",
+		"hero-title-2": "江户和装工房",
+		"hero-subtitle-2": "和服租赁 物美价廉",
+		"hero-title-3": "江户和装工房",
+		"hero-subtitle-3": "在线预约 简单方便",
+		"cloth-type": "衣服类型",
+		"belt": "腰带绑法",
+		"gender": "适用人群",
+		"event": "推荐场合",
+		"sort1": "受欢迎程度 (从高到低)",
+		"sort2": "价格 (从低到高)",
+		"sort3": "价格 (从高到低)",
+		"search-place-holder": "输入关键字检索",
+		"search": "搜索",
+		"answererName": "客服小雅",
+		"boss-name": "店长阿乐",
+		"boss-quote": "这两年当中，承蒙大家的错爱, 我们遇到各行各业不同的顾客，她们从事IT，空姐，摄影师等等能够与您们相遇都是我们前世的缘分, 感恩您们选择了我们，愿接下来的路，还能有您们的陪伴和支持，和新的旅程的开始",
+		"prev": "上一页",
+		"next": "下一页"
+	}
+};
+
+/***/ }),
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2941,7 +2982,7 @@ module.exports = React;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2985,7 +3026,7 @@ function reactProdInvariant(code) {
 module.exports = reactProdInvariant;
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3157,7 +3198,7 @@ module.exports = ReactReconciler;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3278,47 +3319,6 @@ DOMLazyTree.queueHTML = queueHTML;
 DOMLazyTree.queueText = queueText;
 
 module.exports = DOMLazyTree;
-
-/***/ }),
-/* 26 */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"zh": {
-		"apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
-		"google-play-url": "https://play.google.com/store/apps/details?id=com.busgazer.oba&_branch_match_id=399387738945819974",
-		"nav-home": "主页",
-		"nav-web": "Web App",
-		"nav-combo": "特色套餐",
-		"nav-booking": "网上预约",
-		"nav-faq": "预约流程和常见问题",
-		"nav-girls": "她们来过",
-		"nav-about": "关于我们",
-		"nav-social": "联系方式",
-		"download-iphone": "iPhone",
-		"download-android": "Andoid",
-		"hero-title-1": "江户和装工房",
-		"hero-subtitle-1": "和服是一次相遇",
-		"hero-title-2": "江户和装工房",
-		"hero-subtitle-2": "和服租赁 物美价廉",
-		"hero-title-3": "江户和装工房",
-		"hero-subtitle-3": "在线预约 简单方便",
-		"cloth-type": "衣服类型",
-		"belt": "腰带绑法",
-		"gender": "适用人群",
-		"event": "推荐场合",
-		"sort1": "受欢迎程度 (从高到低)",
-		"sort2": "价格 (从低到高)",
-		"sort3": "价格 (从高到低)",
-		"search-place-holder": "输入关键字检索",
-		"search": "搜索",
-		"answererName": "客服小雅",
-		"boss-name": "店长阿乐",
-		"boss-quote": "这两年当中，承蒙大家的错爱, 我们遇到各行各业不同的顾客，她们从事IT，空姐，摄影师等等能够与您们相遇都是我们前世的缘分, 感恩您们选择了我们，愿接下来的路，还能有您们的陪伴和支持，和新的旅程的开始",
-		"prev": "上一页",
-		"next": "下一页"
-	}
-};
 
 /***/ }),
 /* 27 */
@@ -5754,7 +5754,7 @@ module.exports = getEventModifierState;
 
 
 
-var DOMLazyTree = __webpack_require__(25);
+var DOMLazyTree = __webpack_require__(26);
 var Danger = __webpack_require__(165);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactInstrumentation = __webpack_require__(12);
@@ -6053,7 +6053,7 @@ var _prodInvariant = __webpack_require__(6);
 var ReactPropTypesSecret = __webpack_require__(89);
 var propTypesFactory = __webpack_require__(74);
 
-var React = __webpack_require__(22);
+var React = __webpack_require__(23);
 var PropTypes = propTypesFactory(React.isValidElement);
 
 var invariant = __webpack_require__(2);
@@ -8106,7 +8106,7 @@ var _classnames = __webpack_require__(5);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _MenuButton = __webpack_require__(302);
+var _MenuButton = __webpack_require__(303);
 
 var _MenuButton2 = _interopRequireDefault(_MenuButton);
 
@@ -8214,7 +8214,7 @@ exports.default = PlaybackRateMenuButton;
 
 
 
-var _prodInvariant = __webpack_require__(23),
+var _prodInvariant = __webpack_require__(24),
     _assign = __webpack_require__(7);
 
 var ReactNoopUpdateQueue = __webpack_require__(70);
@@ -10726,7 +10726,7 @@ module.exports = instantiateReactComponent;
 
 var _prodInvariant = __webpack_require__(6);
 
-var React = __webpack_require__(22);
+var React = __webpack_require__(23);
 
 var invariant = __webpack_require__(2);
 
@@ -11324,9 +11324,9 @@ module.exports = getActiveElement;
 
 var _prodInvariant = __webpack_require__(6);
 
-var DOMLazyTree = __webpack_require__(25);
+var DOMLazyTree = __webpack_require__(26);
 var DOMProperty = __webpack_require__(18);
-var React = __webpack_require__(22);
+var React = __webpack_require__(23);
 var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactCurrentOwner = __webpack_require__(14);
 var ReactDOMComponentTree = __webpack_require__(8);
@@ -11336,7 +11336,7 @@ var ReactFeatureFlags = __webpack_require__(81);
 var ReactInstanceMap = __webpack_require__(30);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactMarkupChecksum = __webpack_require__(223);
-var ReactReconciler = __webpack_require__(24);
+var ReactReconciler = __webpack_require__(25);
 var ReactUpdateQueue = __webpack_require__(57);
 var ReactUpdates = __webpack_require__(15);
 
@@ -12642,7 +12642,7 @@ module.exports = throttle;
 /* 105 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var root = __webpack_require__(284);
+var root = __webpack_require__(285);
 
 /** Built-in value references. */
 var Symbol = root.Symbol;
@@ -15855,11 +15855,11 @@ var _classnames = __webpack_require__(5);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _PopupButton = __webpack_require__(298);
+var _PopupButton = __webpack_require__(299);
 
 var _PopupButton2 = _interopRequireDefault(_PopupButton);
 
-var _VolumeBar = __webpack_require__(300);
+var _VolumeBar = __webpack_require__(301);
 
 var _VolumeBar2 = _interopRequireDefault(_VolumeBar);
 
@@ -16123,7 +16123,7 @@ var _App = __webpack_require__(231);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _Wallop = __webpack_require__(308);
+var _Wallop = __webpack_require__(310);
 
 var _Wallop2 = _interopRequireDefault(_Wallop);
 
@@ -16357,7 +16357,7 @@ module.exports = ReactChildren;
 
 
 
-var _prodInvariant = __webpack_require__(23);
+var _prodInvariant = __webpack_require__(24);
 
 var invariant = __webpack_require__(2);
 
@@ -16474,7 +16474,7 @@ module.exports = PooledClass;
 
 
 
-var _prodInvariant = __webpack_require__(23);
+var _prodInvariant = __webpack_require__(24);
 
 var ReactCurrentOwner = __webpack_require__(14);
 var REACT_ELEMENT_TYPE = __webpack_require__(71);
@@ -16895,7 +16895,7 @@ module.exports = ReactDOMFactories;
 
 
 
-var _prodInvariant = __webpack_require__(23);
+var _prodInvariant = __webpack_require__(24);
 
 var ReactPropTypeLocationNames = __webpack_require__(138);
 var ReactPropTypesSecret = __webpack_require__(139);
@@ -18060,7 +18060,7 @@ module.exports = factory;
  */
 
 
-var _prodInvariant = __webpack_require__(23);
+var _prodInvariant = __webpack_require__(24);
 
 var ReactElement = __webpack_require__(19);
 
@@ -18110,7 +18110,7 @@ module.exports = onlyChild;
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactDefaultInjection = __webpack_require__(147);
 var ReactMount = __webpack_require__(99);
-var ReactReconciler = __webpack_require__(24);
+var ReactReconciler = __webpack_require__(25);
 var ReactUpdates = __webpack_require__(15);
 var ReactVersion = __webpack_require__(225);
 
@@ -20400,7 +20400,7 @@ module.exports = ReactComponentBrowserEnvironment;
 
 var _prodInvariant = __webpack_require__(6);
 
-var DOMLazyTree = __webpack_require__(25);
+var DOMLazyTree = __webpack_require__(26);
 var ExecutionEnvironment = __webpack_require__(9);
 
 var createNodesFromMarkup = __webpack_require__(166);
@@ -20819,7 +20819,7 @@ var _prodInvariant = __webpack_require__(6),
 
 var AutoFocusUtils = __webpack_require__(171);
 var CSSPropertyOperations = __webpack_require__(172);
-var DOMLazyTree = __webpack_require__(25);
+var DOMLazyTree = __webpack_require__(26);
 var DOMNamespaces = __webpack_require__(50);
 var DOMProperty = __webpack_require__(18);
 var DOMPropertyOperations = __webpack_require__(88);
@@ -22831,7 +22831,7 @@ module.exports = ReactDOMInput;
 
 var _assign = __webpack_require__(7);
 
-var React = __webpack_require__(22);
+var React = __webpack_require__(23);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactDOMSelect = __webpack_require__(90);
 
@@ -23130,7 +23130,7 @@ var ReactInstanceMap = __webpack_require__(30);
 var ReactInstrumentation = __webpack_require__(12);
 
 var ReactCurrentOwner = __webpack_require__(14);
-var ReactReconciler = __webpack_require__(24);
+var ReactReconciler = __webpack_require__(25);
 var ReactChildReconciler = __webpack_require__(186);
 
 var emptyFunction = __webpack_require__(11);
@@ -23575,7 +23575,7 @@ module.exports = ReactMultiChild;
 
 
 
-var ReactReconciler = __webpack_require__(24);
+var ReactReconciler = __webpack_require__(25);
 
 var instantiateReactComponent = __webpack_require__(91);
 var KeyEscapeUtils = __webpack_require__(56);
@@ -23737,14 +23737,14 @@ module.exports = ReactChildReconciler;
 var _prodInvariant = __webpack_require__(6),
     _assign = __webpack_require__(7);
 
-var React = __webpack_require__(22);
+var React = __webpack_require__(23);
 var ReactComponentEnvironment = __webpack_require__(53);
 var ReactCurrentOwner = __webpack_require__(14);
 var ReactErrorUtils = __webpack_require__(45);
 var ReactInstanceMap = __webpack_require__(30);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactNodeTypes = __webpack_require__(92);
-var ReactReconciler = __webpack_require__(24);
+var ReactReconciler = __webpack_require__(25);
 
 if (process.env.NODE_ENV !== 'production') {
   var checkReactTypeSpec = __webpack_require__(188);
@@ -25186,7 +25186,7 @@ module.exports = ReactServerUpdateQueue;
 
 var _assign = __webpack_require__(7);
 
-var DOMLazyTree = __webpack_require__(25);
+var DOMLazyTree = __webpack_require__(26);
 var ReactDOMComponentTree = __webpack_require__(8);
 
 var ReactDOMEmptyComponent = function (instantiate) {
@@ -25395,7 +25395,7 @@ var _prodInvariant = __webpack_require__(6),
     _assign = __webpack_require__(7);
 
 var DOMChildrenOperations = __webpack_require__(49);
-var DOMLazyTree = __webpack_require__(25);
+var DOMLazyTree = __webpack_require__(26);
 var ReactDOMComponentTree = __webpack_require__(8);
 
 var escapeTextContentForBrowser = __webpack_require__(39);
@@ -30689,9 +30689,13 @@ var _GirlsSection = __webpack_require__(275);
 
 var _GirlsSection2 = _interopRequireDefault(_GirlsSection);
 
-var _AboutSection = __webpack_require__(277);
+var _AboutSection = __webpack_require__(278);
 
 var _AboutSection2 = _interopRequireDefault(_AboutSection);
+
+var _FooterSection = __webpack_require__(309);
+
+var _FooterSection2 = _interopRequireDefault(_FooterSection);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -30740,7 +30744,8 @@ var HomePage = function (_React$Component) {
         _react2.default.createElement(_ProductSection2.default, { lang: this.state.lang }),
         _react2.default.createElement(_QaSection2.default, { lang: this.state.lang }),
         _react2.default.createElement(_GirlsSection2.default, { lang: this.state.lang }),
-        _react2.default.createElement(_AboutSection2.default, { lang: this.state.lang })
+        _react2.default.createElement(_AboutSection2.default, { lang: this.state.lang }),
+        _react2.default.createElement(_FooterSection2.default, { lang: this.state.lang })
       );
     }
   }]);
@@ -30771,7 +30776,7 @@ var _classnames = __webpack_require__(5);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _dict = __webpack_require__(26);
+var _dict = __webpack_require__(22);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -31109,7 +31114,7 @@ var HeroSection = function HeroSection(props) {
   language = lang;
   return _react2.default.createElement(
     'section',
-    { className: 'hero is-primary' },
+    { className: 'hero is-primary', id: 'hero-section' },
     _react2.default.createElement(HeroHead, null),
     _react2.default.createElement(HeroBody, null)
   );
@@ -31154,7 +31159,7 @@ var _cards = __webpack_require__(268);
 
 var _cards2 = _interopRequireDefault(_cards);
 
-var _dict = __webpack_require__(26);
+var _dict = __webpack_require__(22);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -31295,7 +31300,12 @@ var ProductSection = function (_React$Component) {
       var pageNum = Math.floor((this.state.cards.length - 1) / cardsPerPage) + 1;
       return _react2.default.createElement(
         'section',
-        { className: 'product-section section container' },
+        { className: 'product-section section container', id: 'product-section' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'title has-text-centered' },
+          _dict2.default[language]['nav-combo']
+        ),
         _react2.default.createElement(
           'div',
           { className: 'columns' },
@@ -31551,7 +31561,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(26);
+var _dict = __webpack_require__(22);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -31692,7 +31702,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(26);
+var _dict = __webpack_require__(22);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -42312,7 +42322,7 @@ var _step = __webpack_require__(274);
 
 var _step2 = _interopRequireDefault(_step);
 
-var _dict = __webpack_require__(26);
+var _dict = __webpack_require__(22);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -42343,7 +42353,12 @@ var QaSection = function (_React$Component) {
       language = lang;
       return _react2.default.createElement(
         'div',
-        { className: 'section qa-section container' },
+        { className: 'section qa-section container', id: 'qa-section' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'title has-text-centered' },
+          _dict2.default[language]['nav-faq']
+        ),
         _react2.default.createElement(
           'div',
           { className: 'tile is-ancestor' },
@@ -42918,9 +42933,13 @@ var _intro = __webpack_require__(276);
 
 var _intro2 = _interopRequireDefault(_intro);
 
-var _dict = __webpack_require__(26);
+var _dict = __webpack_require__(22);
 
 var _dict2 = _interopRequireDefault(_dict);
+
+var _girl = __webpack_require__(277);
+
+var _girl2 = _interopRequireDefault(_girl);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -42949,7 +42968,12 @@ var GirlsSection = function (_React$Component) {
       language = lang;
       return _react2.default.createElement(
         'div',
-        { className: 'section girls-section container' },
+        { className: 'section girls-section container', id: 'girls-section' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'title has-text-centered' },
+          _dict2.default[language]['nav-faq']
+        ),
         _react2.default.createElement(_intro2.default, {
           bossName: _dict2.default[language]['boss-name'],
           bossQuote: _dict2.default[language]['boss-quote']
@@ -42962,7 +42986,13 @@ var GirlsSection = function (_React$Component) {
   return GirlsSection;
 }(_react2.default.Component);
 
-var GirlCard = function GirlCard() {
+var GirlCard = function GirlCard(props) {
+  var snapshot = props.snapshot,
+      avatar = props.avatar,
+      name = props.name,
+      content = props.content,
+      url = props.url;
+
   return _react2.default.createElement(
     'div',
     { className: 'columns' },
@@ -42972,7 +43002,7 @@ var GirlCard = function GirlCard() {
       _react2.default.createElement(
         'figure',
         { className: 'image' },
-        _react2.default.createElement('img', { src: '/images/girls-section/Picture3.png' })
+        _react2.default.createElement('img', { src: snapshot })
       )
     ),
     _react2.default.createElement(
@@ -42992,8 +43022,8 @@ var GirlCard = function GirlCard() {
               { className: 'media-left' },
               _react2.default.createElement(
                 'figure',
-                { className: 'image is-48x48' },
-                _react2.default.createElement('img', { src: 'http://bulma.io/images/placeholders/96x96.png', alt: 'Image' })
+                { className: 'image is-48x48 avatar' },
+                _react2.default.createElement('img', { src: avatar, alt: 'Image' })
               )
             ),
             _react2.default.createElement(
@@ -43002,41 +43032,22 @@ var GirlCard = function GirlCard() {
               _react2.default.createElement(
                 'p',
                 { className: 'title is-4' },
-                'John Smith'
+                name,
+                _react2.default.createElement(
+                  'a',
+                  { target: '_blank', href: url },
+                  _react2.default.createElement(
+                    'span',
+                    { className: 'icon' },
+                    _react2.default.createElement('i', { className: 'fa fa-weibo' })
+                  )
+                )
               ),
               _react2.default.createElement(
-                'p',
-                { className: 'subtitle is-6' },
-                '@johnsmith'
+                'div',
+                { className: 'content' },
+                content
               )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'content' },
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. ',
-            _react2.default.createElement(
-              'a',
-              null,
-              '@bulmaio'
-            ),
-            '.',
-            _react2.default.createElement(
-              'a',
-              null,
-              '#css'
-            ),
-            ' ',
-            _react2.default.createElement(
-              'a',
-              null,
-              '#responsive'
-            ),
-            _react2.default.createElement('br', null),
-            _react2.default.createElement(
-              'small',
-              null,
-              '11:09 PM - 1 Jan 2016'
             )
           )
         )
@@ -43052,33 +43063,21 @@ var WallopSlides = function WallopSlides() {
     _react2.default.createElement(
       'div',
       { className: 'Wallop-list' },
-      _react2.default.createElement(
-        'div',
-        { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { url: 'http://pedroduarte.me/wallop/9d6648441fd2044ef03dc6b849b21eed.gif' })
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { url: 'http://pedroduarte.me/wallop/567275306c02924439ba68bcf790ba16.gif' })
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { url: 'http://pedroduarte.me/wallop/c086c7946c62720cfb4e32e0ad282b58.gif' })
-      )
+      Array.from(_girl2.default, function (girl) {
+        return _react2.default.createElement(
+          'div',
+          { className: 'Wallop-item', key: girl.id },
+          _react2.default.createElement(GirlCard, {
+            snapshot: girl.snapshot,
+            avatar: girl.avatar,
+            name: girl.name[language],
+            content: girl.content[language],
+            url: girl.url })
+        );
+      })
     ),
     _react2.default.createElement('button', { className: 'Wallop-buttonPrevious button is-primary' }),
     _react2.default.createElement('button', { className: 'Wallop-buttonNext button is-primary' })
-  );
-};
-
-var WallopSlide = function WallopSlide(props) {
-  var url = props.url;
-
-  return (
-    // <img class='girl-img' src={url} alt='girl demo' />
-    _react2.default.createElement(GirlCard, null)
   );
 };
 
@@ -43182,6 +43181,109 @@ exports.default = Intro;
 
 /***/ }),
 /* 277 */
+/***/ (function(module, exports) {
+
+module.exports = [
+	{
+		"id": 1,
+		"snapshot": "/images/girls-section/1.png",
+		"avatar": "/images/girls-section/avatar1.jpg",
+		"name": {
+			"zh": "aki猫咪"
+		},
+		"content": {
+			"zh": "时尚达人，新丝路平面模特。有真小林志玲之称的aki也多次一同与志玲参加各种活动，可见其多有人气"
+		},
+		"url": "http://weibo.com/1749156250/F1rcx8Bas"
+	},
+	{
+		"id": 2,
+		"snapshot": "/images/girls-section/2.png",
+		"avatar": "/images/girls-section/avatar2.jpg",
+		"name": {
+			"zh": "白兔uSAgi"
+		},
+		"content": {
+			"zh": "品珂签约模特，电竞女神。关于浅草寺，酒红的和服，粉红的🌸，迷人的你"
+		},
+		"url": "http://weibo.com/1959620915/DqFHczVyQ"
+	},
+	{
+		"id": 3,
+		"snapshot": "/images/girls-section/3.png",
+		"avatar": "/images/girls-section/avatar3.jpg",
+		"name": {
+			"zh": "猫力molly"
+		},
+		"content": {
+			"zh": "旅记博主圈鼻祖人物, 一个自由的环球旅行者，在5月的尾巴，'猫力乱步'到了江户和装工房，体验了一回'心'与'动'的和服文化！"
+		},
+		"url": "http://weibo.com/1908834133/EDUBUyV4H"
+	},
+	{
+		"id": 4,
+		"snapshot": "/images/girls-section/4.png",
+		"avatar": "/images/girls-section/avatar4.jpg",
+		"name": {
+			"zh": "王幼宣幼乖"
+		},
+		"content": {
+			"zh": "微电商达人。主打粉色系写产品。装扮也别具一格"
+		},
+		"url": "http://weibo.com/1739049744/E1eGdhAiS"
+	},
+	{
+		"id": 5,
+		"snapshot": "/images/girls-section/5.png",
+		"avatar": "/images/girls-section/avatar5.jpg",
+		"name": {
+			"zh": "林晶莹lily"
+		},
+		"content": {
+			"zh": "知名旅游博主，携程签约摄影师 写的一手好文，拍的一手好照片。"
+		},
+		"url": "http://weibo.com/1719984830/EB8bAlXfj"
+	},
+	{
+		"id": 6,
+		"snapshot": "/images/girls-section/6.png",
+		"avatar": "/images/girls-section/avatar6.jpg",
+		"name": {
+			"zh": "顾子沫"
+		},
+		"content": {
+			"zh": "平面模特 最是人间4月，芳菲尽"
+		},
+		"url": "http://weibo.com/2422449772/EDUrE1tkd"
+	},
+	{
+		"id": 7,
+		"snapshot": "/images/girls-section/7.png",
+		"avatar": "/images/girls-section/avatar7.jpg",
+		"name": {
+			"zh": "周若雪patty"
+		},
+		"content": {
+			"zh": "微博旅行家，各大OTA平台游记博主，美妆博主 把旅行当作一场时装盛宴，走过40多个国家，体验不同的时装魅"
+		},
+		"url": "http://weibo.com/1877951477/DlBv0eZrb"
+	},
+	{
+		"id": 8,
+		"snapshot": "/images/girls-section/8.png",
+		"avatar": "/images/girls-section/avatar8.jpg",
+		"name": {
+			"zh": "鹿的角"
+		},
+		"content": {
+			"zh": "微博时尚达人，调皮可爱。"
+		},
+		"url": "http://weibo.com/2690354033/EDh6ioF86"
+	}
+];
+
+/***/ }),
+/* 278 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43197,11 +43299,15 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _videoReact = __webpack_require__(278);
+var _videoReact = __webpack_require__(279);
 
-var _about = __webpack_require__(307);
+var _about = __webpack_require__(308);
 
 var _about2 = _interopRequireDefault(_about);
+
+var _dict = __webpack_require__(22);
+
+var _dict2 = _interopRequireDefault(_dict);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -43230,7 +43336,12 @@ var AboutSection = function (_React$Component) {
       language = lang;
       return _react2.default.createElement(
         'div',
-        { className: 'section about-section container' },
+        { className: 'section about-section container', id: 'about-section' },
+        _react2.default.createElement(
+          'h1',
+          { className: 'title has-text-centered' },
+          _dict2.default[language]['nav-about']
+        ),
         _react2.default.createElement(VideoPlayer, null),
         _react2.default.createElement(AboutItems, null)
       );
@@ -43350,7 +43461,7 @@ var AboutItem = function AboutItem(props) {
 exports.default = AboutSection;
 
 /***/ }),
-/* 278 */
+/* 279 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43361,7 +43472,7 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.PlaybackRate = exports.PlaybackRateMenuButton = exports.VolumeMenuButton = exports.TimeDivider = exports.DurationDisplay = exports.CurrentTimeDisplay = exports.RemainingTimeDisplay = exports.MouseTimeDisplay = exports.LoadProgressBar = exports.PlayProgressBar = exports.Slider = exports.SeekBar = exports.ProgressControl = exports.FullscreenToggle = exports.ReplayControl = exports.ForwardControl = exports.PlayToggle = exports.ControlBar = exports.Shortcut = exports.Bezel = exports.PosterImage = exports.LoadingSpinner = exports.BigPlayButton = exports.Video = exports.Player = undefined;
 
-var _Player = __webpack_require__(279);
+var _Player = __webpack_require__(280);
 
 var _Player2 = _interopRequireDefault(_Player);
 
@@ -43441,7 +43552,7 @@ var _PlaybackRateMenuButton = __webpack_require__(68);
 
 var _PlaybackRateMenuButton2 = _interopRequireDefault(_PlaybackRateMenuButton);
 
-var _PlaybackRate = __webpack_require__(306);
+var _PlaybackRate = __webpack_require__(307);
 
 var _PlaybackRate2 = _interopRequireDefault(_PlaybackRate);
 
@@ -43490,7 +43601,7 @@ exports.PlaybackRateMenuButton = _PlaybackRateMenuButton2.default;
 exports.PlaybackRate = _PlaybackRate2.default; // import '../styles/scss/video-react.scss';
 
 /***/ }),
-/* 279 */
+/* 280 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -43520,7 +43631,7 @@ var _lodash = __webpack_require__(104);
 
 var _lodash2 = _interopRequireDefault(_lodash);
 
-var _Manager = __webpack_require__(280);
+var _Manager = __webpack_require__(281);
 
 var _Manager2 = _interopRequireDefault(_Manager);
 
@@ -43552,7 +43663,7 @@ var _ControlBar = __webpack_require__(114);
 
 var _ControlBar2 = _interopRequireDefault(_ControlBar);
 
-var _browser = __webpack_require__(305);
+var _browser = __webpack_require__(306);
 
 var browser = _interopRequireWildcard(_browser);
 
@@ -44032,7 +44143,7 @@ Player.propTypes = propTypes;
 Player.defaultProps = defaultProps;
 
 /***/ }),
-/* 280 */
+/* 281 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44046,11 +44157,11 @@ var _extends = Object.assign || function (target) { for (var i = 1; i < argument
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _createStore = __webpack_require__(281);
+var _createStore = __webpack_require__(282);
 
 var _createStore2 = _interopRequireDefault(_createStore);
 
-var _reducers = __webpack_require__(295);
+var _reducers = __webpack_require__(296);
 
 var _reducers2 = _interopRequireDefault(_reducers);
 
@@ -44164,7 +44275,7 @@ var Manager = function () {
 exports.default = Manager;
 
 /***/ }),
-/* 281 */
+/* 282 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44174,11 +44285,11 @@ exports.__esModule = true;
 exports.ActionTypes = undefined;
 exports['default'] = createStore;
 
-var _isPlainObject = __webpack_require__(282);
+var _isPlainObject = __webpack_require__(283);
 
 var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
 
-var _symbolObservable = __webpack_require__(291);
+var _symbolObservable = __webpack_require__(292);
 
 var _symbolObservable2 = _interopRequireDefault(_symbolObservable);
 
@@ -44431,12 +44542,12 @@ var ActionTypes = exports.ActionTypes = {
 }
 
 /***/ }),
-/* 282 */
+/* 283 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var baseGetTag = __webpack_require__(283),
-    getPrototype = __webpack_require__(288),
-    isObjectLike = __webpack_require__(290);
+var baseGetTag = __webpack_require__(284),
+    getPrototype = __webpack_require__(289),
+    isObjectLike = __webpack_require__(291);
 
 /** `Object#toString` result references. */
 var objectTag = '[object Object]';
@@ -44499,12 +44610,12 @@ module.exports = isPlainObject;
 
 
 /***/ }),
-/* 283 */
+/* 284 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(105),
-    getRawTag = __webpack_require__(286),
-    objectToString = __webpack_require__(287);
+    getRawTag = __webpack_require__(287),
+    objectToString = __webpack_require__(288);
 
 /** `Object#toString` result references. */
 var nullTag = '[object Null]',
@@ -44533,10 +44644,10 @@ module.exports = baseGetTag;
 
 
 /***/ }),
-/* 284 */
+/* 285 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var freeGlobal = __webpack_require__(285);
+var freeGlobal = __webpack_require__(286);
 
 /** Detect free variable `self`. */
 var freeSelf = typeof self == 'object' && self && self.Object === Object && self;
@@ -44548,7 +44659,7 @@ module.exports = root;
 
 
 /***/ }),
-/* 285 */
+/* 286 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
@@ -44559,7 +44670,7 @@ module.exports = freeGlobal;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(64)))
 
 /***/ }),
-/* 286 */
+/* 287 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(105);
@@ -44611,7 +44722,7 @@ module.exports = getRawTag;
 
 
 /***/ }),
-/* 287 */
+/* 288 */
 /***/ (function(module, exports) {
 
 /** Used for built-in method references. */
@@ -44639,10 +44750,10 @@ module.exports = objectToString;
 
 
 /***/ }),
-/* 288 */
+/* 289 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var overArg = __webpack_require__(289);
+var overArg = __webpack_require__(290);
 
 /** Built-in value references. */
 var getPrototype = overArg(Object.getPrototypeOf, Object);
@@ -44651,7 +44762,7 @@ module.exports = getPrototype;
 
 
 /***/ }),
-/* 289 */
+/* 290 */
 /***/ (function(module, exports) {
 
 /**
@@ -44672,7 +44783,7 @@ module.exports = overArg;
 
 
 /***/ }),
-/* 290 */
+/* 291 */
 /***/ (function(module, exports) {
 
 /**
@@ -44707,14 +44818,14 @@ module.exports = isObjectLike;
 
 
 /***/ }),
-/* 291 */
+/* 292 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(292);
+module.exports = __webpack_require__(293);
 
 
 /***/ }),
-/* 292 */
+/* 293 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44724,7 +44835,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _ponyfill = __webpack_require__(294);
+var _ponyfill = __webpack_require__(295);
 
 var _ponyfill2 = _interopRequireDefault(_ponyfill);
 
@@ -44747,10 +44858,10 @@ if (typeof self !== 'undefined') {
 
 var result = (0, _ponyfill2['default'])(root);
 exports['default'] = result;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(64), __webpack_require__(293)(module)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(64), __webpack_require__(294)(module)))
 
 /***/ }),
-/* 293 */
+/* 294 */
 /***/ (function(module, exports) {
 
 module.exports = function(module) {
@@ -44778,7 +44889,7 @@ module.exports = function(module) {
 
 
 /***/ }),
-/* 294 */
+/* 295 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44807,7 +44918,7 @@ function symbolObservablePonyfill(root) {
 };
 
 /***/ }),
-/* 295 */
+/* 296 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44827,18 +44938,18 @@ exports.default = function () {
   };
 };
 
-var _player = __webpack_require__(296);
+var _player = __webpack_require__(297);
 
 var _player2 = _interopRequireDefault(_player);
 
-var _operation = __webpack_require__(297);
+var _operation = __webpack_require__(298);
 
 var _operation2 = _interopRequireDefault(_operation);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 /***/ }),
-/* 296 */
+/* 297 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -44967,7 +45078,7 @@ function video() {
 }
 
 /***/ }),
-/* 297 */
+/* 298 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45007,7 +45118,7 @@ function operation() {
 }
 
 /***/ }),
-/* 298 */
+/* 299 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45037,7 +45148,7 @@ var _ClickableComponent = __webpack_require__(130);
 
 var _ClickableComponent2 = _interopRequireDefault(_ClickableComponent);
 
-var _Popup = __webpack_require__(299);
+var _Popup = __webpack_require__(300);
 
 var _Popup2 = _interopRequireDefault(_Popup);
 
@@ -45079,7 +45190,7 @@ PopupButton.propTypes = propTypes;
 PopupButton.defaultProps = defaultProps;
 
 /***/ }),
-/* 299 */
+/* 300 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45159,7 +45270,7 @@ exports.default = Popup;
 Popup.propTypes = propTypes;
 
 /***/ }),
-/* 300 */
+/* 301 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45189,7 +45300,7 @@ var _Slider = __webpack_require__(67);
 
 var _Slider2 = _interopRequireDefault(_Slider);
 
-var _VolumeLevel = __webpack_require__(301);
+var _VolumeLevel = __webpack_require__(302);
 
 var _VolumeLevel2 = _interopRequireDefault(_VolumeLevel);
 
@@ -45359,7 +45470,7 @@ VolumeBar.propTypes = propTypes;
 exports.default = VolumeBar;
 
 /***/ }),
-/* 301 */
+/* 302 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45421,7 +45532,7 @@ VolumeLevel.defaultProps = defaultProps;
 exports.default = VolumeLevel;
 
 /***/ }),
-/* 302 */
+/* 303 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45445,11 +45556,11 @@ var _classnames = __webpack_require__(5);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _Menu = __webpack_require__(303);
+var _Menu = __webpack_require__(304);
 
 var _Menu2 = _interopRequireDefault(_Menu);
 
-var _MenuItem = __webpack_require__(304);
+var _MenuItem = __webpack_require__(305);
 
 var _MenuItem2 = _interopRequireDefault(_MenuItem);
 
@@ -45699,7 +45810,7 @@ exports.default = MenuButton;
 MenuButton.propTypes = propTypes;
 
 /***/ }),
-/* 303 */
+/* 304 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45777,7 +45888,7 @@ exports.default = Menu;
 Menu.propTypes = propTypes;
 
 /***/ }),
-/* 304 */
+/* 305 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45869,7 +45980,7 @@ exports.default = MenuItem;
 MenuItem.propTypes = propTypes;
 
 /***/ }),
-/* 305 */
+/* 306 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45899,7 +46010,7 @@ var IS_IPOD = exports.IS_IPOD = /iPod/i.test(USER_AGENT);
 var IS_IOS = exports.IS_IOS = IS_IPHONE || IS_IPAD || IS_IPOD;
 
 /***/ }),
-/* 306 */
+/* 307 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -45954,7 +46065,7 @@ var PlaybackRate = function (_Component) {
 exports.default = PlaybackRate;
 
 /***/ }),
-/* 307 */
+/* 308 */
 /***/ (function(module, exports) {
 
 module.exports = [
@@ -46011,7 +46122,147 @@ module.exports = [
 ];
 
 /***/ }),
-/* 308 */
+/* 309 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(1);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var FooterSection = function FooterSection(props) {
+  var lang = props.lang;
+
+  return _react2.default.createElement(
+    'div',
+    { className: 'section footer-section container', id: 'footer-section' },
+    _react2.default.createElement(
+      'footer',
+      { id: 'footer' },
+      _react2.default.createElement(
+        'ul',
+        { className: 'contact-list has-text-centered' },
+        _react2.default.createElement(
+          'li',
+          { className: 'email' },
+          _react2.default.createElement(
+            'span',
+            { className: 'icon is-small' },
+            _react2.default.createElement('i', { className: 'fa fa-envelope' })
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            'Service@mymiyabi.com'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'phone' },
+          _react2.default.createElement(
+            'span',
+            { className: 'icon is-small' },
+            _react2.default.createElement('i', { className: 'fa fa-phone' })
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            '\u5BA2\u670D\u4E00\u53F7\u7EBF:03-6802-3566'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'phone' },
+          _react2.default.createElement(
+            'span',
+            { className: 'icon is-small' },
+            _react2.default.createElement('i', { className: 'fa fa-phone-square' })
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            '\u5BA2\u670D\u4E8C\u53F7\u7EBF:080-3353-7888'
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'address' },
+          _react2.default.createElement(
+            'span',
+            { className: 'icon is-small' },
+            _react2.default.createElement('i', { className: 'fa fa-map-marker' })
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: 'https://goo.gl/maps/JP86SivD6C82', target: '_blank' },
+              '\u6D45\u8349\u5206\u5E97: \u4E1C\u4EAC\u90FD\u53F0\u4E1C\u533A\u6D45\u83493-30-2\u672B\u5D0E\u30D3\u30EB'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'li',
+          { className: 'address' },
+          _react2.default.createElement(
+            'span',
+            { className: 'icon is-small' },
+            _react2.default.createElement('i', { className: 'fa fa-location-arrow' })
+          ),
+          _react2.default.createElement(
+            'span',
+            null,
+            _react2.default.createElement(
+              'a',
+              { href: 'https://goo.gl/maps/24vBAU8ijTo', target: '_blank' },
+              '\u4E0A\u91CE\u5206\u5E97: \u4E1C\u4EAC\u90FD\u53F0\u4E1C\u533A\u53F0\u4E1C4-9-2'
+            )
+          )
+        )
+      ),
+      _react2.default.createElement('img', { src: '/images/barcode_tn.jpg', id: 'barcode' }),
+      _react2.default.createElement(
+        'a',
+        { href: 'http://weibo.com/mymiyabi', target: '_blank', className: 'social-icn' },
+        _react2.default.createElement('img', { src: '/images/icn/ic_sina-weibo.svg', alt: 'weibo', className: 'button' })
+      ),
+      _react2.default.createElement(
+        'a',
+        { href: 'https://www.facebook.com/miyabinokimono', target: '_blank', className: 'social-icn' },
+        _react2.default.createElement('img', { src: '/images/icn/ic_facebook.svg', alt: 'facebook', className: 'button' })
+      ),
+      _react2.default.createElement(
+        'a',
+        { href: 'https://www.instagram.com/tokyo_kimono_miyabi', target: '_blank', className: 'social-icn' },
+        _react2.default.createElement('img', { src: '/images/icn/ic_instagram.svg', alt: 'instagram', className: 'button' })
+      ),
+      _react2.default.createElement(
+        'a',
+        { href: 'http://m.dianping.com/appshare/shop/32347442', target: '_blank', className: 'social-icn' },
+        _react2.default.createElement('img', { src: '/images/icn/ic_dianping.svg', alt: 'dianping', className: 'button' })
+      ),
+      _react2.default.createElement(
+        'a',
+        { href: '#hero-section', className: 'social-icn' },
+        _react2.default.createElement('img', { src: '/images/icn/ic_up.svg', alt: 'dianping', className: 'button' })
+      )
+    )
+  );
+};
+
+exports.default = FooterSection;
+
+/***/ }),
+/* 310 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/**

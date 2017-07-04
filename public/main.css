@@ -283,6 +283,8 @@ nav.pagination {
   .girls-section .Wallop-item .image img {
     box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1);
     width: 350px; }
+  .girls-section .Wallop-item .image.avatar img {
+    border-radius: 50%; }
   @media screen and (min-width: 769px), print {
     .girls-section .Wallop-item .columns {
       width: 80%; } }
@@ -402,6 +404,54 @@ nav.pagination {
   font-weight: bold;
   font-size: 1rem;
   margin-bottom: 0.5rem; }
+
+.footer-section footer {
+  color: #7c8081;
+  padding: 50px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid #D7DBDD; }
+  .footer-section footer svg {
+    vertical-align: top;
+    margin-right: 20px;
+    width: 24px;
+    height: 24px; }
+    .footer-section footer svg:hover, .footer-section footer svg:focus {
+      fill: red; }
+  .footer-section footer img {
+    margin-top: 20px;
+    margin-right: 20px; }
+    @media screen and (min-width: 1192px) {
+      .footer-section footer img {
+        width: 100px;
+        height: 100px; } }
+    @media screen and (min-width: 769px), print {
+      .footer-section footer img {
+        width: 50px;
+        height: 50px; } }
+    @media screen and (max-width: 768px) {
+      .footer-section footer img {
+        width: 50px;
+        height: 50px; } }
+  .footer-section footer img#barcode {
+    width: 200px;
+    height: 200px; }
+  .footer-section footer .contact-list {
+    list-style: none;
+    margin-right: 20px; }
+    .footer-section footer .contact-list li {
+      margin: 10px; }
+      .footer-section footer .contact-list li a {
+        text-decoration: underline; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**

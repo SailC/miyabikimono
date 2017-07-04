@@ -93,7 +93,8 @@ class ProductSection extends React.Component {
         (this.state.cards.length - 1) / cardsPerPage
     ) + 1
     return (
-      <section class='product-section section container'>
+      <section class='product-section section container' id='product-section'>
+        <h1 class='title has-text-centered'>{dict[language]['nav-combo']}</h1>
         <div class='columns'>
           <div class='filter column is-one-quarter'>
             <Filter cards={this.state.cards}

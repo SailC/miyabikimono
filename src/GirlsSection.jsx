@@ -1,6 +1,7 @@
 import React from 'react'
 import Intro from './intro'
 import dict from './dict'
+import girls from './girl'
 
 var language
 
@@ -9,7 +10,8 @@ class GirlsSection extends React.Component {
     let {lang} = this.props
     language = lang
     return (
-      <div class='section girls-section container'>
+      <div class='section girls-section container' id='girls-section'>
+        <h1 class='title has-text-centered'>{dict[language]['nav-faq']}</h1>
         <Intro
           bossName={dict[language]['boss-name']}
           bossQuote={dict[language]['boss-quote']}
@@ -20,12 +22,13 @@ class GirlsSection extends React.Component {
   }
 }
 
-const GirlCard = () => {
+const GirlCard = (props) => {
+  const {snapshot, avatar, name, content, url} = props
   return (
     <div class='columns'>
       <div class='column is-half'>
         <figure class='image'>
-          <img src='/images/girls-section/Picture3.png' />
+          <img src={snapshot} />
         </figure>
       </div>
       <div class='column info'>
@@ -33,21 +36,22 @@ const GirlCard = () => {
           <div class='card-content'>
             <div class='media'>
               <div class='media-left'>
-                <figure class='image is-48x48'>
-                  <img src='http://bulma.io/images/placeholders/96x96.png' alt='Image' />
+                <figure class='image is-48x48 avatar'>
+                  <img src={avatar} alt='Image' />
                 </figure>
               </div>
               <div class='media-content'>
-                <p class='title is-4'>John Smith</p>
-                <p class='subtitle is-6'>@johnsmith</p>
+                <p class='title is-4'>{name}
+                  <a target='_blank' href={url} >
+                    <span class='icon'>
+                      <i class='fa fa-weibo' />
+                    </span>
+                  </a>
+                </p>
+                <div class='content'>
+                  {content}
+                </div>
               </div>
-            </div>
-            <div class='content'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-              <a>#css</a> <a>#responsive</a>
-              <br />
-              <small>11:09 PM - 1 Jan 2016</small>
             </div>
           </div>
         </div>
@@ -56,29 +60,26 @@ const GirlCard = () => {
   )
 }
 
-const WallopSlides = () => (
-  <div class='Wallop Wallop--slide' id='girlWallop'>
-    <div class='Wallop-list'>
-      <div class='Wallop-item'>
-        <WallopSlide url='http://pedroduarte.me/wallop/9d6648441fd2044ef03dc6b849b21eed.gif' />
-      </div>
-      <div class='Wallop-item'>
-        <WallopSlide url='http://pedroduarte.me/wallop/567275306c02924439ba68bcf790ba16.gif' />
-      </div>
-      <div class='Wallop-item'>
-        <WallopSlide url='http://pedroduarte.me/wallop/c086c7946c62720cfb4e32e0ad282b58.gif' />
-      </div>
-    </div>
-    <button class='Wallop-buttonPrevious button is-primary' />
-    <button class='Wallop-buttonNext button is-primary' />
-  </div>
-)
-
-const WallopSlide = (props) => {
-  let { url } = props
+const WallopSlides = () => {
   return (
-    // <img class='girl-img' src={url} alt='girl demo' />
-    <GirlCard />
+    <div class='Wallop Wallop--slide' id='girlWallop'>
+      <div class='Wallop-list'>
+        {
+          Array.from(girls, (girl) => (
+            <div class='Wallop-item' key={girl.id}>
+              <GirlCard
+                snapshot={girl.snapshot}
+                avatar={girl.avatar}
+                name={girl.name[language]}
+                content={girl.content[language]}
+                url={girl.url} />
+            </div>
+          ))
+        }
+      </div>
+      <button class='Wallop-buttonPrevious button is-primary' />
+      <button class='Wallop-buttonNext button is-primary' />
+    </div>
   )
 }
 

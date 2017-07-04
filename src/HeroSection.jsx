@@ -205,7 +205,7 @@ const HeroSection = (props) => {
   text = dict[lang]
   language = lang
   return (
-    <section class='hero is-primary'>
+    <section class='hero is-primary' id='hero-section'>
       <HeroHead />
       <HeroBody />
     </section>

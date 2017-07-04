@@ -1,6 +1,7 @@
 import React from 'react'
 import { Player, BigPlayButton } from 'video-react'
 import abouts from './about'
+import dict from './dict'
 
 var language
 
@@ -9,7 +10,8 @@ class AboutSection extends React.Component {
     let {lang} = this.props
     language = lang
     return (
-      <div class='section about-section container'>
+      <div class='section about-section container' id='about-section'>
+        <h1 class='title has-text-centered'>{dict[language]['nav-about']}</h1>
         <VideoPlayer />
         <AboutItems />
       </div>

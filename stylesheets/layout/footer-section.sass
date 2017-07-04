@@ -1,0 +1,42 @@
+.footer-section footer
+  color: #7c8081
+  padding: 50px 0
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  // box-shadow: 0 1px 3px rgba(0,0,0,0.3)
+  border-top: 1px solid #D7DBDD
+
+  svg
+    vertical-align: top
+    margin-right: 20px
+    width: 24px
+    height: 24px
+    &:hover,
+    &:focus
+      fill: red
+
+  img
+    @include widescreen
+      width: 100px
+      height: 100px
+    @include tablet
+      width: 50px
+      height: 50px
+    @include mobile
+      width: 50px
+      height: 50px
+    margin-top: 20px
+    margin-right: 20px
+  img#barcode
+    width: 200px
+    height: 200px
+
+  .contact-list
+    list-style: none
+    margin-right: 20px
+    li
+      margin: 10px
+      a
+        text-decoration: underline
