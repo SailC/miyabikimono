@@ -3109,6 +3109,47 @@ module.exports = DOMLazyTree;
 
 /***/ }),
 /* 24 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"zh": {
+		"apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
+		"google-play-url": "https://play.google.com/store/apps/details?id=com.busgazer.oba&_branch_match_id=399387738945819974",
+		"nav-home": "主页",
+		"nav-web": "Web App",
+		"nav-combo": "特色套餐",
+		"nav-booking": "网上预约",
+		"nav-faq": "预约流程和常见问题",
+		"nav-girls": "她们来过",
+		"nav-about": "关于我们",
+		"nav-social": "联系方式",
+		"download-iphone": "iPhone",
+		"download-android": "Andoid",
+		"hero-title-1": "江户和装工房",
+		"hero-subtitle-1": "和服是一次相遇",
+		"hero-title-2": "江户和装工房",
+		"hero-subtitle-2": "和服租赁 物美价廉",
+		"hero-title-3": "江户和装工房",
+		"hero-subtitle-3": "在线预约 简单方便",
+		"cloth-type": "衣服类型",
+		"belt": "腰带绑法",
+		"gender": "适用人群",
+		"event": "推荐场合",
+		"sort1": "受欢迎程度 (从高到低)",
+		"sort2": "价格 (从低到高)",
+		"sort3": "价格 (从高到低)",
+		"search-place-holder": "输入关键字检索",
+		"search": "搜索",
+		"answererName": "客服小雅",
+		"boss-name": "店长阿乐",
+		"boss-quote": "这两年当中，承蒙大家的错爱, 我们遇到各行各业不同的顾客，她们从事IT，空姐，摄影师等等能够与您们相遇都是我们前世的缘分, 感恩您们选择了我们，愿接下来的路，还能有您们的陪伴和支持，和新的旅程的开始",
+		"prev": "上一页",
+		"next": "下一页"
+	}
+};
+
+/***/ }),
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3124,7 +3165,7 @@ module.exports = DOMLazyTree;
 
 
 
-var EventPluginHub = __webpack_require__(25);
+var EventPluginHub = __webpack_require__(26);
 var EventPluginUtils = __webpack_require__(41);
 
 var accumulateInto = __webpack_require__(70);
@@ -3248,7 +3289,7 @@ module.exports = EventPropagators;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3528,7 +3569,7 @@ module.exports = EventPluginHub;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3592,7 +3633,7 @@ SyntheticEvent.augmentClass(SyntheticUIEvent, UIEventInterface);
 module.exports = SyntheticUIEvent;
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3643,7 +3684,7 @@ var ReactInstanceMap = {
 module.exports = ReactInstanceMap;
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3707,43 +3748,6 @@ var createPath = exports.createPath = function createPath(location) {
   if (hash && hash !== '#') path += hash.charAt(0) === '#' ? hash : '#' + hash;
 
   return path;
-};
-
-/***/ }),
-/* 29 */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"zh": {
-		"apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
-		"google-play-url": "https://play.google.com/store/apps/details?id=com.busgazer.oba&_branch_match_id=399387738945819974",
-		"nav-home": "主页",
-		"nav-web": "Web App",
-		"nav-combo": "特色套餐",
-		"nav-booking": "网上预约",
-		"nav-faq": "预约流程和常见问题",
-		"nav-girls": "她们来过",
-		"nav-about": "关于我们",
-		"nav-social": "联系方式",
-		"download-iphone": "iPhone",
-		"download-android": "Andoid",
-		"hero-title-1": "江户和装工房",
-		"hero-subtitle-1": "和服是一次相遇",
-		"hero-title-2": "江户和装工房",
-		"hero-subtitle-2": "和服租赁 物美价廉",
-		"hero-title-3": "江户和装工房",
-		"hero-subtitle-3": "在线预约 简单方便",
-		"cloth-type": "衣服类型",
-		"belt": "腰带绑法",
-		"gender": "适用人群",
-		"event": "推荐场合",
-		"sort1": "受欢迎程度 (从高到低)",
-		"sort2": "价格 (从低到高)",
-		"sort3": "价格 (从高到低)",
-		"search-place-holder": "输入关键字检索",
-		"search": "搜索",
-		"answererName": "客服小雅"
-	}
 };
 
 /***/ }),
@@ -4314,7 +4318,7 @@ module.exports = TransactionImpl;
 
 
 
-var SyntheticUIEvent = __webpack_require__(26);
+var SyntheticUIEvent = __webpack_require__(27);
 var ViewportMetrics = __webpack_require__(77);
 
 var getEventModifierState = __webpack_require__(45);
@@ -6243,7 +6247,7 @@ module.exports = KeyEscapeUtils;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(13);
-var ReactInstanceMap = __webpack_require__(27);
+var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(10);
 var ReactUpdates = __webpack_require__(14);
 
@@ -6915,7 +6919,7 @@ var _valueEqual = __webpack_require__(204);
 
 var _valueEqual2 = _interopRequireDefault(_valueEqual);
 
-var _PathUtils = __webpack_require__(28);
+var _PathUtils = __webpack_require__(29);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -10455,7 +10459,7 @@ var ReactDOMComponentTree = __webpack_require__(6);
 var ReactDOMContainerInfo = __webpack_require__(188);
 var ReactDOMFeatureFlags = __webpack_require__(189);
 var ReactFeatureFlags = __webpack_require__(74);
-var ReactInstanceMap = __webpack_require__(27);
+var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(10);
 var ReactMarkupChecksum = __webpack_require__(190);
 var ReactReconciler = __webpack_require__(22);
@@ -11333,7 +11337,7 @@ var _App = __webpack_require__(198);
 
 var _App2 = _interopRequireDefault(_App);
 
-var _Wallop = __webpack_require__(242);
+var _Wallop = __webpack_require__(244);
 
 var _Wallop2 = _interopRequireDefault(_Wallop);
 
@@ -11342,11 +11346,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /* global setInterval */
 
 _reactDom2.default.render(_react2.default.createElement(_App2.default, null), document.getElementById('app'));
-var wallopEl = document.querySelector('.Wallop');
-var slider = new _Wallop2.default(wallopEl);
+var heroWallop = document.querySelector('#heroWallop');
+var girlWallop = document.querySelector('#girlWallop');
+var heroSlider = new _Wallop2.default(heroWallop);
+var girlSlider = new _Wallop2.default(girlWallop);
 
 function goToNextSlide() {
-  slider.next();
+  heroSlider.next();
 }
 
 setInterval(goToNextSlide, 3000);
@@ -13610,7 +13616,7 @@ module.exports = ARIADOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(24);
+var EventPropagators = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
 var FallbackCompositionState = __webpack_require__(117);
 var SyntheticCompositionEvent = __webpack_require__(118);
@@ -14182,8 +14188,8 @@ module.exports = SyntheticInputEvent;
 
 
 
-var EventPluginHub = __webpack_require__(25);
-var EventPropagators = __webpack_require__(24);
+var EventPluginHub = __webpack_require__(26);
+var EventPropagators = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactUpdates = __webpack_require__(14);
@@ -15239,7 +15245,7 @@ module.exports = DefaultEventPluginOrder;
 
 
 
-var EventPropagators = __webpack_require__(24);
+var EventPropagators = __webpack_require__(25);
 var ReactDOMComponentTree = __webpack_require__(6);
 var SyntheticMouseEvent = __webpack_require__(34);
 
@@ -16041,7 +16047,7 @@ var DOMLazyTree = __webpack_require__(23);
 var DOMNamespaces = __webpack_require__(47);
 var DOMProperty = __webpack_require__(16);
 var DOMPropertyOperations = __webpack_require__(81);
-var EventPluginHub = __webpack_require__(25);
+var EventPluginHub = __webpack_require__(26);
 var EventPluginRegistry = __webpack_require__(32);
 var ReactBrowserEventEmitter = __webpack_require__(37);
 var ReactDOMComponentFlags = __webpack_require__(69);
@@ -17611,7 +17617,7 @@ module.exports = quoteAttributeValueForBrowser;
 
 
 
-var EventPluginHub = __webpack_require__(25);
+var EventPluginHub = __webpack_require__(26);
 
 function runEventQueueInBatch(events) {
   EventPluginHub.enqueueEvents(events);
@@ -18344,7 +18350,7 @@ module.exports = ReactDOMTextarea;
 var _prodInvariant = __webpack_require__(3);
 
 var ReactComponentEnvironment = __webpack_require__(50);
-var ReactInstanceMap = __webpack_require__(27);
+var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(10);
 
 var ReactCurrentOwner = __webpack_require__(13);
@@ -18959,7 +18965,7 @@ var React = __webpack_require__(20);
 var ReactComponentEnvironment = __webpack_require__(50);
 var ReactCurrentOwner = __webpack_require__(13);
 var ReactErrorUtils = __webpack_require__(42);
-var ReactInstanceMap = __webpack_require__(27);
+var ReactInstanceMap = __webpack_require__(28);
 var ReactInstrumentation = __webpack_require__(10);
 var ReactNodeTypes = __webpack_require__(85);
 var ReactReconciler = __webpack_require__(22);
@@ -21055,7 +21061,7 @@ module.exports = getUnboundedScrollPosition;
 
 
 var DOMProperty = __webpack_require__(16);
-var EventPluginHub = __webpack_require__(25);
+var EventPluginHub = __webpack_require__(26);
 var EventPluginUtils = __webpack_require__(41);
 var ReactComponentEnvironment = __webpack_require__(50);
 var ReactEmptyComponent = __webpack_require__(86);
@@ -21985,7 +21991,7 @@ module.exports = SVGDOMPropertyConfig;
 
 
 
-var EventPropagators = __webpack_require__(24);
+var EventPropagators = __webpack_require__(25);
 var ExecutionEnvironment = __webpack_require__(7);
 var ReactDOMComponentTree = __webpack_require__(6);
 var ReactInputSelection = __webpack_require__(90);
@@ -22182,7 +22188,7 @@ module.exports = SelectEventPlugin;
 var _prodInvariant = __webpack_require__(3);
 
 var EventListener = __webpack_require__(89);
-var EventPropagators = __webpack_require__(24);
+var EventPropagators = __webpack_require__(25);
 var ReactDOMComponentTree = __webpack_require__(6);
 var SyntheticAnimationEvent = __webpack_require__(179);
 var SyntheticClipboardEvent = __webpack_require__(180);
@@ -22193,7 +22199,7 @@ var SyntheticMouseEvent = __webpack_require__(34);
 var SyntheticDragEvent = __webpack_require__(184);
 var SyntheticTouchEvent = __webpack_require__(185);
 var SyntheticTransitionEvent = __webpack_require__(186);
-var SyntheticUIEvent = __webpack_require__(26);
+var SyntheticUIEvent = __webpack_require__(27);
 var SyntheticWheelEvent = __webpack_require__(187);
 
 var emptyFunction = __webpack_require__(9);
@@ -22497,7 +22503,7 @@ module.exports = SyntheticClipboardEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(26);
+var SyntheticUIEvent = __webpack_require__(27);
 
 /**
  * @interface FocusEvent
@@ -22538,7 +22544,7 @@ module.exports = SyntheticFocusEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(26);
+var SyntheticUIEvent = __webpack_require__(27);
 
 var getEventCharCode = __webpack_require__(56);
 var getEventKey = __webpack_require__(183);
@@ -22785,7 +22791,7 @@ module.exports = SyntheticDragEvent;
 
 
 
-var SyntheticUIEvent = __webpack_require__(26);
+var SyntheticUIEvent = __webpack_require__(27);
 
 var getEventModifierState = __webpack_require__(45);
 
@@ -23125,7 +23131,7 @@ var _prodInvariant = __webpack_require__(3);
 
 var ReactCurrentOwner = __webpack_require__(13);
 var ReactDOMComponentTree = __webpack_require__(6);
-var ReactInstanceMap = __webpack_require__(27);
+var ReactInstanceMap = __webpack_require__(28);
 
 var getHostComponentFromComposite = __webpack_require__(93);
 var invariant = __webpack_require__(1);
@@ -23702,7 +23708,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(57);
 
-var _PathUtils = __webpack_require__(28);
+var _PathUtils = __webpack_require__(29);
 
 var _createTransitionManager = __webpack_require__(58);
 
@@ -24191,7 +24197,7 @@ var _warning = __webpack_require__(19);
 
 var _warning2 = _interopRequireDefault(_warning);
 
-var _PathUtils = __webpack_require__(28);
+var _PathUtils = __webpack_require__(29);
 
 var _LocationUtils = __webpack_require__(57);
 
@@ -24974,7 +24980,7 @@ module.exports = Array.isArray || function (arr) {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_PathUtils__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_PathUtils__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_history_PathUtils___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_history_PathUtils__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__Router__ = __webpack_require__(59);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -25407,7 +25413,7 @@ var _invariant2 = _interopRequireDefault(_invariant);
 
 var _LocationUtils = __webpack_require__(57);
 
-var _PathUtils = __webpack_require__(28);
+var _PathUtils = __webpack_require__(29);
 
 var _createTransitionManager = __webpack_require__(58);
 
@@ -25903,6 +25909,10 @@ var _QaSection = __webpack_require__(237);
 
 var _QaSection2 = _interopRequireDefault(_QaSection);
 
+var _GirlsSection = __webpack_require__(242);
+
+var _GirlsSection2 = _interopRequireDefault(_GirlsSection);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -25948,7 +25958,8 @@ var HomePage = function (_React$Component) {
         { className: 'home-page' },
         _react2.default.createElement(_HeroSection2.default, { lang: this.state.lang, onLangChange: this.onLangChange.bind(this) }),
         _react2.default.createElement(_ProductSection2.default, { lang: this.state.lang }),
-        _react2.default.createElement(_QaSection2.default, { lang: this.state.lang })
+        _react2.default.createElement(_QaSection2.default, { lang: this.state.lang }),
+        _react2.default.createElement(_GirlsSection2.default, { lang: this.state.lang })
       );
     }
   }]);
@@ -25979,7 +25990,7 @@ var _classnames = __webpack_require__(61);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _dict = __webpack_require__(29);
+var _dict = __webpack_require__(24);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -26266,7 +26277,7 @@ var Headlines = function Headlines(props) {
 var WallopSlides = function WallopSlides() {
   return _react2.default.createElement(
     'div',
-    { className: 'Wallop Wallop--fade' },
+    { className: 'Wallop Wallop--fade', id: 'heroWallop' },
     _react2.default.createElement(
       'div',
       { className: 'Wallop-list' },
@@ -26362,7 +26373,7 @@ var _cards = __webpack_require__(235);
 
 var _cards2 = _interopRequireDefault(_cards);
 
-var _dict = __webpack_require__(29);
+var _dict = __webpack_require__(24);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -26503,7 +26514,7 @@ var ProductSection = function (_React$Component) {
       var pageNum = Math.floor((this.state.cards.length - 1) / cardsPerPage) + 1;
       return _react2.default.createElement(
         'section',
-        { className: 'product-section section' },
+        { className: 'product-section section container' },
         _react2.default.createElement(
           'div',
           { className: 'columns' },
@@ -26759,7 +26770,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(29);
+var _dict = __webpack_require__(24);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -26900,7 +26911,7 @@ var _react = __webpack_require__(4);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(29);
+var _dict = __webpack_require__(24);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -37520,7 +37531,7 @@ var _step = __webpack_require__(241);
 
 var _step2 = _interopRequireDefault(_step);
 
-var _dict = __webpack_require__(29);
+var _dict = __webpack_require__(24);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -37551,7 +37562,7 @@ var QaSection = function (_React$Component) {
       language = lang;
       return _react2.default.createElement(
         'div',
-        { className: 'section qa-section' },
+        { className: 'section qa-section container' },
         _react2.default.createElement(
           'div',
           { className: 'tile is-ancestor' },
@@ -38107,6 +38118,289 @@ module.exports = [
 
 /***/ }),
 /* 242 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _intro = __webpack_require__(243);
+
+var _intro2 = _interopRequireDefault(_intro);
+
+var _dict = __webpack_require__(24);
+
+var _dict2 = _interopRequireDefault(_dict);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var language;
+
+var GirlsSection = function (_React$Component) {
+  _inherits(GirlsSection, _React$Component);
+
+  function GirlsSection() {
+    _classCallCheck(this, GirlsSection);
+
+    return _possibleConstructorReturn(this, (GirlsSection.__proto__ || Object.getPrototypeOf(GirlsSection)).apply(this, arguments));
+  }
+
+  _createClass(GirlsSection, [{
+    key: 'render',
+    value: function render() {
+      var lang = this.props.lang;
+
+      language = lang;
+      return _react2.default.createElement(
+        'div',
+        { className: 'section girls-section container' },
+        _react2.default.createElement(_intro2.default, {
+          bossName: _dict2.default[language]['boss-name'],
+          bossQuote: _dict2.default[language]['boss-quote']
+        }),
+        _react2.default.createElement(WallopSlides, null)
+      );
+    }
+  }]);
+
+  return GirlsSection;
+}(_react2.default.Component);
+
+var GirlCard = function GirlCard() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'columns' },
+    _react2.default.createElement(
+      'div',
+      { className: 'column is-half' },
+      _react2.default.createElement(
+        'figure',
+        { className: 'image' },
+        _react2.default.createElement('img', { src: '/images/girls-section/Picture3.png' })
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      { className: 'column info' },
+      _react2.default.createElement(
+        'div',
+        { className: 'card' },
+        _react2.default.createElement(
+          'div',
+          { className: 'card-content' },
+          _react2.default.createElement(
+            'div',
+            { className: 'media' },
+            _react2.default.createElement(
+              'div',
+              { className: 'media-left' },
+              _react2.default.createElement(
+                'figure',
+                { className: 'image is-48x48' },
+                _react2.default.createElement('img', { src: 'http://bulma.io/images/placeholders/96x96.png', alt: 'Image' })
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'media-content' },
+              _react2.default.createElement(
+                'p',
+                { className: 'title is-4' },
+                'John Smith'
+              ),
+              _react2.default.createElement(
+                'p',
+                { className: 'subtitle is-6' },
+                '@johnsmith'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'content' },
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. ',
+            _react2.default.createElement(
+              'a',
+              null,
+              '@bulmaio'
+            ),
+            '.',
+            _react2.default.createElement(
+              'a',
+              null,
+              '#css'
+            ),
+            ' ',
+            _react2.default.createElement(
+              'a',
+              null,
+              '#responsive'
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
+              'small',
+              null,
+              '11:09 PM - 1 Jan 2016'
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+var WallopSlides = function WallopSlides() {
+  return _react2.default.createElement(
+    'div',
+    { className: 'Wallop Wallop--slide', id: 'girlWallop' },
+    _react2.default.createElement(
+      'div',
+      { className: 'Wallop-list' },
+      _react2.default.createElement(
+        'div',
+        { className: 'Wallop-item' },
+        _react2.default.createElement(WallopSlide, { url: 'http://pedroduarte.me/wallop/9d6648441fd2044ef03dc6b849b21eed.gif' })
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'Wallop-item' },
+        _react2.default.createElement(WallopSlide, { url: 'http://pedroduarte.me/wallop/567275306c02924439ba68bcf790ba16.gif' })
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'Wallop-item' },
+        _react2.default.createElement(WallopSlide, { url: 'http://pedroduarte.me/wallop/c086c7946c62720cfb4e32e0ad282b58.gif' })
+      )
+    ),
+    _react2.default.createElement('button', { className: 'Wallop-buttonPrevious button is-primary' }),
+    _react2.default.createElement('button', { className: 'Wallop-buttonNext button is-primary' })
+  );
+};
+
+var WallopSlide = function WallopSlide(props) {
+  var url = props.url;
+
+  return (
+    // <img class='girl-img' src={url} alt='girl demo' />
+    _react2.default.createElement(GirlCard, null)
+  );
+};
+
+exports.default = GirlsSection;
+
+/***/ }),
+/* 243 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Intro = function Intro(props) {
+  var bossName = props.bossName,
+      bossQuote = props.bossQuote;
+
+  return _react2.default.createElement(
+    'div',
+    { className: 'box' },
+    _react2.default.createElement(
+      'article',
+      { className: 'media' },
+      _react2.default.createElement(
+        'div',
+        { className: 'media-left' },
+        _react2.default.createElement(
+          'figure',
+          { className: 'image is-64x64' },
+          _react2.default.createElement('img', { src: '/images/faq-section/service_miyabi.png', alt: 'Image' })
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'media-content' },
+        _react2.default.createElement(
+          'div',
+          { className: 'content' },
+          _react2.default.createElement(
+            'p',
+            null,
+            _react2.default.createElement(
+              'strong',
+              null,
+              bossName
+            ),
+            _react2.default.createElement('br', null),
+            bossQuote
+          )
+        ),
+        _react2.default.createElement(
+          'nav',
+          { className: 'level is-mobile' },
+          _react2.default.createElement(
+            'div',
+            { className: 'level-left' },
+            _react2.default.createElement(
+              'a',
+              { className: 'level-item', target: '_blank', href: 'http://weibo.com/mymiyabi' },
+              _react2.default.createElement(
+                'span',
+                { className: 'icon is-small' },
+                _react2.default.createElement('i', { className: 'fa fa-weibo' })
+              )
+            ),
+            _react2.default.createElement(
+              'a',
+              { className: 'level-item', href: '#footer' },
+              _react2.default.createElement(
+                'span',
+                { className: 'icon is-small' },
+                _react2.default.createElement('i', { className: 'fa fa-weixin' })
+              )
+            ),
+            _react2.default.createElement(
+              'a',
+              { className: 'level-item', target: '_blank', href: 'https://www.facebook.com/miyabinokimono' },
+              _react2.default.createElement(
+                'span',
+                { className: 'icon is-small' },
+                _react2.default.createElement('i', { className: 'fa fa-facebook-official' })
+              )
+            )
+          )
+        )
+      )
+    )
+  );
+};
+
+exports.default = Intro;
+
+/***/ }),
+/* 244 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;/**
