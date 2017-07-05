@@ -12,7 +12,7 @@ const ShowCards = (props) => {
   )
   let showCards = cards.slice(beginCard, endCard)
   showCards = showCards.map((card) => (
-    <Card key={card[lang].id} card={card[lang]} />
+    <Card key={card.id} card={card} lang={lang} />
   ))
   return <div class='product-list'>{showCards}</div>
 }

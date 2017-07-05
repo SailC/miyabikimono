@@ -1,7 +1,11 @@
 import React from 'react'
+import dict from '../dict'
+
+var language
 
 const Card = (props) => {
-  const {card} = props
+  const {lang, card} = props
+  language = lang
   const BASE_DIR = '/images/service-section'
   return (
     <div class='card'>
@@ -12,22 +16,35 @@ const Card = (props) => {
       </div>
       <div class='card-content'>
         <div class='media'>
-          <div class='media-left'>
-            <figure class='image is-3by2'>
-              <img src='http://bulma.io/images/placeholders/96x96.png' alt='Image' />
-            </figure>
-          </div>
           <div class='media-content'>
-            <p class='title is-4'>{card.id}</p>
-            <p class='subtitle is-6'>@johnsmith</p>
+            <div class='title is-4'>
+              {card[language].name}
+              <span class='item-price button is-danger'>
+                {'￥' + card.price.toString()}
+              </span>
+            </div>
           </div>
         </div>
 
         <div class='content'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-          <a>#css</a> <a>#responsive</a>
-          <small>11:09 PM - 1 Jan 2016</small>
+          <div class='item-desc'>
+            <div>
+              <span class='item-feature button is-info'> {dict[language]['combo-desc']} </span>
+              <span> {card[language].desc} </span>
+            </div>
+          </div>
+          <div class='item-desc'>
+            <p>
+              <span class='item-feature button is-primary'> {dict[language]['combo-acc']} </span>
+              {card[language].acc}
+            </p>
+          </div>
+          <div class='item-desc'>
+            <p>
+              <span class='item-feature button is-warning'> {dict[language]['combo-hair']} </span>
+              {card[language].hair}
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -1429,7 +1429,7 @@ var _prodInvariant = __webpack_require__(6),
     _assign = __webpack_require__(7);
 
 var CallbackQueue = __webpack_require__(80);
-var PooledClass = __webpack_require__(20);
+var PooledClass = __webpack_require__(21);
 var ReactFeatureFlags = __webpack_require__(81);
 var ReactReconciler = __webpack_require__(25);
 var Transaction = __webpack_require__(36);
@@ -1801,7 +1801,7 @@ var mediaProperties = exports.mediaProperties = ['error', 'src', 'srcObject', 'c
 
 var _assign = __webpack_require__(7);
 
-var PooledClass = __webpack_require__(20);
+var PooledClass = __webpack_require__(21);
 
 var emptyFunction = __webpack_require__(11);
 var warning = __webpack_require__(4);
@@ -2271,6 +2271,50 @@ module.exports = DOMProperty;
 
 /***/ }),
 /* 19 */
+/***/ (function(module, exports) {
+
+module.exports = {
+	"zh": {
+		"apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
+		"google-play-url": "https://play.google.com/store/apps/details?id=com.busgazer.oba&_branch_match_id=399387738945819974",
+		"nav-home": "主页",
+		"nav-web": "Web App",
+		"nav-combo": "特色套餐",
+		"nav-booking": "网上预约",
+		"nav-faq": "预约流程和常见问题",
+		"nav-girls": "她们来过",
+		"nav-about": "关于我们",
+		"nav-social": "联系方式",
+		"download-iphone": "iPhone",
+		"download-android": "Andoid",
+		"hero-title-1": "江户和装工房",
+		"hero-subtitle-1": "和服是一次相遇",
+		"hero-title-2": "江户和装工房",
+		"hero-subtitle-2": "和服租赁 物美价廉",
+		"hero-title-3": "江户和装工房",
+		"hero-subtitle-3": "在线预约 简单方便",
+		"cloth-type": "衣服类型",
+		"belt": "腰带绑法",
+		"gender": "适用人群",
+		"event": "推荐场合",
+		"sort1": "受欢迎程度 (从高到低)",
+		"sort2": "价格 (从低到高)",
+		"sort3": "价格 (从高到低)",
+		"search-place-holder": "输入关键字检索",
+		"search": "搜索",
+		"answererName": "客服小雅",
+		"boss-name": "店长阿乐",
+		"boss-quote": "这两年当中，承蒙大家的错爱, 我们遇到各行各业不同的顾客，她们从事IT，空姐，摄影师等等能够与您们相遇都是我们前世的缘分, 感恩您们选择了我们，愿接下来的路，还能有您们的陪伴和支持，和新的旅程的开始",
+		"prev": "上一页",
+		"next": "下一页",
+		"combo-desc": "套餐特点",
+		"combo-acc": "包含物件",
+		"combo-hair": "发型设计"
+	}
+};
+
+/***/ }),
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2617,7 +2661,7 @@ module.exports = ReactElement;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2735,7 +2779,7 @@ module.exports = PooledClass;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2803,47 +2847,6 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 22 */
-/***/ (function(module, exports) {
-
-module.exports = {
-	"zh": {
-		"apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
-		"google-play-url": "https://play.google.com/store/apps/details?id=com.busgazer.oba&_branch_match_id=399387738945819974",
-		"nav-home": "主页",
-		"nav-web": "Web App",
-		"nav-combo": "特色套餐",
-		"nav-booking": "网上预约",
-		"nav-faq": "预约流程和常见问题",
-		"nav-girls": "她们来过",
-		"nav-about": "关于我们",
-		"nav-social": "联系方式",
-		"download-iphone": "iPhone",
-		"download-android": "Andoid",
-		"hero-title-1": "江户和装工房",
-		"hero-subtitle-1": "和服是一次相遇",
-		"hero-title-2": "江户和装工房",
-		"hero-subtitle-2": "和服租赁 物美价廉",
-		"hero-title-3": "江户和装工房",
-		"hero-subtitle-3": "在线预约 简单方便",
-		"cloth-type": "衣服类型",
-		"belt": "腰带绑法",
-		"gender": "适用人群",
-		"event": "推荐场合",
-		"sort1": "受欢迎程度 (从高到低)",
-		"sort2": "价格 (从低到高)",
-		"sort3": "价格 (从高到低)",
-		"search-place-holder": "输入关键字检索",
-		"search": "搜索",
-		"answererName": "客服小雅",
-		"boss-name": "店长阿乐",
-		"boss-quote": "这两年当中，承蒙大家的错爱, 我们遇到各行各业不同的顾客，她们从事IT，空姐，摄影师等等能够与您们相遇都是我们前世的缘分, 感恩您们选择了我们，愿接下来的路，还能有您们的陪伴和支持，和新的旅程的开始",
-		"prev": "上一页",
-		"next": "下一页"
-	}
-};
-
-/***/ }),
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -2865,7 +2868,7 @@ var _assign = __webpack_require__(7);
 var ReactBaseClasses = __webpack_require__(69);
 var ReactChildren = __webpack_require__(132);
 var ReactDOMFactories = __webpack_require__(136);
-var ReactElement = __webpack_require__(19);
+var ReactElement = __webpack_require__(20);
 var ReactPropTypes = __webpack_require__(140);
 var ReactVersion = __webpack_require__(142);
 
@@ -7174,7 +7177,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 
 exports.__esModule = true;
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(22);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -7261,7 +7264,7 @@ exports.default = createTransitionManager;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -8544,7 +8547,7 @@ module.exports = getIteratorFn;
 
 var ReactCurrentOwner = __webpack_require__(14);
 var ReactComponentTreeHook = __webpack_require__(10);
-var ReactElement = __webpack_require__(19);
+var ReactElement = __webpack_require__(20);
 
 var checkReactTypeSpec = __webpack_require__(137);
 
@@ -9510,7 +9513,7 @@ var _prodInvariant = __webpack_require__(6);
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var PooledClass = __webpack_require__(20);
+var PooledClass = __webpack_require__(21);
 
 var invariant = __webpack_require__(2);
 
@@ -11950,7 +11953,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -16161,7 +16164,7 @@ setInterval(goToNextSlide, 3000);
 
 
 var PooledClass = __webpack_require__(133);
-var ReactElement = __webpack_require__(19);
+var ReactElement = __webpack_require__(20);
 
 var emptyFunction = __webpack_require__(11);
 var traverseAllChildren = __webpack_require__(134);
@@ -16720,7 +16723,7 @@ module.exports = KeyEscapeUtils;
 
 
 
-var ReactElement = __webpack_require__(19);
+var ReactElement = __webpack_require__(20);
 
 /**
  * Create a factory that creates HTML tag elements.
@@ -17041,7 +17044,7 @@ module.exports = ReactPropTypesSecret;
 
 
 
-var _require = __webpack_require__(19),
+var _require = __webpack_require__(20),
     isValidElement = _require.isValidElement;
 
 var factory = __webpack_require__(74);
@@ -17156,7 +17159,7 @@ module.exports = '15.6.1';
 var _require = __webpack_require__(69),
     Component = _require.Component;
 
-var _require2 = __webpack_require__(19),
+var _require2 = __webpack_require__(20),
     isValidElement = _require2.isValidElement;
 
 var ReactNoopUpdateQueue = __webpack_require__(70);
@@ -18062,7 +18065,7 @@ module.exports = factory;
 
 var _prodInvariant = __webpack_require__(24);
 
-var ReactElement = __webpack_require__(19);
+var ReactElement = __webpack_require__(20);
 
 var invariant = __webpack_require__(2);
 
@@ -18783,7 +18786,7 @@ module.exports = BeforeInputEventPlugin;
 
 var _assign = __webpack_require__(7);
 
-var PooledClass = __webpack_require__(20);
+var PooledClass = __webpack_require__(21);
 
 var getTextContentAccessor = __webpack_require__(79);
 
@@ -24945,7 +24948,7 @@ module.exports = flattenChildren;
 
 var _assign = __webpack_require__(7);
 
-var PooledClass = __webpack_require__(20);
+var PooledClass = __webpack_require__(21);
 var Transaction = __webpack_require__(36);
 var ReactInstrumentation = __webpack_require__(12);
 var ReactServerUpdateQueue = __webpack_require__(195);
@@ -25636,7 +25639,7 @@ var _assign = __webpack_require__(7);
 
 var EventListener = __webpack_require__(96);
 var ExecutionEnvironment = __webpack_require__(9);
-var PooledClass = __webpack_require__(20);
+var PooledClass = __webpack_require__(21);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactUpdates = __webpack_require__(15);
 
@@ -25878,7 +25881,7 @@ module.exports = ReactInjection;
 var _assign = __webpack_require__(7);
 
 var CallbackQueue = __webpack_require__(80);
-var PooledClass = __webpack_require__(20);
+var PooledClass = __webpack_require__(21);
 var ReactBrowserEventEmitter = __webpack_require__(40);
 var ReactInputSelection = __webpack_require__(97);
 var ReactInstrumentation = __webpack_require__(12);
@@ -28474,7 +28477,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(22);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -28969,7 +28972,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(22);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -29930,7 +29933,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(3);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(21);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(22);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__matchPath__ = __webpack_require__(63);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -30179,7 +30182,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(21);
+var _warning = __webpack_require__(22);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -30776,7 +30779,7 @@ var _classnames = __webpack_require__(5);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _dict = __webpack_require__(22);
+var _dict = __webpack_require__(19);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -31159,7 +31162,7 @@ var _cards = __webpack_require__(268);
 
 var _cards2 = _interopRequireDefault(_cards);
 
-var _dict = __webpack_require__(22);
+var _dict = __webpack_require__(19);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -31214,15 +31217,15 @@ var ProductSection = function (_React$Component) {
       var sortFunc = void 0;
       if (event.target.value === text['sort3']) {
         sortFunc = function sortFunc(a, b) {
-          return b.price - a.price;
+          return parseInt(b.price) - parseInt(a.price);
         };
       } else if (event.target.value === text['sort2']) {
         sortFunc = function sortFunc(a, b) {
-          return a.price - b.price;
+          return parseInt(a.price) - parseInt(b.price);
         };
       } else {
         sortFunc = function sortFunc(a, b) {
-          return b.popularity - a.popularity;
+          return parseInt(b.popularity) - parseInt(a.popularity);
         };
       }
       var newCards = Array.from(this.state.cards);
@@ -31375,7 +31378,7 @@ var ShowCards = function ShowCards(props) {
   var endCard = (pageIndex + 1) * cardsPerPage >= showCardNum ? showCardNum : (pageIndex + 1) * cardsPerPage;
   var showCards = cards.slice(beginCard, endCard);
   showCards = showCards.map(function (card) {
-    return _react2.default.createElement(_Card2.default, { key: card[lang].id, card: card[lang] });
+    return _react2.default.createElement(_Card2.default, { key: card.id, card: card, lang: lang });
   });
   return _react2.default.createElement(
     'div',
@@ -31401,11 +31404,19 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _dict = __webpack_require__(19);
+
+var _dict2 = _interopRequireDefault(_dict);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var Card = function Card(props) {
-  var card = props.card;
+var language;
 
+var Card = function Card(props) {
+  var lang = props.lang,
+      card = props.card;
+
+  language = lang;
   var BASE_DIR = '/images/service-section';
   return _react2.default.createElement(
     'div',
@@ -31427,53 +31438,75 @@ var Card = function Card(props) {
         { className: 'media' },
         _react2.default.createElement(
           'div',
-          { className: 'media-left' },
-          _react2.default.createElement(
-            'figure',
-            { className: 'image is-3by2' },
-            _react2.default.createElement('img', { src: 'http://bulma.io/images/placeholders/96x96.png', alt: 'Image' })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
           { className: 'media-content' },
           _react2.default.createElement(
-            'p',
+            'div',
             { className: 'title is-4' },
-            card.id
-          ),
-          _react2.default.createElement(
-            'p',
-            { className: 'subtitle is-6' },
-            '@johnsmith'
+            card[language].name,
+            _react2.default.createElement(
+              'span',
+              { className: 'item-price button is-danger' },
+              '￥' + card.price.toString()
+            )
           )
         )
       ),
       _react2.default.createElement(
         'div',
         { className: 'content' },
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris. ',
         _react2.default.createElement(
-          'a',
-          null,
-          '@bulmaio'
+          'div',
+          { className: 'item-desc' },
+          _react2.default.createElement(
+            'div',
+            null,
+            _react2.default.createElement(
+              'span',
+              { className: 'item-feature button is-info' },
+              ' ',
+              _dict2.default[language]['combo-desc'],
+              ' '
+            ),
+            _react2.default.createElement(
+              'span',
+              null,
+              ' ',
+              card[language].desc,
+              ' '
+            )
+          )
         ),
-        '.',
         _react2.default.createElement(
-          'a',
-          null,
-          '#css'
+          'div',
+          { className: 'item-desc' },
+          _react2.default.createElement(
+            'p',
+            null,
+            _react2.default.createElement(
+              'span',
+              { className: 'item-feature button is-primary' },
+              ' ',
+              _dict2.default[language]['combo-acc'],
+              ' '
+            ),
+            card[language].acc
+          )
         ),
-        ' ',
         _react2.default.createElement(
-          'a',
-          null,
-          '#responsive'
-        ),
-        _react2.default.createElement(
-          'small',
-          null,
-          '11:09 PM - 1 Jan 2016'
+          'div',
+          { className: 'item-desc' },
+          _react2.default.createElement(
+            'p',
+            null,
+            _react2.default.createElement(
+              'span',
+              { className: 'item-feature button is-warning' },
+              ' ',
+              _dict2.default[language]['combo-hair'],
+              ' '
+            ),
+            card[language].hair
+          )
         )
       )
     )
@@ -31561,7 +31594,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(22);
+var _dict = __webpack_require__(19);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -31702,7 +31735,7 @@ var _react = __webpack_require__(1);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(22);
+var _dict = __webpack_require__(19);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -31770,13 +31803,13 @@ exports.default = Sort;
 
 module.exports = [
 	{
+		"id": "1",
+		"url": "hualinvshi.jpg",
+		"baseurl": "/images/combo-section/hualinvshi",
+		"price": 5000,
+		"popularity": 13,
 		"zh": {
-			"id": "1",
 			"name": "女士华丽和服",
-			"url": "hualinvshi.jpg",
-			"baseurl": "/images/combo-section/hualinvshi",
-			"price": 5000,
-			"popularity": 13,
 			"desc": "选择性最多的套餐，基本上各种花色都有，淡雅的，小家碧玉的，华丽的，一般而言，会有一款是您喜欢的风格的这是江户和装工房--雅的人气套餐。在有限的预算内，这个套餐是性价比比较高的一款",
 			"clothNum": "200件左右",
 			"acc": "半幅带，草履，袜子，包包，和服，和服内衣，襦袢，装饰带",
@@ -31789,13 +31822,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "2",
+		"url": "gaojihefu.jpg",
+		"baseurl": "/images/combo-section/gaojihefu",
+		"price": 10000,
+		"popularity": 14,
 		"zh": {
-			"id": "2",
 			"name": "女士高级和服",
-			"url": "gaojihefu.jpg",
-			"baseurl": "/images/combo-section/gaojihefu",
-			"price": 10000,
-			"popularity": 14,
 			"desc": "和服质地上乘，用料高于华丽款，在腰带部分有明显的分别，有精致美丽的装饰绳，和服的选择性很多，，让你既可以艳丽又可以典雅，性价比高，肯定有一款是您喜欢的和服。店长推荐哦",
 			"clothNum": "100件左右",
 			"acc": "半幅带，草履，袜子，包包，和服，和服内衣，襦袢，精致装饰带，精致发饰",
@@ -31808,13 +31841,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "3",
+		"url": "chengren.jpg",
+		"baseurl": "/images/combo-section/chengren",
+		"price": 38000,
+		"popularity": 11,
 		"zh": {
-			"id": "3",
 			"name": "成人礼振袖",
-			"url": "chengren.jpg",
-			"baseurl": "/images/combo-section/chengren",
-			"price": 38000,
-			"popularity": 11,
 			"desc": "日本的女性的成年礼是在20岁，在日本的成人礼，都是在1月，那天满20岁的人都是穿上华丽的振袖的和服去参加自己所在地区的成人礼，非常的华丽毕竟一生中只穿一次。振袖是日本未婚女士最高规格的和服",
 			"clothNum": "50件以上",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，带扬，精致装饰带，精致发饰",
@@ -31827,13 +31860,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "4",
+		"url": "gaojichengren.jpg",
+		"baseurl": "/images/combo-section/gaojichengren",
+		"price": 72000,
+		"popularity": 5,
 		"zh": {
-			"id": "4",
 			"name": "豪华成人礼振袖",
-			"url": "gaojichengren.jpg",
-			"baseurl": "/images/combo-section/gaojichengren",
-			"price": 72000,
-			"popularity": 5,
 			"desc": "最上乘的正娟材质，烫金图案，手工刺绣，华丽非凡，给你古代皇室的顶级体验，在日本对于成人礼重视的程度，看看振袖和服就知道了，很多父母都会不惜成本去帮儿女参加一场自己是主角的成人礼",
 			"clothNum": "20件以上",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，半衿，带扬，精致装饰带，精致发饰",
@@ -31846,13 +31879,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "5",
+		"url": "mingpaihefu.jpg",
+		"baseurl": "/images/combo-section/mingpaihefu",
+		"price": 20000,
+		"popularity": 10,
 		"zh": {
-			"id": "5",
 			"name": "名牌和服",
-			"url": "mingpaihefu.jpg",
-			"baseurl": "/images/combo-section/mingpaihefu",
-			"price": 20000,
-			"popularity": 10,
 			"desc": "想体验更加豪华奢侈的和服？我们为了想要变得更加华贵的客人们准备了这个名牌和服套餐，用料更精细，所有物品都是精心挑选的，特别的准备只为特别的你，值得您尝试",
 			"clothNum": "20件",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，精致发饰 ，带扬，带缔",
@@ -31865,13 +31898,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "6",
+		"url": "kua.jpg",
+		"baseurl": "/images/combo-section/kua",
+		"price": 20000,
+		"popularity": 9,
 		"zh": {
-			"id": "6",
 			"name": "毕业典礼用袴",
-			"url": "kua.jpg",
-			"baseurl": "/images/combo-section/kua",
-			"price": 20000,
-			"popularity": 9,
 			"desc": "明治时代学习院女学部长、华族女校校长、女子礼法家下田歌子把男子马乘袴改造后的海老茶袴作为女子校服。袴也多作为女子毕业着作为毕业典礼的礼服。鞋子可以是正装草履，也可以是靴子，配靴子是大正时期留下的穿法",
 			"clothNum": "20件",
 			"acc": "半幅带，草履，刺绣袜子，包包，和服，和服内衣",
@@ -31883,13 +31916,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "7",
+		"url": "fangwen.jpg",
+		"baseurl": "/images/combo-section/fangwen",
+		"price": 20000,
+		"popularity": 8,
 		"zh": {
-			"id": "7",
 			"name": "访问者",
-			"url": "fangwen.jpg",
-			"baseurl": "/images/combo-section/fangwen",
-			"price": 20000,
-			"popularity": 8,
 			"desc": "访问着并没有已婚未婚的分别。访问着是整体染上图案的和服，它从下摆，左前袖，左肩到领子展开后是一幅图画，特徵是称为「絵羽(えば)」的这种形式。适合访问着的有：友人婚宴、派对、陪同入学典礼、茶会、同学会、相亲等社交场合",
 			"clothNum": "20件",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，精致装饰带，精致发饰",
@@ -31901,13 +31934,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "8",
+		"url": "nvshiyouhui.jpg",
+		"baseurl": "/images/combo-section/hualinvshi",
+		"price": 3000,
+		"popularity": 12,
 		"zh": {
-			"id": "8",
 			"name": "女士优惠和服",
-			"url": "nvshiyouhui.jpg",
-			"baseurl": "/images/combo-section/hualinvshi",
-			"price": 3000,
-			"popularity": 12,
 			"desc": "原件5000日元，每天从5000日元中抽选20件作为优惠套餐，非常的实惠。和服较为花色朴素，每天限定，先到先得，不支持事先预约以及预留，适合年长女士的花色居多",
 			"clothNum": "20件",
 			"acc": "半幅带，草履，袜子，包包，和服，和服内衣，襦袢，装饰带",
@@ -31920,13 +31953,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "9",
+		"url": "nanshihefu.jpg",
+		"baseurl": "/images/combo-section/nanshihefu",
+		"price": 5000,
+		"popularity": 1,
 		"zh": {
-			"id": "9",
 			"name": "男士和服",
-			"url": "nanshihefu.jpg",
-			"baseurl": "/images/combo-section/nanshihefu",
-			"price": 5000,
-			"popularity": 1,
 			"desc": "和服的美丽可不仅仅只属于爱美的女生，男生也可以感受男性和服的那种庄严感，江户和装工房—雅为男士们准备了50套以上服饰用于选择。虽然没有女士那么多的选择，花色也没有那么鲜艳，但是男人简单就好",
 			"clothNum": "50件以上",
 			"acc": "腰带，草履，袜子，包包，和服，和服内衣，襦袢",
@@ -31938,13 +31971,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "10",
+		"url": "ertonghefu.jpg",
+		"baseurl": "/images/combo-section/ertonghefu",
+		"price": 3500,
+		"popularity": 6,
 		"zh": {
-			"id": "10",
 			"name": "儿童和服",
-			"url": "ertonghefu.jpg",
-			"baseurl": "/images/combo-section/ertonghefu",
-			"price": 3500,
-			"popularity": 6,
 			"desc": "可爱的孩子们穿上了可爱的儿童和服一定会变得更加可爱吧，让孩子们穿上一套和服，全家一起散步这种场景相信都是满满的温馨，，从喜欢的颜色到喜欢的花纹，从开始选择就可以让孩子充满欢乐。适用的身高为95cm到140cm",
 			"clothNum": "50件以上",
 			"acc": "兵儿带，草履，袜子，包包，和服，和服内衣，襦袢，和服外套",
@@ -31956,13 +31989,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "11",
+		"url": "nvtongzhenxiu.jpg",
+		"baseurl": "/images/combo-section/nvtongzhenxiu",
+		"price": 7000,
+		"popularity": 2,
 		"zh": {
-			"id": "11",
 			"name": "女童振袖和服",
-			"url": "nvtongzhenxiu.jpg",
-			"baseurl": "/images/combo-section/nvtongzhenxiu",
-			"price": 7000,
-			"popularity": 2,
 			"desc": "日本最华丽的儿童和服，让小朋友瞬间变成日本小公主，漫游古色古香的浅草寺，穿上华丽的和服，让孩子遇见一个不一样的自己，留下一个美好的回忆。数量不多，选择有限，先到先得哦。适用的身高115cm到140cm。",
 			"clothNum": "6件",
 			"acc": "豪华腰带，草履，袜子，包包，和服，和服内衣，襦袢",
@@ -31974,13 +32007,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "12",
+		"url": "nvshiyuyi.jpg",
+		"baseurl": "/images/combo-section/nvshiyuyi",
+		"price": 3500,
+		"popularity": 7,
 		"zh": {
-			"id": "12",
 			"name": "女士浴衣",
-			"url": "nvshiyuyi.jpg",
-			"baseurl": "/images/combo-section/nvshiyuyi",
-			"price": 3500,
-			"popularity": 7,
 			"desc": "女士浴衣是夏天限定的套餐，提供浴衣的时间是6月1号到9月15日。浴衣是简易和服，在材料和穿法上与正式的和服都是不一样的，质地较薄，比较休闲，花色比较艳丽，在夏天参加花火大会和一些夏祭活动的最佳着装",
 			"clothNum": "300件左右",
 			"acc": "半幅带，木屐，包包，浴衣，浴衣内衣，各种小物，装饰带",
@@ -31992,13 +32025,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "13",
+		"url": "nanshiyuyi.jpg",
+		"baseurl": "/images/combo-section/nanshiyuyi",
+		"price": 3500,
+		"popularity": 4,
 		"zh": {
-			"id": "13",
 			"name": "男士浴衣",
-			"url": "nanshiyuyi.jpg",
-			"baseurl": "/images/combo-section/nanshiyuyi",
-			"price": 3500,
-			"popularity": 4,
 			"desc": "男士浴衣是夏天限定的套餐，提供浴衣的时间是6月1号到9月15日。浴衣是简易和服，在材料和穿法上与正式的和服都是不一样的，质地较薄，比较休闲，花色比较艳丽，是在夏天参加花火大会和一些夏祭活动的最佳着装",
 			"clothNum": "100件左右",
 			"acc": "角带，木屐，包包，浴衣，浴衣内衣，各种小物",
@@ -32010,13 +32043,13 @@ module.exports = [
 		}
 	},
 	{
+		"id": "14",
+		"url": "ertongyuyi.jpg",
+		"baseurl": "/images/combo-section/ertongyuyi",
+		"price": 3000,
+		"popularity": 3,
 		"zh": {
-			"id": "14",
 			"name": "儿童浴衣",
-			"url": "ertongyuyi.jpg",
-			"baseurl": "/images/combo-section/ertongyuyi",
-			"price": 3000,
-			"popularity": 3,
 			"desc": "可爱的孩子们穿上了可爱的浴衣一定会变得更加可爱吧，让孩子们穿上一套浴衣，全家一起散步这种场景相信都是满满的温馨，从喜欢的颜色到喜欢的花纹，从开始选择就可以让孩子充满欢乐",
 			"clothNum": "50件以上",
 			"acc": "兵儿带，木屐，包包，浴衣",
@@ -42322,7 +42355,7 @@ var _step = __webpack_require__(274);
 
 var _step2 = _interopRequireDefault(_step);
 
-var _dict = __webpack_require__(22);
+var _dict = __webpack_require__(19);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -42504,9 +42537,13 @@ var FaqItem = function (_React$Component) {
               askerName
             ),
             _react2.default.createElement(
-              'p',
-              null,
-              question
+              'a',
+              { onClick: this.toggleListener.bind(this) },
+              _react2.default.createElement(
+                'p',
+                null,
+                question
+              )
             )
           ),
           _react2.default.createElement(
@@ -42933,7 +42970,7 @@ var _intro = __webpack_require__(276);
 
 var _intro2 = _interopRequireDefault(_intro);
 
-var _dict = __webpack_require__(22);
+var _dict = __webpack_require__(19);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -42972,7 +43009,7 @@ var GirlsSection = function (_React$Component) {
         _react2.default.createElement(
           'h1',
           { className: 'title has-text-centered' },
-          _dict2.default[language]['nav-faq']
+          _dict2.default[language]['nav-girls']
         ),
         _react2.default.createElement(_intro2.default, {
           bossName: _dict2.default[language]['boss-name'],
@@ -43305,7 +43342,7 @@ var _about = __webpack_require__(308);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _dict = __webpack_require__(22);
+var _dict = __webpack_require__(19);
 
 var _dict2 = _interopRequireDefault(_dict);
 

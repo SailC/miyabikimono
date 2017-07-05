@@ -231,6 +231,13 @@ nav.pagination {
 .filter-open .filter.column .menu-svg {
   visibility: hidden; }
 
+.item-desc {
+  margin-bottom: 10px; }
+
+span.item-feature {
+  margin-right: 5px;
+  vertical-align: text-bottom; }
+
 .qa-section {
   margin: 0 auto; }
   .qa-section .step-items .tile.box {

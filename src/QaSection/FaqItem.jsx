@@ -27,7 +27,7 @@ class FaqItem extends React.Component {
         <div class='media-content'>
           <div class='content'>
             <strong>{askerName}</strong>
-            <p>{question}</p>
+            <a onClick={this.toggleListener.bind(this)} ><p>{question}</p></a>
           </div>
 
           <article class={classNames(

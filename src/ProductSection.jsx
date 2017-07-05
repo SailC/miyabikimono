@@ -35,11 +35,11 @@ class ProductSection extends React.Component {
   sortClickListener (event) {
     let sortFunc
     if (event.target.value === text['sort3']) {
-      sortFunc = (a, b) => b.price - a.price
+      sortFunc = (a, b) => parseInt(b.price) - parseInt(a.price)
     } else if (event.target.value === text['sort2']) {
-      sortFunc = (a, b) => a.price - b.price
+      sortFunc = (a, b) => parseInt(a.price) - parseInt(b.price)
     } else {
-      sortFunc = (a, b) => b.popularity - a.popularity
+      sortFunc = (a, b) => parseInt(b.popularity) - parseInt(a.popularity)
     }
     let newCards = Array.from(this.state.cards)
     newCards.sort(sortFunc)
