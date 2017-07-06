@@ -1,13 +1,16 @@
 import React from 'react'
-import { BrowserRouter, Route } from 'react-router-dom'
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
 import HomePage from './HomePage'
 
 const App = () => (
-  <BrowserRouter>
+  <Router>
     <div className='app'>
       <Route exact path='/' component={HomePage} />
     </div>
-  </BrowserRouter>
+  </Router>
 )
 
 export default App

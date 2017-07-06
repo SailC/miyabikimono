@@ -117,6 +117,7 @@ class ProductSection extends React.Component {
             />
           </div>
         </div>
+
       </section>
     )
   }

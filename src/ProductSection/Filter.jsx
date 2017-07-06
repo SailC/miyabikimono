@@ -14,7 +14,7 @@ const CheckBox = (props) => {
           filterClickListener.bind(this, fieldName, text)
         } />
         {text}
-        <span class='tag is-primary'>{size}</span>
+        <span class='tag is-light'>{size}</span>
       </label>
     </p>
   )
