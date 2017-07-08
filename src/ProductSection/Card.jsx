@@ -1,7 +1,6 @@
 import React from 'react'
 import dict from '../dict'
-import classNames from 'classnames'
-import Wallop from 'Wallop'
+import Lightbox from 'react-images'
 
 var language
 
@@ -10,19 +9,41 @@ class Card extends React.Component {
     super()
     this.state = {
       isModalActive: false,
-      gallerySlider: null
+      gallerySlider: null,
+      currentImage: 0
     }
+    this.toggleListener = this.toggleListener.bind(this)
+    this.gotoNext = this.gotoNext.bind(this)
+    this.gotoPrevious = this.gotoPrevious.bind(this)
+    this.gotoImage = this.gotoImage.bind(this)
+    this.handleClickImage = this.handleClickImage.bind(this)
   }
 
   toggleListener () {
-    if (this.state.gallerySlider === null) {
-      let id = this.props.card.id
-      let galleryWallop = document.querySelector(`#gallery${id}`)
-      this.state.gallerySlider = new Wallop(galleryWallop)
-    }
     this.setState({
       isModalActive: !(this.state.isModalActive)
     })
+  }
+
+  gotoPrevious () {
+    this.setState({
+      currentImage: this.state.currentImage - 1
+    })
+  }
+  gotoNext () {
+    this.setState({
+      currentImage: this.state.currentImage + 1
+    })
+  }
+  gotoImage (index) {
+    this.setState({
+      currentImage: index
+    })
+  }
+  handleClickImage () {
+    // only ten images
+    if (this.state.currentImage === 10) return
+    this.gotoNext()
   }
 
   render () {
@@ -74,9 +95,7 @@ class Card extends React.Component {
               </p>
             </div>
             <div class='item-link has-text-centered'>
-              <button class='button' onClick={
-                this.toggleListener.bind(this)
-              } >
+              <button class='button' onClick={this.toggleListener} >
                 <span class='icon'>
                   <i class='fa fa-camera' />
                 </span>
@@ -95,55 +114,23 @@ class Card extends React.Component {
             </div>
           </div>
 
-          <Gallery
-            toggleListener={this.toggleListener.bind(this)}
-            isModalActive={this.state.isModalActive}
-            baseurl={card.baseurl}
-            id={card.id}
+          <Lightbox
+            currentImage={this.state.currentImage}
+            images={
+              Array.from(Array(11).keys()).map(id => (
+                {src: `${card.baseurl}/${id}.jpg`}
+              ))
+            }
+            isOpen={this.state.isModalActive}
+            onClickPrev={this.gotoPrevious}
+            onClickNext={this.gotoNext}
+            onClose={this.toggleListener}
+            onClickImage={this.handleClickImage}
           />
         </div>
       </div>
     )
   }
-}
-
-const Gallery = (props) => {
-  const {toggleListener, isModalActive, baseurl, id} = props
-  return (
-    <div class={classNames(
-      'modal',
-      {'is-active': isModalActive}
-    )}>
-      <div class='modal-background' />
-      <div class='modal-content'>
-        <WallopSlides baseurl={baseurl} id={id} />
-      </div>
-      <button class='modal-close is-large' onClick={
-        toggleListener
-      } />
-    </div>
-  )
-}
-
-const WallopSlides = (props) => {
-  const {baseurl, id} = props
-  return (
-    <div class='Wallop' id={`gallery${id}`}>
-      <div class='Wallop-list'>
-        {
-          Array.from(Array.from(
-            Array(10).keys()
-          ), (id) => (
-            <div class='Wallop-item' key={id}>
-              <img src={`${baseurl}/${id + 1}.jpg`} />
-            </div>
-          ))
-        }
-      </div>
-      <button class='Wallop-buttonPrevious button is-primary' />
-      <button class='Wallop-buttonNext button is-primary' />
-    </div>
-  )
 }
 
 export default Card
