@@ -59,7 +59,7 @@ class BookingPage extends React.Component {
                 iconName='fa-clock-o'
               />
               <Message title={dict[language]['notes-title-5']}
-                content={dict[language]['note5']}
+                content={`${dict[language]['note5']} ${this.state.m.format('LLLL')}`}
                 styleClass='is-danger'
                 iconName='fa-check-circle'
               />

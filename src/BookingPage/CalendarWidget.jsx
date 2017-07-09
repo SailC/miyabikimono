@@ -67,8 +67,11 @@ module.exports = React.createClass({
           />
         </div>
 
-        <button type='button' className={'im-btn btn-save ' + (tab === 0 ? 'ion-arrow-right-c' : 'ion-arrow-down-c')}
+        <button type='button' className={'im-btn btn-save'}
           onClick={this.handleSave}>
+          <span class='icon'>
+            <i class='fa fa-arrow-right is-small' />
+          </span>
           {SAVE_BUTTON_NAME}
         </button>
 
