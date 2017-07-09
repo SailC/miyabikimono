@@ -105,7 +105,9 @@ class ProductSection extends React.Component {
           </div>
           <div class='product column'>
             <Sort sortClickListener={this.sortClickListener.bind(this)}
-              toggleListener={this.toggleListener} />
+              toggleListener={this.toggleListener}
+              lang={lang}
+             />
             <ShowCards cards={this.state.cards}
               pageIndex={this.state.pageIndex}
               cardsPerPage={cardsPerPage}

@@ -212,4 +212,7 @@ const HeroSection = (props) => {
   )
 }
 
-export default HeroSection
+export {
+  HeroSection,
+  HeroHead
+}

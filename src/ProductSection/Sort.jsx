@@ -1,11 +1,8 @@
 import React from 'react'
 import dict from '../dict.json'
 
-const language = 'zh'
-const text = dict[language]
-
 const Sort = (props) => {
-  const {sortClickListener, toggleListener} = props
+  const {sortClickListener, toggleListener, lang} = props
   return (
     <div class='field has-addons has-addons-right'>
 
@@ -18,9 +15,9 @@ const Sort = (props) => {
         </a>
         <span class='select'>
           <select onChange={sortClickListener}>
-            <option>{text['sort1']}</option>
-            <option>{text['sort2']}</option>
-            <option>{text['sort3']}</option>
+            <option>{dict[lang]['sort1']}</option>
+            <option>{dict[lang]['sort2']}</option>
+            <option>{dict[lang]['sort3']}</option>
           </select>
         </span>
       </p>

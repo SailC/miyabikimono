@@ -30,10 +30,6 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader'
       },
-      // {
-      //   test: /\.json$/,
-      //   loader: 'json-loader'
-      // },
       {
         test: /\.sass$/,
         use: [
@@ -47,6 +43,10 @@ module.exports = {
             loader: 'sass-loader' // compiles Sass to CSS
           }
         ]
+      },
+      {
+        test: /\.less$/,
+        loader: 'style-loader!css-loader!less-loader'
       }
     ]
   }

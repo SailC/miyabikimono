@@ -1,6 +1,7 @@
 import React from 'react'
 import dict from '../dict'
 import Lightbox from 'react-images'
+import { Link } from 'react-router-dom'
 
 var language
 
@@ -103,14 +104,16 @@ class Card extends React.Component {
                   {dict[language]['combo-photo']}
                 </span>
               </button>
-              <button class='button'>
-                <span class='icon'>
-                  <i class='fa fa-calendar' />
-                </span>
-                <span>
-                  {dict[language]['combo-book']}
-                </span>
-              </button>
+              <Link to='/booking'>
+                <button class='button'>
+                  <span class='icon'>
+                    <i class='fa fa-calendar' />
+                  </span>
+                  <span>
+                    {dict[language]['combo-book']}
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
 

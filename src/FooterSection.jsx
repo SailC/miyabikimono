@@ -1,4 +1,5 @@
 import React from 'react'
+import dict from './dict.json'
 
 const FooterSection = (props) => {
   const {lang} = props
@@ -8,25 +9,25 @@ const FooterSection = (props) => {
         <ul class='contact-list has-text-centered'>
           <li class='email'>
             <span class='icon is-small'><i class='fa fa-envelope' /></span>
-            <span>Service@mymiyabi.com</span>
+            <span>{dict[lang]['email-name']}: Service@mymiyabi.com</span>
           </li>
           <li class='phone'>
             <span class='icon is-small'><i class='fa fa-phone' /></span>
-            <span>客服一号线:03-6802-3566</span>
+            <span>{dict[lang]['contact-name1']}: 03-6802-3566</span>
           </li>
           <li class='phone'>
             <span class='icon is-small'><i class='fa fa-phone-square' /></span>
-            <span>客服二号线:080-3353-7888</span>
+            <span>{dict[lang]['contact-name2']}: 080-3353-7888</span>
           </li>
           <li class='address'>
             <span class='icon is-small'><i class='fa fa-map-marker' /></span>
             <span>
-              <a href='https://goo.gl/maps/JP86SivD6C82' target='_blank'>浅草分店: 东京都台东区浅草3-30-2末崎ビル</a>
+              <a href='https://goo.gl/maps/JP86SivD6C82' target='_blank'>{dict[lang]['location-1']}</a>
             </span>
           </li>
           <li class='address'>
             <span class='icon is-small'><i class='fa fa-location-arrow' /></span>
-            <span><a href='https://goo.gl/maps/24vBAU8ijTo' target='_blank'>上野分店: 东京都台东区台东4-9-2</a></span>
+            <span><a href='https://goo.gl/maps/24vBAU8ijTo' target='_blank'>{dict[lang]['location-2']}</a></span>
           </li>
         </ul>
         <img src='/images/barcode_tn.jpg' id='barcode' />

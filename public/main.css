@@ -472,6 +472,35 @@ span.item-price {
       .footer-section footer .contact-list li a {
         text-decoration: underline; }
 
+.calendar-section .m-input-moment {
+  width: 100%; }
+
+.calendar-section .tabs .icon:first-child {
+  margin: 0; }
+
+.calendar-section .tabs .icon:last-child {
+  margin: 0; }
+
+.calendar-section .m-input-moment .tab.is-active {
+  width: 100%; }
+
+.calendar-section .m-calendar.tab {
+  height: 100%; }
+
+.calendar-section .calendar-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.calendar-section .m-input-moment .tabs {
+  margin-top: 30px; }
+
+.calendar-section .m-input-moment .btn-save {
+  margin-top: 50px; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).

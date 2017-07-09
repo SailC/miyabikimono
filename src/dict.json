@@ -1,5 +1,5 @@
 {
-  "zh":{
+  "zh-cn":{
     "apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
     "google-play-url": "https://play.google.com/store/apps/details?id=com.busgazer.oba&_branch_match_id=399387738945819974",
     "nav-home": "主页",
@@ -36,6 +36,30 @@
     "combo-acc": "包含物件",
     "combo-hair": "发型设计",
     "combo-book": "开始预约",
-    "combo-photo": "客人风采"
+    "combo-photo": "客人风采",
+    "contact-name1": "客服一号线",
+    "contact-name2": "客服二号线",
+    "email-name": "电子邮件",
+    "location-1": "浅草分店: 东京都台东区浅草3-30-2末崎ビル",
+    "location-2": "上野分店: 东京都台东区台东4-9-2",
+    "nav-calendar": "选择来店日期和时间",
+    "notes-title-1": "支付方式",
+    "notes-title-2": "预约时区",
+    "notes-title-3": "选择来店日期",
+    "notes-title-4": "选择来店时间",
+    "notes-title-5": "来店时间确认",
+    "note1": "套餐的选择和支付可以等到您来到店里之后再进行",
+    "note2": "所选择日期和时间均为东京当地时间",
+    "note3": "点击日历的中间区域选择日期",
+    "note4": "拖拽进度条选择来店的时间",
+    "note5": "当前预约的时间是：",
+    "confirm-time": "我确定预约时间没有错误",
+    "date": "日期",
+    "time": "时间",
+    "hour": "时钟",
+    "minute": "分钟",
+    "next-step": "下一步",
+    "weeks": ["周日", "周一", "周二", "周三", "周四", "周五", "周六"]
+
   }
 }
