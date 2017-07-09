@@ -22,8 +22,8 @@ module.exports = React.createClass({
           <div className='time-text'>{HOUR_NAME}</div>
           <InputSlider
             className='u-slider-time'
-            xmin={0}
-            xmax={23}
+            xmin={9}
+            xmax={18}
             x={m.hour()}
             onChange={this.changeHours}
           />

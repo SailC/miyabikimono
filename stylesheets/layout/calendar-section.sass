@@ -1,4 +1,10 @@
 .calendar-section
+  .calendar-widget.container
+    margin: 0 auto
+    @include desktop
+      width: 50%
+    @include widescreen
+      width: 30%
   .m-input-moment
     width: 100%
 
@@ -20,3 +26,12 @@
 
   .m-input-moment .btn-save
     margin-top: 50px
+
+  .m-calendar td.is-disabled
+    cursor: not-allowed
+
+  .m-time .sliders
+    padding: 0 15px
+
+  .button.repick-time
+    margin-top: 25px

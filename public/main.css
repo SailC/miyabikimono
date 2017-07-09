@@ -472,6 +472,15 @@ span.item-price {
       .footer-section footer .contact-list li a {
         text-decoration: underline; }
 
+.calendar-section .calendar-widget.container {
+  margin: 0 auto; }
+  @media screen and (min-width: 1000px) {
+    .calendar-section .calendar-widget.container {
+      width: 50%; } }
+  @media screen and (min-width: 1192px) {
+    .calendar-section .calendar-widget.container {
+      width: 30%; } }
+
 .calendar-section .m-input-moment {
   width: 100%; }
 
@@ -500,6 +509,15 @@ span.item-price {
 
 .calendar-section .m-input-moment .btn-save {
   margin-top: 50px; }
+
+.calendar-section .m-calendar td.is-disabled {
+  cursor: not-allowed; }
+
+.calendar-section .m-time .sliders {
+  padding: 0 15px; }
+
+.calendar-section .button.repick-time {
+  margin-top: 25px; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**

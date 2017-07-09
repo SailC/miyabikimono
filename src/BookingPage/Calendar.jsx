@@ -3,6 +3,9 @@ var blacklist = require('blacklist')
 var React = require('react')
 var range = require('lodash/range')
 var chunk = require('lodash/chunk')
+var moment = require('moment-timezone')
+
+var today = moment().tz('Asia/Tokyo')
 
 var Day = React.createClass({
   displayName: 'Day',
@@ -12,11 +15,12 @@ var Day = React.createClass({
     var w = this.props.w
     var prevMonth = (w === 0 && i > 7)
     var nextMonth = (w >= 4 && i <= 14)
-    var props = blacklist(this.props, 'i', 'w', 'd', 'className')
+    var props = blacklist(this.props, 'i', 'w', 'd', 'className', 'm')
     props.className = cx({
       'prev-month': prevMonth,
       'next-month': nextMonth,
-      'current-day': !prevMonth && !nextMonth && (i === this.props.d)
+      'current-day': !prevMonth && !nextMonth && (i === this.props.d),
+      'is-disabled': false
     })
 
     return <td {... props}>{i}</td>
@@ -72,6 +76,7 @@ module.exports = React.createClass({
                 {row.map((i) => (
                   <Day key={i} i={i} d={d} w={w}
                     onClick={this.selectDate.bind(null, i, w)}
+                    m={this.props.moment}
                   />
                 ))}
               </tr>
@@ -85,7 +90,7 @@ module.exports = React.createClass({
   selectDate (i, w) {
     var prevMonth = (w === 0 && i > 7)
     var nextMonth = (w >= 4 && i <= 14)
-    var m = this.props.moment
+    var m = this.props.moment.clone()
 
     m.date(i)
     if (prevMonth) {
@@ -94,17 +99,26 @@ module.exports = React.createClass({
     if (nextMonth) {
       m.add(1, 'month')
     }
-
-    this.props.onChange(m)
+    if (m > today) {
+      this.props.onChange(m)
+    }
   },
 
   prevMonth (e) {
     e.preventDefault()
-    this.props.onChange(this.props.moment.subtract(1, 'month'))
+    var m = this.props.moment.clone()
+    m.subtract(1, 'month')
+    if (m >= today) {
+      this.props.onChange(m)
+    }
   },
 
   nextMonth (e) {
     e.preventDefault()
-    this.props.onChange(this.props.moment.add(1, 'month'))
+    var m = this.props.moment.clone()
+    m.add(1, 'month')
+    if (m >= today) {
+      this.props.onChange(m)
+    }
   }
 })

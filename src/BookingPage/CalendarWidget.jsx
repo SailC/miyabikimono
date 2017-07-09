@@ -87,10 +87,11 @@ module.exports = React.createClass({
   handleSave (e) {
     e.preventDefault()
     if (this.state.tab === 1) {
-      $('#booking-section').removeClass('hidden-section')
-      let time = $('.date-time').text()
-      this.props.initForm(time)
-      $(document).scrollTop($('cf-chat').offset().top)
+      // $('#booking-section').removeClass('hidden-section')
+      // let time = $('.date-time').text()
+      // $(document).scrollTop($('cf-chat').offset().top)
+      this.props.onSave()
+      this.setState({tab: 0})
     } else {
       this.setState({tab: 1})
     }

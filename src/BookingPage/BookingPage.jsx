@@ -2,6 +2,7 @@ import React from 'react'
 import moment from 'moment-timezone'
 import {HeroHead} from '../HeroSection'
 import CalendarWidget from './CalendarWidget'
+import classNames from 'classnames'
 import './less/input-moment.less'
 import dict from '../dict'
 
@@ -11,6 +12,8 @@ class BookingPage extends React.Component {
   constructor () {
     super()
     this.state = {
+      isRightHidden: true,
+      isleftHidden: false,
       m: moment().tz('Asia/Tokyo')
     }
   }
@@ -28,7 +31,11 @@ class BookingPage extends React.Component {
             {dict[language]['nav-calendar']}
           </h1>
           <div class='calendar-widget columns container'>
-            <div class='column calendar-column'>
+            <div class={classNames(
+              'column',
+              'calendar-column',
+              {'is-hidden': this.state.isleftHidden}
+            )}>
               <CalendarWidget
                 moment={this.state.m}
                 onChange={this.handleChange.bind(this)}
@@ -37,41 +44,36 @@ class BookingPage extends React.Component {
                     // initForm={initDialogForm}
               />
             </div>
-            <div class='column messages'>
+            <div class={classNames(
+              'column',
+              'messages',
+            {'is-hidden': this.state.isRightHidden})}>
               <Message title={dict[language]['notes-title-1']}
                 content={dict[language]['note1']}
-                styleClass='is-dark'
+                styleClass='is-primary'
                 iconName='fa-money'
               />
+
               <Message title={dict[language]['notes-title-2']}
-                content={dict[language]['note2']}
+                content={`${dict[language]['note2']} ${this.state.m.format('LLLL')}`}
                 styleClass='is-primary'
-                iconName='fa-exclamation-circle'
-              />
-              <Message title={dict[language]['notes-title-3']}
-                content={dict[language]['note3']}
-                styleClass='is-primary'
-                iconName='fa-calendar'
-              />
-              <Message title={dict[language]['notes-title-4']}
-                content={dict[language]['note4']}
-                styleClass='is-primary'
-                iconName='fa-clock-o'
-              />
-              <Message title={dict[language]['notes-title-5']}
-                content={`${dict[language]['note5']} ${this.state.m.format('LLLL')}`}
-                styleClass='is-danger'
                 iconName='fa-check-circle'
               />
+              <div class='has-text-centered'>
+                <a class='button is-primary is-outlined'>
+                  <span class='icon is-small'>
+                    <i class='fa fa-check' />
+                  </span>
+                  <span>{dict[language]['confirm-time']}</span>
+                </a>
+                <a class='button is-primary repick-time' onClick={this.repickTime.bind(this)}>
+                  <span class='icon is-small'>
+                    <i class='fa fa-clock-o' />
+                  </span>
+                  <span>{dict[language]['repick-time']}</span>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class='container has-text-centered' id='confirm-time'>
-            <a class='button is-danger is-outlined'>
-              <span class='icon is-small'>
-                <i class='fa fa-check' />
-              </span>
-              <span>{dict[language]['confirm-time']}</span>
-            </a>
           </div>
         </section>
       </div>
@@ -85,16 +87,18 @@ class BookingPage extends React.Component {
     // $('#step1-button').removeClass('hidden-section')
   }
 
-  handleSave () {
-    if (this.state.tab === 1) {
-      // $('#booking-section').removeClass('hidden-section')
-      // let time = $('.date-time').text()
-      // initDialogForm(time)
-      // $(document).scrollTop($('#booking-section').offset().top)
-    } else {
-      this.setState({tab: 1})
-      // this.render()
-    }
+  handleSave (e) {
+    this.setState({
+      isRightHidden: false,
+      isleftHidden: true
+    })
+  }
+
+  repickTime (e) {
+    this.setState({
+      isRightHidden: true,
+      isleftHidden: false
+    })
   }
 }
 
