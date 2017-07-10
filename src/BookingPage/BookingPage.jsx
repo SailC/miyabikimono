@@ -1,11 +1,10 @@
 import React from 'react'
 import moment from 'moment-timezone'
-import {HeroHead} from '../HeroSection'
 import CalendarSection from './CalendarSection'
+import {FormSection} from './FormSection'
 // import dict from '../dict'
 import {
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
 
 var language
@@ -26,10 +25,7 @@ class BookingPage extends React.Component {
     let match = this.props.match
     return (
       <div class='booking-page'>
-        <div class='hero is-primary'>
-          <HeroHead />
-        </div>
-        <Route exact path={match.url}
+        <Route exact path={`${match.url}`}
           render={props => (
             // <CalendarSection
             <CalendarSection {...props}
@@ -40,6 +36,13 @@ class BookingPage extends React.Component {
               handleChange={this.handleChange.bind(this)}
               handleSave={this.handleSave.bind(this)}
               repickTime={this.repickTime.bind(this)}
+            />
+           )}
+         />
+        <Route path={`${match.url}/form`}
+          render={props => (
+            <FormSection {...props}
+              language={language}
             />
            )}
          />

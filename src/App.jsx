@@ -40,7 +40,7 @@ class App extends React.Component {
             />
           )}
           />
-          <Route exact path='/booking' render={props => (
+          <Route path='/booking' render={props => (
             <BookingPage {...props}
               lang={this.state.lang}
             />

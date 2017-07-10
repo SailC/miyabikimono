@@ -538,6 +538,65 @@ span.item-price {
       -ms-flex-align: center;
           align-items: center; }
 
+.form-section #robot-form-context {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%; }
+
+.form-section .conversational-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media screen and (min-width: 769px), print {
+    .form-section .conversational-form .conversational-form-inner {
+      width: 70%; } }
+  @media screen and (min-width: 1000px) {
+    .form-section .conversational-form .conversational-form-inner {
+      width: 60%; } }
+  @media screen and (min-width: 1192px) {
+    .form-section .conversational-form .conversational-form-inner {
+      width: 50%; } }
+  @media screen and (max-width: 768px) {
+    .form-section .conversational-form .conversational-form-inner {
+      padding-left: 7px;
+      padding-right: 7px; } }
+
+.form-section .conversational-form-inner cf-input textarea {
+  padding-left: 25px;
+  border-radius: 40px;
+  font-weight: bold;
+  height: 52px; }
+
+.form-section .conversational-form cf-chat-response text {
+  font-weight: 900;
+  color: #222;
+  min-height: 42px;
+  font-size: 13px; }
+
+.form-section .conversational-form cf-input textarea {
+  font-size: 16px; }
+
+.form-section .conversational-form cf-input-button {
+  background: #e6f3fe;
+  border: none; }
+
+.form-section cf-chat-response thumb {
+  width: 32px;
+  height: 32px; }
+
+section.section.form-section {
+  padding-top: 0px;
+  padding-bottom: 0px; }
+  @media screen and (max-width: 768px) {
+    section.section.form-section {
+      padding-left: 0px;
+      padding-right: 0px; } }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).

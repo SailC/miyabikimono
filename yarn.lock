@@ -1662,6 +1662,10 @@ content-type@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/content-type/-/content-type-1.0.2.tgz#b7d113aee7a8dd27bd21133c4dc2529df1721eed"
 
+conversational-form@^0.9.5:
+  version "0.9.5"
+  resolved "https://registry.yarnpkg.com/conversational-form/-/conversational-form-0.9.5.tgz#163ec1efe8ff1adc1f665b02d89272bfd5f106ae"
+
 convert-source-map@^1.1.0, convert-source-map@^1.4.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.5.0.tgz#9acd70851c6d5dfdd93d9282e5edf94a03ff46b5"

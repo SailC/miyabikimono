@@ -2,10 +2,16 @@ import React from 'react'
 import Intro from './intro'
 import dict from './dict'
 import girls from './girl'
+import Wallop from 'Wallop'
 
 var language
 
 class GirlsSection extends React.Component {
+  componentDidMount () {
+    var girlWallop = document.querySelector('#girlWallop')
+    let girlSlider = new Wallop(girlWallop)
+  }
+
   render () {
     let {lang} = this.props
     language = lang

@@ -1,4 +1,3 @@
-import $ from 'jquery'
 var cx = require('classnames')
 var blacklist = require('blacklist')
 var React = require('react')

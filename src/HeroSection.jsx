@@ -1,6 +1,7 @@
 import React from 'react'
 import classNames from 'classnames'
 import dict from './dict.json'
+import Wallop from 'Wallop'
 
 // default to Chinese simplified
 var language = 'zh'
@@ -199,17 +200,27 @@ const WallopSlide = (props) => {
   )
 }
 
-const HeroSection = (props) => {
-  let {lang, onLangChange} = props
-  langChangeListener = onLangChange
-  text = dict[lang]
-  language = lang
-  return (
-    <section class='hero is-primary' id='hero-section'>
-      <HeroHead />
-      <HeroBody />
-    </section>
-  )
+class HeroSection extends React.Component {
+  componentDidMount () {
+    var heroWallop = document.querySelector('#heroWallop')
+    var heroSlider = new Wallop(heroWallop)
+    setInterval(() => {
+      heroSlider.next()
+    }, 3000)
+  }
+
+  render () {
+    let {lang, onLangChange} = this.props
+    langChangeListener = onLangChange
+    text = dict[lang]
+    language = lang
+    return (
+      <section class='hero is-primary' id='hero-section'>
+        <HeroHead />
+        <HeroBody />
+      </section>
+    )
+  }
 }
 
 export {
