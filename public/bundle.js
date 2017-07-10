@@ -5915,7 +5915,27 @@ module.exports = {
 		],
 		"nav-form": "填写顾客信息",
 		"question1": "欢迎使用江户和装工房~雅的网上预约，请问您的名字是? ",
-		"placeHolder1": "请输入您的姓名"
+		"placeHolder1": "请输入您的姓名",
+		"question2": "请问您要来我们哪家分店呢?",
+		"placeHolder2": "请点击分店按钮或者输入分店名称",
+		"question3_1": "请问同行的有几位男士呢？如果没有，请输入0",
+		"placeHolder3_1": "请输入来店的男士人数",
+		"question3_2": "请问同行的有几位女士呢？如果没有，请输入0",
+		"placeHolder3_2": "请输入来店的女士人数",
+		"question3_3": "请问同行的有几位儿童呢？如果没有，请输入0",
+		"placeHolder3_3": "请输入来店的儿童人数",
+		"question4": "您的Email是? 请务必填写",
+		"placeHolder4": "输入您的Email，请务必填写",
+		"question5": "您的微信号或者qq号是? 如果没有，直接按回车键或者按提交按钮",
+		"placeHolder5": "请输入您的微信号或者qq号",
+		"question6": "您的联系电话是? 如果没有，直接按回车键或者按提交按钮",
+		"placeHolder6": "请输入您的联系电话",
+		"question7": "您是通过哪种方式了解到本店的?",
+		"placeHolder7": "请选择了解到本店的渠道",
+		"question8": "有没有什么特殊的要求或者留言？如果没有，直接按回车键或者按提交按钮",
+		"placeHolder8": "请输入您的特殊要求",
+		"question9": "请检查一下您的预约信息，如果想要修改已经输入的信息，请单击您之前回复的消息对话框，然后输入要更改的信息或者选择相应的答案。如果你想修改时间，可以直接在日历上面选择新的时间",
+		"placeHolder9": "请点击按钮以继续"
 	}
 };
 
@@ -70377,6 +70397,15 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 //   Link
 // } from 'react-router-dom'
 
+var contextStyle = {
+  position: 'absolute',
+  top: '0',
+  left: '0',
+  height: '100%',
+  width: '100%',
+  zIndex: 250
+};
+
 var FormSection = function (_React$Component) {
   _inherits(FormSection, _React$Component);
 
@@ -70403,7 +70432,7 @@ var FormSection = function (_React$Component) {
         { className: 'form-section section', id: 'form-section' },
         _react2.default.createElement(
           'div',
-          { id: 'robot-form-context' },
+          { style: contextStyle, id: 'robot-form-context' },
           _react2.default.createElement(
             'form',
             { id: 'robot-form' },
@@ -70425,6 +70454,9 @@ var FormSection = function (_React$Component) {
 }(_react2.default.Component);
 
 function initForm() {
+  if (window.ConversationalForm) {
+    window.ConversationalForm.remove();
+  }
   var conversationalForm = new cf.ConversationalForm({
     formEl: document.getElementById('robot-form'),
     context: document.getElementById('robot-form-context'),

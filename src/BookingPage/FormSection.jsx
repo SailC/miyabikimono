@@ -6,6 +6,15 @@ import dict from '../dict'
 //   Link
 // } from 'react-router-dom'
 
+const contextStyle = {
+  position: 'absolute',
+  top: '0',
+  left: '0',
+  height: '100%',
+  width: '100%',
+  zIndex: 250
+}
+
 class FormSection extends React.Component {
   componentDidMount () {
     initForm()
@@ -16,7 +25,7 @@ class FormSection extends React.Component {
     console.log('render')
     return (
       <section class='form-section section' id='form-section'>
-        <div id='robot-form-context'>
+        <div style={contextStyle} id='robot-form-context'>
           <form id='robot-form'>
             <input
               class='input'
@@ -34,6 +43,9 @@ class FormSection extends React.Component {
 }
 
 function initForm () {
+  if (window.ConversationalForm) {
+    window.ConversationalForm.remove()
+  }
   var conversationalForm = new cf.ConversationalForm({
     formEl: document.getElementById('robot-form'),
     context: document.getElementById('robot-form-context'),

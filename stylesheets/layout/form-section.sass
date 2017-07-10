@@ -1,28 +1,23 @@
 .form-section
-  form#robot-form
-    // min-height: 500px
-    // height: 100%
-  #robot-form-context
-    position: absolute
-    top: 0
-    left: 0
-    height: 100%
-    width: 100%
-
+  display: flex
+  justify-content: center
+  align-items: center
   .conversational-form
-    display: flex
-    justify-content: center
-
     .conversational-form-inner
-      @include tablet
-        width: 70%
-      @include desktop
-        width: 60%
-      @include widescreen
-        width: 50%
+      .user
+        thumb
+          background-image: url(/images/user.png) !important
+      .robot
+        thumb
+          background-image: url(/images/faq-section/service_miyabi.png) !important
       @include mobile
-        padding-left: 7px
-        padding-right: 7px
+        padding: 0 5%
+      @include tablet
+        padding: 0 10%
+      @include desktop
+        padding: 0 18%
+      @include widescreen
+        padding: 0 25%
 
   .conversational-form-inner cf-input textarea
     padding-left: 25px
