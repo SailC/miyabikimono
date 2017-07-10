@@ -6,6 +6,7 @@ var chunk = require('lodash/chunk')
 var moment = require('moment-timezone')
 
 var today = moment().tz('Asia/Tokyo')
+var firstDayOfThisMonth = today.clone().date(1)
 
 var Day = React.createClass({
   displayName: 'Day',
@@ -108,7 +109,7 @@ module.exports = React.createClass({
     e.preventDefault()
     var m = this.props.moment.clone()
     m.subtract(1, 'month')
-    if (m >= today) {
+    if (m >= firstDayOfThisMonth) {
       this.props.onChange(m)
     }
   },
@@ -117,8 +118,6 @@ module.exports = React.createClass({
     e.preventDefault()
     var m = this.props.moment.clone()
     m.add(1, 'month')
-    if (m >= today) {
-      this.props.onChange(m)
-    }
+    this.props.onChange(m)
   }
 })
