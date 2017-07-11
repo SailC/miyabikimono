@@ -25,7 +25,8 @@ const VideoPlayer = () => (
       <Player
         playsInline
         poster='/images/logo-landscape.png'
-        src='/video/intro.mp4' >
+        // src='/video/intro.mp4' >
+        src='https://r8---sn-a8au-xfge.googlevideo.com/videoplayback?itag=22&ipbits=0&lmt=1499796387699883&expire=1499818135&mime=video%2Fmp4&key=yt6&requiressl=yes&source=youtube&ratebypass=yes&pcm2cms=yes&dur=40.054&initcwndbps=5377500&pl=21&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpcm2cms%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&ei=NxRlWbisGKPR8gSq5a7YBg&ip=129.42.208.179&id=o-AEzQXmqQPGM5AYf4SDHW9z8MnYVHFhfDdhZVh0ku3I19&mm=31&mn=sn-a8au-xfge&mt=1499796441&mv=m&signature=A751B84F80530DF8BE257470560F38384F418C46.8292D46EAB602818D20AE00976C4C98E7F6040C4&ms=au' >
         <BigPlayButton position='center' />
       </Player>
     </div>
