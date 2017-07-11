@@ -1,10 +1,11 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
+  Router,
   Route
 } from 'react-router-dom'
 import HomePage from './HomePage'
 import BookingPage from './BookingPage/BookingPage'
+import history from './history'
 
 class App extends React.Component {
   constructor () {
@@ -31,7 +32,7 @@ class App extends React.Component {
 
   render () {
     return (
-      <Router>
+      <Router history={history}>
         <div className='app'>
           <Route exact path='/' render={props => (
             <HomePage {...props}

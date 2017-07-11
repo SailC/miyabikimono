@@ -1,6 +1,9 @@
 /* global cf */
 import React from 'react'
 import dict from '../dict'
+import history from '../history'
+import $ from 'jquery'
+
 // import classNames from 'classnames'
 // import {
 //   Link
@@ -20,12 +23,11 @@ const contextStyle = {
 class FormSection extends React.Component {
   componentDidMount () {
     initForm()
-    console.log('mount')
   }
   render () {
     const {lang} = this.props
     language = lang
-    console.log(lang, language)
+
     return (
       <section class='form-section section' id='form-section'>
         <div style={contextStyle} id='robot-form-context'>
@@ -226,37 +228,11 @@ function initForm () {
       'user-reponse-and': dict[language]['user-reponse-and'],
       'general': dict[language]['general']
     }, // empty will throw error
-    flowStepCallback: function (dto, success, error) {
-      // if (dto.tag.name === 'yesorno' || dto.tag.name === 'requirement') {
-        // let confirmMessage = generateConfirmMsg(conversationalForm.getFormData(true))
-        // conversationalForm.addRobotChatResponse(confirmMessage)
-        // $('cf-chat-response.robot:last-child > text').css('background-color', '#28a1fc')
-        // $('cf-chat-response.robot:last-child > text').css('color', 'white')
-      // }
-      success()
-    },
     submitCallback: function () {
-      let email = conversationalForm.getFormData(true).email
-      conversationalForm.addRobotChatResponse(
-        `恭喜你完成表格的填写！预约确认的邮件稍后会发送至您的邮箱 ${email}, 请查收. 请再次确认页面下方的预约信息，如需修改，请点击重新预订按钮。`)
-      // $('cf-chat-response.robot:last-child > text').css('background-color', '#28a1fc')
-      // $('cf-chat-response.robot:last-child > text').css('color', 'white')
       var formData = conversationalForm.getFormData(true)
       console.log(formData)
-      // formData['time'] = time
-      // $('span#confirm-name').text(formData.name)
-      // $('span#confirm-location').text(formData.location)
-      // $('span#confirm-time').text(formData.time)
-      // $('span#confirm-male').text(formData.number_male)
-      // $('span#confirm-female').text(formData.number_female)
-      // $('span#confirm-children').text(formData.number_children)
-      // $('span#confirm-email').text(formData.email === undefined ? '无' : formData.email)
-      // $('span#confirm-wechat').text(formData.wechat === undefined ? '无' : formData.wechat)
-      // $('span#confirm-mobile').text(formData.phone === undefined ? '无' : formData.phone)
-      // $('span#confirm-requirement').text(formData.requirement === undefined ? '无' : formData.requirement)
-      // $('#booking-confirm-section').removeClass('hidden-section')
-      // $('cf-chat scrollable').css('overflow-y', 'hidden')
-      // $('cf-input').css('display', 'none')
+
+      history.push('/')
 
       // $.ajax({
       //   url: '/booking',

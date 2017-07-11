@@ -60,7 +60,8 @@ const CalendarSection = (props) => {
               <span>{dict[language]['confirm-time']}</span>
             </Link>
             {/* </Link> */}
-            <a class='button is-primary repick-time' onClick={repickTime}>
+            <a class='button is-primary repick-time is-outlined'
+              onClick={repickTime}>
               <span class='icon is-small'>
                 <i class='fa fa-clock-o' />
               </span>
