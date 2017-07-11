@@ -1,11 +1,13 @@
 import React from 'react'
 import {
   Router,
-  Route
+  Route,
+  Switch
 } from 'react-router-dom'
 import HomePage from './HomePage'
 import BookingPage from './BookingPage/BookingPage'
 import history from './history'
+import NoMatch from './NoMatch'
 
 class App extends React.Component {
   constructor () {
@@ -34,24 +36,26 @@ class App extends React.Component {
     return (
       <Router history={history}>
         <div className='app'>
-          <Route exact path='/' render={props => (
-            <HomePage {...props}
-              lang={this.state.lang}
-              onLangChange={this.state.onLangChange}
+          <Switch>
+            <Route exact path='/' render={props => (
+              <HomePage {...props}
+                lang={this.state.lang}
+                onLangChange={this.state.onLangChange}
+              />
+            )}
             />
-          )}
-          />
-          <Route path='/booking' render={props => (
-            <BookingPage {...props}
-              lang={this.state.lang}
+            <Route path='/booking' render={props => (
+              <BookingPage {...props}
+                lang={this.state.lang}
+              />
+            )}
             />
-          )}
-          />
+            <Route component={NoMatch} />
+          </Switch>
         </div>
       </Router>
     )
   }
-
 }
 
 export default App

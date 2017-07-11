@@ -232,7 +232,7 @@ function initForm () {
       var formData = conversationalForm.getFormData(true)
       console.log(formData)
 
-      history.push('/')
+      history.push('/booking/confirm')
 
       // $.ajax({
       //   url: '/booking',
@@ -247,7 +247,4 @@ function initForm () {
   })
 }
 
-export {
-  FormSection,
-  initForm
-}
+export default FormSection
