@@ -1,5 +1,6 @@
 import React from 'react'
 import dict from '../dict'
+import path from 'path'
 import CalendarWidget from './CalendarWidget'
 import classNames from 'classnames'
 import './less/input-moment.less'
@@ -52,14 +53,13 @@ const CalendarSection = (props) => {
             iconName='fa-check-circle'
           />
           <div class='text-button has-text-centered'>
-            <Link to={`${props.match.url}/form`}
+            <Link to={path.join(props.match.url, '/form')}
               class='button is-primary is-outlined'>
               <span class='icon is-small'>
                 <i class='fa fa-check' />
               </span>
               <span>{dict[language]['confirm-time']}</span>
             </Link>
-            {/* </Link> */}
             <a class='button is-primary repick-time is-outlined'
               onClick={repickTime}>
               <span class='icon is-small'>
@@ -93,4 +93,7 @@ const Message = (props) => {
     </article>
   )
 }
-export default CalendarSection
+export {
+  CalendarSection,
+  Message
+}

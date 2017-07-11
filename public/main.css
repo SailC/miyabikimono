@@ -519,10 +519,6 @@ span.item-price {
 .calendar-section .button.repick-time {
   margin-top: 25px; }
 
-.calendar-section .m-calendar .current-day {
-  color: white;
-  background: #28a1fc; }
-
 .calendar-section .text-button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -590,6 +586,14 @@ section.section.form-section {
     section.section.form-section {
       padding-left: 0px;
       padding-right: 0px; } }
+
+.confirm-section table {
+  table-layout: fixed; }
+  .confirm-section table td {
+    word-wrap: break-word; }
+
+.confirm-section th span.icon.button {
+  margin-right: 10px; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**

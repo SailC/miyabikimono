@@ -1,6 +1,6 @@
 import React from 'react'
 import moment from 'moment-timezone'
-import CalendarSection from './CalendarSection'
+import {CalendarSection} from './CalendarSection'
 import FormSection from './FormSection'
 import ConfirmSection from './ConfirmSection'
 import NoMatch from '../NoMatch'
@@ -18,7 +18,17 @@ class BookingPage extends React.Component {
     this.state = {
       isRightHidden: true,
       isleftHidden: false,
-      m: moment().tz('Asia/Tokyo')
+      m: moment().tz('Asia/Tokyo'),
+      data: {
+        name: '',
+        location: [''],
+        number_male: '',
+        number_female: '',
+        number_children: '',
+        phone: '',
+        via: [''],
+        wechat: ''
+      }
     }
   }
 
@@ -47,6 +57,7 @@ class BookingPage extends React.Component {
             render={props => (
               <FormSection {...props}
                 lang={language}
+                setFormData={this.setFormData.bind(this)}
               />
              )}
            />
@@ -54,6 +65,8 @@ class BookingPage extends React.Component {
             render={props => (
               <ConfirmSection {...props}
                 lang={language}
+                data={this.state.data}
+                moment={this.state.m}
               />
              )}
            />
@@ -61,6 +74,12 @@ class BookingPage extends React.Component {
         </Switch>
       </div>
     )
+  }
+
+  setFormData (formData) {
+    this.setState({
+      data: formData
+    })
   }
 
   handleChange (m) {

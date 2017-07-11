@@ -2,12 +2,6 @@
 import React from 'react'
 import dict from '../dict'
 import history from '../history'
-import $ from 'jquery'
-
-// import classNames from 'classnames'
-// import {
-//   Link
-// } from 'react-router-dom'
 
 var language
 
@@ -22,7 +16,7 @@ const contextStyle = {
 
 class FormSection extends React.Component {
   componentDidMount () {
-    initForm()
+    initForm(this.props.setFormData)
   }
   render () {
     const {lang} = this.props
@@ -207,7 +201,7 @@ class FormSection extends React.Component {
   }
 }
 
-function initForm () {
+function initForm (setFormData) {
   if (window.ConversationalForm) {
     window.ConversationalForm.remove()
   }
@@ -230,7 +224,7 @@ function initForm () {
     }, // empty will throw error
     submitCallback: function () {
       var formData = conversationalForm.getFormData(true)
-      console.log(formData)
+      setFormData(formData)
 
       history.push('/booking/confirm')
 
