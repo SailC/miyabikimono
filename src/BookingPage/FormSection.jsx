@@ -59,12 +59,9 @@ function initForm () {
       'input-placeholder-error': '您的输入格式不正确',
       'entry-not-found': '找不到这一项',
       'group-placeholder': '点击按钮来选择',
-      'input-placeholder-file-error': '文件上传失败',
-      'input-placeholder-file-size-error': '文件大小超过限制',
       'input-no-filter': '找不到包含关键字的结果',
       'user-reponse-and': ' 和',
-      'general': '默认类型1 | 默认类型2',
-      'icon-type-file': "<svg class='cf-icon-file' viewBox='0 0 10 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-756.000000, -549.000000)' fill='#0D83FF'><g transform='translate(736.000000, 127.000000)'><g transform='translate(0.000000, 406.000000)'><polygon points='20 16 26.0030799 16 30 19.99994 30 30 20 30'></polygon></g></g></g></g></svg>"
+      'general': '默认类型1 | 默认类型2'
     }, // empty will throw error
     flowStepCallback: function (dto, success, error) {
       // if (dto.tag.name === 'yesorno' || dto.tag.name === 'requirement') {

@@ -63396,9 +63396,9 @@ module.exports = [
 			"zh-cn": "是的，完全没有问题，我们提供和服浴衣穿戴所需所有服饰配件。"
 		},
 		"askerName": {
-			"zh-cn": "李先生"
+			"zh-cn": "耳机君"
 		},
-		"askerUrl": "/images/faq-section/customer_male.png"
+		"askerUrl": "/images/faq-section/boy-1.png"
 	},
 	{
 		"id": 2,
@@ -63409,9 +63409,9 @@ module.exports = [
 			"zh-cn": "正常情况下，女性顾客需要花费15分钟，男生顾客需要花费10分钟时间。 有选择发型设计的情况可能需要额外10分钟时间。"
 		},
 		"askerName": {
-			"zh-cn": "小野女士"
+			"zh-cn": "短发妹"
 		},
-		"askerUrl": "/images/faq-section/customer_female.png"
+		"askerUrl": "/images/faq-section/girl-1.png"
 	},
 	{
 		"id": 3,
@@ -63422,9 +63422,9 @@ module.exports = [
 			"zh-cn": "是的，可以。小物配件都是可以单独租赁的。对于要求发型设计服务的顾客，我们将免费提供这些饰品。"
 		},
 		"askerName": {
-			"zh-cn": "碧昂斯"
+			"zh-cn": "花轮同学"
 		},
-		"askerUrl": "/images/faq-section/customer_beyongce.png"
+		"askerUrl": "/images/faq-section/boy-2.png"
 	},
 	{
 		"id": 4,
@@ -63435,9 +63435,9 @@ module.exports = [
 			"zh-cn": "当然可以，我们提供带钥匙的箱子免费供客人保存私人物品。（贵重品除外）"
 		},
 		"askerName": {
-			"zh-cn": "旋涡鸣人"
+			"zh-cn": "大辫子酱"
 		},
-		"askerUrl": "/images/faq-section/customer_naruto.png"
+		"askerUrl": "/images/faq-section/girl-2.png"
 	},
 	{
 		"id": 5,
@@ -63448,9 +63448,9 @@ module.exports = [
 			"zh-cn": "对于可以修复洗净范围内的服饰物品，无需其他任何额外费用。如果损坏而无法再次使用的情况下 根据物品种类，需要进行相应赔偿。请注意与谅解。"
 		},
 		"askerName": {
-			"zh-cn": "月野兔"
+			"zh-cn": "娃娃头"
 		},
-		"askerUrl": "/images/faq-section/customer_sailormoon.png"
+		"askerUrl": "/images/faq-section/girl-3.png"
 	},
 	{
 		"id": 6,
@@ -63461,9 +63461,9 @@ module.exports = [
 			"zh-cn": "正常情况下，租赁时间为当天的10点到18点，根据情况，这个时间有可能变化，我们会另行通知。"
 		},
 		"askerName": {
-			"zh-cn": "卡戴珊"
+			"zh-cn": "双马尾酱"
 		},
-		"askerUrl": "/images/faq-section/customer_kardashian.png"
+		"askerUrl": "/images/faq-section/girl-4.png"
 	},
 	{
 		"id": 7,
@@ -63474,9 +63474,9 @@ module.exports = [
 			"zh-cn": "因为特殊情况，当天无法归还的情况下，可以选择追加1000円，延长租赁时间至翌日中午11时。"
 		},
 		"askerName": {
-			"zh-cn": "川普"
+			"zh-cn": "阿姨"
 		},
-		"askerUrl": "/images/faq-section/customer_trump.png"
+		"askerUrl": "/images/faq-section/girl-5.png"
 	},
 	{
 		"id": 8,
@@ -63487,9 +63487,9 @@ module.exports = [
 			"zh-cn": "正常情况下，我们一天的最终接待时间是17点时。客人穿完衣服后，可能只有30分钟左右的照相时间，18点之前也要归还给我们，如果是要过夜的客人，只要是18点之前，我们都会提供服务的，时间根据节日可能产生些许调整，担心的客人可以联系我们咨询。"
 		},
 		"askerName": {
-			"zh-cn": "小野女士"
+			"zh-cn": "眼镜哥"
 		},
-		"askerUrl": "/images/faq-section/customer_female.png"
+		"askerUrl": "/images/faq-section/boy-3.png"
 	},
 	{
 		"id": 9,
@@ -63500,9 +63500,9 @@ module.exports = [
 			"zh-cn": "当然可以，我们优惠提供仅仅提供穿戴服务的套餐。但是请不要遗漏所需穿戴的配件。"
 		},
 		"askerName": {
-			"zh-cn": "小野女士"
+			"zh-cn": "小丸子的妈妈"
 		},
-		"askerUrl": "/images/faq-section/customer_female.png"
+		"askerUrl": "/images/faq-section/girl-6.png"
 	},
 	{
 		"id": 10,
@@ -63513,9 +63513,9 @@ module.exports = [
 			"zh-cn": "只要臀围不超过110cm的，我们都是可以提供的，小孩的身高在95cm以上的我们也可以提供的"
 		},
 		"askerName": {
-			"zh-cn": "爱因斯坦"
+			"zh-cn": "广场舞阿姨"
 		},
-		"askerUrl": "/images/faq-section/customer_einstein.png"
+		"askerUrl": "/images/faq-section/girl-7.png"
 	},
 	{
 		"id": 11,
@@ -63526,9 +63526,9 @@ module.exports = [
 			"zh-cn": "冬天气温下降，虽然我们在和服里面已经准备了衬衣，但为了更加保暖，请另行准备低领的打底衣。同时由于需要 穿上开指袜，所以也请不要穿戴连体的袜裤（能露出脚部即可）"
 		},
 		"askerName": {
-			"zh-cn": "小野女士"
+			"zh-cn": "中分哥"
 		},
-		"askerUrl": "/images/faq-section/customer_female.png"
+		"askerUrl": "/images/faq-section/boy-4.png"
 	},
 	{
 		"id": 12,
@@ -63539,9 +63539,9 @@ module.exports = [
 			"zh-cn": "孕妇基本不适合穿着和服。如果实在想要体验的话，建议3个月以上6个月以内"
 		},
 		"askerName": {
-			"zh-cn": "小野女士"
+			"zh-cn": "小帅哥"
 		},
-		"askerUrl": "/images/faq-section/customer_female.png"
+		"askerUrl": "/images/faq-section/boy-5.png"
 	},
 	{
 		"id": 13,
@@ -63552,9 +63552,9 @@ module.exports = [
 			"zh-cn": "我们需要追加隔夜费一天1000日元，请在付款的时候告知我们"
 		},
 		"askerName": {
-			"zh-cn": "小野女士"
+			"zh-cn": "眼镜姐姐"
 		},
-		"askerUrl": "/images/faq-section/customer_female.png"
+		"askerUrl": "/images/faq-section/girl-8.png"
 	},
 	{
 		"id": 14,
@@ -63565,9 +63565,9 @@ module.exports = [
 			"zh-cn": "我们可以为小孩提供的尺寸范围是95cm到140cm为止。"
 		},
 		"askerName": {
-			"zh-cn": "熊孩子"
+			"zh-cn": "原住民妹妹"
 		},
-		"askerUrl": "/images/faq-section/customer_kid.png"
+		"askerUrl": "/images/faq-section/girl-9.png"
 	},
 	{
 		"id": 15,
@@ -63578,9 +63578,9 @@ module.exports = [
 			"zh-cn": "我们不能够使用信用卡，支持现金支付。"
 		},
 		"askerName": {
-			"zh-cn": "小野女士"
+			"zh-cn": "时尚黑GAL"
 		},
-		"askerUrl": "/images/faq-section/customer_female.png"
+		"askerUrl": "/images/faq-section/girl-10.png"
 	}
 ];
 
@@ -70470,12 +70470,9 @@ function initForm() {
       'input-placeholder-error': '您的输入格式不正确',
       'entry-not-found': '找不到这一项',
       'group-placeholder': '点击按钮来选择',
-      'input-placeholder-file-error': '文件上传失败',
-      'input-placeholder-file-size-error': '文件大小超过限制',
       'input-no-filter': '找不到包含关键字的结果',
       'user-reponse-and': ' 和',
-      'general': '默认类型1 | 默认类型2',
-      'icon-type-file': "<svg class='cf-icon-file' viewBox='0 0 10 14' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><g stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'><g transform='translate(-756.000000, -549.000000)' fill='#0D83FF'><g transform='translate(736.000000, 127.000000)'><g transform='translate(0.000000, 406.000000)'><polygon points='20 16 26.0030799 16 30 19.99994 30 30 20 30'></polygon></g></g></g></g></svg>"
+      'general': '默认类型1 | 默认类型2'
     }, // empty will throw error
     flowStepCallback: function flowStepCallback(dto, success, error) {
       // if (dto.tag.name === 'yesorno' || dto.tag.name === 'requirement') {
