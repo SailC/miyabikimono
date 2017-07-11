@@ -5916,25 +5916,46 @@ module.exports = {
 		"nav-form": "填写顾客信息",
 		"question1": "欢迎使用江户和装工房~雅的网上预约，请问您的名字是? ",
 		"placeHolder1": "请输入您的姓名",
+		"input-placeholder": "输入回复...",
+		"input-placeholder-required": "请务必回答这个问题",
+		"user-reponse-missing": "没有",
+		"user-reponse-missing-group": "我不知道答案",
+		"input-placeholder-error": "您的输入格式不正确",
+		"entry-not-found": "找不到这一项",
+		"group-placeholder": "点击按钮来选择",
+		"input-no-filter": "找不到包含关键字的结果",
+		"user-reponse-and": " 和",
+		"general": "默认类型1 | 默认类型2",
+		"say-hello": "很高兴认识你",
 		"question2": "请问您要来我们哪家分店呢?",
-		"placeHolder2": "请点击分店按钮或者输入分店名称",
-		"question3_1": "请问同行的有几位男士呢？如果没有，请输入0",
+		"location1": "浅草",
+		"location2": "上野",
+		"question3_1": "请问同行的有几位男士呢?如果没有,请输入0",
 		"placeHolder3_1": "请输入来店的男士人数",
-		"question3_2": "请问同行的有几位女士呢？如果没有，请输入0",
+		"question3_2": "请问同行的有几位女士呢?如果没有请,输入0",
 		"placeHolder3_2": "请输入来店的女士人数",
-		"question3_3": "请问同行的有几位儿童呢？如果没有，请输入0",
+		"question3_3": "请问同行的有几位儿童呢?如果没有,请输入0",
 		"placeHolder3_3": "请输入来店的儿童人数",
-		"question4": "您的Email是? 请务必填写",
-		"placeHolder4": "输入您的Email，请务必填写",
-		"question5": "您的微信号或者qq号是? 如果没有，直接按回车键或者按提交按钮",
+		"question4": "您的Email是?请务必填写",
+		"placeHolder4": "输入您的Email,请务必填写",
+		"question5": "请留下您的微信号或者qq号?如果没有,请直接按提交按钮",
 		"placeHolder5": "请输入您的微信号或者qq号",
-		"question6": "您的联系电话是? 如果没有，直接按回车键或者按提交按钮",
+		"question6": "您的联系电话是?如果没有,请直接按提交按钮",
 		"placeHolder6": "请输入您的联系电话",
 		"question7": "您是通过哪种方式了解到本店的?",
 		"placeHolder7": "请选择了解到本店的渠道",
-		"question8": "有没有什么特殊的要求或者留言？如果没有，直接按回车键或者按提交按钮",
+		"via1": "大众点评",
+		"via2": "搜索引擎",
+		"via3": "朋友介绍",
+		"via4": "新浪微博",
+		"via5": "Facebook",
+		"via6": "杂志",
+		"via7": "旅游攻略",
+		"via8": "其他",
+		"question8": "您还有什么特殊的要求或者留言吗？如果没有,请直接按提交按钮",
 		"placeHolder8": "请输入您的特殊要求",
-		"question9": "请检查一下您的预约信息，如果想要修改已经输入的信息，请单击您之前回复的消息对话框，然后输入要更改的信息或者选择相应的答案。如果你想修改时间，可以直接在日历上面选择新的时间",
+		"question9": "请检查一下您的预约信息,如果想要修改,请单击您之前回复的消息对话框,然后输入要更改的信息或者选择相应的答案",
+		"confirm-answer": "已经检查过了，确认预约信息无误！",
 		"placeHolder9": "请点击按钮以继续"
 	}
 };
@@ -67029,7 +67050,7 @@ var BookingPage = function (_React$Component) {
         _react2.default.createElement(_reactRouterDom.Route, { path: match.url + '/form',
           render: function render(props) {
             return _react2.default.createElement(_FormSection.FormSection, _extends({}, props, {
-              language: language
+              lang: language
             }));
           }
         })
@@ -70397,6 +70418,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 //   Link
 // } from 'react-router-dom'
 
+var language;
+
 var contextStyle = {
   position: 'absolute',
   top: '0',
@@ -70424,9 +70447,10 @@ var FormSection = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-      var language = this.props.language;
+      var lang = this.props.lang;
 
-      console.log('render');
+      language = lang;
+      console.log(lang, language);
       return _react2.default.createElement(
         'section',
         { className: 'form-section section', id: 'form-section' },
@@ -70437,13 +70461,172 @@ var FormSection = function (_React$Component) {
             'form',
             { id: 'robot-form' },
             _react2.default.createElement('input', {
+              is: true,
+              'cf-questions': _dict2.default[language].question1,
+              'cf-input-placeholder': _dict2.default[language].placeHolder1,
               className: 'input',
               type: 'text',
-              placeholder: _dict2.default[language].placeHolder1,
-              required: true,
-              'data-cf-question': _dict2.default[language].question1,
-              name: 'name'
-            })
+              name: 'name',
+              required: true
+            }),
+            _react2.default.createElement(
+              'radiogroup',
+              {
+                is: true,
+                'cf-questions': _dict2.default[language]['say-hello'] + ' {previous-answer} ' + _dict2.default[language].question2
+              },
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].location1,
+                value: '\u6D45\u8349',
+                name: 'location'
+              }),
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].location2,
+                value: '\u4E0A\u91CE',
+                name: 'location'
+              })
+            ),
+            _react2.default.createElement('input', {
+              is: true,
+              'cf-questions': _dict2.default[language]['question3_1'],
+              'cf-input-placeholder': _dict2.default[language]['placeHolder3_1'],
+              className: 'input',
+              type: 'text',
+              name: 'number_male',
+              required: true
+            }),
+            _react2.default.createElement('input', {
+              is: true,
+              'cf-questions': _dict2.default[language]['question3_2'],
+              'cf-input-placeholder': _dict2.default[language]['placeHolder3_2'],
+              className: 'input',
+              type: 'text',
+              name: 'number_female',
+              required: true
+            }),
+            _react2.default.createElement('input', {
+              is: true,
+              'cf-questions': _dict2.default[language]['question3_3'],
+              'cf-input-placeholder': _dict2.default[language]['placeHolder3_3'],
+              className: 'input',
+              type: 'text',
+              name: 'number_children',
+              required: true
+            }),
+            _react2.default.createElement('input', {
+              is: true,
+              'cf-questions': _dict2.default[language]['question4'],
+              'cf-input-placeholder': _dict2.default[language]['placeHolder4'],
+              className: 'input',
+              type: 'text',
+              name: 'email',
+              required: true
+            }),
+            _react2.default.createElement('input', {
+              is: true,
+              'cf-questions': _dict2.default[language]['question5'],
+              'cf-input-placeholder': _dict2.default[language]['placeHolder5'],
+              className: 'input',
+              type: 'text',
+              name: 'wechat'
+            }),
+            _react2.default.createElement('input', {
+              is: true,
+              'cf-questions': _dict2.default[language]['question6'],
+              'cf-input-placeholder': _dict2.default[language]['placeHolder6'],
+              className: 'input',
+              type: 'text',
+              name: 'phone'
+            }),
+            _react2.default.createElement(
+              'radiogroup',
+              {
+                is: true,
+                'cf-questions': _dict2.default[language].question7
+              },
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].via1,
+                value: '\u5927\u4F17\u70B9\u8BC4',
+                name: 'via'
+              }),
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].via2,
+                value: '\u641C\u7D22\u5F15\u64CE',
+                name: 'via'
+              }),
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].via3,
+                value: '\u670B\u53CB\u4ECB\u7ECD',
+                name: 'via'
+              }),
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].via4,
+                value: '\u65B0\u6D6A\u5FAE\u535A',
+                name: 'via'
+              }),
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].via5,
+                value: 'Facebook',
+                name: 'via'
+              }),
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].via6,
+                value: '\u6742\u5FD7',
+                name: 'via'
+              }),
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].via7,
+                value: '\u65C5\u6E38\u653B\u7565',
+                name: 'via'
+              }),
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language].via8,
+                value: '\u5176\u4ED6',
+                name: 'via'
+              })
+            ),
+            _react2.default.createElement('input', {
+              is: true,
+              'cf-questions': _dict2.default[language]['question8'],
+              'cf-input-placeholder': _dict2.default[language]['placeHolder8'],
+              className: 'input',
+              type: 'text',
+              name: 'requirement'
+            }),
+            _react2.default.createElement(
+              'radiogroup',
+              {
+                is: true,
+                'cf-questions': _dict2.default[language].question9
+              },
+              _react2.default.createElement('input', {
+                is: true,
+                type: 'radio',
+                'cf-label': _dict2.default[language]['confirm-answer'],
+                value: 'yes',
+                name: 'yesorno'
+              })
+            )
           )
         )
       );
@@ -70463,16 +70646,16 @@ function initForm() {
     userImage: '/images/user.png',
     robotImage: '/images/faq-section/service_miyabi.png',
     dictionaryData: {
-      'input-placeholder': '输入回复...',
-      'input-placeholder-required': '请务必回答这个问题',
-      'user-reponse-missing': '我没有',
-      'user-reponse-missing-group': '我不知道答案',
-      'input-placeholder-error': '您的输入格式不正确',
-      'entry-not-found': '找不到这一项',
-      'group-placeholder': '点击按钮来选择',
-      'input-no-filter': '找不到包含关键字的结果',
-      'user-reponse-and': ' 和',
-      'general': '默认类型1 | 默认类型2'
+      'input-placeholder': _dict2.default[language]['input-placeholder'],
+      'input-placeholder-required': _dict2.default[language]['input-placeholder-required'],
+      'user-reponse-missing': _dict2.default[language]['user-reponse-missing'],
+      'user-reponse-missing-group': _dict2.default[language]['user-reponse-missing-group'],
+      'input-placeholder-error': _dict2.default[language]['input-placeholder-error'],
+      'entry-not-found': _dict2.default[language]['entry-not-found'],
+      'group-placeholder': _dict2.default[language]['group-placeholder'],
+      'input-no-filter': _dict2.default[language]['input-no-filter'],
+      'user-reponse-and': _dict2.default[language]['user-reponse-and'],
+      'general': _dict2.default[language]['general']
     }, // empty will throw error
     flowStepCallback: function flowStepCallback(dto, success, error) {
       // if (dto.tag.name === 'yesorno' || dto.tag.name === 'requirement') {

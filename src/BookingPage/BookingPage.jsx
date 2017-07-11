@@ -42,7 +42,7 @@ class BookingPage extends React.Component {
         <Route path={`${match.url}/form`}
           render={props => (
             <FormSection {...props}
-              language={language}
+              lang={language}
             />
            )}
          />
