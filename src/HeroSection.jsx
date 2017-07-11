@@ -2,6 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 import dict from './dict.json'
 import Wallop from 'Wallop'
+import { Link } from 'react-router-dom'
 
 // default to Chinese simplified
 var language = 'zh'
@@ -39,7 +40,7 @@ const NavRight = (props) => {
       {'is-active': isActive}
     )} onClick={toggleListener}>
       <span class='nav-item'>
-        <a href='#' class='button is-primary'>
+        <a href='#product-section' class='button is-primary'>
           <span class='icon'>
             <i class='fa fa-female' />
           </span>
@@ -52,35 +53,35 @@ const NavRight = (props) => {
         </a>
       </span>
       <span class='nav-item'>
-        <a href='#' class='button is-primary'>
+        <Link to='/booking' class='button is-primary'>
           <span class='icon'>
             <i class='fa fa-calendar' />
           </span>
-        </a>
+        </Link>
       </span>
       <span class='nav-item'>
-        <a href='#' class='button is-primary'>
+        <a href='#qa-section' class='button is-primary'>
           <span class='icon'>
             <i class='fa fa-question-circle' />
           </span>
         </a>
       </span>
       <span class='nav-item'>
-        <a href='#' class='button is-primary'>
+        <a href='#girls-section' class='button is-primary'>
           <span class='icon'>
             <i class='fa fa-camera' />
           </span>
         </a>
       </span>
       <span class='nav-item'>
-        <a href='#' class='button is-primary'>
+        <a href='#about-section' class='button is-primary'>
           <span class='icon'>
             <i class='fa fa-users' />
           </span>
         </a>
       </span>
       <span class='nav-item'>
-        <a href='#' class='button is-primary'>
+        <a href='#footer' class='button is-primary'>
           <span class='icon'>
             <i class='fa fa-wechat' />
           </span>
@@ -154,18 +155,12 @@ const Headlines = (props) => {
         'subtitle',
         {'font-zhao': language === 'zh'}
       )}>{text[`hero-subtitle-${num}`]}</h2>
-      <a href={text['apple-store-url']} target='_blank' class='store-icon button is-primary is-inverted'>
+      <Link to='/booking' class='store-icon button is-primary is-inverted'>
         <span class='icon is-small'>
-          <i class='fa fa-apple' />
+          <i class='fa fa-calendar' />
         </span>
-        <span>{text['download-iphone']}</span>
-      </a>
-      <a href={text['google-play-url']} target='_blank' class='store-icon button is-primary is-inverted'>
-        <span class='icon is-small'>
-          <i class='fa fa-android' />
-        </span>
-        <span>{text['download-android']}</span>
-      </a>
+        <span>{text['button-calendar']}</span>
+      </Link>
     </div>
   )
 }
