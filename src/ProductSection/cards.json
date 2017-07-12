@@ -1,10 +1,22 @@
 [
   {
     "id": "1",
-    "url":  "hualinvshi.jpg",
-    "baseurl":  "/images/combo-section/hualinvshi",
+    "url": "hualinvshi.jpg",
+    "baseurl": "/images/combo-section/hualinvshi",
     "price": 5000,
     "popularity": 13,
+    "zh-tw": {
+      "name": "女士華麗和服",
+      "desc": "選擇性最多的套餐，基本上各種花色都有，淡雅的，小家碧玉的，華麗的，一般而言，會有一款是您喜歡的風格的這是江戶和裝工房--雅的人氣套餐。在有限的預算內，這個套餐是性價比比較高的一款",
+      "clothNum": "200件左右",
+      "acc": "半幅帶，草履，襪子，包包，和服，和服內衣，襦袢，裝飾帶",
+      "hair": "髮型設計需要追加1000日元",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "女士",
+      "feature": "人氣套餐",
+      "belt": "半幅帶",
+      "event": "各種場合都適用"
+    },
     "zh-cn": {
       "name": "女士华丽和服",
       "desc": "选择性最多的套餐，基本上各种花色都有，淡雅的，小家碧玉的，华丽的，一般而言，会有一款是您喜欢的风格的这是江户和装工房--雅的人气套餐。在有限的预算内，这个套餐是性价比比较高的一款",
@@ -20,10 +32,22 @@
   },
   {
     "id": "2",
-    "url":  "gaojihefu.jpg",
-    "baseurl":  "/images/combo-section/gaojihefu",
+    "url": "gaojihefu.jpg",
+    "baseurl": "/images/combo-section/gaojihefu",
     "price": 10000,
     "popularity": 14,
+    "zh-tw": {
+      "name": "女士高級和服",
+      "desc": "和服質地上乘，用料高於華麗款，在腰帶部分有明顯的分別，有精緻美麗的裝飾繩，和服的選擇性很多，，讓你既可以艷麗又可以典雅，性價比高，肯定有一款是您喜歡的和服。店長推薦哦",
+      "clothNum": "100件左右",
+      "acc": "半幅帶，草履，襪子，包包，和服，和服內衣，襦袢，精緻裝飾帶，精緻髮飾",
+      "hair": "包含髮型設計",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "女士",
+      "feature": "精緻套餐",
+      "belt": "半幅帶",
+      "event": "各種場合都適用"
+    },
     "zh-cn": {
       "name": "女士高级和服",
       "desc": "和服质地上乘，用料高于华丽款，在腰带部分有明显的分别，有精致美丽的装饰绳，和服的选择性很多，，让你既可以艳丽又可以典雅，性价比高，肯定有一款是您喜欢的和服。店长推荐哦",
@@ -39,10 +63,22 @@
   },
   {
     "id": "3",
-    "url":  "chengren.jpg",
-    "baseurl":  "/images/combo-section/chengren",
+    "url": "chengren.jpg",
+    "baseurl": "/images/combo-section/chengren",
     "price": 38000,
     "popularity": 11,
+    "zh-tw": {
+      "name": "成人禮振袖",
+      "desc": "日本的女性的成年禮是在20歲，在日本的成人禮，都是在1月，那天滿20歲的人都是穿上華麗的振袖的和服去參加自己所在地區的成人禮，非常的華麗畢竟一生中只穿一次。振袖是日本未婚女士最高規格的和服",
+      "clothNum": "50件以上",
+      "acc": "袋帶，草履，刺繡襪子，包包，和服，和服內衣，襦袢，帶揚，精緻裝飾帶，精緻髮飾",
+      "hair": "包含髮型設計",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "女士",
+      "feature": "特惠套餐",
+      "belt": "袋帶",
+      "event": "成人禮 婚宴喜事"
+    },
     "zh-cn": {
       "name": "成人礼振袖",
       "desc": "日本的女性的成年礼是在20岁，在日本的成人礼，都是在1月，那天满20岁的人都是穿上华丽的振袖的和服去参加自己所在地区的成人礼，非常的华丽毕竟一生中只穿一次。振袖是日本未婚女士最高规格的和服",
@@ -58,10 +94,22 @@
   },
   {
     "id": "4",
-    "url":  "gaojichengren.jpg",
-    "baseurl":  "/images/combo-section/gaojichengren",
+    "url": "gaojichengren.jpg",
+    "baseurl": "/images/combo-section/gaojichengren",
     "price": 72000,
     "popularity": 5,
+    "zh-tw": {
+      "name": "豪華成人禮振袖",
+      "desc": "最上乘的正娟材質，燙金圖案，手工刺繡，華麗非凡，給你古代皇室的頂級體驗，在日本對於成人禮重視的程度，看看振袖和服就知道了，很多父母都會不惜成本去幫兒女參加一場自己是主角的成人禮",
+      "clothNum": "20件以上",
+      "acc": "袋帶，草履，刺繡襪子，包包，和服，和服內衣，襦袢，半衿，帶揚，精緻裝飾帶，精緻髮飾",
+      "hair": "包含髮型設計",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "女士",
+      "feature": "特惠套餐",
+      "belt": "袋帶",
+      "event": "成人禮 婚宴喜事"
+    },
     "zh-cn": {
       "name": "豪华成人礼振袖",
       "desc": "最上乘的正娟材质，烫金图案，手工刺绣，华丽非凡，给你古代皇室的顶级体验，在日本对于成人礼重视的程度，看看振袖和服就知道了，很多父母都会不惜成本去帮儿女参加一场自己是主角的成人礼",
@@ -77,10 +125,22 @@
   },
   {
     "id": "5",
-    "url":  "mingpaihefu.jpg",
-    "baseurl":  "/images/combo-section/mingpaihefu",
+    "url": "mingpaihefu.jpg",
+    "baseurl": "/images/combo-section/mingpaihefu",
     "price": 20000,
     "popularity": 10,
+    "zh-tw": {
+      "name": "名牌和服",
+      "desc": "想體驗更加豪華奢侈的和服？我們為了想要變得更加華貴的客人們準備了這個名牌和服套餐，用料更精細，所有物品都是精心挑選的，特別的準備只為特別的你，值得您嘗試",
+      "clothNum": "20件",
+      "acc": "袋帶，草履，刺繡襪子，包包，和服，和服內衣，襦袢，精緻髮飾 ，帶揚，帶締",
+      "hair": "包含髮型設計",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "女士",
+      "feature": "精選套餐",
+      "belt": "袋帶",
+      "event": "各種場合都適用"
+    },
     "zh-cn": {
       "name": "名牌和服",
       "desc": "想体验更加豪华奢侈的和服？我们为了想要变得更加华贵的客人们准备了这个名牌和服套餐，用料更精细，所有物品都是精心挑选的，特别的准备只为特别的你，值得您尝试",
@@ -96,10 +156,21 @@
   },
   {
     "id": "6",
-    "url":  "kua.jpg",
-    "baseurl":  "/images/combo-section/kua",
+    "url": "kua.jpg",
+    "baseurl": "/images/combo-section/kua",
     "price": 20000,
     "popularity": 9,
+    "zh-tw": {
+      "name": "畢業典禮用袴",
+      "desc": "明治時代學習院女學部長、華族女校校長、女子禮法家下田歌子把男子馬乘袴改造後的海老茶袴作為女子校服。袴也多作為女子畢業著作為畢業典禮的禮服。鞋子可以是正裝草履，也可以是靴子，配靴子是大正時期留下的穿法",
+      "clothNum": "20件",
+      "acc": "半幅帶，草履，刺繡襪子，包包，和服，和服內衣",
+      "hair": "包含髮型設計",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "女士",
+      "belt": "半幅帶",
+      "event": "畢業典禮"
+    },
     "zh-cn": {
       "name": "毕业典礼用袴",
       "desc": "明治时代学习院女学部长、华族女校校长、女子礼法家下田歌子把男子马乘袴改造后的海老茶袴作为女子校服。袴也多作为女子毕业着作为毕业典礼的礼服。鞋子可以是正装草履，也可以是靴子，配靴子是大正时期留下的穿法",
@@ -114,10 +185,21 @@
   },
   {
     "id": "7",
-    "url":  "fangwen.jpg",
-    "baseurl":  "/images/combo-section/fangwen",
+    "url": "fangwen.jpg",
+    "baseurl": "/images/combo-section/fangwen",
     "price": 20000,
     "popularity": 8,
+    "zh-tw": {
+      "name": "訪問者",
+      "desc": "訪問著並沒有已婚未婚的分別。訪問著是整體染上圖案的和服，它從下擺，左前袖，左肩到領子展開後是一幅圖畫，特徵是稱為「絵羽(えば)」的這種形式。適合訪問著的有：友人婚宴、派對、陪同入學典禮、茶會、同學會、相親等社交場合",
+      "clothNum": "20件",
+      "acc": "袋帶，草履，刺繡襪子，包包，和服，和服內衣，襦袢，精緻裝飾帶，精緻髮飾",
+      "hair": "包含髮型設計",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "女士",
+      "belt": "袋帶",
+      "event": "登門拜訪"
+    },
     "zh-cn": {
       "name": "访问者",
       "desc": "访问着并没有已婚未婚的分别。访问着是整体染上图案的和服，它从下摆，左前袖，左肩到领子展开后是一幅图画，特徵是称为「絵羽(えば)」的这种形式。适合访问着的有：友人婚宴、派对、陪同入学典礼、茶会、同学会、相亲等社交场合",
@@ -132,10 +214,22 @@
   },
   {
     "id": "8",
-    "url":  "nvshiyouhui.jpg",
-    "baseurl":  "/images/combo-section/hualinvshi",
+    "url": "nvshiyouhui.jpg",
+    "baseurl": "/images/combo-section/hualinvshi",
     "price": 3000,
     "popularity": 12,
+    "zh-tw": {
+      "name": "女士優惠和服",
+      "desc": "原件5000日元，每天從5000日元中抽選20件作為優惠套餐，非常的實惠。和服較為花色樸素，每天限定，先到先得，不支持事先預約以及預留，適合年長女士的花色居多",
+      "clothNum": "20件",
+      "acc": "半幅帶，草履，襪子，包包，和服，和服內衣，襦袢，裝飾帶",
+      "hair": "髮型設計需要追加1000日元",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "女士",
+      "feature": "特惠套餐",
+      "belt": "半幅帶",
+      "event": "登門拜訪"
+    },
     "zh-cn": {
       "name": "女士优惠和服",
       "desc": "原件5000日元，每天从5000日元中抽选20件作为优惠套餐，非常的实惠。和服较为花色朴素，每天限定，先到先得，不支持事先预约以及预留，适合年长女士的花色居多",
@@ -151,10 +245,21 @@
   },
   {
     "id": "9",
-    "url":  "nanshihefu.jpg",
-    "baseurl":  "/images/combo-section/nanshihefu",
+    "url": "nanshihefu.jpg",
+    "baseurl": "/images/combo-section/nanshihefu",
     "price": 5000,
     "popularity": 1,
+    "zh-tw": {
+      "name": "男士和服",
+      "desc": "和服的美麗可不僅僅只屬於愛美的女生，男生也可以感受男性和服的那種莊嚴感，江戶和裝工房—雅為男士們準備了50套以上服飾用於選擇。雖然沒有女士那麼多的選擇，花色也沒有那麼鮮豔，但是男人簡單就好",
+      "clothNum": "50件以上",
+      "acc": "腰帶，草履，襪子，包包，和服，和服內衣，襦袢",
+      "hair": "不包含髮型設計",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "男士",
+      "belt": "角帶",
+      "event": "各種場合都適用"
+    },
     "zh-cn": {
       "name": "男士和服",
       "desc": "和服的美丽可不仅仅只属于爱美的女生，男生也可以感受男性和服的那种庄严感，江户和装工房—雅为男士们准备了50套以上服饰用于选择。虽然没有女士那么多的选择，花色也没有那么鲜艳，但是男人简单就好",
@@ -169,10 +274,21 @@
   },
   {
     "id": "10",
-    "url":  "ertonghefu.jpg",
-    "baseurl":  "/images/combo-section/ertonghefu",
+    "url": "ertonghefu.jpg",
+    "baseurl": "/images/combo-section/ertonghefu",
     "price": 3500,
     "popularity": 6,
+    "zh-tw": {
+      "name": "兒童和服",
+      "desc": "可愛的孩子們穿上了可愛的兒童和服一定會變得更加可愛吧，讓孩子們穿上一套和服，全家一起散步這種場景相信都是滿滿的溫馨，，從喜歡的顏色到喜歡的花紋，從開始選擇就可以讓孩子充滿歡樂。適用的身高為95cm到140cm",
+      "clothNum": "50件以上",
+      "acc": "兵兒帶，草履，襪子，包包，和服，和服內衣，襦袢，和服外套",
+      "hair": "髮型設計需要追加1000日元",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "兒童",
+      "belt": "兵兒帶",
+      "event": "各種場合都適用"
+    },
     "zh-cn": {
       "name": "儿童和服",
       "desc": "可爱的孩子们穿上了可爱的儿童和服一定会变得更加可爱吧，让孩子们穿上一套和服，全家一起散步这种场景相信都是满满的温馨，，从喜欢的颜色到喜欢的花纹，从开始选择就可以让孩子充满欢乐。适用的身高为95cm到140cm",
@@ -187,10 +303,21 @@
   },
   {
     "id": "11",
-    "url":  "nvtongzhenxiu.jpg",
-    "baseurl":  "/images/combo-section/nvtongzhenxiu",
+    "url": "nvtongzhenxiu.jpg",
+    "baseurl": "/images/combo-section/nvtongzhenxiu",
     "price": 7000,
     "popularity": 2,
+    "zh-tw": {
+      "name": "女童振袖和服",
+      "desc": "日本最華麗的兒童和服，讓小朋友瞬間變成日本小公主，漫遊古色古香的淺草寺，穿上華麗的和服，讓孩子遇見一個不一樣的自己，留下一個美好的回憶。數量不多，選擇有限，先到先得哦。適用的身高115cm到140cm。",
+      "clothNum": "6件",
+      "acc": "豪華腰帶，草履，襪子，包包，和服，和服內衣，襦袢",
+      "hair": "髮型設計需要追加1000日元",
+      "cloth-type": "和服(春冬首選)",
+      "gender": "兒童",
+      "feature": "奢華套餐",
+      "event": "各種場合都適用"
+    },
     "zh-cn": {
       "name": "女童振袖和服",
       "desc": "日本最华丽的儿童和服，让小朋友瞬间变成日本小公主，漫游古色古香的浅草寺，穿上华丽的和服，让孩子遇见一个不一样的自己，留下一个美好的回忆。数量不多，选择有限，先到先得哦。适用的身高115cm到140cm。",
@@ -205,10 +332,21 @@
   },
   {
     "id": "12",
-    "url":  "nvshiyuyi.jpg",
-    "baseurl":  "/images/combo-section/nvshiyuyi",
+    "url": "nvshiyuyi.jpg",
+    "baseurl": "/images/combo-section/nvshiyuyi",
     "price": 3500,
     "popularity": 7,
+    "zh-tw": {
+      "name": "女士浴衣",
+      "desc": "女士浴衣是夏天限定的套餐，提供浴衣的時間是6月1號到9月15日。浴衣是簡易和服，在材料和穿法上與正式的和服都是不一樣的，質地較薄，比較休閒，花色比較艷麗，在夏天參加花火大會和一些夏祭活動的最佳著裝",
+      "clothNum": "300件左右",
+      "acc": "半幅帶，木屐，包包，浴衣，浴衣內衣，各種小物，裝飾帶",
+      "hair": "髮型設計需要追加1000日元",
+      "cloth-type": "浴衣(夏秋首選)",
+      "gender": "女士",
+      "event": "夏季火花大會",
+      "belt": "半幅帶"
+    },
     "zh-cn": {
       "name": "女士浴衣",
       "desc": "女士浴衣是夏天限定的套餐，提供浴衣的时间是6月1号到9月15日。浴衣是简易和服，在材料和穿法上与正式的和服都是不一样的，质地较薄，比较休闲，花色比较艳丽，在夏天参加花火大会和一些夏祭活动的最佳着装",
@@ -223,10 +361,21 @@
   },
   {
     "id": "13",
-    "url":  "nanshiyuyi.jpg",
-    "baseurl":  "/images/combo-section/nanshiyuyi",
+    "url": "nanshiyuyi.jpg",
+    "baseurl": "/images/combo-section/nanshiyuyi",
     "price": 3500,
     "popularity": 4,
+    "zh-tw": {
+      "name": "男士浴衣",
+      "desc": "男士浴衣是夏天限定的套餐，提供浴衣的時間是6月1號到9月15日。浴衣是簡易和服，在材料和穿法上與正式的和服都是不一樣的，質地較薄，比較休閒，花色比較艷麗，是在夏天參加花火大會和一些夏祭活動的最佳著裝",
+      "clothNum": "100件左右",
+      "acc": "角帶，木屐，包包，浴衣，浴衣內衣，各種小物",
+      "hair": "不包含髮型設計",
+      "cloth-type": "浴衣(夏秋首選)",
+      "gender": "男士",
+      "event": "夏季火花大會",
+      "belt": "角帶"
+    },
     "zh-cn": {
       "name": "男士浴衣",
       "desc": "男士浴衣是夏天限定的套餐，提供浴衣的时间是6月1号到9月15日。浴衣是简易和服，在材料和穿法上与正式的和服都是不一样的，质地较薄，比较休闲，花色比较艳丽，是在夏天参加花火大会和一些夏祭活动的最佳着装",
@@ -241,10 +390,21 @@
   },
   {
     "id": "14",
-    "url":  "ertongyuyi.jpg",
-    "baseurl":  "/images/combo-section/ertongyuyi",
+    "url": "ertongyuyi.jpg",
+    "baseurl": "/images/combo-section/ertongyuyi",
     "price": 3000,
     "popularity": 3,
+    "zh-tw": {
+      "name": "兒童浴衣",
+      "desc": "可愛的孩子們穿上了可愛的浴衣一定會變得更加可愛吧，讓孩子們穿上一套浴衣，全家一起散步這種場景相信都是滿滿的溫馨，從喜歡的顏色到喜歡的花紋，從開始選擇就可以讓孩子充滿歡樂",
+      "clothNum": "50件以上",
+      "acc": "兵兒帶，木屐，包包，浴衣",
+      "hair": "髮型設計需要追加1000日元",
+      "cloth-type": "浴衣(夏秋首選)",
+      "gender": "兒童",
+      "belt": "兵兒帶",
+      "event": "夏季火花大會"
+    },
     "zh-cn": {
       "name": "儿童浴衣",
       "desc": "可爱的孩子们穿上了可爱的浴衣一定会变得更加可爱吧，让孩子们穿上一套浴衣，全家一起散步这种场景相信都是满满的温馨，从喜欢的颜色到喜欢的花纹，从开始选择就可以让孩子充满欢乐",
