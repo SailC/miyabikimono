@@ -43767,7 +43767,7 @@ var CalendarSection = function CalendarSection(props) {
     'section',
     { className: 'calendar-section section container', id: 'calendar-section' },
     _react2.default.createElement(
-      'h1',
+      'div',
       { className: 'title has-text-centered' },
       _dict2.default[language]['nav-calendar']
     ),
