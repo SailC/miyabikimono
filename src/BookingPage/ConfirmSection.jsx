@@ -1,6 +1,7 @@
 import React from 'react'
 import dict from '../dict'
 import {Message} from './CalendarSection'
+import {Link} from 'react-router-dom'
 
 class ConfirmSection extends React.Component {
   render () {
@@ -127,7 +128,7 @@ class ConfirmSection extends React.Component {
         </table>
 
         <Message title={dict[lang]['confirm-title-1']}
-          content={dict[lang]['confirm-msg-1']}
+          content={dict[lang]['confirm-msg-1'] + data['email']}
           styleClass='is-danger'
           iconName='fa-heart'
         />
@@ -136,25 +137,31 @@ class ConfirmSection extends React.Component {
           styleClass='is-primary'
           iconName='fa-calendar'
         />
-        <div class='button-links has-text-centered'>
-          <button class='button is-primary'>
-            <span class='icon'>
-              <i class='fa fa-home' />
-            </span>
-            <span>
-              {dict[lang]['nav-return']}
-            </span>
-          </button>
-        </div>
-        <div class='button-links has-text-centered'>
-          <button class='button is-primary'>
-            <span class='icon'>
-              <i class='fa fa-calendar' />
-            </span>
-            <span>
-              {dict[lang]['repick-time']}
-            </span>
-          </button>
+        <div class='level'>
+          <div class='level-item button-links has-text-centered'>
+            <Link to='/'>
+              <button class='button is-primary'>
+                <span class='icon'>
+                  <i class='fa fa-home' />
+                </span>
+                <span>
+                  {dict[lang]['nav-return']}
+                </span>
+              </button>
+            </Link>
+          </div>
+          <div class='level-item button-links has-text-centered'>
+            <Link to='/booking'>
+              <button class='button is-primary'>
+                <span class='icon'>
+                  <i class='fa fa-calendar' />
+                </span>
+                <span>
+                  {dict[lang]['repick-time']}
+                </span>
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
     )

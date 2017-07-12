@@ -26,7 +26,7 @@ const VideoPlayer = () => (
         playsInline
         poster='/images/logo-landscape.png'
         // src='/video/intro.mp4' >
-        src='https://r8---sn-a8au-xfge.googlevideo.com/videoplayback?itag=22&ipbits=0&lmt=1499796387699883&expire=1499818135&mime=video%2Fmp4&key=yt6&requiressl=yes&source=youtube&ratebypass=yes&pcm2cms=yes&dur=40.054&initcwndbps=5377500&pl=21&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpcm2cms%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&ei=NxRlWbisGKPR8gSq5a7YBg&ip=129.42.208.179&id=o-AEzQXmqQPGM5AYf4SDHW9z8MnYVHFhfDdhZVh0ku3I19&mm=31&mn=sn-a8au-xfge&mt=1499796441&mv=m&signature=A751B84F80530DF8BE257470560F38384F418C46.8292D46EAB602818D20AE00976C4C98E7F6040C4&ms=au' >
+        src='https://r3---sn-p5qs7n7z.googlevideo.com/videoplayback?mn=sn-p5qs7n7z&mm=31&expire=1499841555&id=o-APSm-74gDarK6SDhxbt9u7mlRreCexnXoBGrQLHIBVKT&mime=video%2Fmp4&ip=2601%3A547%3A500%3A4865%3A902f%3Ae63b%3Ac5e8%3A848&sparams=dur%2Cei%2Cid%2Cinitcwndbps%2Cip%2Cipbits%2Citag%2Clmt%2Cmime%2Cmm%2Cmn%2Cms%2Cmv%2Cpl%2Cratebypass%2Crequiressl%2Csource%2Cexpire&itag=22&pl=26&dur=40.054&mv=m&source=youtube&ms=au&beids=%5B9466591%5D&requiressl=yes&mt=1499819873&ipbits=0&initcwndbps=1453750&lmt=1499796387699883&signature=3AF78CF8A99E7BAE2CF575E97BB2CC8480622735.2B16FFBDAB82A5347127AE528E6B02E534AEB797&key=yt6&ratebypass=yes&ei=sm9lWZSXN-OC8gSmrarQDA' >
         <BigPlayButton position='center' />
       </Player>
     </div>
