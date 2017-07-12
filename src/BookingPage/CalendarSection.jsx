@@ -20,9 +20,9 @@ const CalendarSection = (props) => {
   } = props
   return (
     <section class='calendar-section section container' id='calendar-section'>
-      <h1 class='title has-text-centered'>
+      <div class='title has-text-centered'>
         {dict[language]['nav-calendar']}
-      </h1>
+      </div>
       <div class='calendar-widget columns container'>
         <div class={classNames(
           'column',

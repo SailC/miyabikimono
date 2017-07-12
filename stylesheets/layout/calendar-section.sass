@@ -6,7 +6,7 @@
     @include widescreen
       width: 30%
   .m-input-moment
-    width: 100%
+    // width: 100%
 
   .tabs .icon:first-child
     margin: 0
@@ -16,16 +16,18 @@
     width: 100%
   .m-calendar.tab
     height: 100%
+  .m-time.tab.is-active
+    height: 325px
 
   .calendar-column
     display: flex
     justify-content: center
 
   .m-input-moment .tabs
-    margin-top: 30px
+    // margin-top: 30px
 
   .m-input-moment .btn-save
-    margin-top: 50px
+    // margin-top: 50px
 
   .m-calendar td.is-disabled
     cursor: not-allowed
@@ -45,3 +47,15 @@
     flex-direction: column
     justify-content: center
     align-items: center
+
+.section.calendar-section
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  padding-top: 0px
+  padding-bottom: 0px
+  @include mobile
+    padding-left: 0px
+    padding-right: 0px
