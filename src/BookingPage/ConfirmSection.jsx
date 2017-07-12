@@ -139,27 +139,23 @@ class ConfirmSection extends React.Component {
         />
         <div class='level'>
           <div class='level-item button-links has-text-centered'>
-            <Link to='/'>
-              <button class='button is-primary'>
-                <span class='icon'>
-                  <i class='fa fa-home' />
-                </span>
-                <span>
-                  {dict[lang]['nav-return']}
-                </span>
-              </button>
+            <Link to='/' class='button is-primary'>
+              <span class='icon'>
+                <i class='fa fa-home' />
+              </span>
+              <span>
+                {dict[lang]['nav-return']}
+              </span>
             </Link>
           </div>
           <div class='level-item button-links has-text-centered'>
-            <Link to='/booking'>
-              <button class='button is-primary'>
-                <span class='icon'>
-                  <i class='fa fa-calendar' />
-                </span>
-                <span>
-                  {dict[lang]['repick-time']}
-                </span>
-              </button>
+            <Link to='/booking' class='button is-primary'>
+              <span class='icon'>
+                <i class='fa fa-calendar' />
+              </span>
+              <span>
+                {dict[lang]['repick-time']}
+              </span>
             </Link>
           </div>
         </div>

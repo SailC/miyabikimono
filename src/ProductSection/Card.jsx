@@ -96,23 +96,21 @@ class Card extends React.Component {
               </p>
             </div>
             <div class='item-link has-text-centered'>
-              <button class='button' onClick={this.toggleListener} >
-                <span class='icon'>
+              <a class='button' onClick={this.toggleListener} >
+                <span class='icon is-small'>
                   <i class='fa fa-camera' />
                 </span>
                 <span>
                   {dict[language]['combo-photo']}
                 </span>
-              </button>
-              <Link to='/booking'>
-                <button class='button'>
-                  <span class='icon'>
-                    <i class='fa fa-calendar' />
-                  </span>
-                  <span>
-                    {dict[language]['combo-book']}
-                  </span>
-                </button>
+              </a>
+              <Link to='/booking' class='button'>
+                <span class='icon is-small'>
+                  <i class='fa fa-calendar' />
+                </span>
+                <span>
+                  {dict[language]['combo-book']}
+                </span>
               </Link>
             </div>
           </div>

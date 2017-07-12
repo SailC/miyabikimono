@@ -247,7 +247,7 @@ span.item-price {
 .title span.item-price {
   font-weight: bold; }
 
-.item-link button.button {
+.item-link .button {
   margin: 2.5px; }
 
 .qa-section {
