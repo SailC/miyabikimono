@@ -26,15 +26,8 @@ app.use(expressValidator())
 app.use(express.static(path.join(__dirname, '../public'))) // static file look up
 app.use(favicon(path.join(__dirname, '../public/images/favicon.ico')))
 
-// route setup
-app.use('/', index)
-
-// catch 404 and forward to error handler
-app.use(function (req, res, next) {
-  var err = new Error('Not Found')
-  err.status = 404
-  next(err)
-})
+// send all requests to index.html so browserHistory in React Router works
+app.use('*', index)
 
 // error handler
 app.use(function (err, req, res, next) {
