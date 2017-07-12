@@ -71088,10 +71088,6 @@ var _history = __webpack_require__(277);
 
 var _history2 = _interopRequireDefault(_history);
 
-var _jquery = __webpack_require__(128);
-
-var _jquery2 = _interopRequireDefault(_jquery);
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -71342,16 +71338,7 @@ function initForm(setFormData) {
     submitCallback: function submitCallback() {
       var formData = conversationalForm.getFormData(true);
       setFormData(formData);
-
       _history2.default.push('/booking/confirm');
-
-      _jquery2.default.ajax({
-        url: '/booking',
-        type: 'POST',
-        data: formData,
-        success: function success(data) {},
-        error: function error() {}
-      });
     }
   });
 }
@@ -72204,6 +72191,10 @@ var _CalendarSection = __webpack_require__(274);
 
 var _reactRouterDom = __webpack_require__(25);
 
+var _jquery = __webpack_require__(128);
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -72229,7 +72220,15 @@ var ConfirmSection = function (_React$Component) {
           data = _props.data,
           moment = _props.moment;
 
+      data.time = moment.format('LLLL');
       console.log(data);
+      _jquery2.default.ajax({
+        url: '/email',
+        type: 'POST',
+        data: data,
+        success: function success(data) {},
+        error: function error() {}
+      });
       return _react2.default.createElement(
         'section',
         { className: 'confirm-section section container' },

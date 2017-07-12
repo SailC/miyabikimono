@@ -2,7 +2,6 @@
 import React from 'react'
 import dict from '../dict'
 import history from '../history'
-import $ from 'jquery'
 
 var language
 
@@ -226,18 +225,7 @@ function initForm (setFormData) {
     submitCallback: function () {
       var formData = conversationalForm.getFormData(true)
       setFormData(formData)
-
       history.push('/booking/confirm')
-
-      $.ajax({
-        url: '/booking',
-        type: 'POST',
-        data: formData,
-        success: function (data) {
-        },
-        error: function () {
-        }
-      })
     }
   })
 }

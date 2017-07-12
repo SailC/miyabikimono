@@ -9,6 +9,7 @@ var expressValidator = require('express-validator')
 
 // express routes
 var index = require('./routes/index')
+var emailRouter = require('./routes/email')
 // init app
 var app = express()
 
@@ -27,6 +28,7 @@ app.use(express.static(path.join(__dirname, '../public'))) // static file look u
 app.use(favicon(path.join(__dirname, '../public/images/favicon.ico')))
 
 // send all requests to index.html so browserHistory in React Router works
+app.use('/email', emailRouter)
 app.use('*', index)
 
 // error handler

@@ -2,11 +2,22 @@ import React from 'react'
 import dict from '../dict'
 import {Message} from './CalendarSection'
 import {Link} from 'react-router-dom'
+import $ from 'jquery'
 
 class ConfirmSection extends React.Component {
   render () {
     const {lang, data, moment} = this.props
+    data.time = moment.format('LLLL')
     console.log(data)
+    $.ajax({
+      url: '/email',
+      type: 'POST',
+      data: data,
+      success: function (data) {
+      },
+      error: function () {
+      }
+    })
     return (
       <section class='confirm-section section container'>
         <h1 class='title has-text-centered'>
