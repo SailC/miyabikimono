@@ -40,6 +40,20 @@ const NavRight = (props) => {
       {'is-active': isActive}
     )} onClick={toggleListener}>
       <span class='nav-item'>
+        <div class='field'>
+          <p class='control'>
+            <span class='select is-small is-primary has-text-centered'>
+              <select onChange={langChangeListener}>
+                <option>简体中文</option>
+                <option>正體中文</option>
+                <option>English</option>
+                <option>日本語</option>
+              </select>
+            </span>
+          </p>
+        </div>
+      </span>
+      <span class='nav-item'>
         <a href='#product-section' class='button is-primary'>
           <span class='icon'>
             <i class='fa fa-female' />
@@ -52,13 +66,13 @@ const NavRight = (props) => {
           </span>
         </a>
       </span>
-      <span class='nav-item'>
+      {/* <span class='nav-item'>
         <Link to='/booking' class='button is-primary'>
           <span class='icon'>
             <i class='fa fa-calendar' />
           </span>
         </Link>
-      </span>
+      </span> */}
       <span class='nav-item'>
         <a href='#qa-section' class='button is-primary'>
           <span class='icon'>
@@ -87,20 +101,7 @@ const NavRight = (props) => {
           </span>
         </a>
       </span>
-      <span class='nav-item'>
-        <div class='field'>
-          <p class='control'>
-            <span class='select is-small is-primary has-text-centered'>
-              <select onChange={langChangeListener}>
-                <option>简体中文</option>
-                <option>正體中文</option>
-                <option>English</option>
-                <option>日本語</option>
-              </select>
-            </span>
-          </p>
-        </div>
-      </span>
+
     </div>
   )
 }

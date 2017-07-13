@@ -22,9 +22,13 @@ class App extends React.Component {
     let language = event.target.value
     // TODO: to be implemented , setState(lang)
     if (language === '简体中文') {
-      console.log('zh')
+      this.setState({
+        lang: 'zh-cn'
+      })
     } else if (language === '正體中文') {
-      console.log('cn')
+      this.setState({
+        lang: 'zh-tw'
+      })
     } else if (language === 'English') {
       console.log('en')
     } else {
@@ -40,7 +44,7 @@ class App extends React.Component {
             <Route exact path='/' render={props => (
               <HomePage {...props}
                 lang={this.state.lang}
-                onLangChange={this.state.onLangChange}
+                onLangChange={this.onLangChange}
               />
             )}
             />

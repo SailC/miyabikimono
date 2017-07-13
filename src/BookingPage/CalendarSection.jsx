@@ -67,6 +67,13 @@ const CalendarSection = (props) => {
               </span>
               <span>{dict[language]['repick-time']}</span>
             </a>
+            <Link to='/'
+              class='button is-primary is-outlined'>
+              <span class='icon is-small'>
+                <i class='fa fa-home' />
+              </span>
+              <span>{dict[language]['nav-return']}</span>
+            </Link>
           </div>
         </div>
       </div>

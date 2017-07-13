@@ -511,7 +511,8 @@ span.item-price {
   padding: 0 15px; }
 
 .calendar-section .button.repick-time {
-  margin-top: 25px; }
+  margin-top: 25px;
+  margin-bottom: 25px; }
 
 .calendar-section .text-button {
   display: -webkit-box;
@@ -6024,6 +6025,26 @@ label.panel-block {
 .footer {
   background-color: whitesmoke;
   padding: 3rem 1.5rem 6rem; }
+
+.ballon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  padding: 13px;
+  background: black;
+  border-radius: 50%;
+  z-index: 100; }
+  .ballon svg {
+    fill: white; }
 
 .video-react .video-react-big-play-button:before, .video-react .video-react-control:before {
   position: absolute;

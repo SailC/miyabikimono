@@ -4,6 +4,8 @@ var nodemailer = require('nodemailer')
 const pug = require('pug')
 const path = require('path')
 
+var language = 'zh-cn'
+
 router.post('/', function (req, res, next) {
   try {
     var time = req.body.time
@@ -17,16 +19,20 @@ router.post('/', function (req, res, next) {
     var maleNumber = req.body.number_male
     var femaleNumber = req.body.number_female
     var childrenNumber = req.body.number_children
+    language = req.body.language
   } catch (err) {
+    console.log(err)
   }
-  sendMail(name, location, maleNumber, femaleNumber, childrenNumber, email, phone, via, requirement, time, wechat)
+  sendMail(name, location, maleNumber, femaleNumber, childrenNumber, email, phone, via, requirement, time, wechat, language)
   res.send({ success: true })
 })
 
 // setup email data with unicode symbols
-function sendMail (name, location, maleNumber, femaleNumber, childrenNumber, email, phone, via, requirement, time, wechat) {
+function sendMail (name, location, maleNumber, femaleNumber, childrenNumber, email, phone, via, requirement, time, wechat, language) {
 //  var template = '/Users/chenqi/github_workspace/edomiyabi/public/assets/html/confirm_email.html';
-  var template = path.join(__dirname, '../views/email_confirmation.pug')
+  console.log(`../views/email_${language}.pug`)
+  var template = path.join(__dirname, `../views/email_${language}.pug`)
+  console.log('before render file')
   const emailContent = pug.renderFile(template, {
     name: name,
     phone: phone,
@@ -39,7 +45,10 @@ function sendMail (name, location, maleNumber, femaleNumber, childrenNumber, ema
     location: location,
     via: via,
     requirement: requirement
+  }, function (err, text) {
+    console.log(err)
   })
+  console.log(emailContent)
 
   let transporter = nodemailer.createTransport({
     service: 'qiye.aliyun',
@@ -67,13 +76,13 @@ function sendMail (name, location, maleNumber, femaleNumber, childrenNumber, ema
   // send mail with defined transport object
   transporter.sendMail(mailOptionsToCustomer, (error, info) => {
     if (error) {
-      return console.log(error)
+      console.log(error)
     }
   })
 
   transporter.sendMail(mailOptionsToMiyabi, (error, info) => {
     if (error) {
-      return console.log(error)
+      console.log(error)
     }
   })
 }

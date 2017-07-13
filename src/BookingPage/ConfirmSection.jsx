@@ -8,6 +8,7 @@ class ConfirmSection extends React.Component {
   render () {
     const {lang, data, moment} = this.props
     data.time = moment.format('LLLL')
+    data.language = lang
     console.log(data)
     $.ajax({
       url: '/email',
@@ -15,7 +16,8 @@ class ConfirmSection extends React.Component {
       data: data,
       success: function (data) {
       },
-      error: function () {
+      error: function (err) {
+        console.log(err)
       }
     })
     return (
