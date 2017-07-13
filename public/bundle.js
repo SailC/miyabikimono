@@ -54039,7 +54039,10 @@ var NavRight = function NavRight(props) {
     { className: (0, _classnames2.default)('nav-right', 'nav-menu', { 'is-active': isActive }), onClick: toggleListener },
     _react2.default.createElement(
       'span',
-      { className: 'nav-item' },
+      { className: 'nav-item', onClick: function onClick(e) {
+          e.preventDefault();
+          e.stopPropagation();
+        } },
       _react2.default.createElement(
         'div',
         { className: 'field' },
@@ -54408,6 +54411,12 @@ var ProductSection = function (_React$Component) {
   }
 
   _createClass(ProductSection, [{
+    key: 'componentDidUpdate',
+    value: function componentDidUpdate() {
+      console.log('scroll');
+      document.getElementById('product-section').scrollIntoView();
+    }
+  }, {
     key: 'toggleListener',
     value: function toggleListener() {
       (0, _jquery2.default)('html').toggleClass('filter-open');
@@ -54543,7 +54552,9 @@ var ProductSection = function (_React$Component) {
             }),
             _react2.default.createElement(_Pages2.default, { pageIndex: this.state.pageIndex,
               pageNum: pageNum,
-              pageClickListener: this.pageClickListener.bind(this)
+              pageClickListener: this.pageClickListener.bind(this),
+              prev: _dict2.default[language]['prev'],
+              next: _dict2.default[language]['next']
             })
           )
         )
@@ -54734,7 +54745,7 @@ var Card = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-price button is-danger is-small is-outlined' },
+                  { className: 'item-price button is-danger is-small' },
                   '￥' + card.price.toString()
                 )
               )
@@ -54751,7 +54762,7 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature button is-primary is-small is-outlined' },
+                  { className: 'item-feature font-tang button is-primary is-small is-outlined' },
                   _dict2.default[language]['combo-desc']
                 ),
                 _react2.default.createElement(
@@ -54771,7 +54782,7 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature button is-primary is-outlined is-small' },
+                  { className: 'item-feature font-tang button is-primary is-outlined is-small' },
                   _dict2.default[language]['combo-acc']
                 ),
                 card[language].acc
@@ -54785,7 +54796,7 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature button is-primary is-outlined is-small' },
+                  { className: 'item-feature font-tang button is-primary is-outlined is-small' },
                   _dict2.default[language]['combo-hair']
                 ),
                 card[language].hair
@@ -58432,7 +58443,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Pages = function Pages(props) {
   var pageIndex = props.pageIndex,
       pageNum = props.pageNum,
-      pageClickListener = props.pageClickListener;
+      pageClickListener = props.pageClickListener,
+      prev = props.prev,
+      next = props.next;
 
 
   var pages = Array.from(Array(pageNum).keys(), function (i) {
@@ -58455,12 +58468,12 @@ var Pages = function Pages(props) {
     _react2.default.createElement(
       'a',
       { className: 'pagination-previous', onClick: pagePrevListener },
-      'Previous'
+      prev
     ),
     _react2.default.createElement(
       'a',
       { className: 'pagination-next', onClick: pageNextListener },
-      'Next page'
+      next
     ),
     _react2.default.createElement(
       'ul',
