@@ -54001,7 +54001,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 // default to Chinese simplified
-// var language = 'zh'
+var language = 'zh';
 var text = _dict2.default['zh'];
 var langChangeListener;
 
@@ -54057,22 +54057,22 @@ var NavRight = function NavRight(props) {
               { onChange: langChangeListener },
               _react2.default.createElement(
                 'option',
-                null,
+                { selected: language === 'zh-cn' },
                 '\u7B80\u4F53\u4E2D\u6587'
               ),
               _react2.default.createElement(
                 'option',
-                null,
+                { selected: language === 'zh-tw' },
                 '\u6B63\u9AD4\u4E2D\u6587'
               ),
               _react2.default.createElement(
                 'option',
-                null,
+                { selected: language === 'en' },
                 'English'
               ),
               _react2.default.createElement(
                 'option',
-                null,
+                { selected: language === 'ja' },
                 '\u65E5\u672C\u8A9E'
               )
             )
@@ -54320,7 +54320,7 @@ var HeroSection = function (_React$Component2) {
 
       langChangeListener = onLangChange;
       text = _dict2.default[lang];
-      // language = lang
+      language = lang;
       return _react2.default.createElement(
         'section',
         { className: 'hero is-primary', id: 'hero-section' },
@@ -54389,6 +54389,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var lastLang;
 var language;
 var text;
 var allCards = _cards2.default;
@@ -54407,14 +54408,18 @@ var ProductSection = function (_React$Component) {
       cards: _cards2.default,
       filters: {}
     };
+    language = props.lang;
+    lastLang = language;
     return _this;
   }
 
   _createClass(ProductSection, [{
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
-      console.log('scroll');
-      document.getElementById('product-section').scrollIntoView();
+      if (language === lastLang) {
+        document.getElementById('product-section').scrollIntoView();
+      }
+      lastLang = language;
     }
   }, {
     key: 'toggleListener',
@@ -58908,7 +58913,7 @@ module.exports = [
 			"event": "登門拜訪"
 		},
 		"zh-cn": {
-			"name": "访问者",
+			"name": "访问着",
 			"desc": "访问着并没有已婚未婚的分别。访问着是整体染上图案的和服，它从下摆，左前袖，左肩到领子展开后是一幅图画，特徵是称为「絵羽(えば)」的这种形式。适合访问着的有：友人婚宴、派对、陪同入学典礼、茶会、同学会、相亲等社交场合",
 			"clothNum": "20件",
 			"acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，精致装饰带，精致发饰",

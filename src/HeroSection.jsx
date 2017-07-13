@@ -5,7 +5,7 @@ import Wallop from 'Wallop'
 import { Link } from 'react-router-dom'
 
 // default to Chinese simplified
-// var language = 'zh'
+var language = 'zh'
 var text = dict['zh']
 var langChangeListener
 
@@ -47,10 +47,10 @@ const NavRight = (props) => {
           <p class='control'>
             <span class='select is-small is-primary has-text-centered'>
               <select onChange={langChangeListener}>
-                <option>简体中文</option>
-                <option>正體中文</option>
-                <option>English</option>
-                <option>日本語</option>
+                <option selected={language === 'zh-cn'}>简体中文</option>
+                <option selected={language === 'zh-tw'}>正體中文</option>
+                <option selected={language === 'en'}>English</option>
+                <option selected={language === 'ja'}>日本語</option>
               </select>
             </span>
           </p>
@@ -214,7 +214,7 @@ class HeroSection extends React.Component {
     let {lang, onLangChange} = this.props
     langChangeListener = onLangChange
     text = dict[lang]
-    // language = lang
+    language = lang
     return (
       <section class='hero is-primary' id='hero-section'>
         <HeroHead />

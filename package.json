@@ -1,15 +1,16 @@
 {
   "name": "Miyabi",
   "version": "1.0.0",
-  "description": "江户和装工坊雅 - 浅草和服租",
+  "description": "江户和装工坊雅 - 浅草和服租赁",
   "jest": {
     "snapshotSerializers": [
       "jest-serializer-enzyme"
     ]
   },
   "scripts": {
-    "start": "node server/server.js",
-    "dev": "webpack-dev-server --inline --content-base public/",
+    "start": "if-env NODE_ENV=production && yarn start:prod || yarn start:dev",
+    "start:dev": "webpack-dev-server --inline --content-base public/ ",
+    "start:prod": "webpack && node server/server.js ",
     "build": "webpack",
     "test": "NODE_ENV=test jest",
     "test:update": "NODE_ENV=test jest -u",
@@ -20,11 +21,13 @@
   "dependencies": {
     "blacklist": "^1.1.4",
     "body-parser": "^1.17.2",
+    "compression": "^1.7.0",
     "conversational-form": "^0.9.5",
     "enzyme": "^2.8.2",
     "express": "^4.15.3",
     "express-validator": "^3.2.0",
     "flow": "^0.2.3",
+    "if-env": "^1.0.0",
     "input-moment": "^0.3.4",
     "jest": "^20.0.4",
     "jest-serializer-enzyme": "^1.0.0",
