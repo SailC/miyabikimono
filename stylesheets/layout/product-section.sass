@@ -8,14 +8,19 @@
     max-width: 60%
 .product-section .card
   margin: 5px
-  @include widescreen
-    width: 24%
-  @include desktop
-    width: 31.5%
-  @include tablet-only
-    width: 48%
+  // @include widescreen
+  //   width: 24%
   @include mobile
     width: 100%
+  @include tablet
+    width: 48%
+  @include desktop
+    width: 31.5%
+
+.media-content .title.is-4
+  display: flex
+  justify-content: center
+  align-items: center
 
 a.filter-icon
   font-size: 1rem
@@ -36,9 +41,9 @@ nav.pagination
   margin-bottom: 30px
   @include mobile
     margin-bottom: 0px
-.facet-title
+.facet-title.title.is-4
   border-bottom: 2px solid #eee
-  font-weight: bold
+  margin-bottom: 0px
 
 .filter.column
   padding-top: 34px
@@ -115,9 +120,9 @@ nav.pagination
   margin-bottom: 10px
 
 span.item-feature
-  font-weight: bold
+  // font-weight: bold
   margin-right: 5px
-  vertical-align: text-bottom
+  // vertical-align: text-bottom
 
 span.item-price
   font-weight: bold

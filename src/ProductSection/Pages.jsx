@@ -2,7 +2,7 @@ import React from 'react'
 import classNames from 'classnames'
 
 const Pages = (props) => {
-  const {pageIndex, pageNum, pageClickListener} = props
+  const {pageIndex, pageNum, pageClickListener, prev, next} = props
 
   let pages = Array.from(Array(pageNum).keys(), (i) => {
     let boundPageClick = pageClickListener.bind(this, i)
@@ -25,8 +25,8 @@ const Pages = (props) => {
   )
   return (
     <nav class='pagination is-centered'>
-      <a class='pagination-previous' onClick={pagePrevListener}>Previous</a>
-      <a class='pagination-next' onClick={pageNextListener}>Next page</a>
+      <a class='pagination-previous' onClick={pagePrevListener}>{prev}</a>
+      <a class='pagination-next' onClick={pageNextListener}>{next}</a>
       <ul class='pagination-list'>
         { pages }
       </ul>

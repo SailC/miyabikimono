@@ -116,18 +116,26 @@
 
 .product-section .card {
   margin: 5px; }
-  @media screen and (min-width: 1192px) {
-    .product-section .card {
-      width: 24%; } }
-  @media screen and (min-width: 1000px) {
-    .product-section .card {
-      width: 31.5%; } }
-  @media screen and (min-width: 769px) and (max-width: 999px) {
-    .product-section .card {
-      width: 48%; } }
   @media screen and (max-width: 768px) {
     .product-section .card {
       width: 100%; } }
+  @media screen and (min-width: 769px), print {
+    .product-section .card {
+      width: 48%; } }
+  @media screen and (min-width: 1000px) {
+    .product-section .card {
+      width: 31.5%; } }
+
+.media-content .title.is-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 a.filter-icon {
   font-size: 1rem;
@@ -151,9 +159,9 @@ nav.pagination {
     .facet {
       margin-bottom: 0px; } }
 
-.facet-title {
+.facet-title.title.is-4 {
   border-bottom: 2px solid #eee;
-  font-weight: bold; }
+  margin-bottom: 0px; }
 
 .filter.column {
   padding-top: 34px; }
@@ -235,9 +243,7 @@ nav.pagination {
   margin-bottom: 10px; }
 
 span.item-feature {
-  font-weight: bold;
-  margin-right: 5px;
-  vertical-align: text-bottom; }
+  margin-right: 5px; }
 
 span.item-price {
   font-weight: bold;

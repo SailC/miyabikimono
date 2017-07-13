@@ -63,7 +63,7 @@ class Card extends React.Component {
             <div class='media-content'>
               <div class='title is-4'>
                 <span class='font-tang'> {card[language].name} </span>
-                <span class='item-price button is-danger is-small is-outlined'>
+                <span class='item-price button is-danger is-small'>
                   {'￥' + card.price.toString()}
                 </span>
               </div>
@@ -73,7 +73,8 @@ class Card extends React.Component {
           <div class='content'>
             <div class='item-desc'>
               <div>
-                <span class='item-feature button is-primary is-small is-outlined'>
+                <span class='item-feature font-tang
+                  button is-primary is-small is-outlined'>
                   {dict[language]['combo-desc']}
                 </span>
                 <span> {card[language].desc} </span>
@@ -81,7 +82,8 @@ class Card extends React.Component {
             </div>
             <div class='item-desc'>
               <p>
-                <span class='item-feature button is-primary is-outlined is-small'>
+                <span class='item-feature font-tang
+                  button is-primary is-outlined is-small'>
                   {dict[language]['combo-acc']}
                 </span>
                 {card[language].acc}
@@ -89,7 +91,8 @@ class Card extends React.Component {
             </div>
             <div class='item-desc'>
               <p>
-                <span class='item-feature button is-primary is-outlined is-small'>
+                <span class='item-feature font-tang
+                  button is-primary is-outlined is-small'>
                   {dict[language]['combo-hair']}
                 </span>
                 {card[language].hair}

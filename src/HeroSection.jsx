@@ -39,7 +39,10 @@ const NavRight = (props) => {
       'nav-menu',
       {'is-active': isActive}
     )} onClick={toggleListener}>
-      <span class='nav-item'>
+      <span class='nav-item' onClick={(e) => {
+        e.preventDefault()
+        e.stopPropagation()
+      }}>
         <div class='field'>
           <p class='control'>
             <span class='select is-small is-primary has-text-centered'>

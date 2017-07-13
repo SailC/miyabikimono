@@ -22,6 +22,11 @@ class ProductSection extends React.Component {
     }
   }
 
+  componentDidUpdate () {
+    console.log('scroll')
+    document.getElementById('product-section').scrollIntoView()
+  }
+
   toggleListener () {
     $('html').toggleClass('filter-open')
   }
@@ -116,6 +121,8 @@ class ProductSection extends React.Component {
             <Pages pageIndex={this.state.pageIndex}
               pageNum={pageNum}
               pageClickListener={this.pageClickListener.bind(this)}
+              prev={dict[language]['prev']}
+              next={dict[language]['next']}
             />
           </div>
         </div>

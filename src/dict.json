@@ -120,7 +120,9 @@
     "confirm-msg-1": "恭喜你完成表格的填写！预约确认的邮件稍后会发送至您的邮箱",
     "confirm-title-2": "重新预约?",
     "confirm-msg-2": "如需修改预订信息，请点击重新预订按钮",
-    "nav-return": "返回主页"
+    "nav-return": "返回主页",
+    "prev": "上一页",
+    "next": "下一页"
   },
   "zh-tw": {
     "apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
@@ -243,6 +245,8 @@
     "confirm-msg-1": "恭喜你完成表格的填寫！預約確認的郵件稍後會發送至您的郵箱",
     "confirm-title-2": "重新預約?",
     "confirm-msg-2": "如需修改預訂信息，請點擊重新預訂按鈕",
-    "nav-return": "返回主頁"
+    "nav-return": "返回主頁",
+    "prev": "上一頁",
+    "next": "下一頁"
   }
 }
