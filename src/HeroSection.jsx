@@ -5,7 +5,7 @@ import Wallop from 'Wallop'
 import { Link } from 'react-router-dom'
 
 // default to Chinese simplified
-var language = 'zh'
+// var language = 'zh'
 var text = dict['zh']
 var langChangeListener
 
@@ -150,17 +150,19 @@ const Headlines = (props) => {
     <div class='container is-fluid has-text-centered'>
       <h1 class={classNames(
         'title',
-        {'font-zhao': language === 'zh'}
+        'is-1',
+        'font-zhao'
       )}> {text[`hero-title-${num}`]} </h1>
       <h2 class={classNames(
         'subtitle',
-        {'font-zhao': language === 'zh'}
+        'is-3',
+        'font-zhao'
       )}>{text[`hero-subtitle-${num}`]}</h2>
-      <Link to='/booking' class='store-icon button is-primary is-inverted'>
-        <span class='icon is-small'>
+      <Link to='/booking' class='store-icon button is-primary is-inverted is-large'>
+        <span class='icon'>
           <i class='fa fa-calendar' />
         </span>
-        <span>{text['button-calendar']}</span>
+        <span class='font-tang'>{text['button-calendar']}</span>
       </Link>
     </div>
   )
@@ -209,7 +211,7 @@ class HeroSection extends React.Component {
     let {lang, onLangChange} = this.props
     langChangeListener = onLangChange
     text = dict[lang]
-    language = lang
+    // language = lang
     return (
       <section class='hero is-primary' id='hero-section'>
         <HeroHead />

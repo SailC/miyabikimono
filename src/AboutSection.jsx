@@ -1,5 +1,4 @@
 import React from 'react'
-import { Player, BigPlayButton } from 'video-react'
 import abouts from './about'
 import dict from './dict'
 
@@ -11,7 +10,7 @@ class AboutSection extends React.Component {
     language = lang
     return (
       <div class='section about-section container' id='about-section'>
-        <h1 class='title has-text-centered'>{dict[language]['nav-about']}</h1>
+        <h1 class='title has-text-centered is-2 font-tang'>{dict[language]['nav-about']}</h1>
         <VideoPlayer />
         <AboutItems />
       </div>
@@ -22,13 +21,6 @@ class AboutSection extends React.Component {
 const VideoPlayer = () => (
   <div class='video-wrapper'>
     <div class='video'>
-      {/* <Player
-        playsInline
-        poster='/images/logo-landscape.png'
-        // src='/video/intro.mp4' >
-        src='https://player.vimeo.com/video/3873878' >
-        <BigPlayButton position='center' />
-      </Player> */}
       <div class='wistia_responsive_padding'
         style={{padding: '56.5% 0 0 0',
           position: 'relative'

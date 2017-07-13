@@ -17,7 +17,7 @@ class GirlsSection extends React.Component {
     language = lang
     return (
       <div class='section girls-section container' id='girls-section'>
-        <h1 class='title has-text-centered'>{dict[language]['nav-girls']}</h1>
+        <h1 class='title has-text-centered is-2 font-tang'>{dict[language]['nav-girls']}</h1>
         <Intro
           bossName={dict[language]['boss-name']}
           bossQuote={dict[language]['boss-quote']}

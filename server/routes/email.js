@@ -32,7 +32,6 @@ function sendMail (name, location, maleNumber, femaleNumber, childrenNumber, ema
 //  var template = '/Users/chenqi/github_workspace/edomiyabi/public/assets/html/confirm_email.html';
   console.log(`../views/email_${language}.pug`)
   var template = path.join(__dirname, `../views/email_${language}.pug`)
-  console.log('before render file')
   const emailContent = pug.renderFile(template, {
     name: name,
     phone: phone,
@@ -45,10 +44,7 @@ function sendMail (name, location, maleNumber, femaleNumber, childrenNumber, ema
     location: location,
     via: via,
     requirement: requirement
-  }, function (err, text) {
-    console.log(err)
   })
-  console.log(emailContent)
 
   let transporter = nodemailer.createTransport({
     service: 'qiye.aliyun',

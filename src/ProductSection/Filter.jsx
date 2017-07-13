@@ -24,7 +24,7 @@ const Field = (props) => {
   const { fieldSet, fieldName, cards } = props
   return (
     <div class='facet'>
-      <h5 class='facet-title'>{text[fieldName]}</h5>
+      <h5 class='facet-title font-tang title is-4'>{text[fieldName]}</h5>
       <div class='field'>
         {
           Array.from(fieldSet, (type) => {

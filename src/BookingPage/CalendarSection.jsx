@@ -20,7 +20,7 @@ const CalendarSection = (props) => {
   } = props
   return (
     <section class='calendar-section section container' id='calendar-section'>
-      <div class='title has-text-centered'>
+      <div class='title has-text-centered is-2 font-tang'>
         {dict[language]['nav-calendar']}
       </div>
       <div class='calendar-widget columns container'>
@@ -58,21 +58,21 @@ const CalendarSection = (props) => {
               <span class='icon is-small'>
                 <i class='fa fa-check' />
               </span>
-              <span>{dict[language]['confirm-time']}</span>
+              <span class='title is-5 font-tang'>{dict[language]['confirm-time']}</span>
             </Link>
             <a class='button is-primary repick-time is-outlined'
               onClick={repickTime}>
               <span class='icon is-small'>
                 <i class='fa fa-clock-o' />
               </span>
-              <span>{dict[language]['repick-time']}</span>
+              <span class='title is-5 font-tang'>{dict[language]['repick-time']}</span>
             </a>
             <Link to='/'
               class='button is-primary is-outlined'>
               <span class='icon is-small'>
                 <i class='fa fa-home' />
               </span>
-              <span>{dict[language]['nav-return']}</span>
+              <span class='title is-5 font-tang'>{dict[language]['nav-return']}</span>
             </Link>
           </div>
         </div>

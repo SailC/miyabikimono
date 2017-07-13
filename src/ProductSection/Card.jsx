@@ -61,8 +61,8 @@ class Card extends React.Component {
         <div class='card-content'>
           <div class='media'>
             <div class='media-content'>
-              <div class='title is-5'>
-                {card[language].name}
+              <div class='title is-4'>
+                <span class='font-tang'> {card[language].name} </span>
                 <span class='item-price button is-danger is-small is-outlined'>
                   {'￥' + card.price.toString()}
                 </span>
@@ -100,7 +100,7 @@ class Card extends React.Component {
                 <span class='icon is-small'>
                   <i class='fa fa-camera' />
                 </span>
-                <span>
+                <span class='font-tang title is-5'>
                   {dict[language]['combo-photo']}
                 </span>
               </a>
@@ -108,7 +108,7 @@ class Card extends React.Component {
                 <span class='icon is-small'>
                   <i class='fa fa-calendar' />
                 </span>
-                <span>
+                <span class='font-tang title is-5'>
                   {dict[language]['combo-book']}
                 </span>
               </Link>

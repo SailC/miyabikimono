@@ -94,7 +94,7 @@ class ProductSection extends React.Component {
     ) + 1
     return (
       <section class='product-section section container' id='product-section'>
-        <h1 class='title has-text-centered'>{dict[language]['nav-combo']}</h1>
+        <h1 class='title has-text-centered font-tang is-2'>{dict[language]['nav-combo']}</h1>
         <div class='columns'>
           <div class='filter column is-one-quarter'>
             <Filter cards={this.state.cards}

@@ -22,7 +22,7 @@ class ConfirmSection extends React.Component {
     })
     return (
       <section class='confirm-section section container'>
-        <h1 class='title has-text-centered'>
+        <h1 class='title has-text-centered is-2 font-tang'>
           {dict[lang]['nav-confirm']}
         </h1>
         <table class='table is-striped'>
@@ -156,7 +156,7 @@ class ConfirmSection extends React.Component {
               <span class='icon'>
                 <i class='fa fa-home' />
               </span>
-              <span>
+              <span class='font-tang'>
                 {dict[lang]['nav-return']}
               </span>
             </Link>
@@ -166,7 +166,7 @@ class ConfirmSection extends React.Component {
               <span class='icon'>
                 <i class='fa fa-calendar' />
               </span>
-              <span>
+              <span class='font-tang'>
                 {dict[lang]['repick-time']}
               </span>
             </Link>

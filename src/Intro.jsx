@@ -12,7 +12,7 @@ const Intro = (props) => {
         </div>
         <div class='media-content'>
           <div class='content'>
-            <p>
+            <p class='title is-5 font-tang'>
               <strong>{bossName}</strong>
               <br />
               {bossQuote}

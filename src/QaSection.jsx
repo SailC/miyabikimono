@@ -13,7 +13,7 @@ class QaSection extends React.Component {
     language = lang
     return (
       <div class='section qa-section container' id='qa-section'>
-        <h1 class='title has-text-centered'>{dict[language]['nav-faq']}</h1>
+        <h1 class='title has-text-centered is-2 font-tang'>{dict[language]['nav-faq']}</h1>
         <div class='tile is-ancestor'>
           <div class='tile is-6 is-vertical is-parent'>
             <StepItems />
