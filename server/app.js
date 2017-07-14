@@ -10,9 +10,7 @@ var bodyParser = require('body-parser')
 var expressValidator = require('express-validator')
 
 // express routes
-console.log('init app')
 var index = require('./routes/index')
-console.log('init success')
 var emailRouter = require('./routes/email')
 // init app
 var app = express()
@@ -40,7 +38,8 @@ app.use('*', index)
 app.use(function (err, req, res, next) {
   // set locals, only providing error in development
   res.locals.message = err.message
-  res.locals.error = req.app.get('env') === 'development' ? err : {}
+  // res.locals.error = req.app.get('env') === 'development' ? err : {}
+  res.locals.error = err
 
   // render the error page
   res.status(err.status || 500)

@@ -4,7 +4,6 @@
 if (typeof (window) === 'undefined') {
   global.window = {}
 }
-console.log('window', window)
 
 var app = require('./app')
 var debug = require('debug')('miyabi:server')
