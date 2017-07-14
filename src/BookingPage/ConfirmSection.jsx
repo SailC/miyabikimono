@@ -5,11 +5,15 @@ import {Link} from 'react-router-dom'
 var $ = require('jquery')
 
 class ConfirmSection extends React.Component {
-  render () {
+  componentDidMount () {
     const {lang, data, moment} = this.props
     data.time = moment.format('LLLL')
     data.language = lang
     console.log(data)
+    if (data.name === '' || data.email === '' ||
+      data.number_male === '' || data.number_female === '' ||
+      data.number_children === '') { return <div /> }
+
     $.ajax({
       url: '/email',
       type: 'POST',
@@ -20,6 +24,13 @@ class ConfirmSection extends React.Component {
         console.log(err)
       }
     })
+  }
+
+  render () {
+    const {lang, data, moment} = this.props
+    data.time = moment.format('LLLL')
+    data.language = lang
+
     return (
       <section class='confirm-section section container'>
         <h1 class='title has-text-centered is-2 font-tang'>
