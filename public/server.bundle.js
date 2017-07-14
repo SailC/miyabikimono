@@ -1007,6 +1007,9 @@ exports.default = NoMatch;
 /**
  * Module dependencies.
  */
+if (typeof window === 'undefined') {
+  global.window = {};
+}
 
 var app = __webpack_require__(18);
 var debug = __webpack_require__(83)('miyabi:server');
@@ -1028,7 +1031,6 @@ var server = http.createServer(app);
 /**
  * Listen on provided port, on all network interfaces.
  */
-
 server.listen(port, function () {
   console.log('Production Express server running at localhost:' + port);
 });
@@ -1778,11 +1780,13 @@ var HeroSection = function (_React$Component2) {
   _createClass(HeroSection, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var heroWallop = document.querySelector('#heroWallop');
-      var heroSlider = new _Wallop2.default(heroWallop);
-      setInterval(function () {
-        heroSlider.next();
-      }, 3000);
+      if (typeof document !== 'undefined') {
+        var heroWallop = document.querySelector('#heroWallop');
+        var heroSlider = new _Wallop2.default(heroWallop);
+        setInterval(function () {
+          heroSlider.next();
+        }, 3000);
+      }
     }
   }, {
     key: 'render',
@@ -1889,10 +1893,12 @@ var ProductSection = function (_React$Component) {
   _createClass(ProductSection, [{
     key: 'componentDidUpdate',
     value: function componentDidUpdate() {
-      if (language === lastLang) {
-        document.getElementById('product-section').scrollIntoView();
+      if (typeof document !== 'undefined') {
+        if (language === lastLang) {
+          document.getElementById('product-section').scrollIntoView();
+        }
+        lastLang = language;
       }
-      lastLang = language;
     }
   }, {
     key: 'toggleListener',
@@ -3790,8 +3796,10 @@ var GirlsSection = function (_React$Component) {
   _createClass(GirlsSection, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      var girlWallop = document.querySelector('#girlWallop');
-      var girlSlider = new _Wallop2.default(girlWallop);
+      if (typeof document !== 'undefined') {
+        var girlWallop = document.querySelector('#girlWallop');
+        var girlSlider = new _Wallop2.default(girlWallop);
+      }
     }
   }, {
     key: 'render',
@@ -4813,7 +4821,6 @@ module.exports = React.createClass({
     if (this.state.tab === 1) {
       // $('#booking-section').removeClass('hidden-section')
       // let time = $('.date-time').text()
-      // $(document).scrollTop($('cf-chat').offset().top)
       this.props.onSave();
       this.setState({ tab: 0 });
     } else {
@@ -5788,8 +5795,8 @@ if(content.locals) module.exports = content.locals;
 if(false) {
 	// When the styles change, update the <style> tags
 	if(!content.locals) {
-		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/less-loader/dist/index.js!./input-moment.less", function() {
-			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/less-loader/dist/index.js!./input-moment.less");
+		module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/less-loader/dist/cjs.js!./input-moment.less", function() {
+			var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/less-loader/dist/cjs.js!./input-moment.less");
 			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 			update(newContent);
 		});
@@ -6405,7 +6412,9 @@ var FormSection = function (_React$Component) {
   _createClass(FormSection, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      initForm(this.props.setFormData);
+      if (typeof document !== 'undefined') {
+        initForm(this.props.setFormData);
+      }
     }
   }, {
     key: 'render',
