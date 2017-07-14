@@ -5,7 +5,7 @@ import Filter from './ProductSection/Filter'
 import Sort from './ProductSection/Sort'
 import cards from './ProductSection/cards'
 import dict from './dict.json'
-import $ from 'jquery'
+var $ = require('jquery')
 
 var lastLang
 var language
@@ -26,10 +26,12 @@ class ProductSection extends React.Component {
   }
 
   componentDidUpdate () {
-    if (language === lastLang) {
-      document.getElementById('product-section').scrollIntoView()
+    if (typeof (document) !== 'undefined') {
+      if (language === lastLang) {
+        document.getElementById('product-section').scrollIntoView()
+      }
+      lastLang = language
     }
-    lastLang = language
   }
 
   toggleListener () {

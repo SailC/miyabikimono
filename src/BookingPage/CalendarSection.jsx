@@ -3,7 +3,9 @@ import dict from '../dict'
 import path from 'path'
 import CalendarWidget from './CalendarWidget'
 import classNames from 'classnames'
-import './less/input-moment.less'
+if (typeof (document) !== 'undefined') {
+  require('./less/input-moment.less')
+}
 import {
   Link
 } from 'react-router-dom'

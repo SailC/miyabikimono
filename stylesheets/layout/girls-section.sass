@@ -24,7 +24,7 @@
       align-items: center
       padding: 20px
     .column.info
-        padding-top: 0px
+      padding-top: 0px
     // padding: 40px
     // max-height: 300px
     // @include tablet
@@ -48,27 +48,27 @@
       content: '\276F'
 
   .Wallop-buttonNext, .Wallop-buttonPrevious
-      border: none
-      webkit-appearance: none
-      background: hsla(0,0%,100%,.6)
-      width: 40px
-      height: 40px
-      border-radius: 20px
-      text-indent: -9999px
+    border: none
+    webkit-appearance: none
+    background: hsla(0,0%,100%,.6)
+    width: 40px
+    height: 40px
+    border-radius: 20px
+    text-indent: -9999px
+    position: absolute
+    @include tablet
+      top: 50%
+    -webkit-transform: translateY(-50%)
+    transform: translateY(-50%)
+    &:before
       position: absolute
-      @include tablet
-        top: 50%
-      -webkit-transform: translateY(-50%)
-      transform: translateY(-50%)
-      &:before
-        position: absolute
-        top: 50%
-        left: 0
-        width: 100%
-        text-align: center
-        text-indent: 0
-        font-size: 25px
-        line-height: 0
+      top: 50%
+      left: 0
+      width: 100%
+      text-align: center
+      text-indent: 0
+      font-size: 25px
+      line-height: 0
 
   // .Wallop-item:nth-child(1)
   //   .info

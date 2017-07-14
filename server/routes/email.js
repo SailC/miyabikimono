@@ -30,7 +30,6 @@ router.post('/', function (req, res, next) {
 // setup email data with unicode symbols
 function sendMail (name, location, maleNumber, femaleNumber, childrenNumber, email, phone, via, requirement, time, wechat, language) {
 //  var template = '/Users/chenqi/github_workspace/edomiyabi/public/assets/html/confirm_email.html';
-  console.log(`../views/email_${language}.pug`)
   var template = path.join(__dirname, `../views/email_${language}.pug`)
   const emailContent = pug.renderFile(template, {
     name: name,

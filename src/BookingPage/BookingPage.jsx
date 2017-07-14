@@ -25,6 +25,7 @@ class BookingPage extends React.Component {
         number_male: '',
         number_female: '',
         number_children: '',
+        email: '',
         phone: '',
         via: [''],
         wechat: ''

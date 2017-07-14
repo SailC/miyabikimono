@@ -8,8 +8,10 @@ var language
 
 class GirlsSection extends React.Component {
   componentDidMount () {
-    var girlWallop = document.querySelector('#girlWallop')
-    let girlSlider = new Wallop(girlWallop)
+    if (typeof (document) !== 'undefined') {
+      var girlWallop = document.querySelector('#girlWallop')
+      let girlSlider = new Wallop(girlWallop)
+    }
   }
 
   render () {

@@ -88,7 +88,6 @@ module.exports = React.createClass({
     if (this.state.tab === 1) {
       // $('#booking-section').removeClass('hidden-section')
       // let time = $('.date-time').text()
-      // $(document).scrollTop($('cf-chat').offset().top)
       this.props.onSave()
       this.setState({tab: 0})
     } else {
