@@ -203,11 +203,13 @@ const WallopSlide = (props) => {
 
 class HeroSection extends React.Component {
   componentDidMount () {
-    var heroWallop = document.querySelector('#heroWallop')
-    var heroSlider = new Wallop(heroWallop)
-    setInterval(() => {
-      heroSlider.next()
-    }, 3000)
+    if (typeof (document) !== 'undefined') {
+      var heroWallop = document.querySelector('#heroWallop')
+      var heroSlider = new Wallop(heroWallop)
+      setInterval(() => {
+        heroSlider.next()
+      }, 3000)
+    }
   }
 
   render () {

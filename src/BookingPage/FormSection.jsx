@@ -16,7 +16,9 @@ const contextStyle = {
 
 class FormSection extends React.Component {
   componentDidMount () {
-    initForm(this.props.setFormData)
+    if (typeof (document) !== 'undefined') {
+      initForm(this.props.setFormData)
+    }
   }
   render () {
     const {lang} = this.props

@@ -1,9 +1,21 @@
 var fs = require('fs')
 var path = require('path')
+var webpack = require('webpack')
 
 module.exports = {
 
   entry: path.resolve(__dirname, 'server/server.js'),
+
+  plugins: process.env.NODE_ENV === 'production' ? [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      },
+      'process.env.BROWSER': false
+    }),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin()
+  ] : [],
 
   output: {
     path: path.join(__dirname, 'public'),

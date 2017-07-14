@@ -10,7 +10,9 @@ var bodyParser = require('body-parser')
 var expressValidator = require('express-validator')
 
 // express routes
+console.log('init app')
 var index = require('./routes/index')
+console.log('init success')
 var emailRouter = require('./routes/email')
 // init app
 var app = express()

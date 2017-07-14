@@ -2,7 +2,7 @@ import React from 'react'
 import dict from '../dict'
 import {Message} from './CalendarSection'
 import {Link} from 'react-router-dom'
-import $ from 'jquery'
+var $ = require('jquery')
 
 class ConfirmSection extends React.Component {
   render () {

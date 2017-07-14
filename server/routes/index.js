@@ -4,24 +4,29 @@ var router = express.Router()
 
 var React = require('react')
 var ReactDOMServer = require('react-dom/server')
-var Router = require('react-router')
+import { StaticRouter } from 'react-router'
+console.log('hit app')
 var App = require('../../src/App')
+console.log('hit success')
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  const StaticRouter = Router.StaticRouter
+  // const StaticRouter = Router.StaticRouter
   const context = {}
-  const html = ReactDOMServer.renderToString(
-    <StaticRouter
-      location={req.url}
-      context={context}
-      >
-      <App />
-    </StaticRouter>
-  )
+  console.log('hit')
+  const html = 'hehe'
+  // const html = ReactDOMServer.renderToString(
+  //   <StaticRouter
+  //     location={req.url}
+  //     context={context}
+  //     >
+  //     <App />
+  //   </StaticRouter>
+  // )
+  console.log('render')
 
   if (context.url) {
-    res.writeHead(30, {
+    res.writeHead(301, {
       Location: context.url
     })
     res.end()
