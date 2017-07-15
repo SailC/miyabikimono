@@ -54,10 +54,6 @@ function renderPage (appHtml) {
         <link rel='stylesheet' href='/wallop.css' />
         <link rel='stylesheet' href='/wallop--fade.css' />
         <link rel='stylesheet' href='/wallop--slide.css' />
-        <link rel='stylesheet' href='/wallop--rotate.css' />
-        <link rel='stylesheet' href='/wallop--scale.css' />
-        <link rel='stylesheet' href='/wallop--fold.css' />
-        <link rel='stylesheet' href='/wallop--vertical-slide.css' />
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
