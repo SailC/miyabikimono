@@ -6,23 +6,26 @@ import App from '../../src/App'
 
 /* GET home page. */
 var router = express.Router()
-router.get('*', function (req, res, next) {
+router.get('/', function (req, res, next) {
   const context = {}
   const appHtml = ReactDOMServer.renderToString(
     <StaticRouter
-      location={req.url}
+      location={req.originalUrl}
       context={context}
       >
       <App />
     </StaticRouter>
   )
+  console.log(appHtml)
 
   if (context.url) {
+    console.log('router')
     res.writeHead(301, {
       Location: context.url
     })
     res.end()
   } else {
+    console.log('express')
     res.write(renderPage(appHtml))
     res.end()
   }
