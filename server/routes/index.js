@@ -18,6 +18,8 @@ router.get('/', function (req, res, next) {
   )
   console.log(appHtml)
 
+  res.set({ 'content-type': 'text/html; charset=utf-8' })
+
   if (context.url) {
     console.log('router')
     res.writeHead(301, {
