@@ -3,6 +3,7 @@ import classNames from 'classnames'
 import dict from './dict.json'
 import Wallop from 'Wallop'
 import { Link } from 'react-router-dom'
+import Scrollchor from 'react-scrollchor'
 
 // default to Chinese simplified
 var language = 'zh'
@@ -57,7 +58,7 @@ const NavRight = (props) => {
         </div>
       </span>
       <span class='nav-item'>
-        <a href='#product-section' class='button is-primary'>
+        <Scrollchor to='#product-section' class='button is-primary nav-link'>
           <span class='icon'>
             <i class='fa fa-female' />
           </span>
@@ -67,7 +68,8 @@ const NavRight = (props) => {
           <span class='icon'>
             <i class='fa fa-male' />
           </span>
-        </a>
+        </Scrollchor>
+
       </span>
       {/* <span class='nav-item'>
         <Link to='/booking' class='button is-primary'>
@@ -77,32 +79,32 @@ const NavRight = (props) => {
         </Link>
       </span> */}
       <span class='nav-item'>
-        <a href='#qa-section' class='button is-primary'>
+        <Scrollchor to='#qa-section' class='button is-primary nav-link'>
           <span class='icon'>
             <i class='fa fa-question-circle' />
           </span>
-        </a>
+        </Scrollchor>
       </span>
       <span class='nav-item'>
-        <a href='#girls-section' class='button is-primary'>
+        <Scrollchor to='#girls-section' class='button is-primary nav-link'>
           <span class='icon'>
             <i class='fa fa-camera' />
           </span>
-        </a>
+        </Scrollchor>
       </span>
       <span class='nav-item'>
-        <a href='#about-section' class='button is-primary'>
+        <Scrollchor to='#about-section' class='button is-primary nav-link'>
           <span class='icon'>
             <i class='fa fa-users' />
           </span>
-        </a>
+        </Scrollchor>
       </span>
       <span class='nav-item'>
-        <a href='#footer' class='button is-primary'>
+        <Scrollchor to='#footer-section' class='button is-primary nav-link'>
           <span class='icon'>
             <i class='fa fa-wechat' />
           </span>
-        </a>
+        </Scrollchor>
       </span>
 
     </div>

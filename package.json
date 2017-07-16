@@ -67,6 +67,7 @@
     "react-input-slider": "^1.6.0",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-scrollchor": "^4.0.0",
     "react-test-renderer": "^15.6.1",
     "redux": "^3.7.1",
     "sass-loader": "^6.0.6",

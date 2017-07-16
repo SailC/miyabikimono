@@ -6399,6 +6399,10 @@ react-router@^4.1.1:
     prop-types "^15.5.4"
     warning "^3.0.0"
 
+react-scrollchor@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/react-scrollchor/-/react-scrollchor-4.0.0.tgz#b1aa4783f9f968ef0981a68fbc3854c60918e969"
+
 react-scrolllock@^1.0.5:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/react-scrolllock/-/react-scrolllock-1.0.8.tgz#4aee8581678327b96cb38a72b7a20e2610664e5a"
