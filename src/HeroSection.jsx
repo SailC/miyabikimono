@@ -133,7 +133,7 @@ class HeroHead extends React.Component {
       <div class='hero-head'>
         <header class='nav'>
           <div class='container'>
-            <NavLeft />
+            {/* <NavLeft /> */}
             <NavToggle toggleListener={this.toggleListener} isActive={this.state.isActive} />
             <NavRight toggleListener={this.toggleListener} isActive={this.state.isActive} />
           </div>

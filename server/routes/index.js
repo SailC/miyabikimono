@@ -1,40 +1,34 @@
-import express from 'express'
-import React from 'react'
-import ReactDOMServer from 'react-dom/server'
-import { StaticRouter } from 'react-router'
-import App from '../../src/App'
+import express from 'express';
+import React from 'react';
+import ReactDOMServer from 'react-dom/server';
+import { StaticRouter } from 'react-router';
+import App from '../../src/App';
 
 /* GET home page. */
-var router = express.Router()
-router.get('/', function (req, res, next) {
-  const context = {}
+var router = express.Router();
+router.get('/', function(req, res, next) {
+  const context = {};
   const appHtml = ReactDOMServer.renderToString(
-    <StaticRouter
-      location={req.originalUrl}
-      context={context}
-      >
+    <StaticRouter location={req.originalUrl} context={context}>
       <App />
     </StaticRouter>
-  )
-  console.log(appHtml)
+  );
 
-  res.set({ 'content-type': 'text/html; charset=utf-8' })
+  res.set({ 'content-type': 'text/html; charset=utf-8' });
 
   if (context.url) {
-    console.log('router')
     res.writeHead(301, {
       Location: context.url
-    })
-    res.end()
+    });
+    res.end();
   } else {
-    console.log('express')
-    res.write(renderPage(appHtml))
-    res.end()
+    res.write(renderPage(appHtml));
+    res.end();
   }
   // res.sendFile(path.join(__dirname, '/../../public/index.html'))
-})
+});
 
-function renderPage (appHtml) {
+function renderPage(appHtml) {
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -90,7 +84,7 @@ function renderPage (appHtml) {
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
       </body>
     </html>
-   `
+   `;
 }
 
-module.exports = router
+module.exports = router;
