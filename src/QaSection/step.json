@@ -1,97 +1,146 @@
-[{
+[
+  {
     "id": 1,
-		"title": {
+    "title": {
       "zh-tw": "第1步：預約確認",
-			"zh-cn": "第1步：预约确认"
-		},
-		"content": {
+      "zh-cn": "第1步：预约确认",
+      "ko": "첫 번째：예약 확인",
+      "en": "Step1：Reservation confirmation",
+      "ja": "第一：予約確認"
+    },
+    "content": {
       "zh-tw": "按照約定時間到店，到店的親，麻煩您報上預約信息，例如預約姓名，人數，還有預約的時間，我們進行確認，套餐的選擇和支付，我們來店之後再進行",
-			"zh-cn": "按照约定时间到店，到店的亲，麻烦您报上预约信息，例如预约姓名，人数，还有预约的时间，我们进行确认，套餐的选择和支付，我们来店之后再进行"
-		},
-		"url": "/images/faq-section/step1.jpg"
-	},
-	{
+      "zh-cn": "按照约定时间到店，到店的亲，麻烦您报上预约信息，例如预约姓名，人数，还有预约的时间，我们进行确认，套餐的选择和支付，我们来店之后再进行",
+      "ko": "예약시간대로 오신 분이 예약 정보를 말씀을 해 주시기 바란다. 예를 들고자 하면 인수, 예역시간, 우리는 정보를 가지고 확인을 한다. 세트의 선택, 지불은 오신 드음에 실시할 예정이다.",
+      "en": "You should come to the shop in accordance with the agreed time. When you arrive at the shop, please tell us your reservation information, such as the name, number, as well as the time for us to make confirmation. Package selection and payment can be preceded after you come to the shop.",
+      "ja": "予約のお時間までにご来店ください。お名前、予約情人节報等をお伝えください。例：予約人のご氏名、予約時間認証後、セット選びとお支払いは来店後になります。"
+    },
+    "url": "/images/faq-section/step1.jpg"
+  },
+  {
     "id": 2,
-		"title": {
+    "title": {
       "zh-tw": "第2步：和服挑選",
-			"zh-cn": "第2步：和服挑选"
-		},
-		"content": {
+      "zh-cn": "第2步：和服挑选",
+      "ko": "둘 번째：기모노의 선택",
+      "en": "Step2: Kimono selection",
+      "ja": "第二：着物選び："
+    },
+    "content": {
       "zh-tw": "在1樓我們工作人員進行套餐介紹，介紹完之後，親可以從琳瑯滿目的和服當中選出一款最符合自己的。日本人常說，选和服就是一場相遇，第一眼看中的都是緣分。所以親不要猶豫哦。盡情的挑選吧",
-			"zh-cn": "在1楼我们工作人员进行套餐介绍，介绍完之后，亲可以从琳琅满目的和服当中选出一款最符合自己的。日本人常说，选和服就是一场相遇，第一眼看中的都是缘分。所以亲不要犹豫哦。尽情的挑选吧"
-		},
-		"url": "/images/faq-section/step2.jpg"
-	},
-	{
+      "zh-cn": "在1楼我们工作人员进行套餐介绍，介绍完之后，亲可以从琳琅满目的和服当中选出一款最符合自己的。日本人常说，选和服就是一场相遇，第一眼看中的都是缘分。所以亲不要犹豫哦。尽情的挑选吧",
+      "ko": "근무 인원들은 1층에서 세트 소개를 해 드릴 예정이고 소개를 드린 다음에 당신은 다종다양의 기모노 중에 자기가 제일 마음에 든 하나를 선택하시면 된다. 일본 사람들은 기모노를 선택하는 것은 한 만남이라고 항상 얘기를 하고 있으며 바로 첫 눈에 마음에 든 것은 연분이라고 생각을 하는 것을 의미한다. 그래서 주저하지 마시고 좋아하는 대로 선택하시면 된다. ",
+      "en": "Our staff will introduce the package to you in the first floor, after that you could choose kimonos that fit you best from various dazzling kimonos. Japanese often say that kimono is an encountering, every first glance is predestination. So do not hesitate, just enjoy the selection.",
+      "ja": "一階にて、当店のスタッフが着物のセット等につき、ご紹介致します。また、当店のスタッフとご一緒に、お客様に最もお似合いの着物を選びましょう。日本人は、“着物選びは出会い、運命”だと良く言いますので、ご遠慮なくお選びください。"
+    },
+    "url": "/images/faq-section/step2.jpg"
+  },
+  {
     "id": 3,
-		"title": {
+    "title": {
       "zh-tw": "第3步：支付",
-			"zh-cn": "第3步：支付"
-		},
-		"content": {
+      "zh-cn": "第3步：支付",
+      "ko": "셋 번째：지불",
+      "en": "Step3: Payment",
+      "ja": "第三：お支払い"
+    },
+    "content": {
       "zh-tw": "挑選結束後，我們要進行先付款，支付結束後就可以馬上去二樓進行更衣了，男士我們是在3樓進行更衣的",
-			"zh-cn": "挑选结束后，我们要进行先付款，支付结束后就可以马上去二楼进行更衣了，男士我们是在3楼进行更衣的"
-		},
-		"url": "/images/faq-section/step3.jpg"
-	},
-	{
+      "zh-cn": "挑选结束后，我们要进行先付款，支付结束后就可以马上去二楼进行更衣了，男士我们是在3楼进行更衣的",
+      "ko": "결정하고 난 다음에 먼저 지불을 하셔야 하며 지불한 다음에 바로 2층에 올라가서 기모노를 갈아 입으시면 된다. 남자같은 경우에는 3층에서 갈아입는 것으로 되고 있다.",
+      "en": "After the selection, you have to pay first; then you could go to the second floor to change the dress, men’s dressing room is in the third floor.",
+      "ja": "着物をお選び頂いた後、先払いとなります。お支払いが済みましたら、二階へ行き、着替えます。男性の方は三階へ。"
+    },
+    "url": "/images/faq-section/step3.jpg"
+  },
+  {
     "id": 4,
-		"title": {
-      "zh-tw": "第4步：存放隨時物品",
-			"zh-cn": "第4步：存放随时物品"
-		},
-		"content": {
+    "title": {
+      "zh-tw": "第4步：存放隨身物品",
+      "zh-cn": "第4步：存放随身物品",
+      "ko": "네 번째：수신 물품 보관",
+      "en": "Step4: Leave your personal belongings",
+      "ja": "第四：荷物のお預かり："
+    },
+    "content": {
       "zh-tw": "到達相應樓層之後，脫下鞋子，進入更衣室，找個空的櫃子，儲存貴重的物品",
-			"zh-cn": "到达相应楼层之后，脱下鞋子，进入更衣室，找个空的柜子，储存贵重的物品"
-		},
-		"url": "/images/faq-section/step4.jpg"
-	},
-	{
+      "zh-cn": "到达相应楼层之后，脱下鞋子，进入更衣室，找个空的柜子，储存贵重的物品",
+      "ko": "신발을 벗은 다음에 근의실에 들어가서 한 비어 있는 캐비닛을 찾아서 귀중한 물품을 보관한다.",
+      "en": "After taking off your shoes, you can enter the locker room, and store valuable personal belongings in any empty cabinets.",
+      "ja": "更衣室へ入る時は、必ず靴を脱ぎ、ロッカーへお荷物をお入れください。"
+    },
+    "url": "/images/faq-section/step4.jpg"
+  },
+  {
     "id": 5,
-		"title": {
+    "title": {
       "zh-tw": "第5步：和服更衣",
-			"zh-cn": "第5步：和服更衣"
-		},
-		"content": {
+      "zh-cn": "第5步：和服更衣",
+      "ko": "다섯 번째：기모노의 갈아 입기",
+      "en": "Step5: Kimono dressing",
+      "ja": "第五：着物の着替"
+    },
+    "content": {
       "zh-tw": "選好和服後，由我們的工作人員引導到2樓，由我們專業的老師進行著裝，及髮型設計。這個過程，就可以經曆日本女人的變身，親的和服體驗之旅，從此刻開始",
-			"zh-cn": "选好和服后，由我们的工作人员引导到2楼，由我们专业的老师进行着装，及发型设计。这个过程，就可以经历日本女人的变身，亲的和服体验之旅，从此刻开始"
-		},
-		"url": "/images/faq-section/step5.jpg"
-	},
-	{
+      "zh-cn": "选好和服后，由我们的工作人员引导到2楼，由我们专业的老师进行着装，及发型设计。这个过程，就可以经历日本女人的变身，亲的和服体验之旅，从此刻开始",
+      "ko": "입을 기모노를 결정하게 되면 우리의 스태프가 2층으로 안내해 드린다. 전문 인원이 기모노를 입어해 드리고 머리 스타일을 해 드릴 예정이다.| 본 과정을 통하여 일본 여성으로의 변신을 볼 수 있고 당신의 기모노 체험 여행을 그 시점부터 시작한다.",
+      "en": "After selecting kimono, your will be guided by our staff to the 2nd floor. Our professional masters will design the dress and hair for you. This process can change you into a Japanese lady. And then your kimono experience tour begins from this moment.",
+      "ja": "着物の選択が完了した後、当店のスタッフが二階にて、着衣とヘアデザインを致します。この作業の中で、日本女性の体験をし、着物体験の始まりとなります。"
+    },
+    "url": "/images/faq-section/step5.jpg"
+  },
+  {
     "id": 6,
-		"title": {
+    "title": {
       "zh-tw": "第6步：挑選配件",
-			"zh-cn": "第6步：挑选配件"
-		},
-		"content": {
+      "zh-cn": "第6步：挑选配件",
+      "ko": "여섯 번째：배식 선택",
+      "en": "Step6:  Accessories selection",
+      "ja": "第六： 小物選び"
+    },
+    "content": {
       "zh-tw": "和服變身完畢，親就可以來到1樓，挑選自己喜歡的日式小布袋，放自己隨身攜帶的貴重物品，天冷的話，可以繼續挑選各式小披肩哦。然後工作人員，進行最後著裝確認",
-			"zh-cn": "和服变身完毕，亲就可以来到1楼，挑选自己喜欢的日式小布袋，放自己随身携带的贵重物品，天冷的话，可以继续挑选各式小披肩哦。然后工作人员，进行最后着装确认"
-		},
-		"url": "/images/faq-section/step6.jpg"
-	},
-	{
+      "zh-cn": "和服变身完毕，亲就可以来到1楼，挑选自己喜欢的日式小布袋，放自己随身携带的贵重物品，天冷的话，可以继续挑选各式小披肩哦。然后工作人员，进行最后着装确认",
+      "ko": "기모노를 갈아입은 후에 1층에 내려와도 된다. 작가 좋아하는 일본식가방을 선택해서 사전 귀중한 물품을 넣어도 된다. 날씨가 추우면 여러가지 조끼를 선택할 수도 있다. 다 끝났으면 우리의 스테프들은 마지막에 확인을 해 준다.",
+      "en": "Dressed with Kimono, you can come to the first floor to pick your favorite Japanese-style small bags, and carry your expensive belongings with you. If the weather is cold, you can continue to choose all kinds of small shawls. Then our staff will have a final check of your dress.",
+      "ja": "着物着衣完了後、一階にて、和式の小物入れを選びます。貴重品等の入れ物です。寒い日には、スカーフも用意しております。最後に、当店のスタッフが着衣チェックします。"
+    },
+    "url": "/images/faq-section/step6.jpg"
+  },
+  {
     "id": 7,
-		"title": {
+    "title": {
       "zh-tw": "第7步：遊玩觀光",
-			"zh-cn": "第7步：游玩观光"
-		},
-		"content": {
+      "zh-cn": "第7步：游玩观光",
+      "ko": "일곱 번째：관광 안내",
+      "en": "Step7: Sightseeing",
+      "ja": "第七：自由時間"
+    },
+    "content": {
       "zh-tw": "挑選完配件之後，親，就可以自由活動啦，區域不受限制哦，當然最推薦肯定是淺草古寺，古色古香。附近也有上野公園和天空樹，可供遊玩",
-			"zh-cn": "挑选完配件之后，亲，就可以自由活动啦，区域不受限制哦，当然最推荐肯定是浅草古寺，古色古香。附近也有上野公园和天空树，可供游玩"
-		},
-		"url": "/images/faq-section/step7.jpg"
-	},
-	{
+      "zh-cn": "挑选完配件之后，亲，就可以自由活动啦，区域不受限制哦，当然最推荐肯定是浅草古寺，古色古香。附近也有上野公园和天空树，可供游玩",
+      "ko": "장식 물품까지 결정한 후에 당신은 자유로 행동하게 된다. 구역은 한정되지 않으며 제일 추천한 데는 당연히 아사쿠사절이며 아주 고풍스런운 곳이다. 근처에 우에노 공원과 Sky Tree 가 있으며 좋아하는 대로 관광할 수 있다. ",
+      "en": "After the selection of accessories, you can freely enjoy your time. You can go anywhere you want; of course, the best destination recommended is certainly Asakusa Temple, full of antique flavor. You also visit Ueno Park and Sky Tree nearby.",
+      "ja": "小物選びが完了後、自由時間に入ります。もちろん、行動区域に制限はありませんが、お勧めは歴史のある浅草寺です。付近には、上野公園、スカイツリー等もありますので、是非お楽しみください。"
+    },
+    "url": "/images/faq-section/step7.jpg"
+  },
+  {
     "id": 8,
-		"title": {
+    "title": {
       "zh-tw": "第8步：和服歸還",
-			"zh-cn": "第8步：和服归还"
-		},
-		"content": {
+      "zh-cn": "第8步：和服归还",
+      "ko": "여덟 번째：기모노 반환",
+      "en": "Step8: Kimono return",
+      "ja": "第八：着物の返還"
+    },
+    "content": {
       "zh-tw": "和服歸還時間隨時都可以哦，只要在我們的營業結束時間之前歸還即可，即18:00之前。如果親，還是對我們的和服依依不捨的話，當然可以，只要再追加1000日元，就可以隔夜啦，隔天的11點前歸還即可。不過正絹和服必須在營業結束時間18:00之前歸還",
-			"zh-cn": "和服归还时间随时都可以哦，只要在我们的营业结束时间之前归还即可，即18:00之前。如果亲，还是对我们的和服依依不舍的话，当然可以，只要再追加1000日元，就可以隔夜啦，隔天的11点前归还即可。不过正绢和服必须在营业结束时间18:00之前归还"
-		},
-		"url": "/images/faq-section/step8.jpg"
-	}
+      "zh-cn": "和服归还时间随时都可以哦，只要在我们的营业结束时间之前归还即可，即18:00之前。如果亲，还是对我们的和服依依不舍的话，当然可以，只要再追加1000日元，就可以隔夜啦，隔天的11点前归还即可。不过正绢和服必须在营业结束时间18:00之前归还",
+      "ko": "기모노의 반환 시간은 수시로 되고 있으며 영업이 끝난 시간 18:00 시 전에 반화하시면 된다. 만약 당신은 기모노를 더 입고 싶은 경우에는 1000엔 추가 비용을 내시면 그 다음날에 11시전에 반환을 하시면 된다. 하지만 주의해야 할 것은 정견(제일 좋은 비단)재질이된 기모노는 영업 끝난 시간 18:00시 전에 반환을 해야 한다. ",
+      "en": "You can return your Kimonos at any time you want, as long as before the end of our business time that is, before 18:00. If you really love our kimono and reluctantly to return them in such a short time, you can return them at 11 o’clock next morning, as long as you pay an additional 1,000 yen. However, the silk kimono must be returned before the end of business hours (18:00).",
+      "ja": "着物の返還時間に制限はありませんが、閉店前（18:00）時までには必ずお返しください。次の日まで、時間の追加をしたい場合は、1000円の追加料金となりますが、翌日の朝(11:00)までには必ずお返しください。注意：正絹の着物はお時間の追加ができませんので、当日の閉店（18:00）までにはお返しください。"
+    },
+    "url": "/images/faq-section/step8.jpg"
+  }
 ]

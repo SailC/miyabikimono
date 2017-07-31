@@ -3,11 +3,17 @@
     "id": 1,
     "title": {
       "zh-cn": "地理位置绝佳",
-      "zh-tw": "地理位置絕佳"
+      "zh-tw": "地理位置絕佳",
+      "ko": "지리위치 편리",
+      "en": "Best location",
+      "ja": "便利な位置"
     },
     "content": {
-      "zh-cn": "进，可步行三分到达旅游胜地，浅草寺，退，可在有日本特色的，人烟稀少的街道取景拍摄，不想拍游客照的您，不想以人群作为背景的您，想要排除有日本味道照片的您，我们是您在浅草体验和服的最佳选择",
-      "zh-tw": "進，可步行三分到達旅遊勝地，淺草寺，退，可在有日本特色的，人煙稀少的街道取景拍攝，不想拍遊客照的您，不想以人群作為背景的您，想要排除有日本味道照片的您，我們是您在淺草體驗和服的最佳選擇"
+      "zh-cn": "近，可步行三分到达旅游胜地，浅草寺，退，可在有日本特色的，人烟稀少的街道取景拍摄，不想拍游客照的您，不想以人群作为背景的您，想要排除有日本味道照片的您，我们是您在浅草体验和服的最佳选择",
+      "zh-tw": "進，可步行三分到達旅遊勝地，淺草寺，退，可在有日本特色的，人煙稀少的街道取景拍攝，不想拍遊客照的您，不想以人群作為背景的您，想要排除有日本味道照片的您，我們是您在淺草體驗和服的最佳選擇",
+      "ko": "편리하다. 걸어가 3분정도가 있으면 주변의 관광지 아사쿠사 철까지 갈 수 있다. 그리고 아주 특색적이고 사람이 별로 없는 거리에 들어가서 사진을 찍을 수 있습니다.좋은 사진을 찍으려고하면 여기는 당신에게 한 좋은 선택이라고 생각합니다.",
+      "en": "Look forward, you could reach the tourist destination, Asakusa Temple in three minutes’ walk; Look back, you could take photos in the sparsely populated streets which are full of Japanese characteristics; If you do not want to take photos of visitors, and do not want to take the crowd as the background of your photos, but to take photos with Japanese taste, we are the best choice for you to experience kimono in Asakusa.",
+      "ja": "当店から徒歩三分で、観光の場所へ到着します。当店付近の観光地では、日本の伝統的な場所もあり、観光客や人が少なく、撮影を邪魔されない場所があります。私たちは、あなたの着物体験を精一杯サポートします。"
     },
     "url": "/images/about-section/0.jpg"
   },
@@ -15,11 +21,17 @@
     "id": 2,
     "title": {
       "zh-cn": "物美价廉",
-      "zh-tw": ""
+      "zh-tw": "物美价廉",
+      "ko": "품질 좋고 가격이 쌈",
+      "en": "Cheap and fine",
+      "ja": "お得な値段"
     },
     "content": {
       "zh-cn": "江户和装工房—雅所有的套餐的价格都是明码实价的，所有的套餐都包括穿着和服所需要的所有的物品，有无发型也都清楚标注，绝无隐性消费。套餐之间可以自由的加价升级。拍照所用的小道具，油纸伞，面具，扇子，一律免费提供，数量有限，先到先得。",
-      "zh-tw": "江戶和裝工房—雅所有的套餐的價格都是明碼實價的，所有的套餐都包括穿著和服所需要的所有的物品，有無髮型也都清楚標註，絕無隱性消費。套餐之間可以自由的加價升級。拍照所用的小道具，油紙傘，面具，扇子，一律免費提供，數量有限，先到先得。"
+      "zh-tw": "江戶和裝工房—雅所有的套餐的價格都是明碼實價的，所有的套餐都包括穿著和服所需要的所有的物品，有無髮型也都清楚標註，絕無隱性消費。套餐之間可以自由的加價升級。拍照所用的小道具，油紙傘，面具，扇子，一律免費提供，數量有限，先到先得。",
+      "ko": "에도기모노공방-아에 있는 모든 세트의 가격은 다 투명하게 되어 있으며 모든 세트 안에 입는 기모노와 필요한 물품들을 다 포함해 있습니다. 헤어스타일 설계 유무에 대하여 명확하게 표시해 되어 있으니 기타 비용은 따로 받아 드리지 않겠습니다. 세트 사에에 자유롭게 차액을 내셔서 바뀔 수 있습니다. 사진을 찍을 때 필요한 작은 도구, 종이우산, 마스크, 부체등 공짜로 제공해 드리지만 수량이 한정해 되어 있으니 순서대로 제공합니다.",
+      "en": "All the packages in our shop are clearly priced, all the packages include all the items needed in wearing kimono; we have price ticket on everything including the hair style, without any hidden consumption. You could update your package by paying extra money. Props used for taking pictures, such as oil paper umbrella, masks, and fans are free of charge. Reservations are on first-come-first-served basis.",
+      "ja": "当店「江戸和装工房-雅」のサービス料金、セット料金などは、料金表そのままのお値段です。着物に必要な物は全て、セットの中に含まれており、ヘアのセットについても、記してあり、決して消費者を騙すような追加料金等はありません。低いセットを選んだ後、追加料金で高いセットにする事もできます。また、写真つ必要な小道具、油絵傘、仮面、センス等は全て無料で提供致しますが、数量限定のため、早い者勝ちです。"
     },
     "url": "/images/about-section/2.jpg"
   },
@@ -27,11 +39,17 @@
     "id": 3,
     "title": {
       "zh-cn": "尊重传统，专注细节",
-      "zh-tw": "尊重傳統，專注細節"
+      "zh-tw": "尊重傳統，專注細節",
+      "ko": "전통적, 세부적",
+      "en": "Respect the tradition, focus on details",
+      "ja": "伝統を尊重し、細かいサービスに拘ります。"
     },
     "content": {
       "zh-cn": "提供最为传统的和服穿着，不省略任何一个步骤。江户和装工房--雅的和服老师平均资历都是达到25年以上的，和服对于她们而言不仅仅是一份工作，更多的是一种情怀，一份热衷。能够让更多喜爱和服文化的人们穿上漂亮的和服，并让正宗的和服文化传承下去, 对和服老师而言就是最大的安慰",
-      "zh-tw": "提供最為傳統的和服穿著，不省略任何一個步驟。江戶和裝工房--雅的和服老師平均資歷都是達到25年以上的，和服對於她們而言不僅僅是一份工作，更多的是一種情懷，一份熱衷。能夠讓更多喜愛和服文化的人們穿上漂亮的和服，並讓正宗的和服文化傳承下去, 對和服老師而言就是最大的安慰"
+      "zh-tw": "提供最為傳統的和服穿著，不省略任何一個步驟。江戶和裝工房--雅的和服老師平均資歷都是達到25年以上的，和服對於她們而言不僅僅是一份工作，更多的是一種情懷，一份熱衷。能夠讓更多喜愛和服文化的人們穿上漂亮的和服，並讓正宗的和服文化傳承下去, 對和服老師而言就是最大的安慰",
+      "ko": "전통적인 기모노를 제공하니 닥 하나의 절차도 줄리지 않습니다. 에도기모노공방-아(雅)에 계시는 기모노 선생님들은 누구시든 25년 이상의 경험을 가지고 계십니다. 기모노는 그분들에게 단 하나의 일이 아니고 한 마음을 가지면서 하는 취미라고도 합니다. 기모노 문화를 좋아하시는 분들에게 아주 예쁜 기모노를 제공해 드릴 수 있게 되면, 전통적인 기모노 문화가 전수하고 계승하게 될 수 있게 되면 그 분들에게 너무 좋은 선물이라고 합니다.",
+      "en": "We provide the most traditional kimonos, and we seldom omit any one procedure. Kimonos masters of our shop are qualified with average qualifications of more than 25 years. For them, kimono is not just a job, but a feeling, and zeal. It is of great comfort for kimono masters if they could let more people who love kimono culture wear beautiful kimonos, and let the authentic kimono culture inherit forward.",
+      "ja": "当店では、伝統的な着物の着方を重視し、細かい所も一切省きません。江戸和装工房--雅の従業員は、全員平均年齢25以上、着物は仕事ではなく、愛着心を持っています。彼らにとって、伝統的で綺麗な着物を人々に着て頂く事が一番の幸せです。"
     },
     "url": "/images/about-section/3.jpg"
   },
@@ -39,11 +57,17 @@
     "id": 4,
     "title": {
       "zh-cn": "贴心中文服务",
-      "zh-tw": "貼心中文服務"
+      "zh-tw": "貼心中文服務",
+      "ko": "한국어 서비스 제공",
+      "en": "Intimate English  service",
+      "ja": "日本語のサービス"
     },
     "content": {
       "zh-cn": "免费的中文小客服，免费提供化妆品以及化妆台，免费提供带锁储物柜。一切的附加服务，都是为了让您更好的进行一次和服文化体验。添加我们的客服，妈妈就再也不会担心我在日本迷路了，有任何不懂的问题都可以咨询我的客服，我们一定尽力解答。",
-      "zh-tw": "免費的中文小客服，免費提供化妝品以及化妝台，免費提供帶鎖儲物櫃。一切的附加服務，都是為了讓您更好的進行一次和服文化體驗。添加我們的客服，媽媽就再也不會擔心我在日本迷路了，有任何不懂的問題都可以諮詢我的客服，我們一定盡力解答。"
+      "zh-tw": "免費的中文小客服，免費提供化妝品以及化妝台，免費提供帶鎖儲物櫃。一切的附加服務，都是為了讓您更好的進行一次和服文化體驗。添加我們的客服，媽媽就再也不會擔心我在日本迷路了，有任何不懂的問題都可以諮詢我的客服，我們一定盡力解答。",
+      "ko": "한국어 서비스가 되, 화장품 및 화장대같은 걸 제공해 드리는데다가 잠길 수 있는 보관용 캔비닛까지 제공합니다. 모든 첨가 서비스는 고객님께서 한 잊어버릴 수 없는 기모노 체험을 가질 수 있도록 준비릴 한 겁니다. ",
+      "en": "We provide free English customer service, free cosmetics and dressing table, free storage lockers. All the additional services are for the sake of allowing you to better experience the kimono culture. Add our customer service, “my mother will never worry that I might get lost in Japan”; if you have any questions, do not hesitate to consult our customer service, we will try our best to help you.",
+      "ja": "当店では、日本語のサービスもあります。無料で化粧品、化粧台、鍵付きロッカーの提供は、あなたに着物の体験をより良くして頂くためです。日本に詳しくないあなたにとって、私たちは一番の選択です。日本で何かわからない所、または日本についての質問がある場合は、私たちのカスタマーサービスにお聞き頂ければ全力で回答致します。"
     },
     "url": "/images/about-section/1.jpg"
   },
@@ -51,11 +75,17 @@
     "id": 5,
     "title": {
       "zh-cn": "和服种类众多",
-      "zh-tw": "和服種類眾多"
+      "zh-tw": "和服種類眾多",
+      "ko": "기모노 종류 많음",
+      "en": "Various types of kimonos",
+      "ja": "たくさんの種類"
     },
     "content": {
       "zh-cn": "合计1000件以上的和服在库，选择种类众多，总有一件和服是在等待着和您相遇的。”着物が出会い”、这是一家有200多年历史的和服店的86岁会长告诉我们的一句话，穿和服就是一场相遇。江户和装工房--雅和服种类众多，总有一件和服是为您等待的",
-      "zh-tw": "合計1000件以上的和服在庫，選擇種類眾多，總有一件和服是在等待著和您相遇的。 ”著物が出會い”、這是一家有200多年曆史的和服店的86歲會長告訴我們的一句話，穿和服就是一場相遇。江戶和裝工房--雅和服種類眾多，總有一件和服是為您等待的"
+      "zh-tw": "合計1000件以上的和服在庫，選擇種類眾多，總有一件和服是在等待著和您相遇的。 ”著物が出會い”、這是一家有200多年曆史的和服店的86歲會長告訴我們的一句話，穿和服就是一場相遇。江戶和裝工房--雅和服種類眾多，總有一件和服是為您等待的",
+      "ko": "합계를 해서 1000개 이상의 기모노는 재고가 있으니 선택할 범위가 많습니다. 어째든 당신과 잘 어울릴 기모노 있을 거라고 믿습니다. “기모노와의 만남” 라는 말은 한 200년 역사를 가진 기모노 가게의 86세 사장님이 저희에게 알려 주셨습니ㅏ. 기모노를 입는 것은 한 만남이라고 하니 에도기모노공방-아(雅）에서 당신과의 만남을 기대하고 있는 기모노 반드시 있을 겁니다.",
+      "en": "A total of more than 1000 kimonos are in stock, you have a wide range choose; there is always a kimono that fits you best is waiting for you. An 86-year-old chairperson of a kimono shop with over 200 years’ history once told me that wearing a kimono is like a encountering. We have various types of kimonos, and there is always one waiting for you",
+      "ja": "当店では、全部で合計1000枚以上の着物があり、選択範囲が広い、あなたにお似合いの着物はきっとあります。 “着物は出会い”これは、200年もの年月を渡り、長い歴史を持った着物の店の経営者が言ってました。江戸和装工房--雅の着物は種類が多く、あなたにお似合いの着物が必ずあります。"
     },
     "url": "/images/about-section/4.jpg"
   }

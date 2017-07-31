@@ -28,6 +28,42 @@
       "feature": "人气套餐",
       "belt": "半幅带",
       "event": "各种场合都适用"
+    },
+    "ko": {
+      "name": " 화려한 여성 기모노",
+      "desc": "선택폭이 가장 넓은 기모노 체험 세트이며 다양한 종류의 기모노가 있다. 심플한 무늬부터 여성스런 무늬, 화려한 무늬까지 다양하게 준비되어 있다. 이 수많은 무늬중에서 당신의 마음에 드는것도 있을거라 생각한다. 이 세트는 에도 기모노 공방-아에서 제일 인기가 있는 세트이라고 할 수 있다. 만약 예산이 충분하다면 이 세트를 추천한다. ",
+      "clothNum": "200벌정도",
+      "acc": "한하바 오비, 조리, 양말, 가방, 기모노, 기모노 내의, 쥬방，장식띠",
+      "hair": "머리스타일 설계는 1000엔 추가 필요",
+      "cloth-type": "기모노(봄과 겨울에 추천)",
+      "gender": "여성",
+      "feature": "인기세트",
+      "belt": "한하바오비",
+      "event": "각종 상황에 다 적용됨"
+    },
+    "en": {
+      "name": "  Ladies’ gorgeous kimono",
+      "desc": "Package features: We provide the most types for this package, including varieties of colors - elegant, Cinderella, gorgeous; in general, there will be a style that will attract you. This package is one of our popular packages. If you are in a limited budget, this package is relatively high in cost performance. ",
+      "clothNum": "about 200 sets",
+      "acc": "half band belt, Zori, socks, bags, kimono, kimono underwear, jacket loop, decorative belt",
+      "hair": "hair design needs to pay additional 1,000 Yen",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Ladies ",
+      "feature": "Popular set",
+      "belt": "half band belt",
+      "event": "Various occasions are applicable"
+    },
+    "ja": {
+      "name": "女性豪華セット",
+      "desc": "セットの特徴：シンプルから派手、おしゃれ、色々なスタイルの着物があります。「江戸和装工坊 雅」当店のお勧めセットでもあり、一番お得なセットでもあります。",
+      "clothNum": "about 200 sets",
+      "acc": "半副帯、草履、靴下、バッグ、着物、着物の下着、襦袢、飾り帯",
+      "hair": "ヘアセットの場合、1000円の追加料金となります。",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "女性用",
+      "feature": "人気セット",
+      "belt": "半副帯",
+      "event": " いろいろな場面でご使用なれます。"
     }
   },
   {
@@ -52,13 +88,49 @@
       "name": "女士高级和服",
       "desc": "和服质地上乘，用料高于华丽款，在腰带部分有明显的分别，有精致美丽的装饰绳，和服的选择性很多，，让你既可以艳丽又可以典雅，性价比高，肯定有一款是您喜欢的和服。店长推荐哦",
       "clothNum": "100件左右",
-      "acc": "半幅带，草履，袜子，包包，和服，和服内衣，襦袢，精致装饰带，精致发饰",
+      "acc": "半幅带，草履，袜子，包包，和服，和服内衣，襦袢，精致装饰带，精致发",
       "hair": "包含发型设计",
       "cloth-type": "和服(春冬首选)",
       "gender": "女士",
       "feature": "精致套餐",
       "belt": "半幅带",
       "event": "各种场合都适用"
+    },
+    "ko": {
+      "name": " 여성 고급 기모노 ",
+      "desc": "화려한 타임의 기모노에 비해 사용된 재질이 매우 우수하다. 더 좋은 재질의 아름다운 장식띠가 있으며 기모노의 선택폭도 더욱 넓다. 당신의 마음에 드는  스타일이 될 수 도 있고 우아한 타입이 될 수도 있으며 가격이 저렴하고 품질 매우 우수하다. 당신에게 어울리는 기모노 또한 반드시 있을 것이라 생각하며, 본 사에서 강력하게 추천하는 세트이다.",
+      "clothNum": "100벌정도",
+      "acc": "한하바 오비, 조리, 양말, 가방, 기모노, 기모노 내의, 쥬방, 정교한 장식띠, 정규한 머리 스타일",
+      "hair": "헤어스타일 설계 포함됨",
+      "cloth-type": "기모노(봄과 겨울에 추천)",
+      "gender": "여성",
+      "feature": "정교한 세트",
+      "belt": "한하바오비",
+      "event": "각종 상황에 다 적용됨"
+    },
+    "en": {
+      "name": "Ladies’ advanced kimono ",
+      "desc": "This type of kimono is superior in quality. The material used is even better than the gorgeous kimono. You could find the obvious difference in the belt part; there are fine and beautiful decorative ropes, and a lot of choices are provided. You can be both bright and elegant wearing them, and this type of kimono is high cost-effective, there must be one that is your favorite. It is recommended be the manager.",
+      "clothNum": "about 100 sets",
+      "acc": "half band, Zori, socks, bags, kimono, kimono underwear, jacket loop, exquisite decorative belt, exquisite hair ornaments",
+      "hair": "hair design included",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Ladies ",
+      "feature": "Exquisite set",
+      "belt": "half band belt",
+      "event": "Various occasions are applicable"
+    },
+    "ja": {
+      "name": "女性高級着物セット ",
+      "desc": "豪華セット」の素材より高級、特に帯の部分は明らかに違います。このセットの帯は、美しく上品な飾り帯を使用し、着物の種類も多いです。上品感とゴージャス感で、女性の美しさを引き立てます。店長のお勧めでもあります。",
+      "clothNum": "about 100 sets",
+      "acc": "半副帯、草履、靴下、バッグ、着物、着物の下着、襦袢、上品な飾り帯",
+      "hair": "ヘアスタイルのセットを含む",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "女性用 ",
+      "feature": "精巧なセット",
+      "belt": "半副帯",
+      "event": " いろいろな場面でご使用なれます。"
     }
   },
   {
@@ -67,6 +139,7 @@
     "baseurl": "/images/combo-section/chengren",
     "price": 38000,
     "popularity": 11,
+
     "zh-tw": {
       "name": "成人禮振袖",
       "desc": "日本的女性的成年禮是在20歲，在日本的成人禮，都是在1月，那天滿20歲的人都是穿上華麗的振袖的和服去參加自己所在地區的成人禮，非常的華麗畢竟一生中只穿一次。振袖是日本未婚女士最高規格的和服",
@@ -90,6 +163,42 @@
       "feature": "特惠套餐",
       "belt": "袋带",
       "event": "成人礼 婚宴喜事"
+    },
+    "ko": {
+      "name": "성인식 후리소데 ",
+      "desc": "일본의 여성들의 성인식는 20살이 됐을 때 하는 것이다. 일본의 경우에는 성인식은 1월이며 성인의 날 그 날에 만 20살의 사람들은 화려한 후리소데를 입고 자기가 살고 있는 지방의 성인식에 참석하게 되어있다. 인생에서 단 한번만 입는 기모노 이기에 가장 화려하다. 후리소데는 일본의 미혼 여성들이 입는 제일 높은 등급의 기모노라고 한다.",
+      "clothNum": "50벌 이상",
+      "acc": "후쿠로오비, 조리, 자수 양말, 가방, 기모노, 기모노 내의, 쥬방, 오비아게, 정교한 장식띠, 정교한 머리스타일",
+      "hair": "헤어스타일 설계 포함됨.",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "여성",
+      "feature": "특별 세일 세트",
+      "belt": "후쿠로오비",
+      "event": "성인식, 결혼식"
+    },
+    "en": {
+      "name": "Furisode for puberty rite",
+      "desc": "Japanese women's puberty rite is at the age of 20. In Japan, women's puberty rite is usually held in January. During that day, 20-year-old people are wearing gorgeous furisode kimono to participate the puberty rite in their own area. The kimonos are really gorgeous; after all, we only have one puberty rite in our life. furisode kimono is the highest level kimono for Japan's unmarried women.",
+      "clothNum": "over 50 sets ",
+      "acc": " bag, Zori, embroidery socks, bags, kimono, kimono underwear, jacket loop, with Yang, exquisite decorative belt, exquisite hair ornaments",
+      "hair": "hair design included.",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Ladies ",
+      "feature": "sale set",
+      "belt": "bag band",
+      "event": " Adult wedding ceremony  wedding event."
+    },
+    "ja": {
+      "name": "成人式の振袖セット",
+      "desc": "日本女性の成人式は20歳、1月の時に綺麗な着物を着て、自分の地域の成人式へと行きます。振袖は日本の未婚女性の中でも、一番にいい着物となります。人生に一度だけしか着ない着物です。",
+      "clothNum": "over 50 sets ",
+      "acc": " 袋帯、草履、刺繍の靴下、バッグ、着物、着物の下着、襦袢、帯揚、上品な飾り帯、上品な髪飾り",
+      "hair": "ヘアスタイルのセットを含む",
+      "cloth-type": "着物（春冬のお勧め)",
+      "gender": "女性用",
+      "feature": "割引セット",
+      "belt": "袋帯",
+      "event": "成人式、披露宴、結婚式、お尋ね等"
     }
   },
   {
@@ -121,6 +230,42 @@
       "feature": "特惠套餐",
       "belt": "袋带",
       "event": "成人礼 婚宴喜事"
+    },
+    "ko": {
+      "name": "화려한 성인식 후리소데",
+      "desc": "비단 재질 중에 제일 고품질적인 정견(正绢）재질을 사용하고, 금박 인쇄, 수공적인 자수, 화려하고 불범하니 당신에게 고대의 왕실의 귀족이 된듯한 경험을 줄 수 있다. 일사람들의 성인례에 대한 중요도 후리소데로 통하여 알 수 있다. 많은 부모들은 자신의 딸 자기 인생의 주인공이 되는 성인식을 참석할 수 있도록 코스트를 불구하면서 도와 준다.",
+      "clothNum": "20벌 이상",
+      "acc": "후쿠로오비, 조리, 자수 양말, 가방, 기모노, 기모노 내의, 쥬방, 한에리, 정교한 장식띠, 정교한 머리스타일",
+      "hair": "헤어스타일 설게 포함됨",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "여성",
+      "feature": "특별 세일 세트",
+      "belt": "후쿠로오비",
+      "event": "성인식, 결혼식"
+    },
+    "en": {
+      "name": " Luxury furisode for puberty rite",
+      "desc": " Being the best silk material, gilding patterns, hand embroidery, extraordinary gorgeous, the luxury furisode for puberty rite gives you the best experience of the ancient royal family. In Japan, when you see furisode kimono, you will know how important the puberty rite is for Japanese. Many parents will spare no expense to help their children to participate in a puberty rite where they are the protagonist.",
+      "clothNum": "over 20 sets",
+      "acc": "bag band, Zori, embroidery socks, bags, kimono, kimono underwear, jacket loop, semi- belt, with Yang, exquisite decorative belt, exquisite hair ornaments",
+      "hair": "hair design included.",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Ladies ",
+      "feature": "sale set",
+      "belt": "bag band",
+      "event": "Adult wedding ceremony  wedding event"
+    },
+    "ja": {
+      "name": " 豪華成人式振袖",
+      "desc": " 正絹、熨斗、手作業の刺繍で出来上がっています。まるで城の中にいるように、自分をおしゃれにしましょう。日本での成人式の重要差は、振袖着物の作りからわかります。日本では、親は子供の成人式を精一杯応援し、サポートします。",
+      "clothNum": "20セットを超えます",
+      "acc": "袋帯、草履、刺繍の靴下、バッグ、着物、着物の下着、襦袢、帯揚、上品な飾り帯、上品な髪飾り",
+      "hair": "ヘアスタイルのセットを含む",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "女性用 ",
+      "feature": "割引セット",
+      "belt": "袋帯",
+      "event": "成人式、披露宴、結婚式、お尋ね等"
     }
   },
   {
@@ -152,6 +297,42 @@
       "feature": "精选套餐",
       "belt": "袋带",
       "event": "各种场合都适用"
+    },
+    "ko": {
+      "name": " 명품 기모노",
+      "desc": "일반적인 것 보다는 좀 더 화려한 기모노를 체험해보고 싶지 않은 가? 우리는 더 화려한 기모노를 체험하고 싶어하는 고객님들에게 이 명품 기모노 세트를 준비했다. 기모노에 사용된 재질 사용은 더욱 정교하며 모든 물품들은 전부 한땀한땀 공을들여 준비한 것이다. 특별한 당신을 위한 특별한 준비가 되어 있으니 꼭 한 번 해보는 것을 추천한다.",
+      "clothNum": "20벌",
+      "acc": "후쿠로오비, 조리, 자수양말, 가방, 기모노, 기모노 내의,쥬방, 정교한 머리 스타일, 오비아게, 오비시메",
+      "hair": "헤어스타일 설게 포함됨",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "여성",
+      "feature": "특별 추천 세트",
+      "belt": "후쿠로오비",
+      "event": "각종 상화에 적용됨"
+    },
+    "en": {
+      "name": " Brand kimono",
+      "desc": "Do you want to experience more luxurious kimonos? We provide this type brand kimono for customers who want to become more luxurious. This type of kimonos is made from more sophisticated materials, and all items are carefully selected. They are special preparation for you, which is worth trying.",
+      "clothNum": "20벌",
+      "acc": "bag band, Zori, embroidery socks, bags, kimono, kimono underwear, jacket loop, exquisite hair ornaments, with Yang, with the associations",
+      "hair": "hair design included.",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Ladies ",
+      "feature": "suggested set",
+      "belt": "bag band",
+      "event": "Various occasions are applicable"
+    },
+    "ja": {
+      "name": " ブランドの着物セット",
+      "desc": "更におしゃれで豪華、もっとおしゃれになりたい！と言うお客様のために準備したブランドの着物セットです。このセットでは、素材が更に良く、全ての物全部心から選んでいます。",
+      "clothNum": "20セット",
+      "acc": "袋帯、草履、刺繍の靴下、バッグ、着物、着物の下着、襦袢、上品な髪飾り、帯揚、帯メ",
+      "hair": "ヘアスタイルのセットを含む",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "女性用 ",
+      "feature": "お勧めセット",
+      "belt": "袋帯",
+      "event": " いろいろな場面でご使用なれます。"
     }
   },
   {
@@ -181,6 +362,39 @@
       "gender": "女士",
       "belt": "半幅带",
       "event": "毕业典礼"
+    },
+    "ko": {
+      "name": " 졸업식용 하카마",
+      "desc": "메이지 시대 학습원 여학부부장, 화족여학교교장, 여자예법가 시모타 가시(下田歌子)는 남자가 입는 하카마를 개량하여 나온 하카마는 여성의 유니폼으로 사용하게 되었다. 여자들에게 하카마는 졸업식에 착용하는 예복으로 사용되어 왔다. 신발은 쪼리가 될 수도 있고 부츠를 신을 수도 있다. 신발을 신는 방식은 대정시기부터 전해진 방식이다",
+      "clothNum": "20벌",
+      "acc": "한하바오비, 조리, 자수양말, 가방, 기모노, 기모노 내의",
+      "hair": "헤어스타일 설게 포함됨",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "여성",
+      "belt": "한하바오비",
+      "event": "졸업식"
+    },
+    "en": {
+      "name": " Kamishimo for graduation ceremony",
+      "desc": " Meiji era learning school female school minister, the Chinese women's school principals, women's law and practice Shimoda song to the man riding a horse after the transformation of the old sea tea as a woman school uniforms. 袴 also more as a woman graduation as a graduation ceremony dress. Shoes can be fitted with grass, can also be boots, boots with the Taisho period is left to wear the law",
+      "clothNum": "20sets",
+      "acc": "half band, straw, embroidery socks, bags, kimono, kimono underwear ",
+      "hair": "hair design included.",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Ladies ",
+      "belt": "half band",
+      "event": "Graduation ceremony"
+    },
+    "ja": {
+      "name": " 卒業式用、袴セット",
+      "desc": " 明治に入ると、女子教育の黎明期を迎えます。東京女学校や東京女子師範学校などが相次いで創立されました。そこで、女子生徒たちにどのような服装をさせるかが議論となりました。当時の学校は、いすに座って授業を受ける欧米式。従来の着物に帯というスタイルでは、帯や裾が乱れやすいという問題がありました。そのため、政府はこの時代としては例外的に女学生に男袴の着用を認めました。",
+      "clothNum": "20セット",
+      "acc": "半副帯、草履、刺繍の靴下、バッグ、着物、着物の下着",
+      "hair": "ヘアスタイルのセットを含む",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "女性用 ",
+      "belt": "半副帯",
+      "event": "卒業式"
     }
   },
   {
@@ -190,7 +404,7 @@
     "price": 20000,
     "popularity": 8,
     "zh-tw": {
-      "name": "訪問着",
+      "name": "訪問者",
       "desc": "訪問著並沒有已婚未婚的分別。訪問著是整體染上圖案的和服，它從下擺，左前袖，左肩到領子展開後是一幅圖畫，特徵是稱為「絵羽(えば)」的這種形式。適合訪問著的有：友人婚宴、派對、陪同入學典禮、茶會、同學會、相親等社交場合",
       "clothNum": "20件",
       "acc": "袋帶，草履，刺繡襪子，包包，和服，和服內衣，襦袢，精緻裝飾帶，精緻髮飾",
@@ -201,8 +415,8 @@
       "event": "登門拜訪"
     },
     "zh-cn": {
-      "name": "访问着",
-      "desc": "访问着并没有已婚未婚的分别。访问着是整体染上图案的和服，它从下摆，左前袖，左肩到领子展开后是一幅图画，特徵是称为「絵羽(えば)」的这种形式。适合访问着的有：友人婚宴、派对、陪同入学典礼、茶会、同学会、相亲等社交场合",
+      "name": "访问者",
+      "desc": "访问者并没有已婚未婚的分别。访问者是整体染上图案的和服，它从下摆，左前袖，左肩到领子展开后是一幅图画，特徵是称为「絵羽(えば)」的这种形式。适合访问者的有：友人婚宴、派对、陪同入学典礼、茶会、同学会、相亲等社交场合",
       "clothNum": "20件",
       "acc": "袋带，草履，刺绣袜子，包包，和服，和服内衣，襦袢，精致装饰带，精致发饰",
       "hair": "包含发型设计",
@@ -210,6 +424,39 @@
       "gender": "女士",
       "belt": "袋带",
       "event": "登门拜访"
+    },
+    "ko": {
+      "name": " 방문자",
+      "desc": "방문자같은 경우에는 미혼과 기혼의 구별이 없다. 방문자의 기모노는 전체적으로 문양이 있는 기모노이다. 기모노의 스소, 좌측 마에아와세, 좌측 어깨에서 옷깃까지 전개된 문양이 마치 한 폭의 그림같으며 특별하게 에바(絵羽(えば))라는 형식으로 부른다. 방문자 세트의 경우는 결혼식, 파티, 입학식, 차회, 동호회, 선보기등 사적인 경우에 쓰는 일이 많다.",
+      "clothNum": "20벌",
+      "acc": "후쿠로오비, 조리, 자수 양말, 가방, 기모노, 기모노 내의, 쥬방, 정교한 장식띠, 정교한 머리 스타일",
+      "hair": "헤어스타일 설게 포함됨",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "여성",
+      "belt": "후쿠로오비",
+      "event": "등문방문"
+    },
+    "en": {
+      "name": " Visitors’",
+      "desc": "Visitor’ kimonos do not separate married or unmarried types. Visitors’ kimono is painted with patterns overly. It forms a picture if the lower hem, left front sleeves, left shoulder and collar are unfolded, characterized by what is called as “絵羽(えば)”. Social occasions suitable for visitors’ kimono including: friends’ wedding, party, accompanying entrance ceremony, tea party, students reunion, blind date.",
+      "clothNum": "20sets",
+      "acc": "bag band, Zori, embroidery socks, bags, kimono, kimono underwear, jacket loop, exquisite decorative belt, exquisite hair ornaments",
+      "hair": "hair design included.",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Ladies ",
+      "belt": "bag band",
+      "event": "Visiting someone"
+    },
+    "ja": {
+      "name": " お尋ねセット’",
+      "desc": "お尋ねの着物は、結婚、未婚、関係なしに着れます。着物の下から左裾、左肩から襟まで絵羽と言う形の絵となっておりあます。このセットにお勧めな場面：披露宴、パーティー、入学式の付き添い、お茶会、同窓会、お見合い等",
+      "clothNum": "20セット",
+      "acc": "袋帯、草履、刺繍の靴下、バッグ、着物、着物の下着、襦袢、上品な飾り帯、上品な髪飾り",
+      "hair": "ヘアスタイルのセットを含む",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "女性用 ",
+      "belt": "袋帯",
+      "event": "お尋ね、訪問等"
     }
   },
   {
@@ -241,6 +488,42 @@
       "feature": "特惠套餐",
       "belt": "半幅带",
       "event": "登门拜访"
+    },
+    "ko": {
+      "name": "할인 여성 기모노",
+      "desc": "원가는 5000엔이며 매일 그 중에 20개를 선택하여 할인된 기모노 대여세트로 매우 실질적이다. 기모노의 종류는 소박한 색깔이 많고 선착순으로 먼저 등록하신 분들에게 기회가 있다. 사전의 예약과 미리 등록 하시는 것이 불가능하며 노인과 같이 연장자 분들에게 안성맞춤인 종류가 많다.",
+      "clothNum": "20벌",
+      "acc": "한하바오비, 조리, 양말, 가방, 기모노, 기모노 내의,쥬방，장식띠",
+      "hair": "헤어스타일 설계는 1000엔 추가 필요",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "여성",
+      "feature": "특별 세일 세트",
+      "belt": "한하바오비",
+      "event": "등문방문"
+    },
+    "en": {
+      "name": "Women's privilege kimono",
+      "desc": "originally 5000 yen. However 20 kimonos will be selected as a discount package every day, which is very pricerite. The design and colors of Kimono are very simple; first comes first serves, it does not support appointment and reservations; however most of the design and color are suitable for the elderly ladies.",
+      "clothNum": "about 20 sets",
+      "acc": "half band, zori, socks, bags, kimono, kimono underwear, loop, decorative belt",
+      "hair": "hair design needs additional 1,000 Yen",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Ladies ",
+      "feature": "sale sets",
+      "belt": "half band",
+      "event": "Visiting someone"
+    },
+    "ja": {
+      "name": "女性着物お得セット",
+      "desc": "毎日5000円相当のセット商品の中から20セットを選び、お得割引の対象になります。着物はシンプルデザインが多く、中年や年輩の女性たちにピッタリです。また、当店は予約制ではなく、来た人から順番に早い者勝ちです。",
+      "clothNum": "約 20 セット",
+      "acc": "半副帯、草履、靴下、バッグ、着物、着物の下着、襦袢、飾り帯",
+      "hair": "ヘアセットの場合、1000円の追加料金となります。",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "女性用",
+      "feature": "割引セット",
+      "belt": "半副帯",
+      "event": "お尋ね、訪問等"
     }
   },
   {
@@ -270,6 +553,40 @@
       "gender": "男士",
       "belt": "角带",
       "event": "各种场合都适用"
+    },
+    "ko": {
+      "name": "남성 기모노",
+      "desc": "기모노의 아름다움은 미를 추구하는 여성들만이 선호하는 것이 아니고 남자들도 남성 기모노에 있는 그런 미을 체험해 볼 수 있다. 에도기모노공방- 아 는 남성들을 위해 50벌 이상의 남성기모노를 준비해 놓았다. 여성기모노처럼 선택폭이 넓지 않고, 색깔도 화려하다고 할 수는 없지만 편의성을 추구하는 남성들에게는 안성맞춤이라 생각한다.",
+      "clothNum": "50벌이상",
+      "acc": "오비, 조리, 양말, 가방, 기모노, 기모노 내의, 쥬방",
+      "hair": "헤어 스타일에 포함되지 않음",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "남성",
+      "belt": "오비",
+      "event": "각종 상황에 적용됨"
+    },
+    "en": {
+      "name": "Men's kimono",
+      "desc": "The beauty of kimono is not only belonging to the beauty of ladies, men can also experience the masculine sense of kimono. Edo Kimono Studio - Elegance provides 50 sets of kimonos for male guests. Although male guests do not have that many choices as female guests, and the color of male kimono is not so bright, the simple style just fit every male guests.",
+      "clothNum": "over 50sets",
+      "acc": "belts, Zori, socks, bags, kimono, kimono underwear, jacket loop",
+      "hair": "no hair design",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Men’s",
+      "feature": "sale sets",
+      "belt": "belts",
+      "event": "Various occasions are applicable"
+    },
+    "ja": {
+      "name": "男性の着物セット",
+      "desc": "着物の美しさは女性だけではなく、男性にもあります。江戸和装工房-雅は男性の着物を50セット以上準備しています。女性程、種類は多くないが、シンプルで男性向きにピッタリです。",
+      "clothNum": " 50セットを超えます",
+      "acc": "ベルト、草の靴、靴下、バッグ、着物、和装下着、ジャケットループ",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "男性用",
+      "feature": "割引セット",
+      "belt": "ベルト",
+      "event": " いろいろな場面でご使用なれます。"
     }
   },
   {
@@ -299,6 +616,39 @@
       "gender": "儿童",
       "belt": "兵儿带",
       "event": "各种场合都适用"
+    },
+    "ko": {
+      "name": " 어린이 타입의 기모노 ",
+      "desc": "귀여운 아이들이 귀여운 기모노를 입게 되면 더욱 귀엽게 될 것이라 생각한다. 기모노를 입은 귀여운 아이들과 함께 산책한다면 좋은 추억이 될 것이라 생각한다. 색깔부터 문양까지 수많은 기모노 중에서 아이의 마음에 드는걸 선책하게 해주는 것 또한 즐거운 추억이 되지 않을까 ? 사용 가능 신장은 95cm`~140cm의 범위에 있다. ",
+      "clothNum": "50벌이상",
+      "acc": "헤코오비, 조리, 양말, 가방, 기모노,기모노 내의，쥬방，기모노 외의",
+      "hair": "헤어스타일 설계는 1000엔 추가 필요",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "아동",
+      "belt": "헤코오비",
+      "event": "각종 상황에 적용됨"
+    },
+    "en": {
+      "name": "Child kimono ",
+      "desc": "lovely children wearing a lovely child kimono will become cuter. The scene when the children put on a kimono and walk together with the family is full of warm and sweet. From the favorite color to the decorative design, the children are full of joy at the beginning of selecting. Our kimonos are applicable to children with height of 95cm to 140cm",
+      "clothNum": "over 50sets",
+      "acc": "Binger belt, Zori, socks, bags, kimonos, kimono underwear, jacket Loop, kimono jacket",
+      "hair": " hair design needs to pay additional 1,000 Yen",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Children’",
+      "belt": "Binger belt",
+      "event": "Various occasions are applicable"
+    },
+    "ja": {
+      "name": "子供の着物セット ",
+      "desc": "子供達の可愛いらしさプラス着物、家族全員で着物を着て、みんなで散歩をしましょう。着物は好きな色から好きな模様まで選べます。適用の身長：95-140cm",
+      "clothNum": "50セットを超えます",
+      "acc": "へこ帯、草履、靴下、バッグ、着物、着物の下着、襦袢",
+      "hair": " ヘアセットの場合、1000円の追加料金となります。",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "子供用",
+      "belt": "へこ帯",
+      "event": " いろいろな場面でご使用なれます。"
     }
   },
   {
@@ -328,6 +678,39 @@
       "gender": "儿童",
       "feature": "奢华套餐",
       "event": "各种场合都适用"
+    },
+    "ko": {
+      "name": " 여자아이 후리소데",
+      "desc": "일본에 제일 화려한 여성기모노이며 여자아이가 입게되면 흡사 공주와 같은 분위기를 자아낸다. 화려한 기모노를 입고 고풍스러운 아사쿠사 신사를 걸어다니며 관광한다면 색다른 경험과 동시에 잊을 수 없는 추억이 될 수 있을거라 생각한다. 선착순이니 빨리 예약하는 자에게 기회가 돌아간다. 사용 가능 신장은 115cm~140cm의 범위에 있다. ",
+      "clothNum": "6벌",
+      "acc": "호화스러운 오비, 조리, 양말, 가방, 기모노, 기모노 내의,쥬방",
+      "hair": "헤어스타일 설계는 1000엔 추가 필요",
+      "cloth-type": "기모노 (봄과 겨울에 추천)",
+      "gender": "아동",
+      "feature": "화려한 세트",
+      "event": "각종 상황에 적용됨"
+    },
+    "en": {
+      "name": " Girls’ Furisode kimono",
+      "desc": "Japan's most beautiful children kimono, children wearing it will instantly become a small Japanese princess. Roaming in antique Asakusa Temple, wearing a gorgeous kimono, children will meet a different self, and have a good memory. However we do not have too many of the Girls’ Furisode kimono; and the choices are limited; you’d better come earlier to get the best ones. They are applicable to girls with height from 115cm to 140cm.",
+      "clothNum": "6 sets",
+      "acc": "luxury belt, Zori, socks, bags, kimono, kimono underwear, jacket loop",
+      "hair": " hair design needs to pay additional 1,000 Yen",
+      "cloth-type": "Kimono (spring and winter preferred)",
+      "gender": "Children’",
+      "feature": "Gorgeous set",
+      "event": "Various occasions are applicable"
+    },
+    "ja": {
+      "name": " 女の子振袖着物セット",
+      "desc": "日本で一番豪華な女の子の着物、お姫様のカッコをして、浅草寺を散歩しよう。お子様に上品な着物を着させて、一番の思い出を残しましょう。数限定ですので、早い者勝ちです。適応身長115cm-140cm。",
+      "clothNum": "6 セット",
+      "acc": "豪華な帯、草履、靴下、バッグ、着物、着物の下着、襦袢",
+      "hair": " ヘアセットの場合、1000円の追加料金となります。",
+      "cloth-type": "着物（春冬のお勧め）",
+      "gender": "子供用",
+      "feature": "精選セット",
+      "event": " いろいろな場面でご使用なれます。"
     }
   },
   {
@@ -357,6 +740,39 @@
       "gender": "女士",
       "event": "夏季火花大会",
       "belt": "半幅带"
+    },
+    "ko": {
+      "name": "여성 유카타",
+      "desc": "여성 유카타는 여름에만 있는 한정 세트이며 유카타 대여 가능 기간은 6월 1일부터 9월 15일까지이다. 유카타는 간편한 기모노이라 할 수 있으며 재질과 입는 방법은 일반적인 기모노와 다르다. 재질은 얇고 활동성이 좋으며 무난한 문양은 까지 평상복으로 입기에 안성맞춤이다.",
+      "clothNum": "300벌정도",
+      "acc": "한하바오비, 나막신, 가방, 유카타, 유카타 내의, 각종 소물, 장식띠",
+      "hair": "헤어스타일 설계는 1000엔 추가 필요.",
+      "cloth-type": " 유카타(여름과 가을에 추천)",
+      "gender": "여성",
+      "event": "여름에 불꽃 축제",
+      "belt": "한하바오비"
+    },
+    "en": {
+      "name": "Lady’s yukata",
+      "desc": "Ladies yukata is only offered in summer time (from June 1st to September 15th). yukata is a kind of simple kimono. It is different from other kimonos in the material and wearing methods. Its texture is thin, more casual, and with more beautiful colors, it is said to be as the best dress to participate in fireworks and some summer festival activities.",
+      "clothNum": " about 300sets",
+      "acc": "half band, clogs, bags, yukatas, yukata underwear, all kinds of small objects, decorative belt",
+      "hair": "hair design needs to pay additional 1,000 Yen.",
+      "cloth-type": " yukata (summer and autumn preferred)",
+      "gender": "Ladies",
+      "event": "Summer fireworks",
+      "belt": "half band"
+    },
+    "ja": {
+      "name": "女性浴衣セット",
+      "desc": "女性用の浴衣は夏限定(6月1日から9月15日まで)となります。このセットの浴衣は便利差を最優先にした浴衣です。素材も、着方も一般の浴衣と異なります。薄め、カジュアル、派手目に出来上がっています。花火大会や祭りなどに最適です。",
+      "clothNum": " 約300セット",
+      "acc": "半幅帯、下駄、バッグ、浴衣、浴衣の下着、その他小物",
+      "hair": "ヘアセットの場合、1000円の追加料金となります。",
+      "cloth-type": " 浴衣  （夏秋のお勧め）",
+      "gender": "女性用",
+      "event": "花火大会",
+      "belt": "半幅帯"
     }
   },
   {
@@ -386,6 +802,39 @@
       "gender": "男士",
       "event": "夏季火花大会",
       "belt": "角带"
+    },
+    "ko": {
+      "name": "남성 유카타",
+      "desc": "남성 유카타는 여름에만 있는 한정 세트이며 유카타 대여 가능 기간은 6월 1일부터 9월 15일까지 이다. 유카타는 간편한 기모노이라 할 수 있으며 재질과 입는 방법이 일반적인 기모노와 다르다. 재질은 얇고 활동성이 좋으며 무난한 문양은 까지 평상복으로 입기에 안성맞춤이다.",
+      "clothNum": "100벌정도",
+      "acc": "가쿠오비, 나막신, 가방, 유카타, 유카타 내의, 각종 소물",
+      "hair": "헤어스타일 설계 포함되지 않음.",
+      "cloth-type": " 유카타(여름과 가을에 추천)",
+      "gender": "남성",
+      "event": "여름에 불꽃 축제",
+      "belt": "카쿠오비"
+    },
+    "en": {
+      "name": "Men's yukata",
+      "desc": "Men's yukata is only offered in summer time (from June 1st to September 15th). yukata is a kind of simple kimono. It is different from other kimonos in the material and wearing methods. Its texture is thin, more casual, and with more beautiful colors, it is said to be as the best dress to participate in fireworks and some summer festival activities.",
+      "clothNum": "about 100 sets ",
+      "acc": "corner band, clogs, bags, yukatas, yukatas underwear, and various small things",
+      "hair": "does not contain hair design",
+      "cloth-type": " yukata (summer and autumn preferred)",
+      "gender": "Men’s",
+      "event": "Summer fireworks",
+      "belt": "corner band"
+    },
+    "ja": {
+      "name": "男性浴衣セット",
+      "desc": "男性用の浴衣は夏限定(6月1日から9月15日まで)となります。このセットの浴衣は便利差を最優先にした浴衣です。素材も、着方も一般の浴衣と異なります。薄め、カジュアル、派手目に出来上がっています。花火大会や祭りなどに最適です。",
+      "clothNum": "約100セット",
+      "acc": "角帯、下駄、バッグ、浴衣、浴衣の下着、その他小物",
+      "hair": "ヘアスタイルのセットは含まない。",
+      "cloth-type": "浴衣  （夏秋のお勧め）",
+      "gender": "男性用",
+      "event": "花火大会",
+      "belt": "角帯"
     }
   },
   {
@@ -415,6 +864,39 @@
       "gender": "儿童",
       "belt": "兵儿带",
       "event": "夏季火花大会"
+    },
+    "ko": {
+      "name": " 아동 유카타 ",
+      "desc": "귀여운 아이들이 귀여운 유카타를 입게 되면 더 귀여워 지겠죠 ? 유카타를 입은 귀여운 아이들과 함께 가족끼리 나들이를 한다면 즐거운 추억이 되지 않을까요 ? 색깔부터 시작해 무늬까지, 시작부터 모든걸 지원해드립니다.",
+      "clothNum": "50벌이상",
+      "acc": "헤코오비, 나막신, 가방, 유카타",
+      "hair": " 헤어스타일 설계는 1000엔 추가 필요. ",
+      "cloth-type": " 유카타(여름과 가을에 추천)",
+      "gender": "아동",
+      "belt": "헤코오비",
+      "event": "여름에 불꽃 축제"
+    },
+    "en": {
+      "name": " Children's yukata ",
+      "desc": "When lovely children put on a lovely yukata, they will become lovelier. The scene when the children put on a yukata and walk together with the family is full of warm and sweet. From the favorite color to the decorative design, the children are full of joy at the beginning of selecting.",
+      "clothNum": "over 50 sets",
+      "acc": " soldiers with, clogs, bags, yukatas",
+      "hair": " hair design needs to add 1,000 Yen ",
+      "cloth-type": " yukata (summer and autumn preferred)",
+      "gender": "Children",
+      "belt": "soldiers with",
+      "event": "Summer fireworks"
+    },
+    "ja": {
+      "name": " 子供浴衣セット ",
+      "desc": "子供達の可愛いらしさプラス着物、家族全員で着物を着て、みんなで散歩をしましょう。着物は好きな色から好きな模様まで選べます。",
+      "clothNum": "50セットを超えます",
+      "acc": " へこ帯,下駄,バッグ、浴衣",
+      "hair": " ヘアセットの場合、1000円の追加料金となります。",
+      "cloth-type": " 浴衣（夏秋のお勧め）",
+      "gender": "子供用",
+      "belt": "へこ帯",
+      "event": "花火大会"
     }
   }
 ]

@@ -1,75 +1,76 @@
-import React from 'react'
-import classNames from 'classnames'
-import dict from './dict.json'
-import Wallop from 'Wallop'
-import { Link } from 'react-router-dom'
-import Scrollchor from 'react-scrollchor'
+import React from 'react';
+import classNames from 'classnames';
+import dict from './dict.json';
+import Wallop from 'Wallop';
+import { Link } from 'react-router-dom';
+import Scrollchor from 'react-scrollchor';
 
 // default to Chinese simplified
-var language = 'zh'
-var text = dict['zh']
-var langChangeListener
+var language = 'zh';
+var text = dict['zh'];
+var langChangeListener;
 
-const NavLeft = () => (
-  <div class='nav-left'>
-    <a class='nav-item'>
-      <img src='/images/logo-head.png' alt='Logo' />
+const NavLeft = () =>
+  <div class="nav-left">
+    <a class="nav-item">
+      <img src="/images/logo-head.png" alt="Logo" />
     </a>
-  </div>
-)
+  </div>;
 
-const NavToggle = (props) => {
-  let { isActive, toggleListener } = props
+const NavToggle = props => {
+  let { isActive, toggleListener } = props;
   return (
-    <span class={classNames(
-      'nav-toggle',
-      {'is-active': isActive}
-    )} onClick={toggleListener} >
+    <span
+      class={classNames('nav-toggle', { 'is-active': isActive })}
+      onClick={toggleListener}
+    >
       <span />
       <span />
       <span />
     </span>
-  )
-}
+  );
+};
 
-const NavRight = (props) => {
-  let { isActive, toggleListener } = props
+const NavRight = props => {
+  let { isActive, toggleListener } = props;
   return (
-    <div class={classNames(
-      'nav-right',
-      'nav-menu',
-      {'is-active': isActive}
-    )} onClick={toggleListener}>
-      <span class='nav-item' onClick={(e) => {
-        e.preventDefault()
-        e.stopPropagation()
-      }}>
-        <div class='field'>
-          <p class='control'>
-            <span class='select is-small is-primary has-text-centered'>
+    <div
+      class={classNames('nav-right', 'nav-menu', { 'is-active': isActive })}
+      onClick={toggleListener}
+    >
+      <span
+        class="nav-item"
+        onClick={e => {
+          e.preventDefault();
+          e.stopPropagation();
+        }}
+      >
+        <div class="field">
+          <p class="control">
+            <span class="select is-small is-primary has-text-centered">
               <select onChange={langChangeListener}>
                 <option selected={language === 'zh-cn'}>简体中文</option>
                 <option selected={language === 'zh-tw'}>正體中文</option>
                 <option selected={language === 'en'}>English</option>
                 <option selected={language === 'ja'}>日本語</option>
+                <option selected={language === 'ko'}>한국어</option>
               </select>
             </span>
           </p>
         </div>
       </span>
-      <span class='nav-item'>
-        <Scrollchor to='#product-section' class='button is-primary nav-link'>
-          <span class='icon'>
-            <i class='fa fa-female' />
+      <span class="nav-item">
+        <Scrollchor to="#product-section" class="button is-primary nav-link">
+          <span class="icon">
+            <i class="fa fa-female" />
           </span>
-          <span class='icon is-small'>
-            <i class='fa fa-plus' />
+          <span class="icon is-small">
+            <i class="fa fa-plus" />
           </span>
-          <span class='icon'>
-            <i class='fa fa-male' />
+          <span class="icon">
+            <i class="fa fa-male" />
           </span>
         </Scrollchor>
-
       </span>
       {/* <span class='nav-item'>
         <Link to='/booking' class='button is-primary'>
@@ -78,157 +79,162 @@ const NavRight = (props) => {
           </span>
         </Link>
       </span> */}
-      <span class='nav-item'>
-        <Scrollchor to='#qa-section' class='button is-primary nav-link'>
-          <span class='icon'>
-            <i class='fa fa-question-circle' />
+      <span class="nav-item">
+        <Scrollchor to="#qa-section" class="button is-primary nav-link">
+          <span class="icon">
+            <i class="fa fa-question-circle" />
           </span>
         </Scrollchor>
       </span>
-      <span class='nav-item'>
-        <Scrollchor to='#girls-section' class='button is-primary nav-link'>
-          <span class='icon'>
-            <i class='fa fa-camera' />
+      <span class="nav-item">
+        <Scrollchor to="#girls-section" class="button is-primary nav-link">
+          <span class="icon">
+            <i class="fa fa-camera" />
           </span>
         </Scrollchor>
       </span>
-      <span class='nav-item'>
-        <Scrollchor to='#about-section' class='button is-primary nav-link'>
-          <span class='icon'>
-            <i class='fa fa-users' />
+      <span class="nav-item">
+        <Scrollchor to="#about-section" class="button is-primary nav-link">
+          <span class="icon">
+            <i class="fa fa-users" />
           </span>
         </Scrollchor>
       </span>
-      <span class='nav-item'>
-        <Scrollchor to='#footer-section' class='button is-primary nav-link'>
-          <span class='icon'>
-            <i class='fa fa-wechat' />
+      <span class="nav-item">
+        <Scrollchor to="#footer-section" class="button is-primary nav-link">
+          <span class="icon">
+            <i class="fa fa-wechat" />
           </span>
         </Scrollchor>
       </span>
-
     </div>
-  )
-}
+  );
+};
 
 class HeroHead extends React.Component {
-  constructor (props) {
-    super(props)
+  constructor(props) {
+    super(props);
 
     this.state = {
-      'isActive': false
-    }
+      isActive: false
+    };
 
-    this.toggleListener = this.toggleListener.bind(this)
+    this.toggleListener = this.toggleListener.bind(this);
   }
 
-  toggleListener () {
+  toggleListener() {
     this.setState({
-      'isActive': !this.state.isActive
-    })
+      isActive: !this.state.isActive
+    });
   }
 
-  render () {
+  render() {
     return (
-      <div class='hero-head'>
-        <header class='nav'>
-          <div class='container'>
+      <div class="hero-head">
+        <header class="nav">
+          <div class="container">
             {/* <NavLeft /> */}
-            <NavToggle toggleListener={this.toggleListener} isActive={this.state.isActive} />
-            <NavRight toggleListener={this.toggleListener} isActive={this.state.isActive} />
+            <NavToggle
+              toggleListener={this.toggleListener}
+              isActive={this.state.isActive}
+            />
+            <NavRight
+              toggleListener={this.toggleListener}
+              isActive={this.state.isActive}
+            />
           </div>
         </header>
       </div>
-    )
+    );
   }
 }
 
-const HeroBody = () => (
-  <div class='hero-body'>
+const HeroBody = () =>
+  <div class="hero-body">
     <WallopSlides />
-  </div>
-)
+  </div>;
 
-const Headlines = (props) => {
-  let { num } = props
+const Headlines = props => {
+  let { num } = props;
   return (
-    <div class='container is-fluid has-text-centered'>
-      <h1 class={classNames(
-        'title',
-        'is-1',
-        'font-zhao'
-      )}> {text[`hero-title-${num}`]} </h1>
-      <h2 class={classNames(
-        'subtitle',
-        'is-3',
-        'font-zhao'
-      )}>{text[`hero-subtitle-${num}`]}</h2>
-      <Link to='/booking' class='store-icon button is-primary is-inverted is-large'>
-        <span class='icon'>
-          <i class='fa fa-calendar' />
+    <div class="container is-fluid has-text-centered">
+      <h1 class={classNames('title', 'is-1', 'font-zhao')}>
+        {' '}{text[`hero-title-${num}`]}{' '}
+      </h1>
+      <h2 class={classNames('subtitle', 'is-3', 'font-zhao')}>
+        {text[`hero-subtitle-${num}`]}
+      </h2>
+      <Link
+        to="/booking"
+        class="store-icon button is-primary is-inverted is-large"
+      >
+        <span class="icon">
+          <i class="fa fa-calendar" />
         </span>
-        <span class='font-tang'>{text['button-calendar']}</span>
+        <span class="font-tang">
+          {text['button-calendar']}
+        </span>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-const WallopSlides = () => (
-  <div class='Wallop Wallop--fade' id='heroWallop'>
-    <div class='Wallop-list'>
-      <div class='Wallop-item'>
-        <WallopSlide num='1' />
+const WallopSlides = () =>
+  <div class="Wallop Wallop--fade" id="heroWallop">
+    <div class="Wallop-list">
+      <div class="Wallop-item">
+        <WallopSlide num="1" />
       </div>
-      <div class='Wallop-item'>
-        <WallopSlide num='2' />
+      <div class="Wallop-item">
+        <WallopSlide num="2" />
       </div>
-      <div class='Wallop-item'>
-        <WallopSlide num='3' />
+      <div class="Wallop-item">
+        <WallopSlide num="3" />
       </div>
     </div>
-  </div>
-)
+  </div>;
 
-const WallopSlide = (props) => {
-  let { num } = props
+const WallopSlide = props => {
+  let { num } = props;
   return (
-    <div class='columns container is-fluid'>
-      <div class='column is-half'>
+    <div class="columns container is-fluid">
+      <div class="column is-half">
         <Headlines num={num} />
       </div>
-      <div class='column is-half has-text-centered'>
-        <img class='demo-img' src={`/images/mockup/${num}.png`} alt='iphone demo 1' />
+      <div class="column is-half has-text-centered">
+        <img
+          class="demo-img"
+          src={`/images/mockup/${num}.png`}
+          alt="iphone demo 1"
+        />
       </div>
     </div>
-  )
-}
+  );
+};
 
 class HeroSection extends React.Component {
-  componentDidMount () {
-    if (typeof (document) !== 'undefined') {
-      var heroWallop = document.querySelector('#heroWallop')
-      var heroSlider = new Wallop(heroWallop)
+  componentDidMount() {
+    if (typeof document !== 'undefined') {
+      var heroWallop = document.querySelector('#heroWallop');
+      var heroSlider = new Wallop(heroWallop);
       setInterval(() => {
-        heroSlider.next()
-      }, 3000)
+        heroSlider.next();
+      }, 3000);
     }
   }
 
-  render () {
-    let {lang, onLangChange} = this.props
-    langChangeListener = onLangChange
-    text = dict[lang]
-    language = lang
+  render() {
+    let { lang, onLangChange } = this.props;
+    langChangeListener = onLangChange;
+    text = dict[lang];
+    language = lang;
     return (
-      <section class='hero is-primary' id='hero-section'>
+      <section class="hero is-primary" id="hero-section">
         <HeroHead />
         <HeroBody />
       </section>
-    )
+    );
   }
 }
 
-export {
-  HeroSection,
-  HeroHead
-}
+export { HeroSection, HeroHead };

@@ -3,15 +3,24 @@
     "id": 1,
     "question": {
       "zh-tw": "真的可以空手而來嗎",
-      "zh-cn": "真的可以空手而来吗?"
+      "zh-cn": "真的可以空手而来吗?",
+      "ko": "진짜 빈 손으로 가도 될까요?",
+      "en": "Can we really come without taking anything?",
+      "ja": "手ぶらで来てもいいですか？"
     },
     "answer": {
       "zh-tw": "是的，完全沒有問題，我們提供和服浴衣穿戴所需所有服飾配件。",
-      "zh-cn": "是的，完全没有问题，我们提供和服浴衣穿戴所需所有服饰配件。"
+      "zh-cn": "是的，完全没有问题，我们提供和服浴衣穿戴所需所有服饰配件。",
+      "ko": "네, 전혀 문제가 없습니다. 저희는 기모노와 유카타를 입기에 관련한 모든 것을 제공해 드리는 것으로 되고 있습니다.",
+      "en": "Yes, of course, we provide all necessary accessories needed wearing kimono andyukata.",
+      "ja": " 手ぶらで来てもらって全然大丈夫です。着物や浴衣に必要な物は全てこちらで提供致しますので。"
     },
     "askerName": {
       "zh-tw": "耳機君",
-      "zh-cn": "耳机君"
+      "zh-cn": "耳机君",
+      "ko": "이어폰 씨",
+      "en": "Mr earphone",
+      "ja": "イヤホン君"
     },
     "askerUrl": "/images/faq-section/boy-1.png"
   },
@@ -19,15 +28,24 @@
     "id": 2,
     "question": {
       "zh-tw": "穿戴完整需要花費多少時間？",
-      "zh-cn": "穿戴完整需要花费多少时间？"
+      "zh-cn": "穿戴完整需要花费多少时间？",
+      "ko": "전부 갈아입는 시간은 얼마 정도 걸려요?",
+      "en": "How long does it take to dress us up?",
+      "ja": "着替え等にかかるお時間はどれくらいでしょうか？"
     },
     "answer": {
       "zh-tw": "正常情況下，女性顧客需要花費15分鐘，男生顧客需要花費10分鐘時間。有選擇髮型設計的情況可能需要額外10分鐘時間。",
-      "zh-cn": "正常情况下，女性顾客需要花费15分钟，男生顾客需要花费10分钟时间。 有选择发型设计的情况可能需要额外10分钟时间。"
+      "zh-cn": "正常情况下，女性顾客需要花费15分钟，男生顾客需要花费10分钟时间。 有选择发型设计的情况可能需要额外10分钟时间。",
+      "ko": "일반적으로 하며 여성고객님같은 경우에는 15분이 필요하고 남성 고객님같은 경우에는 15분을 걸립니다. 머리 스타일 설계까지 선택하신 고객님같은 경우에는 10분 정도의 액외 시간을 걸립니다.",
+      "en": "Under normal circumstances, female customers need to spend 15 minutes on dressing, while male guests need 10 minutes. It may take an extra 10 minutes to choose a hairstyle design.",
+      "ja": "通常の場合、女性のお客様は15程、男性は10程お時間が必要です。 ヘアデザインをする場合は、10分程の追加になる可能性もあります。"
     },
     "askerName": {
       "zh-tw": "短髮妹",
-      "zh-cn": "短发妹"
+      "zh-cn": "短发妹",
+      "ko": "단발 아가씨",
+      "en": "Miss short hair",
+      "ja": "短髪妹"
     },
     "askerUrl": "/images/faq-section/girl-1.png"
   },
@@ -35,15 +53,24 @@
     "id": 3,
     "question": {
       "zh-tw": "髮飾，頭飾可以單獨租借嗎？",
-      "zh-cn": "发饰，头饰可以单独租借吗？"
+      "zh-cn": "发饰，头饰可以单独租借吗？",
+      "ko": "머리 장식은 따로 렌트하면 가능할까요?",
+      "en": "Can hair ornaments, and headdress be rented alone?",
+      "ja": "ヘア飾り、ヘアアクセサリー等はレンタル可能でしょうか？"
     },
     "answer": {
       "zh-tw": "是的，可以。小物配件都是可以單獨租賃的。對於要求髮型設計服務的顧客，我們將免費提供這些飾品",
-      "zh-cn": "是的，可以。小物配件都是可以单独租赁的。对于要求发型设计服务的顾客，我们将免费提供这些饰品。"
+      "zh-cn": "是的，可以。小物配件都是可以单独租赁的。对于要求发型设计服务的顾客，我们将免费提供这些饰品。",
+      "ko": " 네, 가능합니다. 작은 물품들은 다 별로 렌트하기가 가능합니다. 헤어스타일을 설계하는 것으로 된 고객님들에게 공짜로 제공해 드립니다.",
+      "en": "Yes, of course. Small pieces of accessories can be rent separately. For those who require hair design services, we will provide these accessories free of charge.",
+      "ja": "ヘア飾り、ヘアアクセサリー等は別でレンタルできます。ヘアデザインを選んで頂い方には、無料でお貸しします。"
     },
     "askerName": {
       "zh-tw": "花輪同學",
-      "zh-cn": "花轮同学"
+      "zh-cn": "花轮同学",
+      "ko": "화론 학생",
+      "en": "Student Hwalun",
+      "ja": "花輪学生"
     },
     "askerUrl": "/images/faq-section/boy-2.png"
   },
@@ -51,15 +78,24 @@
     "id": 4,
     "question": {
       "zh-tw": "換下來的衣服可以幫忙保管嗎",
-      "zh-cn": "换下来的衣服可以帮忙保管吗?"
+      "zh-cn": "换下来的衣服可以帮忙保管吗?",
+      "ko": "자기의 옷은 보관해 줄 수 있을까요?",
+      "en": "Can you help taking care of our belongings and changed clothes?",
+      "ja": "服やお荷物のお預かりはできますか？"
     },
     "answer": {
       "zh-tw": "當然可以，我們提供帶鑰匙的箱子免費供客人保存私人物品。 （貴重品除外)",
-      "zh-cn": "当然可以，我们提供带钥匙的箱子免费供客人保存私人物品。（贵重品除外）"
+      "zh-cn": "当然可以，我们提供带钥匙的箱子免费供客人保存私人物品。（贵重品除外）",
+      "ko": "사적인 물품을 보관할 수 있도록 잠길 수 있는 캐비닛을 공짜로 제공해 드립니다.(귀중한 물품들 제외)",
+      "en": "The key box is free for guests to save personal belongings. (Except for valuables)",
+      "ja": "鍵つきのロッカーがありますので、無料で提供致します。（貴重品を除く）"
     },
     "askerName": {
       "zh-tw": "大辮子醬",
-      "zh-cn": "大辫子酱"
+      "zh-cn": "大辫子酱",
+      "ko": "변발 언니",
+      "en": "Miss plait",
+      "ja": "辮髪ちゃん"
     },
     "askerUrl": "/images/faq-section/girl-2.png"
   },
@@ -67,15 +103,24 @@
     "id": 5,
     "question": {
       "zh-tw": "如果租賃物品產生破損污漬，我應該怎麼辦",
-      "zh-cn":"如果租赁物品产生破损污渍，我应该怎么办？"
+      "zh-cn": "如果租赁物品产生破损污渍，我应该怎么办？",
+      "ko": "렌트로 받은 물품들은 파손이 되거나 더러워지게 됐을 경우 어떻게 하면 좋을 까요?",
+      "en": "What should I do if the clothes or other things rented be damaged?",
+      "ja": "借り物に汚れや破損が生じた場合、どうすればいいでしょう。"
     },
     "answer": {
       "zh-tw": "對於可以修復洗淨範圍內的服飾物品，無需其他任何額外費用。如果損壞而無法再次使用的情況下 根據物品種類，需要進行相應賠償。請注意與諒解",
-      "zh-cn": "对于可以修复洗净范围内的服饰物品，无需其他任何额外费用。如果损坏而无法再次使用的情况下 根据物品种类，需要进行相应赔偿。请注意与谅解。"
+      "zh-cn": "对于可以修复洗净范围内的服饰物品，无需其他任何额外费用。如果损坏而无法再次使用的情况下 根据物品种类，需要进行相应赔偿。请注意与谅解。",
+      "ko": "원상태로 복귀하기가 가능한 복식물품들은 액외적으로 비용을 받지 않습니다. 만약 손해가 되어 다시 사용할 수 없는 경우는 물품의 종류대로 해 당 배상을 하셔야 합니다. 주의하시면서 이해를 해 주시기 바랍니다.",
+      "en": "For any items that can be repaired, no additional cost is required. If it is damaged and cannot be reused any more, then you need to pay an appropriate compensation according to the types of things. Please note and understand.",
+      "ja": "当店で修正、直せる破損の範囲内でしたら別料金は必要ありません。また、汚れの場合、当店できれいに洗える場合も別料金は必要ありません。破損があり、修正できない場合は、物によって弁償を請求します。"
     },
     "askerName": {
       "zh-tw": "娃娃頭",
-      "zh-cn": "娃娃头"
+      "zh-cn": "娃娃头",
+      "ko": "와와두",
+      "en": "wawato",
+      "ja": "ワワトウ"
     },
     "askerUrl": "/images/faq-section/girl-3.png"
   },
@@ -83,15 +128,24 @@
     "id": 6,
     "question": {
       "zh-tw": "租賃的時間限制有多長",
-      "zh-cn":"租赁的时间限制有多长？"
+      "zh-cn": "租赁的时间限制有多长？",
+      "ko": "가능한 렌트 시간은 얼마나 됩니까?",
+      "en": "How long can I rent anything in your studio?",
+      "ja": "レンタルの時間制限はどれくらいですか？"
     },
     "answer": {
       "zh-tw": "正常情況下，租賃時間為當天的10點到18點，根據情況，這個時間有可能變化，我們會另行通知",
-      "zh-cn": "正常情况下，租赁时间为当天的10点到18点，根据情况，这个时间有可能变化，我们会另行通知。"
+      "zh-cn": "正常情况下，租赁时间为当天的10点到18点，根据情况，这个时间有可能变化，我们会另行通知。",
+      "ko": "통상적으로 계산을 하면 렌트 시간은 당일의 10시부터 18시까지 되어 있지만 현화를 따라서 변해질 수 있으며 따로 연락해 드릴 수 있습니다.",
+      "en": " Under normal circumstances, the rental time is from 10 am to 18 pm of that day. But it will change according to specific situation, and we will notify you if it happens.",
+      "ja": "通常の場合、当日の10時-18時までになります。日にちによって時間の変更がある場合もあります。その時はまた通知致します。"
     },
     "askerName": {
       "zh-tw": "雙馬尾醬",
-      "zh-cn": "双马尾酱"
+      "zh-cn": "双马尾酱",
+      "ko": "쌍변발 언니",
+      "en": "Miss Dual horsetail",
+      "ja": "二つ辮髪ちゃん"
     },
     "askerUrl": "/images/faq-section/girl-4.png"
   },
@@ -99,15 +153,24 @@
     "id": 7,
     "question": {
       "zh-tw": "如果當天無法歸還，我應該怎麼辦",
-      "zh-cn": "如果当天无法归还，我应该怎么办？"
+      "zh-cn": "如果当天无法归还，我应该怎么办？",
+      "ko": "당일에 반환을 못 할 경우 어떻게 하면 좋을까요?",
+      "en": "What if I cannot return the cloth by the end of the day?",
+      "ja": "当日に返還できない時はどうしたらいいでしょう？"
     },
     "answer": {
       "zh-tw": "因為特殊情況，當天無法歸還的情況下，可以選擇追加1000円，延長租賃時間至翌日中午11時。",
-      "zh-cn": "因为特殊情况，当天无法归还的情况下，可以选择追加1000円，延长租赁时间至翌日中午11时。"
+      "zh-cn": "因为特殊情况，当天无法归还的情况下，可以选择追加1000円，延长租赁时间至翌日中午11时。",
+      "ko": "특수 경우로 인하여 당일에 반환하기가 불가능한 경우 추가 비용 1000엔을 내신 다음에 렌트 시간은 다음 날 점심 11시까지 연장됩니다.",
+      "en": "Due to exceptional cases, when you cannot return the things you rented, you can choose to pay extra 1000 yen to extend the rental time to 11:00 am of the next day.",
+      "ja": "どうしても当日に返還できない場合は、1000円の追加料金で次の日の朝11時まで延長できます。"
     },
     "askerName": {
       "zh-tw": "阿姨",
-      "zh-cn": "阿姨"
+      "zh-cn": "阿姨",
+      "ko": "아주마",
+      "en": "Aunty",
+      "ja": "おばあさん"
     },
     "askerUrl": "/images/faq-section/girl-5.png"
   },
@@ -115,15 +178,24 @@
     "id": 8,
     "question": {
       "zh-tw": "最終接待時間是什麼時候？",
-      "zh-cn": "最终接待时间是什么时候？"
+      "zh-cn": "最终接待时间是什么时候？",
+      "ko": "마지막에 접대하는 시간은 언제입니까?",
+      "en": "What is the final reception time?",
+      "ja": "来店は、一番遅くて何時まででしょうか？"
     },
     "answer": {
       "zh-tw": "正常情況下，我們一天的最終接待時間是17點時。客人穿完衣服後，可能只有30分鐘左右的照相時間，18點之前也要歸還給我們，如果是要過夜的客人，只要是18點之前，我們都會提供服務的，時間根據節日可能產生些許調整，擔心的客人可以聯繫我們諮詢。",
-      "zh-cn": "正常情况下，我们一天的最终接待时间是17点时。客人穿完衣服后，可能只有30分钟左右的照相时间，18点之前也要归还给我们，如果是要过夜的客人，只要是18点之前，我们都会提供服务的，时间根据节日可能产生些许调整，担心的客人可以联系我们咨询。"
+      "zh-cn": "正常情况下，我们一天的最终接待时间是17点时。客人穿完衣服后，可能只有30分钟左右的照相时间，18点之前也要归还给我们，如果是要过夜的客人，只要是18点之前，我们都会提供服务的，时间根据节日可能产生些许调整，担心的客人可以联系我们咨询。",
+      "ko": "정상한 경우에는 우리의 영업 시간은 오후 17시까지 되어 있습니다. 고객님들은 기모노를 갈아입은 후에 30분쯤에 기모노를 입고 사진을 찍고 18시전까지 반환을 해야 합니다. 만약 연장을 하시고 싶은 고객님같은 경우에는 당일에 18시전까지 오시면 서비스를 제공할 수 있습니다. 시간은 휴가를 따라서 조정할 수 있기도하고 너무 걱정이 되시면 연락해 주셔도 됩니다.",
+      "en": "Normally, our final reception time is 17:00 pm. After the guests wear the clothes, there rests only 30 minutes for them to take photos since they have to return everything before 18:00 pm. As for the overnight guests, as long as it is before 18:00 pm, we will provide services to them; however the time may alter a little in holidays, worried guests can contact us for advice.",
+      "ja": "通常の場合、最終来店時間は、17時です。しかし、その場合、お客様の着替え等が済んでから、写真を撮る時間は恐らく30分程しかありません。18時までには回収致します。翌日までお借り頂くお客様に関しては、18時前でしたら接待させていただきます。日付と時間により、時間の調整する可能性もありますので、是非ご来店前にお電話ください。"
     },
     "askerName": {
       "zh-tw": "眼鏡哥",
-      "zh-cn": "眼镜哥"
+      "zh-cn": "眼镜哥",
+      "ko": "안경오빠",
+      "en": "Brother glasses",
+      "ja": "眼鏡お兄ちゃん"
     },
     "askerUrl": "/images/faq-section/boy-3.png"
   },
@@ -131,15 +203,24 @@
     "id": 9,
     "question": {
       "zh-tw": "可以攜帶自己的服飾僅僅接受穿戴服務嗎？",
-      "zh-cn":"可以携带自己的服饰仅仅接受穿戴服务吗？"
+      "zh-cn": "可以携带自己的服饰仅仅接受穿戴服务吗？",
+      "ko": "자기가 입고 싶은 것을 제공해 드리면 갈아 입는 서비스만 받을 수 있을 까요?",
+      "en": "Can I just wear my own dress?",
+      "ja": "自分の服や飾り等を持って行き、着替えのサービス等を受けてもよろしいでしょうか？"
     },
     "answer": {
       "zh-tw": "當然可以，我們優惠提供僅僅提供穿戴服務的套餐。但是請不要遺漏所需穿戴的配件",
-      "zh-cn": "当然可以，我们优惠提供仅仅提供穿戴服务的套餐。但是请不要遗漏所需穿戴的配件。"
+      "zh-cn": "当然可以，我们优惠提供仅仅提供穿戴服务的套餐。但是请不要遗漏所需穿戴的配件。",
+      "ko": " 몰론 가능합니다. 우리는 가격도 싸고 서비스도 좋은 갈아입는 세트를 제공합니다. 하지만 필요한 입을 물품을 누락이 없이 준비를 해 오셔야 할 것을 주의하시기 바랍니다.",
+      "en": "Yes, of course, we offer a package that only provides a dressing service. But please do not forget to bring all the necessary accessories.",
+      "ja": " もちろん、それは可能です。その場合、お得でサービス致します。忘れ物のないよう、お願いします。"
     },
     "askerName": {
       "zh-tw": "小丸子的媽媽",
-      "zh-cn": "小丸子的妈妈"
+      "zh-cn": "小丸子的妈妈",
+      "ko": "소완자의 엄마",
+      "en": "Mummy of meatball",
+      "ja": "小丸子のママ"
     },
     "askerUrl": "/images/faq-section/girl-6.png"
   },
@@ -147,15 +228,24 @@
     "id": 10,
     "question": {
       "zh-tw": "關於尺寸，需要特別注意嗎？",
-      "zh-cn": "关于尺寸，需要特别注意吗？"
+      "zh-cn": "关于尺寸，需要特别注意吗？",
+      "ko": " 사이즈를 관련하여 특별히 주의해야 할 것이 있으세요?",
+      "en": "Do we need special attention on size?",
+      "ja": "サイズについて、何か特別の注意点はありますか？"
     },
     "answer": {
       "zh-tw": "只要臀圍不超過110cm的，我們都是可以提供的，小孩的身高在95cm以上的我們也可以提供的",
-      "zh-cn": "只要臀围不超过110cm的，我们都是可以提供的，小孩的身高在95cm以上的我们也可以提供的"
+      "zh-cn": "只要臀围不超过110cm的，我们都是可以提供的，小孩的身高在95cm以上的我们也可以提供的",
+      "ko": "엉덩이 사이즈를 110cm를 초과하지 않으면 다 제공 드릴 수 있습니다. 아이의 키는 95cm이상에 있으면 제공할 수 있습니다. ",
+      "en": "We are able to provide service for you as long as your hipline does not exceed 110cm, and children shall above 95cm height.",
+      "ja": "ヒップサイズが110cmを超えなければ、全てこちらで対応できます。子供の場合、95cmを超えるサイズもこちらで用意できます。"
     },
     "askerName": {
       "zh-tw": "廣場舞阿姨",
-      "zh-cn": "广场舞阿姨"
+      "zh-cn": "广场舞阿姨",
+      "ko": "광장무아주마",
+      "en": "Aunty square dance",
+      "ja": "広場ダンスおばあさん"
     },
     "askerUrl": "/images/faq-section/girl-7.png"
   },
@@ -163,15 +253,24 @@
     "id": 11,
     "question": {
       "zh-tw": "冬天到了，對於穿和服有什麼需要注意的嗎？",
-      "zh-cn": "冬天到了，对于穿和服有什么需要注意的吗？"
+      "zh-cn": "冬天到了，对于穿和服有什么需要注意的吗？",
+      "ko": "겨울이 되면 기모노를 입을 때 뭘 주의해야 할까요",
+      "en": "What should we pay attention to when wearing kimono in winter?",
+      "ja": "冬の時、着物を着るのに何か注意点はありますか？"
     },
     "answer": {
       "zh-tw": "冬天氣溫下降，雖然我們在和服裡面已經準備了襯衣，但為了更加保暖，請另行準備低領的打底衣。同時由於需要 穿上開指襪，所以也請不要穿戴連體的襪褲（能露出腳部即可）",
-      "zh-cn": "冬天气温下降，虽然我们在和服里面已经准备了衬衣，但为了更加保暖，请另行准备低领的打底衣。同时由于需要 穿上开指袜，所以也请不要穿戴连体的袜裤（能露出脚部即可）"
+      "zh-cn": "冬天气温下降，虽然我们在和服里面已经准备了衬衣，但为了更加保暖，请另行准备低领的打底衣。同时由于需要 穿上开指袜，所以也请不要穿戴连体的袜裤（能露出脚部即可）",
+      "ko": "겨울에 기온이 떨어집니다. 우리는 기모노 속에 내의를 준비했지만 더 따뜻하게 하려고 하면 따로 준비를 하시고 오셔도 됩니다. 양말을 입고 조리를 입는 거라서 따로 스타킹을 입지 않았으면 좋겠어요. (발이 밖에 나올 수 있게 하시면 됩니다.)",
+      "en": "Temperature falls in winter, although we have prepared a shirt inside kimono, in order to keep warm, please prepare low collar underwear. Also because you need to wear socks, so please do not wear conjoined pantyhose (your feet shall be revealed)",
+      "ja": "冬の場合、気温が低いため、こちらで防寒の中に着る服は準備をしていますが、念のため、中に防寒の服を着て来てください。同時に、靴下は、指出しの靴下になるため、靴下とズボンが一体化している物を履いて来店するのは避けてください。"
     },
     "askerName": {
       "zh-tw": "中分哥",
-      "zh-cn": "中分哥"
+      "zh-cn": "中分哥",
+      "ko": "앞가르마 오빠",
+      "en": "brother Centre parting",
+      "ja": "中分お兄ちゃん"
     },
     "askerUrl": "/images/faq-section/boy-4.png"
   },
@@ -179,15 +278,24 @@
     "id": 12,
     "question": {
       "zh-tw": "孕婦是否適合穿著和服呢？",
-      "zh-cn": "孕妇是否适合穿着和服呢？"
+      "zh-cn": "孕妇是否适合穿着和服呢？",
+      "ko": "임신 분들은 기모노를 입어도 상관 없으세요?",
+      "en": "Are pregnant women suitable for wearing kimono?",
+      "ja": "妊婦の場合、着物を着ていいですか？"
     },
     "answer": {
       "zh-tw": "孕婦基本不適合穿著和服。如果實在想要體驗的話，建議3個月以上6個月以內",
-      "zh-cn": "孕妇基本不适合穿着和服。如果实在想要体验的话，建议3个月以上6个月以内"
+      "zh-cn": "孕妇基本不适合穿着和服。如果实在想要体验的话，建议3个月以上6个月以内",
+      "ko": "임신하신 분들은 기모노를 안 입는 좋습니다. 만약 체험하고 싶으면 임신기간은 3개월부터 6개월까지 이내에 있으신 분이면 가능합니다.",
+      "en": "Pregnant women are basically not suitable for wearing kimono. If you really want to experience it, we recommend coming between 3 months and 6 months.",
+      "ja": "妊婦は着物をお避けください、どうしても着物体験をしたい妊婦の方は、妊娠から3ヶ月以上、6ヶ月以内であれば可能です。"
     },
     "askerName": {
       "zh-tw": "小帥哥",
-      "zh-cn": "小帅哥"
+      "zh-cn": "小帅哥",
+      "ko": "멋진 오빠",
+      "en": "Handsome guy",
+      "ja": "イげマン"
     },
     "askerUrl": "/images/faq-section/boy-5.png"
   },
@@ -195,15 +303,24 @@
     "id": 13,
     "question": {
       "zh-tw": "如果超過營業時間或者需要隔夜的話囧麼辦。 。 。",
-      "zh-cn": "如果超过营业时间或者需要隔夜的话囧么办。。。"
+      "zh-cn": "如果超过营业时间或者需要隔夜的话囧么办。。。",
+      "ko": "만약에 영업 시간을 지나가거나 다음 날에 반환하기가 필요할 때 어떻게 하면 좋을까요...",
+      "en": "What can I do if I exceed the business hours or need to use it overnight...",
+      "ja": "翌日まで借りたい場合はどうすればいいでしょう？"
     },
     "answer": {
       "zh-tw": "我們需要追加隔夜費一天1000日元，請在付款的時候告知我們",
-      "zh-cn": "我们需要追加隔夜费一天1000日元，请在付款的时候告知我们"
+      "zh-cn": "我们需要追加隔夜费一天1000日元，请在付款的时候告知我们",
+      "ko": "저희는 추가 비용 1000엔을 받을 것이며 청산을 할 때 말씀을 해 주시기 바랍니다.",
+      "en": "You need to pay an extra 1,000 yen. Please inform us at the time of payment.",
+      "ja": "翌日まで借りたい場合、お支払の時にお伝えください。"
     },
     "askerName": {
       "zh-tw": "眼鏡姐姐",
-      "zh-cn": "眼镜姐姐"
+      "zh-cn": "眼镜姐姐",
+      "ko": "안경언니",
+      "en": "sister glasses",
+      "ja": "眼鏡お姉ちゃん"
     },
     "askerUrl": "/images/faq-section/girl-8.png"
   },
@@ -211,15 +328,24 @@
     "id": 14,
     "question": {
       "zh-tw": "小孩子和服的尺寸範圍？",
-      "zh-cn": "小孩子和服的尺寸范围？"
+      "zh-cn": "小孩子和服的尺寸范围？",
+      "ko": "애기의 기모노의 사이즈 범위는요?",
+      "en": "What is the size range of children’s kimono?",
+      "ja": "子供服のサイズは何がありますか？"
     },
     "answer": {
       "zh-tw": "我們可以為小孩提供的尺寸範圍是95cm到140cm為止。",
-      "zh-cn": "我们可以为小孩提供的尺寸范围是95cm到140cm为止。"
+      "zh-cn": "我们可以为小孩提供的尺寸范围是95cm到140cm为止。",
+      "ko": "애기같은 경우에는 저희는 제공할 수 있는 사이즈 범위는 95cm에서 150cm까지가 되어 있습니다.",
+      "en": "We can provide a size range of 95cm to 140cm for children.",
+      "ja": "子供服のサイズ範囲は95cm-140cmまであります。"
     },
     "askerName": {
       "zh-tw": "原住民妹妹",
-      "zh-cn": "原住民妹妹"
+      "zh-cn": "原住民妹妹",
+      "ko": "원주민 동생",
+      "en": "sister aborigines",
+      "ja": "原住民妹"
     },
     "askerUrl": "/images/faq-section/girl-9.png"
   },
@@ -227,15 +353,24 @@
     "id": 15,
     "question": {
       "zh-tw": "是否可以用信用卡付款？",
-      "zh-cn": "是否可以用信用卡付款？"
+      "zh-cn": "是否可以用信用卡付款？",
+      "ko": "신용카드로 계산하는 것도 가능할까요?",
+      "en": "Can I pay by credit card?",
+      "ja": "クレジットカード等の使用はできますか？"
     },
     "answer": {
       "zh-tw": "我們不能夠使用信用卡，支持現金支付。",
-      "zh-cn": "我们不能够使用信用卡，支持现金支付。"
+      "zh-cn": "我们不能够使用信用卡，支持现金支付。",
+      "ko": "저희 가게는 신용카드로 계산할 수 없고요. 현금으로 계산을 하셔야 하는 것으로 되어 있습니다.",
+      "en": "Credit cards cannot be used here, however we support cash payments.",
+      "ja": "カード等でのお支払はできません。現金になります。"
     },
     "askerName": {
       "zh-tw": "時尚黑GAL",
-      "zh-cn": "时尚黑GAL"
+      "zh-cn": "时尚黑GAL",
+      "ko": "펜션흑GAL",
+      "en": "fashion black GAL",
+      "ja": "ペイシェント黒GAL"
     },
     "askerUrl": "/images/faq-section/girl-10.png"
   }
