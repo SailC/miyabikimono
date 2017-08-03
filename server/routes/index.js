@@ -78,7 +78,7 @@ function renderPage(appHtml) {
 
       <body>
         <div id="app" itemscope="" itemtype="http://schema.org/WebPage">${appHtml}</div>
-        <script src="/conversational-form.min.js"></script>
+        <script src="https://cf-4053.kxcdn.com/conversational-form/0.9.6/conversational-form.min.js"></script>
         <script src="/bundle.js"></script>
         <script src="https://fast.wistia.com/embed/medias/phknks26n7.jsonp" async></script>
         <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>
