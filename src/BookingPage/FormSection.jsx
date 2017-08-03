@@ -10,7 +10,7 @@ const contextStyle = {
   position: 'absolute',
   top: '0',
   left: '0',
-  height: '95vh',
+  height: '90vh',
   width: '100vw',
   zIndex: 250
 };
