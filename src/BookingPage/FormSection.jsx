@@ -2,6 +2,7 @@
 import React from 'react';
 import dict from '../dict';
 import history from '../history';
+import $ from 'jquery';
 
 var language;
 
@@ -229,6 +230,12 @@ function initForm(setFormData) {
       setFormData(formData);
       history.push('/booking/confirm');
     }
+  });
+  $('cf-input textarea').on('focus', () => {
+    console.log('focus');
+    setTimeout(() => {
+      $('cf-input textarea')[0].scrollIntoView();
+    }, 200);
   });
 }
 
