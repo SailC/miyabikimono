@@ -231,12 +231,6 @@ function initForm(setFormData) {
       history.push('/booking/confirm');
     }
   });
-  $('cf-input textarea').on('focus', () => {
-    console.log('focus');
-    setTimeout(() => {
-      $('cf-input textarea')[0].scrollIntoView();
-    }, 200);
-  });
 }
 
 export default FormSection;
