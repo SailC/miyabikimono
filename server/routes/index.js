@@ -6,24 +6,33 @@ import App from '../../src/App';
 
 /* GET home page. */
 var router = express.Router();
+var appHtml;
 router.get('/', function(req, res, next) {
   const context = {};
-  const appHtml = ReactDOMServer.renderToString(
-    <StaticRouter location={req.originalUrl} context={context}>
-      <App />
-    </StaticRouter>
-  );
+  try {
+    appHtml = ReactDOMServer.renderToString(
+      <StaticRouter location={req.originalUrl} context={context}>
+        <App />
+      </StaticRouter>
+    );
+  } catch (e) {
+    console.log(e);
+  }
 
   res.set({ 'content-type': 'text/html; charset=utf-8' });
 
-  if (context.url) {
-    res.writeHead(301, {
-      Location: context.url
-    });
-    res.end();
-  } else {
-    res.write(renderPage(appHtml));
-    res.end();
+  try {
+    if (context.url) {
+      res.writeHead(301, {
+        Location: context.url
+      });
+      res.end();
+    } else {
+      res.write(renderPage(appHtml));
+      res.end();
+    }
+  } catch (e) {
+    console.log(e);
   }
   // res.sendFile(path.join(__dirname, '/../../public/index.html'))
 });

@@ -5,38 +5,16 @@ import BookingPage from './BookingPage/BookingPage';
 import NoMatch from './NoMatch';
 
 class App extends React.Component {
-  constructor() {
+  constructor(props) {
     super();
-    var language = window.navigator.userLanguage || window.navigator.language;
-    // en-us
-    // ja
-    // ko
-    // zh
-    // zh-tw
-    // zh-cn
-    // zh-hk
-    console.log(language); //works IE/SAFARI/CHROME/FF
-    const initLang = (lang => {
-      if (lang.startsWith('zh')) {
-        if (lang === 'zh' || lang.toLowerCase() === 'zh-cn') {
-          return 'zh-cn';
-        } else {
-          return 'zh-tw';
-        }
-      } else if (lang.startsWith('ja')) {
-        return 'ja';
-      } else if (lang.startsWith('ko')) {
-        return 'ko';
-      } else {
-        return 'en';
-      }
-    })(language);
 
     this.state = {
-      lang: initLang
+      lang: 'zh-cn'
     };
     this.onLangChange = this.onLangChange.bind(this);
   }
+
+  componentWillMount() {}
 
   onLangChange(event) {
     let language = event.target.value;
@@ -65,27 +43,32 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      <div className="app">
-        <Switch>
-          <Route
-            exact
-            path="/"
-            render={props =>
-              <HomePage
-                {...props}
-                lang={this.state.lang}
-                onLangChange={this.onLangChange}
-              />}
-          />
-          <Route
-            path="/booking"
-            render={props => <BookingPage {...props} lang={this.state.lang} />}
-          />
-          <Route component={NoMatch} />
-        </Switch>
-      </div>
-    );
+    try {
+      return (
+        <div className="app">
+          <Switch>
+            <Route
+              exact
+              path="/"
+              render={props =>
+                <HomePage
+                  {...props}
+                  lang={this.state.lang}
+                  onLangChange={this.onLangChange}
+                />}
+            />
+            <Route
+              path="/booking"
+              render={props =>
+                <BookingPage {...props} lang={this.state.lang} />}
+            />
+            <Route component={NoMatch} />
+          </Switch>
+        </div>
+      );
+    } catch (e) {
+      console.log(e);
+    }
   }
 }
 
