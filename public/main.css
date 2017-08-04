@@ -14,9 +14,8 @@
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg); } }
 
-@media screen and (min-width: 1200px) {
-  .hero .hero-head .nav-left {
-    max-width: 50px; } }
+.hero .hero-head .nav-left .nav-item span.select {
+  max-width: 100%; }
 
 .hero .hero-head .nav-item {
   font-weight: 500; }

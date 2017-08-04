@@ -12,9 +12,27 @@ var langChangeListener;
 
 const NavLeft = () =>
   <div class="nav-left">
-    <a class="nav-item">
-      <img src="/images/logo-head.png" alt="Logo" />
-    </a>
+    <span
+      class="nav-item"
+      onClick={e => {
+        e.preventDefault();
+        e.stopPropagation();
+      }}
+    >
+      <div class="field">
+        <p class="control">
+          <span class="select is-small is-primary has-text-centered">
+            <select onChange={langChangeListener}>
+              <option selected={language === 'zh-cn'}>简体中文</option>
+              <option selected={language === 'zh-tw'}>正體中文</option>
+              <option selected={language === 'en'}>English</option>
+              <option selected={language === 'ja'}>日本語</option>
+              <option selected={language === 'ko'}>한국어</option>
+            </select>
+          </span>
+        </p>
+      </div>
+    </span>
   </div>;
 
 const NavToggle = props => {
@@ -38,27 +56,6 @@ const NavRight = props => {
       class={classNames('nav-right', 'nav-menu', { 'is-active': isActive })}
       onClick={toggleListener}
     >
-      <span
-        class="nav-item"
-        onClick={e => {
-          e.preventDefault();
-          e.stopPropagation();
-        }}
-      >
-        <div class="field">
-          <p class="control">
-            <span class="select is-small is-primary has-text-centered">
-              <select onChange={langChangeListener}>
-                <option selected={language === 'zh-cn'}>简体中文</option>
-                <option selected={language === 'zh-tw'}>正體中文</option>
-                <option selected={language === 'en'}>English</option>
-                <option selected={language === 'ja'}>日本語</option>
-                <option selected={language === 'ko'}>한국어</option>
-              </select>
-            </span>
-          </p>
-        </div>
-      </span>
       <span class="nav-item">
         <Scrollchor to="#product-section" class="button is-primary nav-link">
           <span class="icon">
@@ -133,7 +130,7 @@ class HeroHead extends React.Component {
       <div class="hero-head">
         <header class="nav">
           <div class="container">
-            {/* <NavLeft /> */}
+            <NavLeft />
             <NavToggle
               toggleListener={this.toggleListener}
               isActive={this.state.isActive}
