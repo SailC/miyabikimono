@@ -3346,10 +3346,10 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/index.html": {
+	"\/index-bak.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/index.html",
+		"oAP": "\/index-bak.html",
 		"oF": 0
 		},
 	"\/main-min.css": {
