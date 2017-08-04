@@ -7,8 +7,33 @@ import NoMatch from './NoMatch';
 class App extends React.Component {
   constructor() {
     super();
+    var language = window.navigator.userLanguage || window.navigator.language;
+    // en-us
+    // ja
+    // ko
+    // zh
+    // zh-tw
+    // zh-cn
+    // zh-hk
+    console.log(language); //works IE/SAFARI/CHROME/FF
+    const initLang = (lang => {
+      if (lang.startsWith('zh')) {
+        if (lang === 'zh' || lang.toLowerCase() === 'zh-cn') {
+          return 'zh-cn';
+        } else {
+          return 'zh-tw';
+        }
+      } else if (lang.startsWith('ja')) {
+        return 'ja';
+      } else if (lang.startsWith('ko')) {
+        return 'ko';
+      } else {
+        return 'en';
+      }
+    })(language);
+
     this.state = {
-      lang: 'zh-cn'
+      lang: initLang
     };
     this.onLangChange = this.onLangChange.bind(this);
   }

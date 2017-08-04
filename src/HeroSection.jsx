@@ -229,7 +229,7 @@ class HeroSection extends React.Component {
     text = dict[lang];
     language = lang;
     return (
-      <section class="hero is-primary" id="hero-section">
+      <section class="hero is-primary is-fullheight" id="hero-section">
         <HeroHead />
         <HeroBody />
       </section>

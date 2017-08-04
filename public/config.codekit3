@@ -3346,10 +3346,10 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/index-bak.html": {
+	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/index-bak.html",
+		"oAP": "\/index.html",
 		"oF": 0
 		},
 	"\/main-min.css": {
@@ -3389,7 +3389,7 @@
 		},
 	"\/server.bundle.js": {
 		"ft": 64,
-		"mi": 1,
+		"mi": 0,
 		"oA": 0,
 		"oAP": "\/server.bundle-min.js",
 		"oF": 0,
