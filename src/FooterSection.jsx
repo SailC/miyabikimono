@@ -31,6 +31,12 @@ const FooterSection = props => {
               {dict[lang]['contact-name2']}: 080-3353-7888
             </span>
           </li>
+          <li class="phone">
+            <span class="icon is-small">
+              <i class="fa fa-phone-square" />
+            </span>
+            <span>客服三号线: 075-551-3280</span>
+          </li>
           <li class="address">
             <span class="icon is-small">
               <i class="fa fa-map-marker" />
@@ -48,6 +54,26 @@ const FooterSection = props => {
             <span>
               <a href="https://goo.gl/maps/GeNeQvhX5642" target="_blank">
                 {dict[lang]['location-2']}
+              </a>
+            </span>
+          </li>
+          <li class="address">
+            <span class="icon is-small">
+              <i class="fa fa-location-arrow" />
+            </span>
+            <span>
+              <a href="https://goo.gl/maps/5ZLyrLM7uCu" target="_blank">
+                和装工房--雅（京都1号店）: 京都市下京区稲荷町320番地ケンゾービル 301室
+              </a>
+            </span>
+          </li>
+          <li class="address">
+            <span class="icon is-small">
+              <i class="fa fa-location-arrow" />
+            </span>
+            <span>
+              <a href="https://goo.gl/maps/6TL7bm8eqx82" target="_blank">
+                和装工房--樱花（京都2号店）: 京都市東山区鐘鋳町419
               </a>
             </span>
           </li>
