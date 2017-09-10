@@ -1,23 +1,25 @@
-Busgazer Web App
+Hefumiyabi
 ===================
+
+^_^ Kimono store for my friend Weile
 
 Getting Started
 ---------------
 
 - Clone the github repo
  ```bash
-  git clone git@gitlab.com:busgazer/website.git
+  git@github.com:SailC/miyabikimono.git
  ```
  For development purpose, please clone your own fork of this repo
 
 - Go to the cloned repo
  ```bash
- cd website
+ cd miyabikimono
  ```
 
 - Install npm packages
  ```bash
- yarn install
+ yarn
  ```
 
 - Start webpack-dev-server
