@@ -22,7 +22,7 @@ Getting Started
  yarn
  ```
 
-- Start webpack-dev-server
+- Start express server
  ```bash
  NODE_ENV=production yarn start
  ```
