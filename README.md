@@ -24,10 +24,10 @@ Getting Started
 
 - Start webpack-dev-server
  ```bash
- yarn start
+ NODE_ENV=production yarn start
  ```
 
 - open browser can go to
  ```bash
- localhost:8080
+ localhost:3000
  ```
