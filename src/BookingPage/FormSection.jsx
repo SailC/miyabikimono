@@ -58,6 +58,20 @@ class FormSection extends React.Component {
                 value="上野"
                 name="location"
               />
+              <input
+                is
+                type="radio"
+                cf-label={dict[language].location3}
+                value="京都一号店"
+                name="location"
+              />
+              <input
+                is
+                type="radio"
+                cf-label={dict[language].location4}
+                value="京都二号店"
+                name="location"
+              />
             </radiogroup>
             <input
               is
