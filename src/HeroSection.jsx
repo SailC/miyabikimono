@@ -153,7 +153,6 @@ const HeroBody = props =>
 
 const Headlines = props => {
   let { num, lang } = props;
-  console.log(props);
 
   let fontName = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-zhao';
   let fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';

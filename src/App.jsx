@@ -6,10 +6,29 @@ import NoMatch from './NoMatch';
 
 class App extends React.Component {
   constructor(props) {
+    let language = window.navigator.userLanguage || window.navigator.language;
+    let codeMap = new Map([
+      ['zh-cn', 'zh-cn'],
+      ['zh-tw', 'zh-tw'],
+      ['zh-hk', 'zh-tw'],
+      ['zh-sg', 'zh-tw'],
+      ['en-us', 'en'],
+      ['ko', 'ko'],
+      ['ko-kp', 'ko'],
+      ['ko-kr', 'ko'],
+      ['ja', 'ja']
+    ]);
+
+    // console.log(language.toLowerCase());
+    // console.log(codeMap);
+
+    let code = codeMap.get(language.toLowerCase()) || 'en';
+    // console.log(code);
+
     super();
 
     this.state = {
-      lang: 'zh-cn'
+      lang: code
     };
     this.onLangChange = this.onLangChange.bind(this);
   }
