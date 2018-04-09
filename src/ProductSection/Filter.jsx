@@ -1,5 +1,6 @@
 import React from 'react';
 import dict from '../dict.json';
+import classNames from 'classnames';
 
 var language;
 var text;
@@ -24,10 +25,11 @@ const CheckBox = props => {
 };
 
 const Field = props => {
-  const { fieldSet, fieldName, cards } = props;
+  const { fieldSet, fieldName, cards, lang } = props;
+  let fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
   return (
     <div class="facet">
-      <h5 class="facet-title font-tang title is-4">
+      <h5 class={classNames('facet-title', 'title', 'is-4', fontName2)}>
         {text[fieldName]}
       </h5>
       <div class="field">
@@ -71,10 +73,20 @@ const Filter = props => {
       <div class="filter-plate">
         <a class="delete is-large" onClick={toggleListener} />
         <div id="filters">
-          <Field fieldSet={clothType} fieldName="cloth-type" cards={cards} />
-          <Field fieldSet={belt} fieldName="belt" cards={cards} />
-          <Field fieldSet={gender} fieldName="gender" cards={cards} />
-          <Field fieldSet={event} fieldName="event" cards={cards} />
+          <Field
+            fieldSet={clothType}
+            fieldName="cloth-type"
+            cards={cards}
+            lang={lang}
+          />
+          <Field fieldSet={belt} fieldName="belt" cards={cards} lang={lang} />
+          <Field
+            fieldSet={gender}
+            fieldName="gender"
+            cards={cards}
+            lang={lang}
+          />
+          <Field fieldSet={event} fieldName="event" cards={cards} lang={lang} />
         </div>
       </div>
     </div>

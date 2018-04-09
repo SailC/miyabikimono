@@ -10,6 +10,9 @@ import dict from './dict.json';
 
 class HomePage extends React.Component {
   render() {
+    let lang = this.props.lang;
+    let fontName2 =
+      lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
     return (
       <div class="home-page">
         <HeroSection
@@ -28,7 +31,7 @@ class HomePage extends React.Component {
           <span class="icon">
             <i class="fa fa-calendar" />
           </span>
-          <span class="font-tang">
+          <span class={fontName2}>
             {dict[this.props.lang]['button-calendar']}
           </span>
         </Link>

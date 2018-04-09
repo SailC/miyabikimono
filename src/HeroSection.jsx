@@ -146,19 +146,24 @@ class HeroHead extends React.Component {
   }
 }
 
-const HeroBody = () =>
+const HeroBody = props =>
   <div class="hero-body">
-    <WallopSlides />
+    <WallopSlides lang={props.lang} />
   </div>;
 
 const Headlines = props => {
-  let { num } = props;
+  let { num, lang } = props;
+  console.log(props);
+
+  let fontName = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-zhao';
+  let fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
+
   return (
     <div class="container is-fluid has-text-centered">
-      <h1 class={classNames('title', 'is-1', 'font-zhao')}>
+      <h1 class={classNames('title', 'is-1', fontName)}>
         {' '}{text[`hero-title-${num}`]}{' '}
       </h1>
-      <h2 class={classNames('subtitle', 'is-3', 'font-zhao')}>
+      <h2 class={classNames('subtitle', 'is-3', fontName)}>
         {text[`hero-subtitle-${num}`]}
       </h2>
       <Link
@@ -168,7 +173,7 @@ const Headlines = props => {
         <span class="icon">
           <i class="fa fa-calendar" />
         </span>
-        <span class="font-tang">
+        <span class={fontName2}>
           {text['button-calendar']}
         </span>
       </Link>
@@ -176,27 +181,27 @@ const Headlines = props => {
   );
 };
 
-const WallopSlides = () =>
+const WallopSlides = props =>
   <div class="Wallop Wallop--fade" id="heroWallop">
     <div class="Wallop-list">
       <div class="Wallop-item">
-        <WallopSlide num="1" />
+        <WallopSlide num="1" lang={props.lang} />
       </div>
       <div class="Wallop-item">
-        <WallopSlide num="2" />
+        <WallopSlide num="2" lang={props.lang} />
       </div>
       <div class="Wallop-item">
-        <WallopSlide num="3" />
+        <WallopSlide num="3" lang={props.lang} />
       </div>
     </div>
   </div>;
 
 const WallopSlide = props => {
-  let { num } = props;
+  let { num, lang } = props;
   return (
     <div class="columns container is-fluid">
       <div class="column is-half">
-        <Headlines num={num} />
+        <Headlines num={num} lang={lang} />
       </div>
       <div class="column is-half has-text-centered">
         <img
@@ -228,7 +233,8 @@ class HeroSection extends React.Component {
     return (
       <section class="hero is-primary is-fullheight" id="hero-section">
         <HeroHead />
-        <HeroBody />
+
+        <HeroBody lang={this.props.lang} />
       </section>
     );
   }
