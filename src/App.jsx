@@ -6,7 +6,10 @@ import NoMatch from './NoMatch';
 
 class App extends React.Component {
   constructor(props) {
-    let language = window.navigator.userLanguage || window.navigator.language;
+    let language;
+    if (window.navigator)
+      language = window.navigator.userLanguage || window.navigator.language;
+    else language = 'en-us';
     let codeMap = new Map([
       ['zh-cn', 'zh-cn'],
       ['zh-tw', 'zh-tw'],

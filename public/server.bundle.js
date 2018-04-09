@@ -73,6 +73,12 @@ module.exports = require("react");
 /* 1 */
 /***/ (function(module, exports) {
 
+module.exports = require("classnames");
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
+
 module.exports = {
 	"zh-cn": {
 		"apple-store-url": "https://itunes.apple.com/us/app/busgazer-pittsburgh/id936235643?mt=8&_branch_match_id=399387738945819974",
@@ -702,16 +708,10 @@ module.exports = {
 };
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports) {
-
-module.exports = require("react-router-dom");
-
-/***/ }),
 /* 3 */
 /***/ (function(module, exports) {
 
-module.exports = require("classnames");
+module.exports = require("react-router-dom");
 
 /***/ }),
 /* 4 */
@@ -1033,7 +1033,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -1045,11 +1045,11 @@ var _CalendarWidget = __webpack_require__(52);
 
 var _CalendarWidget2 = _interopRequireDefault(_CalendarWidget);
 
-var _classnames = __webpack_require__(3);
+var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1067,12 +1067,15 @@ var CalendarSection = function CalendarSection(props) {
       handleSave = props.handleSave,
       repickTime = props.repickTime;
 
+
+  var lang = language;
+  var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
   return _react2.default.createElement(
     'section',
     { className: 'calendar-section section container', id: 'calendar-section' },
     _react2.default.createElement(
       'div',
-      { className: 'title has-text-centered is-2 font-tang' },
+      { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
       _dict2.default[language]['nav-calendar']
     ),
     _react2.default.createElement(
@@ -1080,7 +1083,11 @@ var CalendarSection = function CalendarSection(props) {
       { className: 'calendar-widget columns container' },
       _react2.default.createElement(
         'div',
-        { className: (0, _classnames2.default)('column', 'calendar-column', { 'is-hidden': isleftHidden }) },
+        {
+          className: (0, _classnames2.default)('column', 'calendar-column', {
+            'is-hidden': isleftHidden
+          })
+        },
         _react2.default.createElement(_CalendarWidget2.default, {
           moment: m,
           onChange: handleChange,
@@ -1091,13 +1098,19 @@ var CalendarSection = function CalendarSection(props) {
       ),
       _react2.default.createElement(
         'div',
-        { className: (0, _classnames2.default)('column', 'messages', { 'is-hidden': isRightHidden }) },
-        _react2.default.createElement(Message, { title: _dict2.default[language]['notes-title-1'],
+        {
+          className: (0, _classnames2.default)('column', 'messages', {
+            'is-hidden': isRightHidden
+          })
+        },
+        _react2.default.createElement(Message, {
+          title: _dict2.default[language]['notes-title-1'],
           content: _dict2.default[language]['note1'],
           styleClass: 'is-primary',
           iconName: 'fa-money'
         }),
-        _react2.default.createElement(Message, { title: _dict2.default[language]['notes-title-2'],
+        _react2.default.createElement(Message, {
+          title: _dict2.default[language]['notes-title-2'],
           content: _dict2.default[language]['note2'] + ' ' + m.format('LLLL'),
           styleClass: 'is-primary',
           iconName: 'fa-check-circle'
@@ -1107,8 +1120,10 @@ var CalendarSection = function CalendarSection(props) {
           { className: 'text-button has-text-centered' },
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: _path2.default.join(props.match.url, '/form'),
-              className: 'button is-primary is-outlined' },
+            {
+              to: _path2.default.join(props.match.url, '/form'),
+              className: 'button is-primary is-outlined'
+            },
             _react2.default.createElement(
               'span',
               { className: 'icon is-small' },
@@ -1116,14 +1131,16 @@ var CalendarSection = function CalendarSection(props) {
             ),
             _react2.default.createElement(
               'span',
-              { className: 'title is-5 font-tang' },
+              { className: (0, _classnames2.default)('title', 'is-5', fontName2) },
               _dict2.default[language]['confirm-time']
             )
           ),
           _react2.default.createElement(
             'a',
-            { className: 'button is-primary repick-time is-outlined',
-              onClick: repickTime },
+            {
+              className: 'button is-primary repick-time is-outlined',
+              onClick: repickTime
+            },
             _react2.default.createElement(
               'span',
               { className: 'icon is-small' },
@@ -1131,14 +1148,13 @@ var CalendarSection = function CalendarSection(props) {
             ),
             _react2.default.createElement(
               'span',
-              { className: 'title is-5 font-tang' },
+              { className: (0, _classnames2.default)('title', 'is-5', fontName2) },
               _dict2.default[language]['repick-time']
             )
           ),
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: '/',
-              className: 'button is-primary is-outlined' },
+            { to: '/', className: 'button is-primary is-outlined' },
             _react2.default.createElement(
               'span',
               { className: 'icon is-small' },
@@ -1146,7 +1162,7 @@ var CalendarSection = function CalendarSection(props) {
             ),
             _react2.default.createElement(
               'span',
-              { className: 'title is-5 font-tang' },
+              { className: (0, _classnames2.default)('title', 'is-5', fontName2) },
               _dict2.default[language]['nav-return']
             )
           )
@@ -1412,7 +1428,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -1692,7 +1708,7 @@ router.get('/', function (req, res, next) {
 });
 
 function renderPage(appHtml) {
-  return '\n    <!DOCTYPE html>\n    <html lang="en">\n      <head>\n        <meta charset="utf-8" />\n        <meta name="viewport" content="width=device-width, initial-scale=1"/>\n        <meta name="description" content="\u6C5F\u6237\u548C\u88C5\u5DE5\u623F~\u96C5 \u662F\u6D45\u8349\u77E5\u540D\u7684\u548C\u670D\u79DF\u8D41\u5E97\uFF0C\u8FD9\u91CC\u63D0\u4F9B\u6700\u5730\u9053\u7684\u548C\u670D\u7740\u88C5\uFF0C\u6700\u8D34\u5FC3\u7684\u670D\u52A1\u56E2\u961F\uFF0C\u6700\u4E13\u4E1A\u7684\u5316\u5986\u5E08\u548C\u6444\u5F71\u5E08\u3002\u5E0C\u671B\u5927\u5BB6\u53EF\u4EE5\u5728\u8FD9\u91CC\u7559\u4E0B\u7F8E\u597D\u7684\u56DE\u5FC6\u3002" />\n        <meta name="keywords" content="\u6D45\u8349,\u548C\u670D,\u8457\u7269,\u51FA\u79DF,\u79DF\u501F,\u6D74\u8863,KIMONO,\u548C\u670D\u79DF\u8D41,\u6444\u5F71\uFF0C\u5316\u5986\uFF0CMIYABI,\u632F\u8896,\u7159\u706B,\u82B1\u706B,\u548C\u670D\u5916\u62CD,\u548C\u670D\u63A8\u8350,\u6AFB\u82B1,\u8CDE\u6AFB,\u8CDE\u6953,\u6953\u8449,\u5152\u7AE5\u548C\u670D,\u9AEE\u578B,\u5922\u9928,\u6D45\u8349\u5BFA" />\n        <meta property="og:type" content="website" />\n        <meta property="og:url" content="https://hefumiyabi.com" />\n        <meta property="og:title" content="\u6C5F\u6237\u548C\u88C5\u5DE5\u574A~\u96C5 - \u6D45\u8349\u548C\u670D\u79DF\u8D41 Miyabi Kimono Rental in Asakusa" />\n        <meta property="og:description" content="\u6C5F\u6237\u548C\u88C5\u5DE5\u623F~\u96C5 \u662F\u6D45\u8349\u77E5\u540D\u7684\u548C\u670D\u79DF\u8D41\u5E97\uFF0C\u8FD9\u91CC\u63D0\u4F9B\u6700\u5730\u9053\u7684\u548C\u670D\u7740\u88C5\uFF0C\u6700\u8D34\u5FC3\u7684\u670D\u52A1\u56E2\u961F\uFF0C\u6700\u4E13\u4E1A\u7684\u5316\u5986\u5E08\u548C\u6444\u5F71\u5E08\u3002\u5E0C\u671B\u5927\u5BB6\u53EF\u4EE5\u5728\u8FD9\u91CC\u7559\u4E0B\u7F8E\u597D\u7684\u56DE\u5FC6\u3002" />\n        <meta property="og:site_name" content="\u6C5F\u6237\u548C\u88C5\u5DE5\u623F~\u96C5" />\n        <meta property="og:image" content="https://hefumiyabi.com/images/cover.jpg" />\n        <meta http-equiv="X-UA-Compatible" content="IE=edge" />\n        <title>\u6C5F\u6237\u548C\u88C5\u5DE5\u623F\u96C5 - \u6D45\u8349\u548C\u670D\u79DF\u8D41</title>\n        <link rel="shortcut icon" type="image/png" href="/images/logo1.png"/>\n        <link rel="stylesheet"\n        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />\n        <link rel=\'stylesheet\' href=\'/main.css\' />\n        <link rel=\'stylesheet\' href=\'/conversational-form.min.css\' />\n        <link rel=\'stylesheet\' href=\'/wallop.css\' />\n        <link rel=\'stylesheet\' href=\'/wallop--fade.css\' />\n        <link rel=\'stylesheet\' href=\'/wallop--slide.css\' />\n        <script>\n          (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n          })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n          ga(\'create\', \'UA-100094140-1\', \'auto\');\n          ga(\'send\', \'pageview\');\n        </script>\n        <script type=\'application/ld+json\'>\n          {\n            "@context": "http://schema.org",\n            "@type": "Organization",\n            "url": "https://hefumiyabi.com",\n            "logo": "https://hefumiyabi.com/images/logo1.png",\n            "contactPoint": [{\n              "@type": "ContactPoint",\n              "telephone": "+81-03-6802-3566",\n              "contactType": "customer service"\n            }]\n          }\n        </script>\n      </head>\n\n      <body>\n        <div id="app" itemscope="" itemtype="http://schema.org/WebPage">' + appHtml + '</div>\n        <script src="https://cf-4053.kxcdn.com/conversational-form/0.9.6/conversational-form.min.js"></script>\n        <script src="/bundle.js"></script>\n        <script src="https://fast.wistia.com/embed/medias/phknks26n7.jsonp" async></script>\n        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>\n      </body>\n    </html>\n   ';
+  return '\n    <!DOCTYPE html>\n    <html lang="en">\n      <head>\n        <meta charset="utf-8" />\n        <meta name="viewport" content="width=device-width, initial-scale=1"/>\n        <meta name="description" content="\u6C5F\u6237\u548C\u88C5\u5DE5\u623F~\u96C5 \u662F\u6D45\u8349\u77E5\u540D\u7684\u548C\u670D\u79DF\u8D41\u5E97\uFF0C\u8FD9\u91CC\u63D0\u4F9B\u6700\u5730\u9053\u7684\u548C\u670D\u7740\u88C5\uFF0C\u6700\u8D34\u5FC3\u7684\u670D\u52A1\u56E2\u961F\uFF0C\u6700\u4E13\u4E1A\u7684\u5316\u5986\u5E08\u548C\u6444\u5F71\u5E08\u3002\u5E0C\u671B\u5927\u5BB6\u53EF\u4EE5\u5728\u8FD9\u91CC\u7559\u4E0B\u7F8E\u597D\u7684\u56DE\u5FC6\u3002" />\n        <meta name="keywords" content="\u6D45\u8349,\u548C\u670D,\u8457\u7269,\u51FA\u79DF,\u79DF\u501F,\u6D74\u8863,KIMONO,\u548C\u670D\u79DF\u8D41,\u6444\u5F71\uFF0C\u5316\u5986\uFF0CMIYABI,\u632F\u8896,\u7159\u706B,\u82B1\u706B,\u548C\u670D\u5916\u62CD,\u548C\u670D\u63A8\u8350,\u6AFB\u82B1,\u8CDE\u6AFB,\u8CDE\u6953,\u6953\u8449,\u5152\u7AE5\u548C\u670D,\u9AEE\u578B,\u5922\u9928,\u6D45\u8349\u5BFA" />\n        <meta property="og:type" content="website" />\n        <meta property="og:url" content="https://hefumiyabi.com" />\n        <meta property="og:title" content="\u6C5F\u6237\u548C\u88C5\u5DE5\u574A~\u96C5 - \u6D45\u8349\u548C\u670D\u79DF\u8D41 Miyabi Kimono Rental in Asakusa" />\n        <meta property="og:description" content="\u6C5F\u6237\u548C\u88C5\u5DE5\u623F~\u96C5 \u662F\u6D45\u8349\u77E5\u540D\u7684\u548C\u670D\u79DF\u8D41\u5E97\uFF0C\u8FD9\u91CC\u63D0\u4F9B\u6700\u5730\u9053\u7684\u548C\u670D\u7740\u88C5\uFF0C\u6700\u8D34\u5FC3\u7684\u670D\u52A1\u56E2\u961F\uFF0C\u6700\u4E13\u4E1A\u7684\u5316\u5986\u5E08\u548C\u6444\u5F71\u5E08\u3002\u5E0C\u671B\u5927\u5BB6\u53EF\u4EE5\u5728\u8FD9\u91CC\u7559\u4E0B\u7F8E\u597D\u7684\u56DE\u5FC6\u3002" />\n        <meta property="og:site_name" content="\u6C5F\u6237\u548C\u88C5\u5DE5\u623F~\u96C5" />\n        <meta property="og:image" content="https://hefumiyabi.com/images/cover.jpg" />\n        <meta http-equiv="X-UA-Compatible" content="IE=edge" />\n        <title>\u6C5F\u6237\u548C\u88C5\u5DE5\u623F\u96C5 - \u6D45\u8349\u548C\u670D\u79DF\u8D41</title>\n        <link rel="shortcut icon" type="image/png" href="/images/logo1.png"/>\n        <link rel="stylesheet"\n        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />\n        <link rel=\'stylesheet\' href=\'/main.css\' />\n        <link rel=\'stylesheet\' href=\'/conversational-form.min.css\' />\n        <link rel=\'stylesheet\' href=\'/wallop.css\' />\n        <link rel=\'stylesheet\' href=\'/wallop--fade.css\' />\n        <link rel=\'stylesheet\' href=\'/wallop--slide.css\' />\n        <link href=\'https://fonts.googleapis.com/css?family=Yeon+Sung\' rel=\'stylesheet\'>\n        <script>\n          (function(i,s,o,g,r,a,m){i[\'GoogleAnalyticsObject\']=r;i[r]=i[r]||function(){\n          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),\n          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)\n          })(window,document,\'script\',\'https://www.google-analytics.com/analytics.js\',\'ga\');\n          ga(\'create\', \'UA-100094140-1\', \'auto\');\n          ga(\'send\', \'pageview\');\n        </script>\n        <script type=\'application/ld+json\'>\n          {\n            "@context": "http://schema.org",\n            "@type": "Organization",\n            "url": "https://hefumiyabi.com",\n            "logo": "https://hefumiyabi.com/images/logo1.png",\n            "contactPoint": [{\n              "@type": "ContactPoint",\n              "telephone": "+81-03-6802-3566",\n              "contactType": "customer service"\n            }]\n          }\n        </script>\n      </head>\n\n      <body>\n        <div id="app" itemscope="" itemtype="http://schema.org/WebPage">' + appHtml + '</div>\n        <script src="https://cf-4053.kxcdn.com/conversational-form/0.9.6/conversational-form.min.js"></script>\n        <script src="/bundle.js"></script>\n        <script src="https://fast.wistia.com/embed/medias/phknks26n7.jsonp" async></script>\n        <script src="https://fast.wistia.com/assets/external/E-v1.js" async></script>\n      </body>\n    </html>\n   ';
 }
 
 module.exports = router;
@@ -1728,7 +1744,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(3);
 
 var _HomePage = __webpack_require__(29);
 
@@ -1756,10 +1772,20 @@ var App = function (_React$Component) {
   function App(props) {
     _classCallCheck(this, App);
 
+    var language = void 0;
+    if (window.navigator) language = window.navigator.userLanguage || window.navigator.language;else language = 'en-us';
+    var codeMap = new Map([['zh-cn', 'zh-cn'], ['zh-tw', 'zh-tw'], ['zh-hk', 'zh-tw'], ['zh-sg', 'zh-tw'], ['en-us', 'en'], ['ko', 'ko'], ['ko-kp', 'ko'], ['ko-kr', 'ko'], ['ja', 'ja']]);
+
+    // console.log(language.toLowerCase());
+    // console.log(codeMap);
+
+    var code = codeMap.get(language.toLowerCase()) || 'en';
+    // console.log(code);
+
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
     _this.state = {
-      lang: 'zh-cn'
+      lang: code
     };
     _this.onLangChange = _this.onLangChange.bind(_this);
     return _this;
@@ -1854,7 +1880,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(3);
 
 var _HeroSection = __webpack_require__(30);
 
@@ -1878,7 +1904,7 @@ var _FooterSection = __webpack_require__(50);
 
 var _FooterSection2 = _interopRequireDefault(_FooterSection);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -1902,6 +1928,8 @@ var HomePage = function (_React$Component) {
   _createClass(HomePage, [{
     key: 'render',
     value: function render() {
+      var lang = this.props.lang;
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       return _react2.default.createElement(
         'div',
         { className: 'home-page' },
@@ -1927,7 +1955,7 @@ var HomePage = function (_React$Component) {
           ),
           _react2.default.createElement(
             'span',
-            { className: 'font-tang' },
+            { className: fontName2 },
             _dict2.default[this.props.lang]['button-calendar']
           )
         )
@@ -1958,11 +1986,11 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(3);
+var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -1970,7 +1998,7 @@ var _Wallop = __webpack_require__(8);
 
 var _Wallop2 = _interopRequireDefault(_Wallop);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(3);
 
 var _reactScrollchor = __webpack_require__(31);
 
@@ -2204,30 +2232,35 @@ var HeroHead = function (_React$Component) {
   return HeroHead;
 }(_react2.default.Component);
 
-var HeroBody = function HeroBody() {
+var HeroBody = function HeroBody(props) {
   return _react2.default.createElement(
     'div',
     { className: 'hero-body' },
-    _react2.default.createElement(WallopSlides, null)
+    _react2.default.createElement(WallopSlides, { lang: props.lang })
   );
 };
 
 var Headlines = function Headlines(props) {
-  var num = props.num;
+  var num = props.num,
+      lang = props.lang;
+
+
+  var fontName = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-zhao';
+  var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
 
   return _react2.default.createElement(
     'div',
     { className: 'container is-fluid has-text-centered' },
     _react2.default.createElement(
       'h1',
-      { className: (0, _classnames2.default)('title', 'is-1', 'font-zhao') },
+      { className: (0, _classnames2.default)('title', 'is-1', fontName) },
       ' ',
       text['hero-title-' + num],
       ' '
     ),
     _react2.default.createElement(
       'h2',
-      { className: (0, _classnames2.default)('subtitle', 'is-3', 'font-zhao') },
+      { className: (0, _classnames2.default)('subtitle', 'is-3', fontName) },
       text['hero-subtitle-' + num]
     ),
     _react2.default.createElement(
@@ -2243,14 +2276,14 @@ var Headlines = function Headlines(props) {
       ),
       _react2.default.createElement(
         'span',
-        { className: 'font-tang' },
+        { className: fontName2 },
         text['button-calendar']
       )
     )
   );
 };
 
-var WallopSlides = function WallopSlides() {
+var WallopSlides = function WallopSlides(props) {
   return _react2.default.createElement(
     'div',
     { className: 'Wallop Wallop--fade', id: 'heroWallop' },
@@ -2260,24 +2293,25 @@ var WallopSlides = function WallopSlides() {
       _react2.default.createElement(
         'div',
         { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { num: '1' })
+        _react2.default.createElement(WallopSlide, { num: '1', lang: props.lang })
       ),
       _react2.default.createElement(
         'div',
         { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { num: '2' })
+        _react2.default.createElement(WallopSlide, { num: '2', lang: props.lang })
       ),
       _react2.default.createElement(
         'div',
         { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { num: '3' })
+        _react2.default.createElement(WallopSlide, { num: '3', lang: props.lang })
       )
     )
   );
 };
 
 var WallopSlide = function WallopSlide(props) {
-  var num = props.num;
+  var num = props.num,
+      lang = props.lang;
 
   return _react2.default.createElement(
     'div',
@@ -2285,7 +2319,7 @@ var WallopSlide = function WallopSlide(props) {
     _react2.default.createElement(
       'div',
       { className: 'column is-half' },
-      _react2.default.createElement(Headlines, { num: num })
+      _react2.default.createElement(Headlines, { num: num, lang: lang })
     ),
     _react2.default.createElement(
       'div',
@@ -2333,7 +2367,7 @@ var HeroSection = function (_React$Component2) {
         'section',
         { className: 'hero is-primary is-fullheight', id: 'hero-section' },
         _react2.default.createElement(HeroHead, null),
-        _react2.default.createElement(HeroBody, null)
+        _react2.default.createElement(HeroBody, { lang: this.props.lang })
       );
     }
   }]);
@@ -2387,9 +2421,13 @@ var _cards = __webpack_require__(39);
 
 var _cards2 = _interopRequireDefault(_cards);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
+
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2535,6 +2573,7 @@ var ProductSection = function (_React$Component) {
 
       text = _dict2.default[lang];
       language = lang;
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
 
       var pageNum = Math.floor((this.state.cards.length - 1) / cardsPerPage) + 1;
       return _react2.default.createElement(
@@ -2542,7 +2581,7 @@ var ProductSection = function (_React$Component) {
         { className: 'product-section section container', id: 'product-section' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered font-tang is-2' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[language]['nav-combo']
         ),
         _react2.default.createElement(
@@ -2551,7 +2590,8 @@ var ProductSection = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'filter column is-one-quarter' },
-            _react2.default.createElement(_Filter2.default, { cards: this.state.cards,
+            _react2.default.createElement(_Filter2.default, {
+              cards: this.state.cards,
               filterClick: this.filterClickListener.bind(this),
               toggleListener: this.toggleListener,
               lang: lang
@@ -2560,16 +2600,19 @@ var ProductSection = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'product column' },
-            _react2.default.createElement(_Sort2.default, { sortClickListener: this.sortClickListener.bind(this),
+            _react2.default.createElement(_Sort2.default, {
+              sortClickListener: this.sortClickListener.bind(this),
               toggleListener: this.toggleListener,
               lang: lang
             }),
-            _react2.default.createElement(_ShowCards2.default, { cards: this.state.cards,
+            _react2.default.createElement(_ShowCards2.default, {
+              cards: this.state.cards,
               pageIndex: this.state.pageIndex,
               cardsPerPage: cardsPerPage,
               lang: language
             }),
-            _react2.default.createElement(_Pages2.default, { pageIndex: this.state.pageIndex,
+            _react2.default.createElement(_Pages2.default, {
+              pageIndex: this.state.pageIndex,
               pageNum: pageNum,
               pageClickListener: this.pageClickListener.bind(this),
               prev: _dict2.default[language]['prev'],
@@ -2646,7 +2689,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -2654,7 +2697,11 @@ var _reactImages = __webpack_require__(35);
 
 var _reactImages2 = _interopRequireDefault(_reactImages);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(3);
+
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -2731,6 +2778,7 @@ var Card = function (_React$Component) {
 
       language = lang;
       var BASE_DIR = '/images/service-section';
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       return _react2.default.createElement(
         'div',
         { className: 'card' },
@@ -2757,8 +2805,7 @@ var Card = function (_React$Component) {
                 { className: 'title is-4' },
                 _react2.default.createElement(
                   'span',
-                  { className: 'font-tang' },
-                  ' ',
+                  { className: (0, _classnames2.default)(fontName2) },
                   card[language].name,
                   ' '
                 ),
@@ -2781,7 +2828,9 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature font-tang button is-primary is-small is-outlined' },
+                  {
+                    className: (0, _classnames2.default)(fontName2, 'item-feature', 'button', 'is-primary', 'is-small', 'is-outlined')
+                  },
                   _dict2.default[language]['combo-desc']
                 ),
                 _react2.default.createElement(
@@ -2801,7 +2850,9 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature font-tang button is-primary is-outlined is-small' },
+                  {
+                    className: (0, _classnames2.default)(fontName2, 'item-feature', 'button', 'is-primary', 'is-small', 'is-outlined')
+                  },
                   _dict2.default[language]['combo-acc']
                 ),
                 card[language].acc
@@ -2815,7 +2866,9 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature font-tang button is-primary is-outlined is-small' },
+                  {
+                    className: (0, _classnames2.default)(fontName2, 'item-feature', 'button', 'is-primary', 'is-small', 'is-outlined')
+                  },
                   _dict2.default[language]['combo-hair']
                 ),
                 card[language].hair
@@ -2834,7 +2887,7 @@ var Card = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                   'span',
-                  { className: 'font-tang title is-5' },
+                  { className: (0, _classnames2.default)(fontName2, 'title', 'is-5') },
                   _dict2.default[language]['combo-photo']
                 )
               ),
@@ -2848,7 +2901,7 @@ var Card = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                   'span',
-                  { className: 'font-tang title is-5' },
+                  { className: (0, _classnames2.default)(fontName2, 'title', 'is-5') },
                   _dict2.default[language]['combo-book']
                 )
               )
@@ -2857,7 +2910,9 @@ var Card = function (_React$Component) {
           _react2.default.createElement(_reactImages2.default, {
             currentImage: this.state.currentImage,
             images: Array.from(Array(11).keys()).map(function (id) {
-              return { src: card.baseurl + '/' + id + '.jpg' };
+              return {
+                src: card.baseurl + '/' + id + '.jpg'
+              };
             }),
             isOpen: this.state.isModalActive,
             onClickPrev: this.gotoPrevious,
@@ -2896,7 +2951,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(3);
+var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -2962,9 +3017,13 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
+
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -3000,14 +3059,16 @@ var CheckBox = function CheckBox(props) {
 var Field = function Field(props) {
   var fieldSet = props.fieldSet,
       fieldName = props.fieldName,
-      cards = props.cards;
+      cards = props.cards,
+      lang = props.lang;
 
+  var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
   return _react2.default.createElement(
     'div',
     { className: 'facet' },
     _react2.default.createElement(
       'h5',
-      { className: 'facet-title font-tang title is-4' },
+      { className: (0, _classnames2.default)('facet-title', 'title', 'is-4', fontName2) },
       text[fieldName]
     ),
     _react2.default.createElement(
@@ -3068,10 +3129,20 @@ var Filter = function Filter(props) {
       _react2.default.createElement(
         'div',
         { id: 'filters' },
-        _react2.default.createElement(Field, { fieldSet: clothType, fieldName: 'cloth-type', cards: cards }),
-        _react2.default.createElement(Field, { fieldSet: belt, fieldName: 'belt', cards: cards }),
-        _react2.default.createElement(Field, { fieldSet: gender, fieldName: 'gender', cards: cards }),
-        _react2.default.createElement(Field, { fieldSet: event, fieldName: 'event', cards: cards })
+        _react2.default.createElement(Field, {
+          fieldSet: clothType,
+          fieldName: 'cloth-type',
+          cards: cards,
+          lang: lang
+        }),
+        _react2.default.createElement(Field, { fieldSet: belt, fieldName: 'belt', cards: cards, lang: lang }),
+        _react2.default.createElement(Field, {
+          fieldSet: gender,
+          fieldName: 'gender',
+          cards: cards,
+          lang: lang
+        }),
+        _react2.default.createElement(Field, { fieldSet: event, fieldName: 'event', cards: cards, lang: lang })
       )
     )
   );
@@ -3094,7 +3165,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -4093,7 +4164,11 @@ var _step = __webpack_require__(44);
 
 var _step2 = _interopRequireDefault(_step);
 
-var _dict = __webpack_require__(1);
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -4122,12 +4197,13 @@ var QaSection = function (_React$Component) {
       var lang = this.props.lang;
 
       language = lang;
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       return _react2.default.createElement(
         'div',
         { className: 'section qa-section container', id: 'qa-section' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered is-2 font-tang' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[language]['nav-faq']
         ),
         _react2.default.createElement(
@@ -4207,7 +4283,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(3);
+var _classnames = __webpack_require__(1);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -4952,7 +5028,7 @@ var _intro = __webpack_require__(46);
 
 var _intro2 = _interopRequireDefault(_intro);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -4963,6 +5039,10 @@ var _girl2 = _interopRequireDefault(_girl);
 var _Wallop = __webpack_require__(8);
 
 var _Wallop2 = _interopRequireDefault(_Wallop);
+
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -4996,16 +5076,18 @@ var GirlsSection = function (_React$Component) {
     value: function render() {
       var lang = this.props.lang;
 
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       language = lang;
       return _react2.default.createElement(
         'div',
         { className: 'section girls-section container', id: 'girls-section' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered is-2 font-tang' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[language]['nav-girls']
         ),
         _react2.default.createElement(_intro2.default, {
+          lang: lang,
           bossName: _dict2.default[language]['boss-name'],
           bossQuote: _dict2.default[language]['boss-quote']
         }),
@@ -5103,7 +5185,8 @@ var WallopSlides = function WallopSlides() {
             avatar: girl.avatar,
             name: girl.name[language],
             content: girl.content[language],
-            url: girl.url })
+            url: girl.url
+          })
         );
       })
     ),
@@ -5129,12 +5212,18 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Intro = function Intro(props) {
   var bossName = props.bossName,
-      bossQuote = props.bossQuote;
+      bossQuote = props.bossQuote,
+      lang = props.lang;
 
+  var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
   return _react2.default.createElement(
     'div',
     { className: 'box' },
@@ -5158,7 +5247,7 @@ var Intro = function Intro(props) {
           { className: 'content' },
           _react2.default.createElement(
             'p',
-            { className: 'title is-5 font-tang' },
+            { className: (0, _classnames2.default)('title', 'is-5', fontName2) },
             _react2.default.createElement(
               'strong',
               null,
@@ -5176,7 +5265,11 @@ var Intro = function Intro(props) {
             { className: 'level-left' },
             _react2.default.createElement(
               'a',
-              { className: 'level-item', target: '_blank', href: 'http://weibo.com/mymiyabi' },
+              {
+                className: 'level-item',
+                target: '_blank',
+                href: 'http://weibo.com/mymiyabi'
+              },
               _react2.default.createElement(
                 'span',
                 { className: 'icon is-small' },
@@ -5194,7 +5287,11 @@ var Intro = function Intro(props) {
             ),
             _react2.default.createElement(
               'a',
-              { className: 'level-item', target: '_blank', href: 'https://www.facebook.com/miyabinokimono' },
+              {
+                className: 'level-item',
+                target: '_blank',
+                href: 'https://www.facebook.com/miyabinokimono'
+              },
               _react2.default.createElement(
                 'span',
                 { className: 'icon is-small' },
@@ -5398,9 +5495,13 @@ var _about = __webpack_require__(49);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
+
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -5426,13 +5527,14 @@ var AboutSection = function (_React$Component) {
     value: function render() {
       var lang = this.props.lang;
 
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       language = lang;
       return _react2.default.createElement(
         'div',
         { className: 'section about-section container', id: 'about-section' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered is-2 font-tang' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[language]['nav-about']
         ),
         _react2.default.createElement(VideoPlayer, null),
@@ -5453,28 +5555,35 @@ var VideoPlayer = function VideoPlayer() {
       { className: 'video' },
       _react2.default.createElement(
         'div',
-        { className: 'wistia_responsive_padding',
-          style: { padding: '56.5% 0 0 0',
+        {
+          className: 'wistia_responsive_padding',
+          style: {
+            padding: '56.5% 0 0 0',
             position: 'relative'
-          } },
+          }
+        },
         _react2.default.createElement(
           'div',
-          { className: 'wistia_responsive_wrapper',
+          {
+            className: 'wistia_responsive_wrapper',
             style: {
               height: '100%',
               left: '0',
               position: 'absolute',
               top: '0',
               width: '100%'
-            } },
+            }
+          },
           _react2.default.createElement(
             'span',
-            { className: 'wistia_embed wistia_async_phknks26n7 popover=true popoverAnimateThumbnail=true videoFoam=true',
+            {
+              className: 'wistia_embed wistia_async_phknks26n7 popover=true popoverAnimateThumbnail=true videoFoam=true',
               style: {
                 display: 'inline-block',
                 height: '100%',
                 width: '100%'
-              } },
+              }
+            },
             '\xA0'
           )
         )
@@ -5685,7 +5794,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -5928,7 +6037,7 @@ var _NoMatch = __webpack_require__(18);
 
 var _NoMatch2 = _interopRequireDefault(_NoMatch);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(3);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -6065,12 +6174,12 @@ exports.default = BookingPage;
 "use strict";
 
 
-var cx = __webpack_require__(3);
+var cx = __webpack_require__(1);
 var blacklist = __webpack_require__(11);
 var React = __webpack_require__(0);
 var Calendar = __webpack_require__(53);
 var Time = __webpack_require__(72);
-var dict = __webpack_require__(1);
+var dict = __webpack_require__(2);
 
 module.exports = React.createClass({
   displayName: 'InputMoment',
@@ -6179,7 +6288,7 @@ module.exports = React.createClass({
 "use strict";
 
 
-var cx = __webpack_require__(3);
+var cx = __webpack_require__(1);
 var blacklist = __webpack_require__(11);
 var React = __webpack_require__(0);
 var range = __webpack_require__(54);
@@ -7035,7 +7144,7 @@ module.exports = toInteger;
 "use strict";
 
 
-var cx = __webpack_require__(3);
+var cx = __webpack_require__(1);
 var React = __webpack_require__(0);
 var InputSlider = __webpack_require__(73);
 
@@ -7715,7 +7824,7 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -8610,13 +8719,17 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(1);
+var _dict = __webpack_require__(2);
 
 var _dict2 = _interopRequireDefault(_dict);
 
 var _CalendarSection = __webpack_require__(10);
 
-var _reactRouterDom = __webpack_require__(2);
+var _reactRouterDom = __webpack_require__(3);
+
+var _classnames = __webpack_require__(1);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -8670,6 +8783,7 @@ var ConfirmSection = function (_React$Component) {
           data = _props2.data,
           moment = _props2.moment;
 
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       data.time = moment.format('LLLL');
       data.language = lang;
 
@@ -8678,7 +8792,7 @@ var ConfirmSection = function (_React$Component) {
         { className: 'confirm-section section container' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered is-2 font-tang' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[lang]['nav-confirm']
         ),
         _react2.default.createElement(
@@ -8883,12 +8997,14 @@ var ConfirmSection = function (_React$Component) {
             )
           )
         ),
-        _react2.default.createElement(_CalendarSection.Message, { title: _dict2.default[lang]['confirm-title-1'],
+        _react2.default.createElement(_CalendarSection.Message, {
+          title: _dict2.default[lang]['confirm-title-1'],
           content: _dict2.default[lang]['confirm-msg-1'] + data['email'],
           styleClass: 'is-danger',
           iconName: 'fa-heart'
         }),
-        _react2.default.createElement(_CalendarSection.Message, { title: _dict2.default[lang]['confirm-title-2'],
+        _react2.default.createElement(_CalendarSection.Message, {
+          title: _dict2.default[lang]['confirm-title-2'],
           content: _dict2.default[lang]['confirm-msg-2'],
           styleClass: 'is-primary',
           iconName: 'fa-calendar'
@@ -8909,7 +9025,7 @@ var ConfirmSection = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'span',
-                { className: 'font-tang' },
+                { className: (0, _classnames2.default)(fontName2) },
                 _dict2.default[lang]['nav-return']
               )
             )
@@ -8927,7 +9043,7 @@ var ConfirmSection = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'span',
-                { className: 'font-tang' },
+                { className: (0, _classnames2.default)(fontName2) },
                 _dict2.default[lang]['repick-time']
               )
             )

@@ -4812,7 +4812,7 @@ module.exports = invariant;
 
 
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 
 /**
  * Similar to invariant but only logs a warning if the condition is not met.
@@ -5065,7 +5065,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 
 var _prodInvariant = __webpack_require__(5);
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(20);
 var ReactDOMComponentFlags = __webpack_require__(82);
 
 var invariant = __webpack_require__(3);
@@ -5290,6 +5290,61 @@ module.exports = ExecutionEnvironment;
 
 /***/ }),
 /* 10 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+  Copyright (c) 2016 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/
+/* global define */
+
+(function () {
+	'use strict';
+
+	var hasOwn = {}.hasOwnProperty;
+
+	function classNames () {
+		var classes = [];
+
+		for (var i = 0; i < arguments.length; i++) {
+			var arg = arguments[i];
+			if (!arg) continue;
+
+			var argType = typeof arg;
+
+			if (argType === 'string' || argType === 'number') {
+				classes.push(arg);
+			} else if (Array.isArray(arg)) {
+				classes.push(classNames.apply(null, arg));
+			} else if (argType === 'object') {
+				for (var key in arg) {
+					if (hasOwn.call(arg, key) && arg[key]) {
+						classes.push(key);
+					}
+				}
+			}
+		}
+
+		return classes.join(' ');
+	}
+
+	if (typeof module !== 'undefined' && module.exports) {
+		module.exports = classNames;
+	} else if (true) {
+		// register as 'classnames', consistent with npm package name
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
+			return classNames;
+		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {
+		window.classNames = classNames;
+	}
+}());
+
+
+/***/ }),
+/* 11 */
 /***/ (function(module, exports) {
 
 module.exports = {
@@ -5921,7 +5976,7 @@ module.exports = {
 };
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -5940,7 +5995,7 @@ module.exports = {
 
 var _prodInvariant = __webpack_require__(27);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 
 var invariant = __webpack_require__(3);
 var warning = __webpack_require__(4);
@@ -6306,7 +6361,7 @@ module.exports = ReactComponentTreeHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6350,7 +6405,7 @@ emptyFunction.thatReturnsArgument = function (arg) {
 module.exports = emptyFunction;
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6380,7 +6435,7 @@ module.exports = { debugTool: debugTool };
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -6422,7 +6477,7 @@ module.exports = { debugTool: debugTool };
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6456,7 +6511,7 @@ var ReactCurrentOwner = {
 module.exports = ReactCurrentOwner;
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6713,7 +6768,7 @@ module.exports = ReactUpdates;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -6733,7 +6788,7 @@ var _assign = __webpack_require__(7);
 
 var PooledClass = __webpack_require__(23);
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var warning = __webpack_require__(4);
 
 var didWarnForAddedNewProperty = false;
@@ -6985,7 +7040,7 @@ function getPooledWarningPropertyDefinition(propName, getVal) {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 18 */
+/* 19 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -7044,7 +7099,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7259,7 +7314,7 @@ module.exports = DOMProperty;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -7327,61 +7382,6 @@ module.exports = warning;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-/* 21 */
-/***/ (function(module, exports, __webpack_require__) {
-
-var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
-  Copyright (c) 2016 Jed Watson.
-  Licensed under the MIT License (MIT), see
-  http://jedwatson.github.io/classnames
-*/
-/* global define */
-
-(function () {
-	'use strict';
-
-	var hasOwn = {}.hasOwnProperty;
-
-	function classNames () {
-		var classes = [];
-
-		for (var i = 0; i < arguments.length; i++) {
-			var arg = arguments[i];
-			if (!arg) continue;
-
-			var argType = typeof arg;
-
-			if (argType === 'string' || argType === 'number') {
-				classes.push(arg);
-			} else if (Array.isArray(arg)) {
-				classes.push(classNames.apply(null, arg));
-			} else if (argType === 'object') {
-				for (var key in arg) {
-					if (hasOwn.call(arg, key) && arg[key]) {
-						classes.push(key);
-					}
-				}
-			}
-		}
-
-		return classes.join(' ');
-	}
-
-	if (typeof module !== 'undefined' && module.exports) {
-		module.exports = classNames;
-	} else if (true) {
-		// register as 'classnames', consistent with npm package name
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
-			return classNames;
-		}.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {
-		window.classNames = classNames;
-	}
-}());
-
-
-/***/ }),
 /* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -7400,7 +7400,7 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 var _assign = __webpack_require__(7);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 
 var warning = __webpack_require__(4);
 var canDefineProperty = __webpack_require__(36);
@@ -8116,7 +8116,7 @@ module.exports = reactProdInvariant;
 
 
 var ReactRef = __webpack_require__(265);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 
 var warning = __webpack_require__(4);
 
@@ -8857,7 +8857,7 @@ module.exports = EventPluginHub;
 
 
 
-var SyntheticEvent = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 
 var getEventTarget = __webpack_require__(51);
 
@@ -10883,7 +10883,7 @@ module.exports = getEventModifierState;
 var DOMLazyTree = __webpack_require__(29);
 var Danger = __webpack_require__(276);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 
 var createMicrosoftUnsafeLocalFunction = __webpack_require__(56);
 var setInnerHTML = __webpack_require__(42);
@@ -11554,10 +11554,10 @@ module.exports = KeyEscapeUtils;
 
 var _prodInvariant = __webpack_require__(5);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 var ReactInstanceMap = __webpack_require__(34);
-var ReactInstrumentation = __webpack_require__(13);
-var ReactUpdates = __webpack_require__(16);
+var ReactInstrumentation = __webpack_require__(14);
+var ReactUpdates = __webpack_require__(17);
 
 var invariant = __webpack_require__(3);
 var warning = __webpack_require__(4);
@@ -11794,7 +11794,7 @@ module.exports = ReactUpdateQueue;
 
 var _assign = __webpack_require__(7);
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var warning = __webpack_require__(4);
 
 var validateDOMNesting = emptyFunction;
@@ -12300,7 +12300,7 @@ var locationsAreEqual = exports.locationsAreEqual = function locationsAreEqual(a
 
 exports.__esModule = true;
 
-var _warning = __webpack_require__(20);
+var _warning = __webpack_require__(21);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -12387,7 +12387,7 @@ exports.default = createTransitionManager;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_invariant___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_invariant__);
@@ -23502,8 +23502,8 @@ module.exports = getIteratorFn;
 
 
 
-var ReactCurrentOwner = __webpack_require__(15);
-var ReactComponentTreeHook = __webpack_require__(11);
+var ReactCurrentOwner = __webpack_require__(16);
+var ReactComponentTreeHook = __webpack_require__(12);
 var ReactElement = __webpack_require__(22);
 
 var checkReactTypeSpec = __webpack_require__(249);
@@ -23783,7 +23783,7 @@ module.exports = function(isValidElement) {
 
 
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var invariant = __webpack_require__(3);
 var warning = __webpack_require__(4);
 
@@ -25959,9 +25959,9 @@ module.exports = CSSProperty;
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(20);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 
 var quoteAttributeValueForBrowser = __webpack_require__(290);
 var warning = __webpack_require__(4);
@@ -26226,7 +26226,7 @@ var _assign = __webpack_require__(7);
 
 var LinkedValueUtils = __webpack_require__(57);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactUpdates = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(17);
 
 var warning = __webpack_require__(4);
 
@@ -26720,7 +26720,7 @@ module.exports = ReactHostComponent;
 
 var _prodInvariant = __webpack_require__(5);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 var REACT_ELEMENT_TYPE = __webpack_require__(302);
 
 var getIteratorFn = __webpack_require__(303);
@@ -26908,7 +26908,7 @@ module.exports = traverseAllChildren;
  * @typechecks
  */
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 
 /**
  * Upstream version of event listener. Does not take into account specific
@@ -27165,20 +27165,20 @@ module.exports = getActiveElement;
 var _prodInvariant = __webpack_require__(5);
 
 var DOMLazyTree = __webpack_require__(29);
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(20);
 var React = __webpack_require__(26);
 var ReactBrowserEventEmitter = __webpack_require__(44);
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactDOMContainerInfo = __webpack_require__(332);
 var ReactDOMFeatureFlags = __webpack_require__(333);
 var ReactFeatureFlags = __webpack_require__(87);
 var ReactInstanceMap = __webpack_require__(34);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 var ReactMarkupChecksum = __webpack_require__(334);
 var ReactReconciler = __webpack_require__(28);
 var ReactUpdateQueue = __webpack_require__(62);
-var ReactUpdates = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(17);
 
 var emptyObject = __webpack_require__(37);
 var instantiateReactComponent = __webpack_require__(97);
@@ -27737,7 +27737,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(20);
+var _warning = __webpack_require__(21);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -28103,7 +28103,7 @@ var isExtraneousPopstateEvent = exports.isExtraneousPopstateEvent = function isE
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__(2);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
@@ -40225,7 +40225,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -40237,11 +40237,11 @@ var _CalendarWidget = __webpack_require__(444);
 
 var _CalendarWidget2 = _interopRequireDefault(_CalendarWidget);
 
-var _classnames = __webpack_require__(21);
+var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40259,12 +40259,15 @@ var CalendarSection = function CalendarSection(props) {
       handleSave = props.handleSave,
       repickTime = props.repickTime;
 
+
+  var lang = language;
+  var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
   return _react2.default.createElement(
     'section',
     { className: 'calendar-section section container', id: 'calendar-section' },
     _react2.default.createElement(
       'div',
-      { className: 'title has-text-centered is-2 font-tang' },
+      { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
       _dict2.default[language]['nav-calendar']
     ),
     _react2.default.createElement(
@@ -40272,7 +40275,11 @@ var CalendarSection = function CalendarSection(props) {
       { className: 'calendar-widget columns container' },
       _react2.default.createElement(
         'div',
-        { className: (0, _classnames2.default)('column', 'calendar-column', { 'is-hidden': isleftHidden }) },
+        {
+          className: (0, _classnames2.default)('column', 'calendar-column', {
+            'is-hidden': isleftHidden
+          })
+        },
         _react2.default.createElement(_CalendarWidget2.default, {
           moment: m,
           onChange: handleChange,
@@ -40283,13 +40290,19 @@ var CalendarSection = function CalendarSection(props) {
       ),
       _react2.default.createElement(
         'div',
-        { className: (0, _classnames2.default)('column', 'messages', { 'is-hidden': isRightHidden }) },
-        _react2.default.createElement(Message, { title: _dict2.default[language]['notes-title-1'],
+        {
+          className: (0, _classnames2.default)('column', 'messages', {
+            'is-hidden': isRightHidden
+          })
+        },
+        _react2.default.createElement(Message, {
+          title: _dict2.default[language]['notes-title-1'],
           content: _dict2.default[language]['note1'],
           styleClass: 'is-primary',
           iconName: 'fa-money'
         }),
-        _react2.default.createElement(Message, { title: _dict2.default[language]['notes-title-2'],
+        _react2.default.createElement(Message, {
+          title: _dict2.default[language]['notes-title-2'],
           content: _dict2.default[language]['note2'] + ' ' + m.format('LLLL'),
           styleClass: 'is-primary',
           iconName: 'fa-check-circle'
@@ -40299,8 +40312,10 @@ var CalendarSection = function CalendarSection(props) {
           { className: 'text-button has-text-centered' },
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: _path2.default.join(props.match.url, '/form'),
-              className: 'button is-primary is-outlined' },
+            {
+              to: _path2.default.join(props.match.url, '/form'),
+              className: 'button is-primary is-outlined'
+            },
             _react2.default.createElement(
               'span',
               { className: 'icon is-small' },
@@ -40308,14 +40323,16 @@ var CalendarSection = function CalendarSection(props) {
             ),
             _react2.default.createElement(
               'span',
-              { className: 'title is-5 font-tang' },
+              { className: (0, _classnames2.default)('title', 'is-5', fontName2) },
               _dict2.default[language]['confirm-time']
             )
           ),
           _react2.default.createElement(
             'a',
-            { className: 'button is-primary repick-time is-outlined',
-              onClick: repickTime },
+            {
+              className: 'button is-primary repick-time is-outlined',
+              onClick: repickTime
+            },
             _react2.default.createElement(
               'span',
               { className: 'icon is-small' },
@@ -40323,14 +40340,13 @@ var CalendarSection = function CalendarSection(props) {
             ),
             _react2.default.createElement(
               'span',
-              { className: 'title is-5 font-tang' },
+              { className: (0, _classnames2.default)('title', 'is-5', fontName2) },
               _dict2.default[language]['repick-time']
             )
           ),
           _react2.default.createElement(
             _reactRouterDom.Link,
-            { to: '/',
-              className: 'button is-primary is-outlined' },
+            { to: '/', className: 'button is-primary is-outlined' },
             _react2.default.createElement(
               'span',
               { className: 'icon is-small' },
@@ -40338,7 +40354,7 @@ var CalendarSection = function CalendarSection(props) {
             ),
             _react2.default.createElement(
               'span',
-              { className: 'title is-5 font-tang' },
+              { className: (0, _classnames2.default)('title', 'is-5', fontName2) },
               _dict2.default[language]['nav-return']
             )
           )
@@ -40549,7 +40565,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40612,7 +40628,7 @@ var _history = __webpack_require__(241);
 
 var _history2 = _interopRequireDefault(_history);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -40642,7 +40658,7 @@ _reactDom2.default.render(_react2.default.createElement(
 var PooledClass = __webpack_require__(245);
 var ReactElement = __webpack_require__(22);
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var traverseAllChildren = __webpack_require__(246);
 
 var twoArgumentPooler = PooledClass.twoArgumentPooler;
@@ -40955,7 +40971,7 @@ module.exports = PooledClass;
 
 var _prodInvariant = __webpack_require__(27);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 var REACT_ELEMENT_TYPE = __webpack_require__(76);
 
 var getIteratorFn = __webpack_require__(77);
@@ -41390,7 +41406,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(11);
+  ReactComponentTreeHook = __webpack_require__(12);
 }
 
 var loggedTypeFailures = {};
@@ -41432,7 +41448,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(11);
+            ReactComponentTreeHook = __webpack_require__(12);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -41710,7 +41726,7 @@ var ReactDOMComponentTree = __webpack_require__(8);
 var ReactDefaultInjection = __webpack_require__(258);
 var ReactMount = __webpack_require__(105);
 var ReactReconciler = __webpack_require__(28);
-var ReactUpdates = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(17);
 var ReactVersion = __webpack_require__(336);
 
 var findDOMNode = __webpack_require__(337);
@@ -41791,7 +41807,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 if (process.env.NODE_ENV !== 'production') {
-  var ReactInstrumentation = __webpack_require__(13);
+  var ReactInstrumentation = __webpack_require__(14);
   var ReactDOMUnknownPropertyHook = __webpack_require__(339);
   var ReactDOMNullInputValuePropHook = __webpack_require__(340);
   var ReactDOMInvalidARIAHook = __webpack_require__(341);
@@ -42480,7 +42496,7 @@ module.exports = FallbackCompositionState;
 
 
 
-var SyntheticEvent = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 
 /**
  * @interface Event
@@ -42521,7 +42537,7 @@ module.exports = SyntheticCompositionEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 
 /**
  * @interface Event
@@ -42567,8 +42583,8 @@ var EventPluginHub = __webpack_require__(32);
 var EventPropagators = __webpack_require__(31);
 var ExecutionEnvironment = __webpack_require__(9);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactUpdates = __webpack_require__(16);
-var SyntheticEvent = __webpack_require__(17);
+var ReactUpdates = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 
 var inputValueTracking = __webpack_require__(88);
 var getEventTarget = __webpack_require__(51);
@@ -43076,7 +43092,7 @@ module.exports = ReactOwner;
 
 var ReactInvalidSetStateWarningHook = __webpack_require__(268);
 var ReactHostOperationHistoryHook = __webpack_require__(269);
-var ReactComponentTreeHook = __webpack_require__(11);
+var ReactComponentTreeHook = __webpack_require__(12);
 var ExecutionEnvironment = __webpack_require__(9);
 
 var performanceNow = __webpack_require__(270);
@@ -43723,7 +43739,7 @@ module.exports = EnterLeaveEventPlugin;
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(20);
 
 var MUST_USE_PROPERTY = DOMProperty.injection.MUST_USE_PROPERTY;
 var HAS_BOOLEAN_VALUE = DOMProperty.injection.HAS_BOOLEAN_VALUE;
@@ -44003,7 +44019,7 @@ var DOMLazyTree = __webpack_require__(29);
 var ExecutionEnvironment = __webpack_require__(9);
 
 var createNodesFromMarkup = __webpack_require__(277);
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var invariant = __webpack_require__(3);
 
 var Danger = {
@@ -44420,7 +44436,7 @@ var AutoFocusUtils = __webpack_require__(282);
 var CSSPropertyOperations = __webpack_require__(283);
 var DOMLazyTree = __webpack_require__(29);
 var DOMNamespaces = __webpack_require__(55);
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(20);
 var DOMPropertyOperations = __webpack_require__(94);
 var EventPluginHub = __webpack_require__(32);
 var EventPluginRegistry = __webpack_require__(39);
@@ -44431,11 +44447,11 @@ var ReactDOMInput = __webpack_require__(293);
 var ReactDOMOption = __webpack_require__(294);
 var ReactDOMSelect = __webpack_require__(96);
 var ReactDOMTextarea = __webpack_require__(295);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 var ReactMultiChild = __webpack_require__(296);
 var ReactServerRenderingTransaction = __webpack_require__(305);
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var escapeTextContentForBrowser = __webpack_require__(43);
 var invariant = __webpack_require__(3);
 var isEventSupported = __webpack_require__(52);
@@ -45458,7 +45474,7 @@ module.exports = AutoFocusUtils;
 
 var CSSProperty = __webpack_require__(93);
 var ExecutionEnvironment = __webpack_require__(9);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 
 var camelizeStyleName = __webpack_require__(284);
 var dangerousStyleValue = __webpack_require__(286);
@@ -46141,7 +46157,7 @@ var _prodInvariant = __webpack_require__(5),
 var DOMPropertyOperations = __webpack_require__(94);
 var LinkedValueUtils = __webpack_require__(57);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactUpdates = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(17);
 
 var invariant = __webpack_require__(3);
 var warning = __webpack_require__(4);
@@ -46561,7 +46577,7 @@ var _prodInvariant = __webpack_require__(5),
 
 var LinkedValueUtils = __webpack_require__(57);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactUpdates = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(17);
 
 var invariant = __webpack_require__(3);
 var warning = __webpack_require__(4);
@@ -46726,13 +46742,13 @@ var _prodInvariant = __webpack_require__(5);
 
 var ReactComponentEnvironment = __webpack_require__(58);
 var ReactInstanceMap = __webpack_require__(34);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 var ReactReconciler = __webpack_require__(28);
 var ReactChildReconciler = __webpack_require__(297);
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var flattenChildren = __webpack_require__(304);
 var invariant = __webpack_require__(3);
 
@@ -47190,7 +47206,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(11);
+  ReactComponentTreeHook = __webpack_require__(12);
 }
 
 function instantiateChild(childInstances, child, name, selfDebugID) {
@@ -47198,7 +47214,7 @@ function instantiateChild(childInstances, child, name, selfDebugID) {
   var keyUnique = childInstances[name] === undefined;
   if (process.env.NODE_ENV !== 'production') {
     if (!ReactComponentTreeHook) {
-      ReactComponentTreeHook = __webpack_require__(11);
+      ReactComponentTreeHook = __webpack_require__(12);
     }
     if (!keyUnique) {
       process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -47338,10 +47354,10 @@ var _prodInvariant = __webpack_require__(5),
 
 var React = __webpack_require__(26);
 var ReactComponentEnvironment = __webpack_require__(58);
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 var ReactErrorUtils = __webpack_require__(50);
 var ReactInstanceMap = __webpack_require__(34);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 var ReactNodeTypes = __webpack_require__(98);
 var ReactReconciler = __webpack_require__(28);
 
@@ -48255,7 +48271,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(11);
+  ReactComponentTreeHook = __webpack_require__(12);
 }
 
 var loggedTypeFailures = {};
@@ -48297,7 +48313,7 @@ function checkReactTypeSpec(typeSpecs, values, location, componentName, element,
 
         if (process.env.NODE_ENV !== 'production') {
           if (!ReactComponentTreeHook) {
-            ReactComponentTreeHook = __webpack_require__(11);
+            ReactComponentTreeHook = __webpack_require__(12);
           }
           if (debugID !== null) {
             componentStackInfo = ReactComponentTreeHook.getStackAddendumByID(debugID);
@@ -48473,7 +48489,7 @@ if (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 't
   // https://github.com/facebook/react/issues/7240
   // Remove the inline requires when we don't need them anymore:
   // https://github.com/facebook/react/pull/7178
-  ReactComponentTreeHook = __webpack_require__(11);
+  ReactComponentTreeHook = __webpack_require__(12);
 }
 
 /**
@@ -48489,7 +48505,7 @@ function flattenSingleChildIntoContext(traverseContext, child, name, selfDebugID
     var keyUnique = result[name] === undefined;
     if (process.env.NODE_ENV !== 'production') {
       if (!ReactComponentTreeHook) {
-        ReactComponentTreeHook = __webpack_require__(11);
+        ReactComponentTreeHook = __webpack_require__(12);
       }
       if (!keyUnique) {
         process.env.NODE_ENV !== 'production' ? warning(false, 'flattenChildren(...): Encountered two children with the same key, ' + '`%s`. Child keys must be unique; when two children share a key, only ' + 'the first child will be used.%s', KeyEscapeUtils.unescape(name), ReactComponentTreeHook.getStackAddendumByID(selfDebugID)) : void 0;
@@ -48546,7 +48562,7 @@ var _assign = __webpack_require__(7);
 
 var PooledClass = __webpack_require__(23);
 var Transaction = __webpack_require__(40);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 var ReactServerUpdateQueue = __webpack_require__(306);
 
 /**
@@ -49160,10 +49176,10 @@ module.exports = ReactDOMTextComponent;
 
 var _assign = __webpack_require__(7);
 
-var ReactUpdates = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(17);
 var Transaction = __webpack_require__(40);
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 
 var RESET_BATCHED_UPDATES = {
   initialize: emptyFunction,
@@ -49237,7 +49253,7 @@ var EventListener = __webpack_require__(102);
 var ExecutionEnvironment = __webpack_require__(9);
 var PooledClass = __webpack_require__(23);
 var ReactDOMComponentTree = __webpack_require__(8);
-var ReactUpdates = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(17);
 
 var getEventTarget = __webpack_require__(51);
 var getUnboundedScrollPosition = __webpack_require__(312);
@@ -49435,14 +49451,14 @@ module.exports = getUnboundedScrollPosition;
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(20);
 var EventPluginHub = __webpack_require__(32);
 var EventPluginUtils = __webpack_require__(49);
 var ReactComponentEnvironment = __webpack_require__(58);
 var ReactEmptyComponent = __webpack_require__(99);
 var ReactBrowserEventEmitter = __webpack_require__(44);
 var ReactHostComponent = __webpack_require__(100);
-var ReactUpdates = __webpack_require__(16);
+var ReactUpdates = __webpack_require__(17);
 
 var ReactInjection = {
   Component: ReactComponentEnvironment.injection,
@@ -49480,7 +49496,7 @@ var CallbackQueue = __webpack_require__(86);
 var PooledClass = __webpack_require__(23);
 var ReactBrowserEventEmitter = __webpack_require__(44);
 var ReactInputSelection = __webpack_require__(103);
-var ReactInstrumentation = __webpack_require__(13);
+var ReactInstrumentation = __webpack_require__(14);
 var Transaction = __webpack_require__(40);
 var ReactUpdateQueue = __webpack_require__(62);
 
@@ -50370,7 +50386,7 @@ var EventPropagators = __webpack_require__(31);
 var ExecutionEnvironment = __webpack_require__(9);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactInputSelection = __webpack_require__(103);
-var SyntheticEvent = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 
 var getActiveElement = __webpack_require__(104);
 var isTextInputElement = __webpack_require__(89);
@@ -50567,7 +50583,7 @@ var EventPropagators = __webpack_require__(31);
 var ReactDOMComponentTree = __webpack_require__(8);
 var SyntheticAnimationEvent = __webpack_require__(323);
 var SyntheticClipboardEvent = __webpack_require__(324);
-var SyntheticEvent = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 var SyntheticFocusEvent = __webpack_require__(325);
 var SyntheticKeyboardEvent = __webpack_require__(326);
 var SyntheticMouseEvent = __webpack_require__(41);
@@ -50577,7 +50593,7 @@ var SyntheticTransitionEvent = __webpack_require__(330);
 var SyntheticUIEvent = __webpack_require__(33);
 var SyntheticWheelEvent = __webpack_require__(331);
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var getEventCharCode = __webpack_require__(64);
 var invariant = __webpack_require__(3);
 
@@ -50791,7 +50807,7 @@ module.exports = SimpleEventPlugin;
 
 
 
-var SyntheticEvent = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 
 /**
  * @interface Event
@@ -50835,7 +50851,7 @@ module.exports = SyntheticAnimationEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 
 /**
  * @interface Event
@@ -51216,7 +51232,7 @@ module.exports = SyntheticTouchEvent;
 
 
 
-var SyntheticEvent = __webpack_require__(17);
+var SyntheticEvent = __webpack_require__(18);
 
 /**
  * @interface Event
@@ -51504,7 +51520,7 @@ module.exports = '15.6.1';
 
 var _prodInvariant = __webpack_require__(5);
 
-var ReactCurrentOwner = __webpack_require__(15);
+var ReactCurrentOwner = __webpack_require__(16);
 var ReactDOMComponentTree = __webpack_require__(8);
 var ReactInstanceMap = __webpack_require__(34);
 
@@ -51589,9 +51605,9 @@ module.exports = ReactMount.renderSubtreeIntoContainer;
 
 
 
-var DOMProperty = __webpack_require__(19);
+var DOMProperty = __webpack_require__(20);
 var EventPluginRegistry = __webpack_require__(39);
-var ReactComponentTreeHook = __webpack_require__(11);
+var ReactComponentTreeHook = __webpack_require__(12);
 
 var warning = __webpack_require__(4);
 
@@ -51707,7 +51723,7 @@ module.exports = ReactDOMUnknownPropertyHook;
 
 
 
-var ReactComponentTreeHook = __webpack_require__(11);
+var ReactComponentTreeHook = __webpack_require__(12);
 
 var warning = __webpack_require__(4);
 
@@ -51756,8 +51772,8 @@ module.exports = ReactDOMNullInputValuePropHook;
 
 
 
-var DOMProperty = __webpack_require__(19);
-var ReactComponentTreeHook = __webpack_require__(11);
+var DOMProperty = __webpack_require__(20);
+var ReactComponentTreeHook = __webpack_require__(12);
 
 var warning = __webpack_require__(4);
 
@@ -51857,7 +51873,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
 
 var _HomePage = __webpack_require__(369);
 
@@ -51885,10 +51901,20 @@ var App = function (_React$Component) {
   function App(props) {
     _classCallCheck(this, App);
 
+    var language = void 0;
+    if (window.navigator) language = window.navigator.userLanguage || window.navigator.language;else language = 'en-us';
+    var codeMap = new Map([['zh-cn', 'zh-cn'], ['zh-tw', 'zh-tw'], ['zh-hk', 'zh-tw'], ['zh-sg', 'zh-tw'], ['en-us', 'en'], ['ko', 'ko'], ['ko-kp', 'ko'], ['ko-kr', 'ko'], ['ja', 'ja']]);
+
+    // console.log(language.toLowerCase());
+    // console.log(codeMap);
+
+    var code = codeMap.get(language.toLowerCase()) || 'en';
+    // console.log(code);
+
     var _this = _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this));
 
     _this.state = {
-      lang: 'zh-cn'
+      lang: code
     };
     _this.onLangChange = _this.onLangChange.bind(_this);
     return _this;
@@ -51977,7 +52003,7 @@ exports.default = App;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_history_createBrowserHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router__ = __webpack_require__(15);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -52042,7 +52068,7 @@ BrowserRouter.propTypes = {
 
 
 
-var emptyFunction = __webpack_require__(12);
+var emptyFunction = __webpack_require__(13);
 var invariant = __webpack_require__(3);
 var ReactPropTypesSecret = __webpack_require__(48);
 
@@ -52287,7 +52313,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(20);
+var _warning = __webpack_require__(21);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -53248,7 +53274,7 @@ StaticRouter.childContextTypes = {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(20);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning__ = __webpack_require__(21);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_warning___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_warning__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__matchPath__ = __webpack_require__(68);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -53438,7 +53464,7 @@ module.exports = function hoistNonReactStatics(targetComponent, sourceComponent,
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createHashHistory__ = __webpack_require__(358);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_history_createHashHistory___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_history_createHashHistory__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_react_router__ = __webpack_require__(15);
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -53497,7 +53523,7 @@ exports.__esModule = true;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var _warning = __webpack_require__(20);
+var _warning = __webpack_require__(21);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -53821,7 +53847,7 @@ exports.default = createHashHistory;
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["a"]; });
 
 
@@ -53834,7 +53860,7 @@ exports.default = createHashHistory;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types__ = __webpack_require__(6);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_prop_types___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_prop_types__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_react_router__ = __webpack_require__(15);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__Link__ = __webpack_require__(110);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -53907,7 +53933,7 @@ NavLink.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["b"]; });
 
 
@@ -53916,7 +53942,7 @@ NavLink.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["c"]; });
 
 
@@ -53925,7 +53951,7 @@ NavLink.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["d"]; });
 
 
@@ -53934,7 +53960,7 @@ NavLink.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["e"]; });
 
 
@@ -53943,7 +53969,7 @@ NavLink.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["f"]; });
 
 
@@ -53952,7 +53978,7 @@ NavLink.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["g"]; });
 
 
@@ -53961,7 +53987,7 @@ NavLink.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["h"]; });
 
 
@@ -53970,7 +53996,7 @@ NavLink.defaultProps = {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(14);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react_router__ = __webpack_require__(15);
 /* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0_react_router__["i"]; });
 
 
@@ -53991,7 +54017,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
 
 var _HeroSection = __webpack_require__(370);
 
@@ -54015,7 +54041,7 @@ var _FooterSection = __webpack_require__(437);
 
 var _FooterSection2 = _interopRequireDefault(_FooterSection);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -54039,6 +54065,8 @@ var HomePage = function (_React$Component) {
   _createClass(HomePage, [{
     key: 'render',
     value: function render() {
+      var lang = this.props.lang;
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       return _react2.default.createElement(
         'div',
         { className: 'home-page' },
@@ -54064,7 +54092,7 @@ var HomePage = function (_React$Component) {
           ),
           _react2.default.createElement(
             'span',
-            { className: 'font-tang' },
+            { className: fontName2 },
             _dict2.default[this.props.lang]['button-calendar']
           )
         )
@@ -54095,11 +54123,11 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(21);
+var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -54107,7 +54135,7 @@ var _Wallop = __webpack_require__(111);
 
 var _Wallop2 = _interopRequireDefault(_Wallop);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
 
 var _reactScrollchor = __webpack_require__(371);
 
@@ -54341,30 +54369,35 @@ var HeroHead = function (_React$Component) {
   return HeroHead;
 }(_react2.default.Component);
 
-var HeroBody = function HeroBody() {
+var HeroBody = function HeroBody(props) {
   return _react2.default.createElement(
     'div',
     { className: 'hero-body' },
-    _react2.default.createElement(WallopSlides, null)
+    _react2.default.createElement(WallopSlides, { lang: props.lang })
   );
 };
 
 var Headlines = function Headlines(props) {
-  var num = props.num;
+  var num = props.num,
+      lang = props.lang;
+
+
+  var fontName = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-zhao';
+  var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
 
   return _react2.default.createElement(
     'div',
     { className: 'container is-fluid has-text-centered' },
     _react2.default.createElement(
       'h1',
-      { className: (0, _classnames2.default)('title', 'is-1', 'font-zhao') },
+      { className: (0, _classnames2.default)('title', 'is-1', fontName) },
       ' ',
       text['hero-title-' + num],
       ' '
     ),
     _react2.default.createElement(
       'h2',
-      { className: (0, _classnames2.default)('subtitle', 'is-3', 'font-zhao') },
+      { className: (0, _classnames2.default)('subtitle', 'is-3', fontName) },
       text['hero-subtitle-' + num]
     ),
     _react2.default.createElement(
@@ -54380,14 +54413,14 @@ var Headlines = function Headlines(props) {
       ),
       _react2.default.createElement(
         'span',
-        { className: 'font-tang' },
+        { className: fontName2 },
         text['button-calendar']
       )
     )
   );
 };
 
-var WallopSlides = function WallopSlides() {
+var WallopSlides = function WallopSlides(props) {
   return _react2.default.createElement(
     'div',
     { className: 'Wallop Wallop--fade', id: 'heroWallop' },
@@ -54397,24 +54430,25 @@ var WallopSlides = function WallopSlides() {
       _react2.default.createElement(
         'div',
         { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { num: '1' })
+        _react2.default.createElement(WallopSlide, { num: '1', lang: props.lang })
       ),
       _react2.default.createElement(
         'div',
         { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { num: '2' })
+        _react2.default.createElement(WallopSlide, { num: '2', lang: props.lang })
       ),
       _react2.default.createElement(
         'div',
         { className: 'Wallop-item' },
-        _react2.default.createElement(WallopSlide, { num: '3' })
+        _react2.default.createElement(WallopSlide, { num: '3', lang: props.lang })
       )
     )
   );
 };
 
 var WallopSlide = function WallopSlide(props) {
-  var num = props.num;
+  var num = props.num,
+      lang = props.lang;
 
   return _react2.default.createElement(
     'div',
@@ -54422,7 +54456,7 @@ var WallopSlide = function WallopSlide(props) {
     _react2.default.createElement(
       'div',
       { className: 'column is-half' },
-      _react2.default.createElement(Headlines, { num: num })
+      _react2.default.createElement(Headlines, { num: num, lang: lang })
     ),
     _react2.default.createElement(
       'div',
@@ -54470,7 +54504,7 @@ var HeroSection = function (_React$Component2) {
         'section',
         { className: 'hero is-primary is-fullheight', id: 'hero-section' },
         _react2.default.createElement(HeroHead, null),
-        _react2.default.createElement(HeroBody, null)
+        _react2.default.createElement(HeroBody, { lang: this.props.lang })
       );
     }
   }]);
@@ -54699,9 +54733,13 @@ var _cards = __webpack_require__(426);
 
 var _cards2 = _interopRequireDefault(_cards);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
+
+var _classnames = __webpack_require__(10);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -54847,6 +54885,7 @@ var ProductSection = function (_React$Component) {
 
       text = _dict2.default[lang];
       language = lang;
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
 
       var pageNum = Math.floor((this.state.cards.length - 1) / cardsPerPage) + 1;
       return _react2.default.createElement(
@@ -54854,7 +54893,7 @@ var ProductSection = function (_React$Component) {
         { className: 'product-section section container', id: 'product-section' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered font-tang is-2' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[language]['nav-combo']
         ),
         _react2.default.createElement(
@@ -54863,7 +54902,8 @@ var ProductSection = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'filter column is-one-quarter' },
-            _react2.default.createElement(_Filter2.default, { cards: this.state.cards,
+            _react2.default.createElement(_Filter2.default, {
+              cards: this.state.cards,
               filterClick: this.filterClickListener.bind(this),
               toggleListener: this.toggleListener,
               lang: lang
@@ -54872,16 +54912,19 @@ var ProductSection = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'product column' },
-            _react2.default.createElement(_Sort2.default, { sortClickListener: this.sortClickListener.bind(this),
+            _react2.default.createElement(_Sort2.default, {
+              sortClickListener: this.sortClickListener.bind(this),
               toggleListener: this.toggleListener,
               lang: lang
             }),
-            _react2.default.createElement(_ShowCards2.default, { cards: this.state.cards,
+            _react2.default.createElement(_ShowCards2.default, {
+              cards: this.state.cards,
               pageIndex: this.state.pageIndex,
               cardsPerPage: cardsPerPage,
               lang: language
             }),
-            _react2.default.createElement(_Pages2.default, { pageIndex: this.state.pageIndex,
+            _react2.default.createElement(_Pages2.default, {
+              pageIndex: this.state.pageIndex,
               pageNum: pageNum,
               pageClickListener: this.pageClickListener.bind(this),
               prev: _dict2.default[language]['prev'],
@@ -54958,7 +55001,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -54966,7 +55009,11 @@ var _reactImages = __webpack_require__(376);
 
 var _reactImages2 = _interopRequireDefault(_reactImages);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
+
+var _classnames = __webpack_require__(10);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -55043,6 +55090,7 @@ var Card = function (_React$Component) {
 
       language = lang;
       var BASE_DIR = '/images/service-section';
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       return _react2.default.createElement(
         'div',
         { className: 'card' },
@@ -55069,8 +55117,7 @@ var Card = function (_React$Component) {
                 { className: 'title is-4' },
                 _react2.default.createElement(
                   'span',
-                  { className: 'font-tang' },
-                  ' ',
+                  { className: (0, _classnames2.default)(fontName2) },
                   card[language].name,
                   ' '
                 ),
@@ -55093,7 +55140,9 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature font-tang button is-primary is-small is-outlined' },
+                  {
+                    className: (0, _classnames2.default)(fontName2, 'item-feature', 'button', 'is-primary', 'is-small', 'is-outlined')
+                  },
                   _dict2.default[language]['combo-desc']
                 ),
                 _react2.default.createElement(
@@ -55113,7 +55162,9 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature font-tang button is-primary is-outlined is-small' },
+                  {
+                    className: (0, _classnames2.default)(fontName2, 'item-feature', 'button', 'is-primary', 'is-small', 'is-outlined')
+                  },
                   _dict2.default[language]['combo-acc']
                 ),
                 card[language].acc
@@ -55127,7 +55178,9 @@ var Card = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                   'span',
-                  { className: 'item-feature font-tang button is-primary is-outlined is-small' },
+                  {
+                    className: (0, _classnames2.default)(fontName2, 'item-feature', 'button', 'is-primary', 'is-small', 'is-outlined')
+                  },
                   _dict2.default[language]['combo-hair']
                 ),
                 card[language].hair
@@ -55146,7 +55199,7 @@ var Card = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                   'span',
-                  { className: 'font-tang title is-5' },
+                  { className: (0, _classnames2.default)(fontName2, 'title', 'is-5') },
                   _dict2.default[language]['combo-photo']
                 )
               ),
@@ -55160,7 +55213,7 @@ var Card = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                   'span',
-                  { className: 'font-tang title is-5' },
+                  { className: (0, _classnames2.default)(fontName2, 'title', 'is-5') },
                   _dict2.default[language]['combo-book']
                 )
               )
@@ -55169,7 +55222,9 @@ var Card = function (_React$Component) {
           _react2.default.createElement(_reactImages2.default, {
             currentImage: this.state.currentImage,
             images: Array.from(Array(11).keys()).map(function (id) {
-              return { src: card.baseurl + '/' + id + '.jpg' };
+              return {
+                src: card.baseurl + '/' + id + '.jpg'
+              };
             }),
             isOpen: this.state.isModalActive,
             onClickPrev: this.gotoPrevious,
@@ -57897,7 +57952,7 @@ var _propTypes = __webpack_require__(6);
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _warning = __webpack_require__(20);
+var _warning = __webpack_require__(21);
 
 var _warning2 = _interopRequireDefault(_warning);
 
@@ -58813,7 +58868,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(21);
+var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -58879,9 +58934,13 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
+
+var _classnames = __webpack_require__(10);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -58917,14 +58976,16 @@ var CheckBox = function CheckBox(props) {
 var Field = function Field(props) {
   var fieldSet = props.fieldSet,
       fieldName = props.fieldName,
-      cards = props.cards;
+      cards = props.cards,
+      lang = props.lang;
 
+  var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
   return _react2.default.createElement(
     'div',
     { className: 'facet' },
     _react2.default.createElement(
       'h5',
-      { className: 'facet-title font-tang title is-4' },
+      { className: (0, _classnames2.default)('facet-title', 'title', 'is-4', fontName2) },
       text[fieldName]
     ),
     _react2.default.createElement(
@@ -58985,10 +59046,20 @@ var Filter = function Filter(props) {
       _react2.default.createElement(
         'div',
         { id: 'filters' },
-        _react2.default.createElement(Field, { fieldSet: clothType, fieldName: 'cloth-type', cards: cards }),
-        _react2.default.createElement(Field, { fieldSet: belt, fieldName: 'belt', cards: cards }),
-        _react2.default.createElement(Field, { fieldSet: gender, fieldName: 'gender', cards: cards }),
-        _react2.default.createElement(Field, { fieldSet: event, fieldName: 'event', cards: cards })
+        _react2.default.createElement(Field, {
+          fieldSet: clothType,
+          fieldName: 'cloth-type',
+          cards: cards,
+          lang: lang
+        }),
+        _react2.default.createElement(Field, { fieldSet: belt, fieldName: 'belt', cards: cards, lang: lang }),
+        _react2.default.createElement(Field, {
+          fieldSet: gender,
+          fieldName: 'gender',
+          cards: cards,
+          lang: lang
+        }),
+        _react2.default.createElement(Field, { fieldSet: event, fieldName: 'event', cards: cards, lang: lang })
       )
     )
   );
@@ -59011,7 +59082,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -60010,7 +60081,11 @@ var _step = __webpack_require__(431);
 
 var _step2 = _interopRequireDefault(_step);
 
-var _dict = __webpack_require__(10);
+var _classnames = __webpack_require__(10);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -60039,12 +60114,13 @@ var QaSection = function (_React$Component) {
       var lang = this.props.lang;
 
       language = lang;
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       return _react2.default.createElement(
         'div',
         { className: 'section qa-section container', id: 'qa-section' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered is-2 font-tang' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[language]['nav-faq']
         ),
         _react2.default.createElement(
@@ -60124,7 +60200,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _classnames = __webpack_require__(21);
+var _classnames = __webpack_require__(10);
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
@@ -60869,7 +60945,7 @@ var _intro = __webpack_require__(433);
 
 var _intro2 = _interopRequireDefault(_intro);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -60880,6 +60956,10 @@ var _girl2 = _interopRequireDefault(_girl);
 var _Wallop = __webpack_require__(111);
 
 var _Wallop2 = _interopRequireDefault(_Wallop);
+
+var _classnames = __webpack_require__(10);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -60913,16 +60993,18 @@ var GirlsSection = function (_React$Component) {
     value: function render() {
       var lang = this.props.lang;
 
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       language = lang;
       return _react2.default.createElement(
         'div',
         { className: 'section girls-section container', id: 'girls-section' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered is-2 font-tang' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[language]['nav-girls']
         ),
         _react2.default.createElement(_intro2.default, {
+          lang: lang,
           bossName: _dict2.default[language]['boss-name'],
           bossQuote: _dict2.default[language]['boss-quote']
         }),
@@ -61020,7 +61102,8 @@ var WallopSlides = function WallopSlides() {
             avatar: girl.avatar,
             name: girl.name[language],
             content: girl.content[language],
-            url: girl.url })
+            url: girl.url
+          })
         );
       })
     ),
@@ -61046,12 +61129,18 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _classnames = __webpack_require__(10);
+
+var _classnames2 = _interopRequireDefault(_classnames);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Intro = function Intro(props) {
   var bossName = props.bossName,
-      bossQuote = props.bossQuote;
+      bossQuote = props.bossQuote,
+      lang = props.lang;
 
+  var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
   return _react2.default.createElement(
     'div',
     { className: 'box' },
@@ -61075,7 +61164,7 @@ var Intro = function Intro(props) {
           { className: 'content' },
           _react2.default.createElement(
             'p',
-            { className: 'title is-5 font-tang' },
+            { className: (0, _classnames2.default)('title', 'is-5', fontName2) },
             _react2.default.createElement(
               'strong',
               null,
@@ -61093,7 +61182,11 @@ var Intro = function Intro(props) {
             { className: 'level-left' },
             _react2.default.createElement(
               'a',
-              { className: 'level-item', target: '_blank', href: 'http://weibo.com/mymiyabi' },
+              {
+                className: 'level-item',
+                target: '_blank',
+                href: 'http://weibo.com/mymiyabi'
+              },
               _react2.default.createElement(
                 'span',
                 { className: 'icon is-small' },
@@ -61111,7 +61204,11 @@ var Intro = function Intro(props) {
             ),
             _react2.default.createElement(
               'a',
-              { className: 'level-item', target: '_blank', href: 'https://www.facebook.com/miyabinokimono' },
+              {
+                className: 'level-item',
+                target: '_blank',
+                href: 'https://www.facebook.com/miyabinokimono'
+              },
               _react2.default.createElement(
                 'span',
                 { className: 'icon is-small' },
@@ -61315,9 +61412,13 @@ var _about = __webpack_require__(436);
 
 var _about2 = _interopRequireDefault(_about);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
+
+var _classnames = __webpack_require__(10);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -61343,13 +61444,14 @@ var AboutSection = function (_React$Component) {
     value: function render() {
       var lang = this.props.lang;
 
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       language = lang;
       return _react2.default.createElement(
         'div',
         { className: 'section about-section container', id: 'about-section' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered is-2 font-tang' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[language]['nav-about']
         ),
         _react2.default.createElement(VideoPlayer, null),
@@ -61370,28 +61472,35 @@ var VideoPlayer = function VideoPlayer() {
       { className: 'video' },
       _react2.default.createElement(
         'div',
-        { className: 'wistia_responsive_padding',
-          style: { padding: '56.5% 0 0 0',
+        {
+          className: 'wistia_responsive_padding',
+          style: {
+            padding: '56.5% 0 0 0',
             position: 'relative'
-          } },
+          }
+        },
         _react2.default.createElement(
           'div',
-          { className: 'wistia_responsive_wrapper',
+          {
+            className: 'wistia_responsive_wrapper',
             style: {
               height: '100%',
               left: '0',
               position: 'absolute',
               top: '0',
               width: '100%'
-            } },
+            }
+          },
           _react2.default.createElement(
             'span',
-            { className: 'wistia_embed wistia_async_phknks26n7 popover=true popoverAnimateThumbnail=true videoFoam=true',
+            {
+              className: 'wistia_embed wistia_async_phknks26n7 popover=true popoverAnimateThumbnail=true videoFoam=true',
               style: {
                 display: 'inline-block',
                 height: '100%',
                 width: '100%'
-              } },
+              }
+            },
             '\xA0'
           )
         )
@@ -61602,7 +61711,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -61845,7 +61954,7 @@ var _NoMatch = __webpack_require__(242);
 
 var _NoMatch2 = _interopRequireDefault(_NoMatch);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -63708,12 +63817,12 @@ var substr = 'ab'.substr(-1) === 'b'
 "use strict";
 
 
-var cx = __webpack_require__(21);
+var cx = __webpack_require__(10);
 var blacklist = __webpack_require__(72);
 var React = __webpack_require__(2);
 var Calendar = __webpack_require__(445);
 var Time = __webpack_require__(464);
-var dict = __webpack_require__(10);
+var dict = __webpack_require__(11);
 
 module.exports = React.createClass({
   displayName: 'InputMoment',
@@ -63822,7 +63931,7 @@ module.exports = React.createClass({
 "use strict";
 
 
-var cx = __webpack_require__(21);
+var cx = __webpack_require__(10);
 var blacklist = __webpack_require__(72);
 var React = __webpack_require__(2);
 var range = __webpack_require__(446);
@@ -64679,7 +64788,7 @@ module.exports = toInteger;
 "use strict";
 
 
-var cx = __webpack_require__(21);
+var cx = __webpack_require__(10);
 var React = __webpack_require__(2);
 var InputSlider = __webpack_require__(465);
 
@@ -64771,7 +64880,7 @@ module.exports = __webpack_require__(466);
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-var cx = __webpack_require__(21);
+var cx = __webpack_require__(10);
 var blacklist = __webpack_require__(72);
 var React = __webpack_require__(2);
 var ReactDOM = __webpack_require__(38);
@@ -65540,7 +65649,7 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
@@ -65844,13 +65953,17 @@ var _react = __webpack_require__(2);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _dict = __webpack_require__(10);
+var _dict = __webpack_require__(11);
 
 var _dict2 = _interopRequireDefault(_dict);
 
 var _CalendarSection = __webpack_require__(236);
 
-var _reactRouterDom = __webpack_require__(18);
+var _reactRouterDom = __webpack_require__(19);
+
+var _classnames = __webpack_require__(10);
+
+var _classnames2 = _interopRequireDefault(_classnames);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -65904,6 +66017,7 @@ var ConfirmSection = function (_React$Component) {
           data = _props2.data,
           moment = _props2.moment;
 
+      var fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
       data.time = moment.format('LLLL');
       data.language = lang;
 
@@ -65912,7 +66026,7 @@ var ConfirmSection = function (_React$Component) {
         { className: 'confirm-section section container' },
         _react2.default.createElement(
           'h1',
-          { className: 'title has-text-centered is-2 font-tang' },
+          { className: (0, _classnames2.default)('title', 'has-text-centered', 'is-2', fontName2) },
           _dict2.default[lang]['nav-confirm']
         ),
         _react2.default.createElement(
@@ -66117,12 +66231,14 @@ var ConfirmSection = function (_React$Component) {
             )
           )
         ),
-        _react2.default.createElement(_CalendarSection.Message, { title: _dict2.default[lang]['confirm-title-1'],
+        _react2.default.createElement(_CalendarSection.Message, {
+          title: _dict2.default[lang]['confirm-title-1'],
           content: _dict2.default[lang]['confirm-msg-1'] + data['email'],
           styleClass: 'is-danger',
           iconName: 'fa-heart'
         }),
-        _react2.default.createElement(_CalendarSection.Message, { title: _dict2.default[lang]['confirm-title-2'],
+        _react2.default.createElement(_CalendarSection.Message, {
+          title: _dict2.default[lang]['confirm-title-2'],
           content: _dict2.default[lang]['confirm-msg-2'],
           styleClass: 'is-primary',
           iconName: 'fa-calendar'
@@ -66143,7 +66259,7 @@ var ConfirmSection = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'span',
-                { className: 'font-tang' },
+                { className: (0, _classnames2.default)(fontName2) },
                 _dict2.default[lang]['nav-return']
               )
             )
@@ -66161,7 +66277,7 @@ var ConfirmSection = function (_React$Component) {
               ),
               _react2.default.createElement(
                 'span',
-                { className: 'font-tang' },
+                { className: (0, _classnames2.default)(fontName2) },
                 _dict2.default[lang]['repick-time']
               )
             )
