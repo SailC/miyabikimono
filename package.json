@@ -11,7 +11,7 @@
     "start:prod": "yarn build && node public/server.bundle.js ",
     "build:client": "NODE_ENV=production webpack",
     "build:server": "NODE_ENV=production webpack --config webpack.server.config.js",
-    "build": "npm run build:client && npm run build:server",
+    "build": "yarn build:client && yarn build:server",
     "test": "NODE_ENV=test jest",
     "test:update": "NODE_ENV=test jest -u",
     "test:coverage": "NODE_ENV=test jest --coverage"
@@ -32,6 +32,7 @@
     "body-parser": "^1.17.2",
     "classnames": "^2.2.5",
     "compression": "^1.7.0",
+    "compression-webpack-plugin": "^1.1.11",
     "conversational-form": "^0.9.5",
     "css-loader": "^0.28.4",
     "enzyme": "^2.8.2",
