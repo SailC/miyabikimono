@@ -1,5 +1,5 @@
-const path = require('path')
-var webpack = require('webpack')
+const path = require('path');
+var webpack = require('webpack');
 
 module.exports = {
   entry: './src/ClientApp.jsx',
@@ -8,16 +8,20 @@ module.exports = {
     historyApiFallback: true
   },
 
-  plugins: process.env.NODE_ENV === 'production' ? [
-    new webpack.DefinePlugin({
-      'process.env': {
-        NODE_ENV: JSON.stringify('production')
-      },
-      'process.env.BROWSER': true
-    }),
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.optimize.UglifyJsPlugin()
-  ] : [],
+  plugins:
+    process.env.NODE_ENV === 'production'
+      ? [
+          new webpack.DefinePlugin({
+            'process.env': {
+              NODE_ENV: JSON.stringify('production')
+            },
+            'process.env.BROWSER': true
+          }),
+          new webpack.optimize.OccurrenceOrderPlugin(),
+          new webpack.optimize.UglifyJsPlugin(),
+          new webpack.optimize.AggressiveMergingPlugin() //Merge chunks
+        ]
+      : [],
 
   output: {
     filename: 'bundle.js',
@@ -62,4 +66,4 @@ module.exports = {
       }
     ]
   }
-}
+};
