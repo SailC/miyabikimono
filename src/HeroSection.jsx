@@ -119,6 +119,18 @@ class HeroHead extends React.Component {
     this.toggleListener = this.toggleListener.bind(this);
   }
 
+  componentDidMount() {
+    document.documentElement.addEventListener('scroll', this.scrollListener);
+  }
+
+  componentWillUnmount() {
+    document.documentElement.removeEventListener('scroll', this.scrollListener);
+  }
+
+  scrollListener() {
+    console.log(window.scrollY);
+  }
+
   toggleListener() {
     this.setState({
       isActive: !this.state.isActive
@@ -199,16 +211,16 @@ const WallopSlide = props => {
   let { num, lang } = props;
   return (
     <div class="columns container is-fluid">
-      <div class="column is-half">
+      <div class="column">
         <Headlines num={num} lang={lang} />
       </div>
-      <div class="column is-half has-text-centered">
+      {/* <div class="column is-half has-text-centered">
         <img
           class="demo-img"
           src={`/images/mockup/${num}.png`}
           alt="iphone demo 1"
         />
-      </div>
+      </div> */}
     </div>
   );
 };

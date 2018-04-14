@@ -214,8 +214,8 @@ function initForm(setFormData) {
   var conversationalForm = new cf.ConversationalForm({
     formEl: document.getElementById('robot-form'),
     context: document.getElementById('robot-form-context'),
-    userImage: '/images/user.png',
-    robotImage: '/images/faq-section/service_miyabi.png',
+    userImage: '/images/faq-section/girl-9.png',
+    robotImage: '/images/service_miyabi.jpg',
     preventAutoFocus: true,
     dictionaryData: {
       'user-image': 'https://cf-4053.kxcdn.com/conversational-form/human.png',

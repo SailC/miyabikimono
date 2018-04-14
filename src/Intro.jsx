@@ -9,7 +9,7 @@ const Intro = props => {
       <article class="media">
         <div class="media-left">
           <figure class="image is-64x64">
-            <img src="/images/faq-section/service_miyabi.png" alt="Image" />
+            <img src="/images/faq-section/service_miyabi.jpg" alt="Image" />
           </figure>
         </div>
         <div class="media-content">
