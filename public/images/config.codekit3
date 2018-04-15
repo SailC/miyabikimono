@@ -89,12 +89,12 @@
 		},
 	"\/backup\/cover.jpg": {
 		"ft": 16384,
-		"iS": 172631,
+		"iS": 700651,
 		"oA": 0,
 		"oAP": "\/backup\/cover.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 1,
+		"opt": 0,
 		"q": 100
 		},
 	"\/backup\/favicon-bak.ico": {
@@ -1729,7 +1729,7 @@
 		},
 	"\/cover.jpg": {
 		"ft": 16384,
-		"iS": 700651,
+		"iS": 214142,
 		"oA": 0,
 		"oAP": "\/cover.jpg",
 		"oF": 0,
