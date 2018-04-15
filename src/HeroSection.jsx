@@ -50,7 +50,7 @@ const NavToggle = props => {
 };
 
 const NavRight = props => {
-  let { isActive, toggleListener } = props;
+  let { isActive, toggleListener, lang } = props;
   return (
     <div
       class={classNames('nav-right', 'nav-menu', { 'is-active': isActive })}
@@ -58,29 +58,12 @@ const NavRight = props => {
     >
       <span class="nav-item">
         <Scrollchor to="#product-section" class="button is-primary nav-link">
-          <span class="icon">
-            <i class="fa fa-female" />
-          </span>
-          <span class="icon is-small">
-            <i class="fa fa-plus" />
-          </span>
-          <span class="icon">
-            <i class="fa fa-male" />
-          </span>
+        {text['nav-combo']}
         </Scrollchor>
       </span>
-      {/* <span class='nav-item'>
-        <Link to='/booking' class='button is-primary'>
-          <span class='icon'>
-            <i class='fa fa-calendar' />
-          </span>
-        </Link>
-      </span> */}
       <span class="nav-item">
         <Scrollchor to="#qa-section" class="button is-primary nav-link">
-          <span class="icon">
-            <i class="fa fa-question-circle" />
-          </span>
+        Q&A
         </Scrollchor>
       </span>
       <span class="nav-item">
@@ -92,9 +75,7 @@ const NavRight = props => {
       </span>
       <span class="nav-item">
         <Scrollchor to="#about-section" class="button is-primary nav-link">
-          <span class="icon">
-            <i class="fa fa-users" />
-          </span>
+          {text['nav-about']}
         </Scrollchor>
       </span>
       <span class="nav-item">
@@ -150,6 +131,7 @@ class HeroHead extends React.Component {
             <NavRight
               toggleListener={this.toggleListener}
               isActive={this.state.isActive}
+              lang={this.props.lang}
             />
           </div>
         </header>
@@ -243,7 +225,7 @@ class HeroSection extends React.Component {
     language = lang;
     return (
       <section class="hero is-primary is-fullheight" id="hero-section">
-        <HeroHead />
+        <HeroHead lang={this.props.lang}/>
 
         <HeroBody lang={this.props.lang} />
       </section>
