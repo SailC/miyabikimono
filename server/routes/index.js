@@ -58,6 +58,7 @@ function renderPage(appHtml) {
         <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
         <link rel='stylesheet' href='/main.css' />
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css' />
         <link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/space10-community/conversational-form@0.9.80/dist/conversational-form.min.js' />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/wallop/2.4.1/css/wallop.min.css' />
         <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/wallop/2.4.1/css/wallop--fade.min.css' />
