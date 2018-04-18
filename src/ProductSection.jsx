@@ -109,7 +109,7 @@ class ProductSection extends React.Component {
           {dict[language]['nav-combo']}
         </h1>
         <div class="columns">
-          <div class="filter column is-one-quarter">
+          <div class="filter column is-one-fifth">
             <Filter
               cards={this.state.cards}
               filterClick={this.filterClickListener.bind(this)}

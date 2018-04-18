@@ -191,6 +191,16 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/vendor\/bulma.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/vendor\/bulma-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/vendor\/bulma.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -198,7 +208,7 @@
 		"dS": 0,
 		"ft": 2,
 		"ma": 0,
-		"oA": 1,
+		"oA": 0,
 		"oAP": "\/vendor\/bulma.css",
 		"oF": 0,
 		"oS": 0,

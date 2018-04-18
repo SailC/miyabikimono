@@ -7,7 +7,7 @@ const Sort = (props) => {
     <div class='field has-addons has-addons-right'>
 
       <p class='control'>
-        <a class='button is-primary filter-icon' onClick={toggleListener}>
+        <a class='button is-primary  filter-icon' onClick={toggleListener}>
           <span class='icon'>
             <i class='fa fa-sliders' />
           </span>

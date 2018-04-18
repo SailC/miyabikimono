@@ -23,12 +23,12 @@ const CalendarSection = props => {
   let fontName2 = lang === 'en' || lang === 'ko' ? 'font-english' : 'font-tang';
   return (
     <section class="calendar-section section container" id="calendar-section">
-      <div class={classNames('title', 'has-text-centered', 'is-2', fontName2)}>
+      <div class={classNames('title', 'has-text-centered', 'is-4', fontName2)}>
         {dict[language]['nav-calendar']}
       </div>
-      <div class="calendar-widget columns container">
+      <div class="calendar-widget  container">
         <div
-          class={classNames('column', 'calendar-column', {
+          class={classNames( 'calendar-column', {
             'is-hidden': isleftHidden
           })}
         >
@@ -41,7 +41,8 @@ const CalendarSection = props => {
           />
         </div>
         <div
-          class={classNames('column', 'messages', {
+          class={classNames('messages',
+          {
             'is-hidden': isRightHidden
           })}
         >
@@ -59,9 +60,10 @@ const CalendarSection = props => {
             iconName="fa-check-circle"
           />
           <div class="text-button has-text-centered">
+
             <Link
               to={path.join(props.match.url, '/form')}
-              class="button is-primary is-outlined"
+              class="button is-small is-primary is-outlined is-rounded"
             >
               <span class="icon is-small">
                 <i class="fa fa-check" />
@@ -71,8 +73,9 @@ const CalendarSection = props => {
                 {dict[language]['confirm-time']}
               </span>
             </Link>
+
             <a
-              class="button is-primary repick-time is-outlined"
+              class="button is-small is-primary repick-time is-outlined is-rounded"
               onClick={repickTime}
             >
               <span class="icon is-small">
@@ -82,7 +85,8 @@ const CalendarSection = props => {
                 {dict[language]['repick-time']}
               </span>
             </a>
-            <Link to="/" class="button is-primary is-outlined">
+
+            <Link to="/" class="button is-small is-primary is-outlined is-rounded">
               <span class="icon is-small">
                 <i class="fa fa-home" />
               </span>

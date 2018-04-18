@@ -14,7 +14,9 @@
     width: 100%
   @include tablet
     width: 48%
-  @include desktop
+  // @include desktop
+    // width: 31.5%
+  @include widescreen
     width: 31.5%
 
 .media-content .title.is-4
@@ -30,6 +32,11 @@ a.filter-icon
 
 nav.pagination
   margin: 5px
+  .pagination-link.is-current
+    background-color: #00d1b2 !important
+    border-color: #00d1b2 !important
+    color: white !important
+
 
 .field.has-addons
   margin: 5px
@@ -44,6 +51,9 @@ nav.pagination
 .facet-title.title.is-4
   border-bottom: 2px solid #eee
   margin-bottom: 0px
+
+.product.column
+  padding: 0
 
 .filter.column
   padding-top: 34px
@@ -118,11 +128,14 @@ nav.pagination
 
 .item-desc
   margin-bottom: 10px
+  display: flex
+  flex-direction: column
+  align-items: flex-start
 
 span.item-feature
   // font-weight: bold
-  margin-right: 5px
-  // vertical-align: text-bottom
+  // margin-right: 5px
+  margin-bottom: 10px
 
 span.item-price
   font-weight: bold
@@ -135,7 +148,8 @@ span.item-price
 .item-link
   .button
     margin: 2.5px
-//
-// .products
-//   @include tablet
-//     flex-basis: 74%
+    .title
+      color: white
+
+.select::after
+    border-color: #00d1b2 !important

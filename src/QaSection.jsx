@@ -60,7 +60,7 @@ const FaqItems = () => {
           askerName={faq.askerName[language]}
           askerUrl={faq.askerUrl}
           answererName={dict[language].answererName}
-          answererUrl="/images/service_miyabi.jpg"
+          answererUrl="/images/logo.png"
         />
       )}
     </div>

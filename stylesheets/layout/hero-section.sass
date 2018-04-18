@@ -3,28 +3,26 @@
 .hero
   .hero-head
     .nav-left
-      // @include from($widescreen)
-        // max-width: 50px
-      .nav-item
-        span.select
-          max-width: 100%
-    .nav-item
-      font-weight: 500
-      .field
-        flex-grow: 1
-      .control
-        display: flex
-        justify-content: center
-    .nav
-      position: fixed !important
-      top: 0
-      left: 0
-      right: 0
-      background-color: #22d0b2
-      opacity: 0.85
+      a.navbar-burger
+        color: #00d1b2
 
-    .nav-toggle:hover
-      background-color: rgb(60, 209, 182) !important
+    .navbar.is-light
+      background-color: #f5f5f5
+      color: #363636
+      .navbar-brand
+        align-items: center
+      .navbar-end
+        @include from($desktop)
+          align-items: center
+          padding-right: 20px
+          .navbar-item
+            margin-left: 10px
+            margin-right: 10px
+        .navbar-item
+          display: flex
+          justify-content: center
+          color: #00d1b2
+
 
   .hero-body
     .columns
@@ -44,9 +42,11 @@
       font-weight: 800
       @include mobile
         font-size: 1.8rem
-
     .subtitle
       font-weight: 500
+
+    .title, .subtitle
+      color: white !important
 
     .Wallop
       width: 100%
@@ -84,3 +84,15 @@
       text-indent: 0
       font-size: 25px
       line-height: 0
+
+.hero-body
+  flex-grow: 1
+  flex-shrink: 0
+  padding: 3rem 1.5rem
+  background-image: url(/images/cover.jpg)
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+#hero-section
+  background-color: transparent

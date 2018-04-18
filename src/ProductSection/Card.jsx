@@ -68,85 +68,92 @@ class Card extends React.Component {
                 <span class={classNames(fontName2)}>
                   {card[language].name}{' '}
                 </span>
-                <span class="item-price button is-danger is-small">
+                <span class="item-price button is-small is-danger">
                   {'￥' + card.price.toString()}
                 </span>
               </div>
             </div>
           </div>
+          <hr />
 
           <div class="content">
-            <div class="item-desc">
-              <div>
+            <div class="item-desc combo-desc">
                 <span
                   class={classNames(
                     fontName2,
                     'item-feature',
                     'button',
                     'is-primary',
-                    'is-small',
-                    'is-outlined'
+                    'is-normal',
+                    'is-outlined',
+                    'is-static',
+                    'is-rounded'
                   )}
                 >
                   {dict[language]['combo-desc']}
                 </span>
-                <span>
+                <div>
                   {' '}{card[language].desc}{' '}
-                </span>
-              </div>
+                </div>
             </div>
+
+            <hr />
+
             <div class="item-desc">
-              <p>
                 <span
                   class={classNames(
                     fontName2,
                     'item-feature',
                     'button',
                     'is-primary',
-                    'is-small',
-                    'is-outlined'
+                    'is-normal',
+                    'is-outlined',
+                    'is-static',
+                    'is-rounded'
                   )}
                 >
                   {dict[language]['combo-acc']}
                 </span>
 
+              <div>
                 {card[language].acc}
-              </p>
+              </div>
             </div>
+
+            <hr />
+
             <div class="item-desc">
-              <p>
-                <span
-                  class={classNames(
-                    fontName2,
-                    'item-feature',
-                    'button',
-                    'is-primary',
-                    'is-small',
-                    'is-outlined'
-                  )}
+              <span
+                class={classNames(
+                  fontName2,
+                  'item-feature',
+                  'button',
+                  'is-primary',
+                  'is-normal',
+                  'is-outlined',
+                  'is-static',
+                  'is-rounded'
+                )}
                 >
                   {dict[language]['combo-hair']}
                 </span>
-                {card[language].hair}
-              </p>
-            </div>
-            <div class="item-link has-text-centered">
-              <a class="button" onClick={this.toggleListener}>
-                <span class="icon is-small">
-                  <i class="fa fa-camera" />
-                </span>
-                <span class={classNames(fontName2, 'title', 'is-5')}>
-                  {dict[language]['combo-photo']}
-                </span>
-              </a>
-              <Link to="/booking" class="button">
-                <span class="icon is-small">
-                  <i class="fa fa-calendar" />
-                </span>
-                <span class={classNames(fontName2, 'title', 'is-5')}>
-                  {dict[language]['combo-book']}
-                </span>
-              </Link>
+                <div>
+                  {card[language].hair}
+                </div>
+              </div>
+
+              <hr />
+
+              <div class="item-link has-text-centered">
+                <a class="button is-primary is-rounded is-medium" onClick={this.toggleListener}>
+                  <span class="icon is-normal">
+                    <i class="fa fa-camera" />
+                  </span>
+                  <span class={classNames(fontName2, 'title', 'is-5')}>
+                    {dict[language]['combo-photo']}
+                  </span>
+                </a>
+
             </div>
           </div>
 

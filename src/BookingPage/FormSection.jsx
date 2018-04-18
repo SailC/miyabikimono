@@ -215,7 +215,7 @@ function initForm(setFormData) {
     formEl: document.getElementById('robot-form'),
     context: document.getElementById('robot-form-context'),
     userImage: '/images/faq-section/girl-9.png',
-    robotImage: '/images/service_miyabi.jpg',
+    robotImage: '/images/logo-mid.png',
     preventAutoFocus: true,
     dictionaryData: {
       'user-image': 'https://cf-4053.kxcdn.com/conversational-form/human.png',

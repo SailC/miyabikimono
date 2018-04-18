@@ -77,6 +77,17 @@
 		"opt": 1,
 		"q": 100
 		},
+	"\/apple-icon.png": {
+		"ft": 32768,
+		"iS": 23336,
+		"oA": 0,
+		"oAP": "\/apple-icon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/backup\/cover copy.jpg": {
 		"ft": 16384,
 		"iS": 307410,
@@ -2009,6 +2020,17 @@
 		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
+	"\/favicon.png": {
+		"ft": 32768,
+		"iS": 8426,
+		"oA": 0,
+		"oAP": "\/favicon.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/girls-section\/1.png": {
 		"ft": 32768,
 		"iS": 101844,
@@ -2556,6 +2578,28 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/logo-mid.png": {
+		"ft": 32768,
+		"iS": 20807,
+		"oA": 0,
+		"oAP": "\/logo-mid.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/logo.png": {
+		"ft": 32768,
+		"iS": 12260,
+		"oA": 0,
+		"oAP": "\/logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/mockup\/1.png": {
 		"ft": 32768,

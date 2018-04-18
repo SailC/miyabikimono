@@ -38,30 +38,12 @@ class App extends React.Component {
 
   componentWillMount() {}
 
-  onLangChange(event) {
-    let language = event.target.value;
-    // TODO: to be implemented , setState(lang)
-    if (language === '简体中文') {
-      this.setState({
-        lang: 'zh-cn'
-      });
-    } else if (language === '正體中文') {
-      this.setState({
-        lang: 'zh-tw'
-      });
-    } else if (language === 'English') {
-      this.setState({
-        lang: 'en'
-      });
-    } else if (language === '日本語') {
-      this.setState({
-        lang: 'ja'
-      });
-    } else {
-      this.setState({
-        lang: 'ko'
-      });
-    }
+  onLangChange(lang) {
+    let language = lang;
+    console.log(lang);
+    this.setState({
+      lang: lang
+    });
   }
 
   render() {
