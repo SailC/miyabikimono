@@ -1,0 +1,24 @@
+version: "3"
+
+services:
+  web:
+    container_name: miyabi-web
+    image: nodebb/docker:v1.8.2
+    ports:
+      - "4567:4567"
+    depends_on:
+      - db
+    links:
+      - db:redis # redis is the hostname for db service
+    volumes:
+      - ./data:/var/lib/nodebb
+    restart: always
+
+  db:
+    container_name: miyabi-redis
+    image: redis
+    expose: # only expose to web, not host
+      - "6379"
+    volumes:
+      - ./data:/data
+    restart: always
